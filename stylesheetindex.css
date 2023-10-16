@@ -39,10 +39,16 @@ a {
 }
 
 .indexfooter {
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     background: #FFD500;
     font-family: Helvetica, sans-serif;
+  }
+
+  .indexfooter img {
+    align-content: center;
+    max-width: 30%;
+    height: auto;
   }
 
   @media screen and (max-width: 700px) {
