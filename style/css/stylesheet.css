@@ -5,6 +5,11 @@ h1, h2, h3 {
 
 /*Maria*/
 
+.index.container {
+   display: flex;
+   flex-direction: row;
+}
+
 /*Nellie*/
 
 /*Tomine*/
