@@ -25,7 +25,7 @@ a {
 
 .flexbox1 {
     flex: 20%;
-    padding: 30px;
+    padding: 40px;
 }
 
 .flexbox2 {
@@ -34,6 +34,13 @@ a {
 }
 
 .flexbox3 {
-    flex: 40%;
+    flex: 20%;
     padding: 30px;
 }
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #FFD500;
+    font-family: Helvetica, sans-serif;
+  }
