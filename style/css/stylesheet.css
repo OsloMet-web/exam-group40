@@ -5,5 +5,18 @@
 /*Tomine*/
 
 /*Susanne*/
+#bildekilde {
+    color:grey;
+    text-align: left;
+  
+}
+.bilde1{
+    float:left;
+}
+.bilde2{
+    float:right;
+}
+
+
 
 /*Ange-Clara*/
