@@ -5,9 +5,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
+.indexheader img {
+  align-content: center;
+  max-width: 10%;
+  height: auto; 
+}
+
+.indexnavbar a {
     display: block;
     text-align: center;
+    font-family: Helvetica, sans-serif;
+  }
+
+.indexnavbar a:hover {
     color: #FFFFFF;
   }
 
@@ -32,6 +42,19 @@ a {
   text-decoration: none;
   color: #FFD500fc;
   font-weight: bold;
+}
+
+.forsidebilde img {
+  align-content: center;
+  max-width: 100%;
+  height: auto; 
+}
+
+.forsidebilde p {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  color: #3d3d3d;
+  margin-left: 1%;
 }
 
 .indexcontainer {
