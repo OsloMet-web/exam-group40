@@ -204,6 +204,39 @@ text-decoration: none;
     padding: 15px;
 }
 
+<<<<<<< HEAD
+=======
+/* Styling for .header klasse innenfor header */
+.header {
+    display: flex;
+}
+
+/* Styling for hovedinnholdet med klassen .content */
+main .content {
+    background-color: #fff018;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for h1 med ID */
+#kantine-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styling for .kantine-paragraph klasse */
+.kantine-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Styling for bilder i kantine */
+>>>>>>> 049bc9b (endret bakgrunnsfarge)
 #kantine-bilde {
     max-width: 100%;
     height: auto;
@@ -214,11 +247,25 @@ text-decoration: none;
 /* Footer-seksjon */
 footer {
     text-align: center;
+<<<<<<< HEAD
     padding: 20px;
     background: #FFD500;
     font-family: Helvetica, sans-serif;
     width: 100%;
     
+=======
+    background-color: #1f0d93;
+    font-family: Helvetica;
+}
+
+.index.container {
+   display: flex;
+   flex-direction: row;
+}
+
+.index.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+>>>>>>> 049bc9b (endret bakgrunnsfarge)
 }
 
 /* Ange-Clara */
