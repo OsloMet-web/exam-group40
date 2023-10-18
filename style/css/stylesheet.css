@@ -10,5 +10,22 @@ h1, h2, h3 {
 /*Tomine*/
 
 /*Susanne*/
+#bildekilde {
+    color:grey;
+    text-align: left;
+  
+}
+.bilde1{
+    float:left;
+}
+.bilde2{
+    float:right;
+}
+.flex-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
 
 /*Ange-Clara*/
