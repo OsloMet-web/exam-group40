@@ -7,6 +7,107 @@ h1, h2, h3 {
 
 /*Nellie*/
 
+/* Styling ilregler for body med klassen .kantina-body */
+.horizontal-menu {
+    list-style: none;
+    display: flex;
+}
+
+/* Styling for menyen */
+.horizontal-menu li {
+    margin-right: 20px; /* Legg til mellomrom mellom menyelementene */
+}
+
+/* Styling for lenkene (a) i menyen */
+.horizontal-menu li a {
+    text-decoration: none;
+    color: #FFD500fc;
+    font-weight: bold;
+}
+
+.kantina-body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Styling for header med ID */
+#page-header {
+    background-color: #1f0d93;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for .header klasse innenfor header */
+.header {
+    display: flex;
+}
+
+/* Styling for hovedinnholdet med klassen .content */
+main .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for h1 med ID */
+#kantine-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styling for .kantine-paragraph klasse */
+.kantine-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Styling for bilder i kantine */
+#kantine-bilde {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Styling for artikkelen med ID */
+#kantine-article {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Styling for aside med ID */
+#special-offers {
+    background-color: #fff018;
+    padding: 15px;
+    border: 1px solid #f0c617;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Styling for footer med ID */
+#page-footer {
+    background-color: #1f0d93;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
 /*Tomine*/
 
 /*Susanne*/
