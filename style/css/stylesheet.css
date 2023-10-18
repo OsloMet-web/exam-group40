@@ -1,11 +1,6 @@
-/*Generelt*/
-h1, h2, h3 {
-    font-family: Helvetica, sans-serif;
-}
-
 /*Maria*/
 
-/*Nellie*/
+/*Nellie jobber hardt*/
 
 /* Styling ilregler for body med klassen .kantina-body */
 .horizontal-menu {
@@ -104,29 +99,17 @@ main .content {
     background-color: #1f0d93;
     color: white;
     padding: 10px;
+>>>>>>> Nellie
     text-align: center;
+    background-color: #FFD500;
+    font-family: Helvetica;
 }
 
-
-/*Tomine*/
-
-/*Susanne*/
-#bildekilde {
-    color:grey;
-    text-align: left;
-  
-}
-.bilde1{
-    float:left;
-}
-.bilde2{
-    float:right;
-}
-.flex-container{
-    display:flex;
-    flex-wrap:wrap;
+.index.container {
+   display: flex;
+   flex-direction: row;
 }
 
-
-
-/*Ange-Clara*/
+.index.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+}
