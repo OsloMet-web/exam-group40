@@ -179,6 +179,7 @@ text-decoration: none;
 
 /* Styling for hovedinnholdet med klassen .content */
 main .content {
+    background-color: #fff018;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -230,7 +231,7 @@ main .content {
     background-color: #1f0d93;
     color: white;
     text-align: center;
-    background-color: #FFD500;
+    background-color: #1f0d93;
     font-family: Helvetica;
 }
 
