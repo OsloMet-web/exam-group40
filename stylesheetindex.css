@@ -110,10 +110,14 @@
 
   @media screen and (max-width: 700px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     .container, .indexnavbar, ul, li {   
 =======
     .container, .indexnavbar {   
 >>>>>>> e76897b (endringer)
+=======
+    .container, .indexnavbar, ul, li {   
+>>>>>>> 0f9590b (Responsive)
       flex-direction: column;
     }
     ul, li {
