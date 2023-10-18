@@ -156,6 +156,7 @@ text-decoration: none;
     padding: 25px;
 }
 
+<<<<<<< HEAD
 .horizontal-menu {
     list-style: none;
     display: flex;
@@ -165,12 +166,42 @@ text-decoration: none;
 
 .horizontal-menu li {
     margin-right: 40px;
+=======
+/* Styling-regler for body med klassen .kantina-body */
+.Kantinaheader {
+    padding: 30px;
+    text-align: center;
+    background-color: #FFD500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Kantinaheader img {
+    max-width: 10%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Styling for menyen */
+.horizontal-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #1f0d93;
+    padding: 10px;
+}
+
+/* Styling for menyelementene */
+.horizontal-menu li {
+    margin-right: 20px;
+>>>>>>> 1a5724f (endring)
 }
 
 .horizontal-menu li a {
     text-decoration: none;
     color: #FFD500;
     font-weight: bold;
+<<<<<<< HEAD
 }
 
 /* Forsidebilde */
@@ -209,17 +240,21 @@ text-decoration: none;
 /* Styling for .header klasse innenfor header */
 .header {
     display: flex;
+=======
+    font-family: Helvetica, sans-serif;
+>>>>>>> 1a5724f (endring)
 }
 
 /* Styling for hovedinnholdet med klassen .content */
 main .content {
-    background-color: #fff018;
+    background-color: #FFFFFF;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Styling for h1 med ID */
@@ -233,8 +268,12 @@ main .content {
 .kantine-paragraph {
     font-size: 16px;
     line-height: 1.5;
+    font-family: Helvetica, sans-serif;
+    color: #3d3d3d;
+    margin-left: 1%;
 }
 
+<<<<<<< HEAD
 /* Styling for bilder i kantine */
 >>>>>>> 049bc9b (endret bakgrunnsfarge)
 #kantine-bilde {
@@ -266,6 +305,47 @@ footer {
 .index.navbar {
     font-family: Arial, Helvetica, sans-serif;
 >>>>>>> 049bc9b (endret bakgrunnsfarge)
+=======
+/* Styling for bilder i kantina */
+#kantine-bilde {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling for artikkelen med ID */
+#kantine-article {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Styling for aside med ID */
+#special-offers {
+    background-color: #FFD500;
+    padding: 15px;
+    border: 1px solid #f0c617;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Styling for footer med ID */
+#page-footer {
+    background-color: #1f0d93;
+    color: #FFD500;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+#page-footer img {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+>>>>>>> 1a5724f (endring)
 }
 
 /* Ange-Clara */
