@@ -9,26 +9,29 @@
 .topical-article{
     margin-left: 2rem;
 }
+
 .topical-header{
 display: flex;
-padding:10px;
+padding:20px;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
 background-image: url(../img/city.jpg);
 background-position: top;
 background-size: 500px;
-background-position: 5%;
+background-position: 100%;
 background-repeat: repeat-x;
 }
 
 .topical-menu{
     list-style: none;
     display: flex;
+    
 
 }
 
 .topical-menu > li {
-    margin: 20px;
+    margin: 10px 40px 10px 40px;
+    
 
 }
 
@@ -36,13 +39,76 @@ background-repeat: repeat-x;
 color:bisque;
 font-weight: bold;
 text-decoration: none;
-margin-left: 1rem;
+
 
 }
 
 .topical-menu > li > a:hover{
     text-decoration: underline;
+    color:pink
 }
+
+#tittel{
+    text-align: center; 
+    font-family: fantasy;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: rgb(23, 71, 112);
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.artikkeltekst{
+    padding:2rem;
+}
+
+.artikkeltekst > p{
+    flex-grow: 2;
+    
+}
+
+.artikkeltekst > h2{
+    font-family: fantasy;
+    font-weight: 10;
+
+    
+}
+
+
+#bilde1{
+max-width: 100%;
+display: flex;
+align-items: flex-end;
+margin:2rem;
+}
+
+#bildekilde1{
+    margin: 0;
+    font-size: smaller;
+    color: grey;
+}
+
+#bilde2{
+    display: flex;
+    align-items: flex-end;
+    max-width: 100%;
+
+}
+
+#topical-footer{
+    display: flex;
+    background-color: bisque;
+    margin:0;
+}
+
+
+
+
+
 
 
 /*Nellie jobber hardt*/
