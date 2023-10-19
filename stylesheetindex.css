@@ -23,6 +23,12 @@
     font-family: Helvetica, sans-serif;
   }
 
+.flexbox1 img {
+    width: 7%;
+    height: auto;
+    padding: 3px;
+  }
+
 .indexnavbar a:hover {
     color: #FFFFFF;
   }
