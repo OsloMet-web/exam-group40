@@ -250,12 +250,12 @@ footer {
  }
 
  .orakel img {
-    width: auto;
-    padding-top: 100px;
+    width: 200px;
+    border: 2px solid #353e9c;
  }
 
  .dtorget img {
-    width: 100%;
+    width: 400px
  }
 
  .dtorget b {
@@ -315,10 +315,9 @@ footer {
     max-width: 100%;
     height: auto; 
   }
-  
 
   @media screen and (max-width: 1000px) {
     .container, .datanavbar {   
       flex-direction: column;
     }
-}
+  }
