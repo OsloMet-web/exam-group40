@@ -135,6 +135,7 @@ text-decoration: none;
 
 /* Header */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .Kantinaheader {
     padding: 60px;
     text-align: center;
@@ -324,6 +325,12 @@ footer {
 }
 
 .index.navbar {
+=======
+.Kantinaheader {
+    padding: 60px;
+    text-align: center;
+    background-color: #FFD500;
+>>>>>>> main
     font-family: Arial, Helvetica, sans-serif;
 >>>>>>> 049bc9b (endret bakgrunnsfarge)
 =======
@@ -332,11 +339,55 @@ footer {
 =======
 }
 
+<<<<<<< HEAD
 .forsidebilde_kantina img {
 >>>>>>> 19d2e5b (Endret css koden)
     max-width: 100%;
 =======
 >>>>>>> f4709eb (Endret css koden)
+=======
+.Kantinaheader img {
+    max-width: 100%;
+    height: 0;
+    margin: 0;
+
+}
+
+/* Navigasjonsmeny */
+.kantinanavbar {
+    display: flex;
+    justify-content: center;
+    background-color: #1f0d93;
+    padding: 25px;
+}
+
+.horizontal-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-menu li {
+    margin-right: 40px;
+}
+
+.horizontal-menu li a {
+    text-decoration: none;
+    color: #FFD500;
+    font-weight: bold;
+}
+
+/* Forsidebilde */
+.forsidebilde_kantina {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    margin-top: 0px;
+}
+
+.forsidebilde_kantina img {
+    max-width: 90%;
+>>>>>>> main
     height: auto;
 }
 
@@ -364,7 +415,10 @@ footer {
     height: auto;
     display: block;
     margin: 0 auto;
+<<<<<<< HEAD
 >>>>>>> 1a5724f (endring)
+=======
+>>>>>>> main
 }
 
 /* Footer-seksjon */

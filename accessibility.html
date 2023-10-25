@@ -7,33 +7,26 @@
     <link rel="icon" type="image/x-icon" href="style/img/logo.png"> <!--favicon bilde-->
     <!-- <link rel="stylesheet" href="style/css/stylesheet.css">*/ -->
     <style>
+
         .accessibility-header-container {
-            grid-area: header;
-        }
-        .nav-container {
-            grid-area: nav;
-        }
-        .accessibility-main {
-            grid-area: main;
-        }
-        .footer-container {
-            grid-area: footer;
-        }
-
-        .accessibility-grid-container {
             display: grid;
-            grid-template-areas: 
-            'header header header'
-            'nav nav nav '
-            'main main main'
-            'footer footer footer';
-
-            gap: 10px;
-            padding: 0px;
+            grid-template-areas: 'header header header';
+            grid-template-columns: none;
+            padding: 10px;
         }
 
-        .accessibility-grid-container > div {
-            padding: 0px 0;
+        .nav-container {
+            display: grid;
+        }
+
+        .accessibility-main-container {
+            display: grid;
+            grid-template-columns: auto;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: auto auto;
         }
 
         #main {
@@ -48,10 +41,16 @@
             display: inline;
         }
 
-        #accessibility-header {
-            background-image: url("style/img/pilestredet.jpeg");
-            max-width: 1400px;
-            height: 700px;
+        .accessibility-header {
+            grid-area: header;
+            background-color: blue;
+            max-width: 100%;
+            height: 100%;
+        }
+
+        #logophoto{
+            width: 50px;
+            height: 34px;
         }
 
         #accessibility-header-text {
@@ -61,23 +60,32 @@
     </style>
 </head>
 <body>
-    <div class="accessibility-grid-container">
-        <div class="accessibility-header-container">
-                <header id="accessibility-header">
-                    <h1 id="accessibility-header-text">Accessibility</h1>
-                </header>
+
+    <!--header-->
+    <header class="accessibility-header-container">
+        <div class="accessibility-header">
+            <img id="logophoto" src="style/img/logo.png" alt="OsloMet Logo">
+             <h1 id="accessibility-header-text">Accessibility</h1>
         </div>
-        <div class="nav-container">
-            <nav>
+    </header>
+
+    <!--end header-->
+
+    <!--Navigation bar-->
+        <nav class="nav-container">
+            <div id="navbar">
                 <ul class="menu">
                     <li id="main"><a href="#home">Home</a></li>
                     <li id="main"><a href="#Kantina">Kantina</a></li>
                     <li id="main"><a href="#datatorget">Datatorget</a></li>
                 </ul>
-            </nav>
-        </div>
-        <div class="accessiblity-main">
-            <h2>accessibility</h2>
+            </div>
+        </nav>
+        <!--end Navigation bar-->
+
+        <main class="accessiblity-main-container">
+            <div id="main-content">
+                <h2>accessibility</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Quis varius quam quisque id diam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Nulla at volutpat diam ut. At imperdiet dui accumsan sit.
@@ -103,17 +111,25 @@
                 Nunc pulvinar sapien et ligula. 
                 Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim.
             </p>
-        </div>
-        <div class="footer-container">
-            <footer>
+            </div>
+        </main>
+        <footer class="footer-container">
                 <div class="footer-menu">
                     <ul id="main-footmenu">
-                        <li id="footer-submenu-1">Postboks 4, St. Olavs plass
+                        <li id="footer-submenu-1">
+                            <div id="footer-adress">
+                            Postboks 4, St. Olavs plass
                             0130 Oslo
-                            Tlf.: 67 23 50 00</li>
+                            Tlf.: 67 23 50 00
+                            </div>
+                        </li>
                         <li id="footer-submenu-2">
-                            <li><a href="accessibility.html">Accessibility</a></li>
-                            <li><a href="topical.html">Topical</a></li>
+                            <ul>
+                                <div>
+                                    <li><a href="accessibility.html">Accessibility</a></li>
+                                    <li><a href="topical.html">Topical</a></li>
+                                </div>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -122,8 +138,7 @@
     
                     </ul>
                 </div>
-            </footer>
-        </div>
+        </footer>
     </div>
 </body>
 </html>
