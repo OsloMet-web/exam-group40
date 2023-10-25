@@ -11,6 +11,12 @@
   height: auto; 
 }
 
+.indexheader h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
 .indexnavbar a {
     display: block;
     text-align: center;
@@ -35,7 +41,7 @@
 }
 
 .horizontal-menu li {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .horizontal-menu li a {
@@ -55,6 +61,10 @@
   font-size: 12px;
   color: #3d3d3d;
   margin-left: 1%;
+}
+
+.flexbox2, .flexbox1 p {
+  line-height: 1.5em;
 }
 
 .container {
@@ -93,7 +103,10 @@
   }
 
   @media screen and (max-width: 700px) {
-    .container, .indexnavbar {   
+    .indexcontainer, .indexnavbar {   
       flex-direction: column;
+    }
+    ul, li {
+      margin: 1%;
     }
 }
