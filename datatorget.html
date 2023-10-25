@@ -3,18 +3,17 @@
 <head>
     <meta lang="nb">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="style/css/stylesheet.css">
     <title>Datatorget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="dataheader">
+    <header class="dataheader">
         <img src="style/img/logo.png" alt="OsloMet Logo">
         <h1>VELKOMMEN TIL DATATORGET</h1>
-      </div>
+    </header>
     
-      <div class="datanavbar">
-        <nav>
+      <nav class="datanavbar">
           <ul class="horizontal-menu">
             <li><a href="index.html">Hjem</a></li>
            <li><a href="accessibility.html">Accessibility</a></li>
@@ -23,20 +22,19 @@
            <li><a href="kantina.html">Kantine</a></li>
           </ul>
        </nav>
-      </div>
 
-    <div class="container">
-        <div class="flexbox1">
+    <main class="container">
+        <section class="flexbox1">
             <b>Adresse:</b>
             <p>Pilestredet 35, 4.etasje</p>
             <b>Åpningstid Orakeltjenesten:</b>
             <p>Tirsdag & Fredag 12.30-1630</p>
             <b>Kontakt Orakeltjenesten og stell deg i kø:</b>
             <p><a href="https://orakeloslomet.github.io/Orakel_Queue_Client/">Kø til Orakeltjenesten</a></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.8756571957914!2d10.7347696!3d59.9196745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f1fc5920b79%3A0xe72cf5d0dee0de6f!2sOsloMet%20-%20Handelsh%C3%B8yskolen!5e0!3m2!1sno!2sno!4v1697620383279!5m2!1sno!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.8756571957914!2d10.7347696!3d59.9196745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f1fc5920b79%3A0xe72cf5d0dee0de6f!2sOsloMet%20-%20Handelsh%C3%B8yskolen!5e0!3m2!1sno!2sno!4v1697620383279!5m2!1sno!2sno" width="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     
-        <div class="flexbox2">
+        <article class="flexbox2">
 
     
 
@@ -64,31 +62,38 @@
 
 
     /*bruk flex bokser+formatere layout på siden*/
-    </div>
-    <div class="flexbox3">
-        <a href="https://student.oslomet.no/auditorier-undervisningsrom/-/undervisningsrom/campus/PIL/bygning/P35"
+        </article>
+    <aside class="flexbox3">
+        
+        <div class="dtorget">
+    <a href="https://student.oslomet.no/auditorier-undervisningsrom/-/undervisningsrom/campus/PIL/bygning/P35">
         <picture>
-        <img src="style/img/p35.jpeg"
-            alt="Bildet av utsiden til bygget P35"
-            height="200"/>
+        <img src="style/img/dtorget.JPG"
+            alt="Bilde av datatorget"/>
         </picture>
     </a>
-    <a href="https://www.facebook.com/OrakelOsloMet/?locale=nb_NO"
+    <b>Datatorget. Foto: Privat</b>
+        </div>
+
+    <div class = "orakel">
+    <a href="https://www.facebook.com/OrakelOsloMet/?locale=nb_NO">
         <picture>
             <img src="style/img/orakel.jpeg"
                 alt="Orakeltjenesten sin logo"
                 height="200"/>
         </picture>
     </a>
+    </div>
     <!--Oppretter et bilde du kan trykke på, som tar deg videre til orakel sin nettside*/
     </div>
     <!--Bildet av P35 som kan klikkes på å ta deg til en oversikt over alle rom i p35-->
-
-</div>
+    </aside>
+    </main>
 
     <!--Ha en footer med button til kantine siden-->
     <footer>
 
     </footer>
+    
 </body>
 </html>
