@@ -131,7 +131,7 @@ text-decoration: none;
 
 
 
-/*Nellie jobber hardt*/
+/*Nellie*/
 
 /* Header */
 .Kantinaheader {
@@ -143,9 +143,9 @@ text-decoration: none;
 
 .Kantinaheader img {
     max-width: 10%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+    height: 0;
+    margin: 0;
+
 }
 
 /* Navigasjonsmeny */
@@ -181,7 +181,7 @@ text-decoration: none;
 }
 
 .forsidebilde_kantina img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }
 
@@ -201,7 +201,7 @@ text-decoration: none;
 
 .flexbox2, .flexbox1, .flexbox3 {
     flex: 1;
-    padding: 20px;
+    padding: 15px;
 }
 
 #kantine-bilde {
@@ -212,7 +212,7 @@ text-decoration: none;
 }
 
 /* Footer-seksjon */
-#page-footer {
+footer {
     text-align: center;
     padding: 20px;
     background: #FFD500;
