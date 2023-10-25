@@ -179,7 +179,7 @@ text-decoration: none;
 }
 
 .Kantinaheader img {
-    max-width: 10%;
+    max-width: 100%;
     height: 0;
     margin: 0;
 
@@ -190,7 +190,7 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     background-color: #1f0d93;
-    padding: 20px;
+    padding: 25px;
 }
 
 .horizontal-menu {
@@ -202,11 +202,15 @@ text-decoration: none;
 
 .horizontal-menu li {
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-right: 20px;
 >>>>>>> 1a5724f (endring)
 =======
     margin-right: 30px;
 >>>>>>> 19d2e5b (Endret css koden)
+=======
+    margin-right: 40px;
+>>>>>>> 33c1431 (endring)
 }
 
 .horizontal-menu li a {
