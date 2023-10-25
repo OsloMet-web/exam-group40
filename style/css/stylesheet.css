@@ -15,11 +15,12 @@ display: flex;
 padding:20px;
 align-items: center;
 justify-content: center;
-background-image: url(../img/city.jpg);
+background-image:url(../img/city.jpg);
 background-position: top;
 background-size: 500px;
 background-position: 100%;
 background-repeat: repeat-x;
+filter: brightness(0.9);
 }
 
 
@@ -37,7 +38,7 @@ background-repeat: repeat-x;
 }
 
 .topical-menu > li > a {
-color:rgb(247, 201, 146);
+color:bisque;
 font-weight: bold;
 text-decoration: none;
 
@@ -47,6 +48,7 @@ text-decoration: none;
     text-decoration: underline;
     color:pink
 }
+
 
 #tittel{
     text-align: center; 
