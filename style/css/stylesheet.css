@@ -59,9 +59,7 @@ text-decoration: none;
 
 .flex-container{
     display:flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-
+    flex-direction:column;
 }
 
 .artikkeltekst{
@@ -86,6 +84,7 @@ text-decoration: none;
     align-items: flex-end;
     max-width: 100%;
 }
+
 
 #bildekilde1{
     margin: 0;
