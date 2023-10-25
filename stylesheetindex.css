@@ -95,18 +95,41 @@ line-height: 1.5em;
 }
 
 .indexfooter {
+    display: flex;
+    flex-direction: row;
     margin-top: 50px;
     padding: 50px;
-    text-align: center;
+    background: #FFD500;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.indexfooter p {
+  line-height: 1.5em;
+}
+
+.footerbox1 {
+    flex: 25%;
     background: #FFD500;
     font-family: Helvetica, sans-serif;
   }
 
-.indexfooter img {
-    align-content: center;
+.footerbox1 img {
     max-width: 30%;
     height: auto;
 }
+
+.footerbox2 {
+  flex: 25%;
+  padding: 40px;
+}
+
+.footerbox2 img {
+  width: 5%;
+  height: auto;
+  padding: 3px;
+}
+
 
 @media screen and (max-width: 800px) {
     .indexcontainer, .indexnavbar, ul, li {   
