@@ -23,6 +23,12 @@
     font-family: Helvetica, sans-serif;
   }
 
+.flexbox1 img {
+    width: 7%;
+    height: auto;
+    padding: 3px;
+  }
+
 .indexnavbar a:hover {
     color: #FFFFFF;
   }
@@ -67,7 +73,7 @@
   line-height: 1.5em;
 }
 
-.container {
+.indexcontainer {
    display: flex;
    justify-content: space-evenly;
    font-family: Arial, Helvetica, sans-serif;
