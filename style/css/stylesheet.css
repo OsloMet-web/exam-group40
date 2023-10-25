@@ -15,7 +15,7 @@ display: flex;
 padding:20px;
 align-items: center;
 justify-content: center;
-background-image: url(../img/city.jpg);
+background-image:url(../img/city.jpg);
 background-position: top;
 background-size: 500px;
 background-position: 100%;
@@ -37,7 +37,7 @@ background-repeat: repeat-x;
 }
 
 .topical-menu > li > a {
-color:rgb(247, 201, 146);
+color:bisque;
 font-weight: bold;
 text-decoration: none;
 
@@ -47,6 +47,7 @@ text-decoration: none;
     text-decoration: underline;
     color:pink
 }
+
 
 #tittel{
     text-align: center; 
@@ -58,8 +59,7 @@ text-decoration: none;
 
 .flex-container{
     display:flex;
-    flex-direction: column;
-
+    flex-direction:column;
 }
 
 .artikkeltekst{
@@ -80,11 +80,11 @@ text-decoration: none;
 
 
 #bilde1{
-max-width: 100%;
-display: flex;
-align-items: flex-end;
-margin:2rem;
+    display: flex;
+    align-items: flex-end;
+    max-width: 100%;
 }
+
 
 #bildekilde1{
     margin: 0;
@@ -92,41 +92,37 @@ margin:2rem;
     color: grey;
 }
 
-#bilde2{
-    display: flex;
-    align-items: flex-end;
-    max-width: 100%;
-
-}
-
 #topical-footer{
-    display: flex;
     background-color: bisque;
     margin:0;
+    margin-top: 50px;
+    padding: 50px;
+    text-align: center;
 }
 
 .animation {
-    display: flex;
     width: 100%;
     height: 100px;
-    background-color:rgb(207,33,33);
+    color:rgb(207,33,33);
     animation-name: example;
     animation-duration: 30s;
     padding: 20px;
     animation-iteration-count: infinite;
+    font-family: Arial;
+    text-align: center;
 }
 @keyframes example {
-    0%   {background-color: rgb(207, 33, 33);}
-    10%  {background-color: rgb(234, 125, 58);}
-    20%  {background-color: #FFD500;}
-    30% {background-color: rgb(73, 194, 73);}
-    40% {background-color: rgb(0, 191, 255);}
-    50% {background-color: rgb(64, 64, 158);}
-    60% {background-color: rgb(138, 42, 138);}
-    70% {background-color: violet;}
-    80% {background-color: pink;}
-    90% {background-color: rgb(213, 85, 106);}
-    100% {background-color: rgb(207,33,33);}
+    0%   {color: rgb(207, 33, 33);}
+    10%  {color: rgb(234, 125, 58);}
+    20%  {color: #FFD500;}
+    30% {color: rgb(73, 194, 73);}
+    40% {color: rgb(0, 191, 255);}
+    50% {color: rgb(64, 64, 158);}
+    60% {color: rgb(138, 42, 138);}
+    70% {color: violet;}
+    80% {color: pink;}
+    90% {color: rgb(213, 85, 106);}
+    100% {color: rgb(207,33,33);}
   }
 
 
@@ -248,3 +244,107 @@ main .content {
 }
 
 /* Ange-Clara */
+
+/* Tomine */
+.body {
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ .flexbox1 {
+     flex: 10%;
+     padding: 40px;
+ }
+ 
+ .flexbox2 {
+     flex: 50%;
+     padding: 30px;
+ }
+ 
+ .flexbox3 {
+     flex: 10%;
+     padding: 30px;
+ }
+
+ .orakel img {
+    width: 200px;
+    border: 2px solid #1f0d93;
+    border-radius: 15px 50px;
+ }
+
+ .dtorget img {
+    width: 400px;
+    border: 2px solid #000000;
+ }
+
+ .dtorget b {
+    font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  color: #FFD500;
+  padding: 5px;
+  background-color: #1f0d93;
+ }
+
+ .dataheader {
+    padding: 60px;
+    text-align: center;
+    background-color: #FFD500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dataheader img {
+  align-content: center;
+  max-width: 10%;
+  height: auto; 
+}
+
+.datanavbar a {
+    display: block;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+  }
+
+.datanavbar a:hover {
+    color: #FFFFFF;
+  }
+
+.datanavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1f0d93;
+    padding: 10px;
+}
+
+.horizontal-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .horizontal-menu li {
+    margin-right: 30px;
+  }
+  
+  .horizontal-menu li a {
+    text-decoration: none;
+    color: #FFD500fc;
+    font-weight: bold;
+  }
+  
+  .forsidebilde img {
+    align-content: center;
+    max-width: 100%;
+    height: auto; 
+  }
+
+  @media screen and (max-width: 1000px) {
+    .container, .datanavbar {   
+      flex-direction: column;
+    }
+  }
