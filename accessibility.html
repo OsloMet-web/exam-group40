@@ -4,26 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>accessibility</title>
-    <link rel="icon" type="image/x-icon" href="style/img/oslometlogo.png"> <!--favicon bilde-->
-    <link rel="stylesheet" href="style/css/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="style/img/logo.png"> <!--favicon bilde-->
+    <!-- <link rel="stylesheet" href="style/css/stylesheet.css">*/ -->
+    <style>
+        .accessibility-header-container {
+            grid-area: header;
+        }
+        .nav-container {
+            grid-area: nav;
+        }
+        .accessibility-main {
+            grid-area: main;
+        }
+        .footer-container {
+            grid-area: footer;
+        }
+
+        .accessibility-grid-container {
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'nav nav nav '
+            'main main main'
+            'footer footer footer';
+
+            gap: 10px;
+            padding: 0px;
+        }
+
+        .accessibility-grid-container > div {
+            padding: 0px 0;
+        }
+
+        #main {
+            display: inline;
+        }
+
+        #footer-submenu-1 {
+            display: inline;
+        }
+
+        #footer-submenu-2 {
+            display: inline;
+        }
+
+        #accessibility-header {
+            background-image: url("style/img/pilestredet.jpeg");
+            max-width: 1400px;
+            height: 700px;
+        }
+
+        #accessibility-header-text {
+            color: white;
+        }
+
+    </style>
 </head>
-<body class="accessibility">
-      <!-- Header-seksjonen -->
-      <header id="page-header">
-        <div class="header">
+<body>
+    <div class="accessibility-grid-container">
+        <div class="accessibility-header-container">
+                <header id="accessibility-header">
+                    <h1 id="accessibility-header-text">Accessibility</h1>
+                </header>
+        </div>
+        <div class="nav-container">
             <nav>
-                <ul class="horizontal-menu">
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="accessibility.html">Accessibility</a></li>
-                    <li><a href="topical.html">Topical</a></li>
-                    <li><a href="kantina.html">Kantina</a></li>
-                    <li><a href="datatorget.html">Datatorget</a></li>
+                <ul class="menu">
+                    <li id="main"><a href="#home">Home</a></li>
+                    <li id="main"><a href="#Kantina">Kantina</a></li>
+                    <li id="main"><a href="#datatorget">Datatorget</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
-    <div class="accessibility-container">
-        <div class=""></div>
+        <div class="accessiblity-main">
+            <h2>accessibility</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis varius quam quisque id diam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Nulla at volutpat diam ut. At imperdiet dui accumsan sit.
+                Nulla at volutpat diam ut. At imperdiet dui accumsan sit. Neque viverra justo nec ultrices dui sapien eget mi proin.
+                Hendrerit gravida rutrum quisque non tellus orci ac.
+                Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. 
+                Euismod quis viverra nibh cras pulvinar mattis nunc. Viverra adipiscing at in tellus.
+                Et malesuada fames ac turpis egestas maecenas pharetra. Vitae semper quis lectus nulla.
+                Nec nam aliquam sem et. Ante metus dictum at tempor commodo ullamcorper a.
+                Justo donec enim diam vulputate ut pharetra sit amet. Sem viverra aliquet eget sit amet tellus cras adipiscing.
+                Vitae tempus quam pellentesque nec nam aliquam.
+                Quis varius quam quisque id. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.
+                Vulputate enim nulla aliquet porttitor lacus.
+            </p>
+            <p>
+                Semper eget duis at tellus at urna condimentum mattis. Tellus cras adipiscing enim eu turpis egestas pretium.
+                Pellentesque eu tincidunt tortor aliquam nulla facilisi. Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus.
+                Mauris pharetra et ultrices neque ornare aenean euismod elementum. Tortor aliquam nulla facilisi cras. 
+                Hendrerit dolor magna eget est lorem ipsum dolor sit amet.
+                Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Mattis ullamcorper velit sed ullamcorper morbi.
+                Et malesuada fames ac turpis egestas sed tempus urna.
+                Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus.
+                Nunc pulvinar sapien et ligula. 
+                Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim.
+            </p>
+        </div>
+        <div class="footer-container">
+            <footer>
+                <div class="footer-menu">
+                    <ul id="main-footmenu">
+                        <li id="footer-submenu-1">Postboks 4, St. Olavs plass
+                            0130 Oslo
+                            Tlf.: 67 23 50 00</li>
+                        <li id="footer-submenu-2">
+                            <li><a href="accessibility.html">Accessibility</a></li>
+                            <li><a href="topical.html">Topical</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-copyright-socials">
+                    <ul id="copyright-contact">
+    
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
