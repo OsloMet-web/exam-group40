@@ -224,6 +224,10 @@ footer {
 /* Ange-Clara */
 
 /* Tomine */
+.body {
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+
 .container {
     display: flex;
     justify-content: space-evenly;
@@ -243,6 +247,21 @@ footer {
  .flexbox3 {
      flex: 10%;
      padding: 30px;
+ }
+
+ .orakel img {
+    width: auto;
+    padding-top: 100px;
+ }
+
+ .dtorget img {
+    width: 100%;
+ }
+
+ .dtorget b {
+    font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  color: #3d3d3d;
  }
 
  .dataheader {
@@ -302,3 +321,4 @@ footer {
     .container, .datanavbar {   
       flex-direction: column;
     }
+}
