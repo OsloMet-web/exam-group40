@@ -8,23 +8,23 @@
     <!-- <link rel="stylesheet" href="style/css/stylesheet.css">*/ -->
     <style>
 
-        header .accessibility-header-container {
+        .accessibility-header-container {
             display: grid;
             grid-template-areas: 'header header header';
             grid-template-columns: none;
             padding: 10px;
         }
 
-        nav .nav-container {
+        .nav-container {
             display: grid;
         }
 
-        main .accessibility-main-container {
+        .accessibility-main-container {
             display: grid;
             grid-template-columns: auto;
         }
 
-        footer .footer-container {
+        .footer-container {
             display: grid;
             grid-template-columns: auto auto;
         }
@@ -48,7 +48,7 @@
             height: 100%;
         }
 
-        img #logophoto{
+        #logophoto{
             width: 50px;
             height: 34px;
         }
@@ -116,12 +116,20 @@
         <footer class="footer-container">
                 <div class="footer-menu">
                     <ul id="main-footmenu">
-                        <li id="footer-submenu-1">Postboks 4, St. Olavs plass
+                        <li id="footer-submenu-1">
+                            <div id="footer-adress">
+                            Postboks 4, St. Olavs plass
                             0130 Oslo
-                            Tlf.: 67 23 50 00</li>
+                            Tlf.: 67 23 50 00
+                            </div>
+                        </li>
                         <li id="footer-submenu-2">
-                            <li><a href="accessibility.html">Accessibility</a></li>
-                            <li><a href="topical.html">Topical</a></li>
+                            <ul>
+                                <div>
+                                    <li><a href="accessibility.html">Accessibility</a></li>
+                                    <li><a href="topical.html">Topical</a></li>
+                                </div>
+                            </ul>
                         </li>
                     </ul>
                 </div>
