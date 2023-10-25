@@ -343,8 +343,45 @@ main .content {
     height: auto; 
   }
 
-  @media screen and (max-width: 1000px) {
-    .container, .datanavbar {   
+  @media screen and (max-width: 800px) {
+    .container, .datanavbar, .indexfooter {   
       flex-direction: column;
     }
   }
+
+  .indexfooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px 50px 50px 70px;
+    background: #FFD500;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.indexfooter p {
+  line-height: 1.5em;
+}
+
+.footerbox1, .footerbox2, .footerbox3 {
+    flex: 30%;
+    padding-left: 30px;
+  }
+
+.footerbox1 img {
+    width: 7%;
+    height: auto;
+    padding: 3px;
+}
+
+.footerbox4 {
+  flex: 100%;
+  padding-left: 30px;
+  padding-top: 2%;
+}
+
+.footerbox4 img {
+    max-width: 20%;
+    height: auto;
+}
