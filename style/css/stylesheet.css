@@ -180,9 +180,9 @@ text-decoration: none;
 
 .Kantinaheader img {
     max-width: 10%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+    height: 0;
+    margin: 0;
+
 }
 
 /* Navigasjonsmeny */
@@ -229,6 +229,7 @@ text-decoration: none;
 
 .forsidebilde_kantina img {
     max-width: 90%;
+<<<<<<< HEAD
     height: auto;
 }
 
@@ -330,6 +331,8 @@ footer {
 .forsidebilde_kantina img {
 >>>>>>> 19d2e5b (Endret css koden)
     max-width: 100%;
+=======
+>>>>>>> f4709eb (Endret css koden)
     height: auto;
 }
 
@@ -349,7 +352,7 @@ footer {
 
 .flexbox2, .flexbox1, .flexbox3 {
     flex: 1;
-    padding: 20px;
+    padding: 15px;
 }
 
 #kantine-bilde {
@@ -361,7 +364,7 @@ footer {
 }
 
 /* Footer-seksjon */
-#page-footer {
+footer {
     text-align: center;
     padding: 20px;
     background: #FFD500;
