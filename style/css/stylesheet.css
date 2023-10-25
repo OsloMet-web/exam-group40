@@ -230,6 +230,7 @@ footer {
 
 .container {
     display: flex;
+    text-align: left;
     justify-content: space-evenly;
     font-family: Arial, Helvetica, sans-serif;
  }
@@ -251,17 +252,21 @@ footer {
 
  .orakel img {
     width: 200px;
-    border: 2px solid #353e9c;
+    border: 2px solid #1f0d93;
+    border-radius: 15px 50px;
  }
 
  .dtorget img {
-    width: 400px
+    width: 400px;
+    border: 2px solid #000000;
  }
 
  .dtorget b {
     font-family: Helvetica, sans-serif;
   font-size: 12px;
-  color: #3d3d3d;
+  color: #FFD500;
+  padding: 5px;
+  background-color: #1f0d93;
  }
 
  .dataheader {
