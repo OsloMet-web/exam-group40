@@ -553,6 +553,7 @@ padding-top: 2%;
     padding: 10px;
     position: -webkit-sticky; /* Safari */
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*position: sticky;
     z-index: 100; /*hjelp av chat?? men funker*/
    /* top: 0;
@@ -560,6 +561,10 @@ padding-top: 2%;
     position: sticky;
     top: 0;
 >>>>>>> 42e5224 (eeEW)
+=======
+    position: sticky;
+    top: 0;
+>>>>>>> 4407e79 (eeEW)
 }
 
 .datanavbar ul {
