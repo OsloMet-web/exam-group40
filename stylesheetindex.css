@@ -23,31 +23,34 @@
   justify-content: center;
   background-color: #1f0d93;
   padding: 10px;
-}
-
-.indexnavbar a {
-    display: block;
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-  }
-
-.indexnavbar a:hover {
-    color: #FFFFFF;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
 .indexnavbar ul {
   list-style: none;
   display: flex;
+  position: sticky;
 }
 
 .indexnavbar li {
   margin-right: 50px;
+  position: sticky;
 }
 
 .indexnavbar li a {
   text-decoration: none;
   color: #FFD500fc;
   font-weight: bold;
+  display: block;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.indexnavbar a:hover {
+  color: #FFFFFF;
+  position: sticky;
 }
 
 .forsidebilde img {
@@ -63,8 +66,6 @@
   margin-left: 1%;
 }
 
-<<<<<<< HEAD
-=======
 .flexbox2, .flexbox1 p {
   line-height: 1.5em;
 }
@@ -73,7 +74,6 @@
   line-height: 1.5em;
 }
 
->>>>>>> d0b4899 (Linjeavstand)
 .indexcontainer {
    display: flex;
    justify-content: center;
@@ -129,7 +129,6 @@ line-height: 1.5em;
     padding: 3px;
 }
 
-<<<<<<< HEAD
 .footerbox4 {
   flex: 100%;
   padding-left: 30px;
@@ -143,10 +142,6 @@ line-height: 1.5em;
 
 @media screen and (max-width: 800px) {
     .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
-=======
-  @media screen and (max-width: 700px) {
-    .container, .indexnavbar, ul, li {   
->>>>>>> 0f9590b (Responsive)
       flex-direction: column;
     }
     ul, li {
