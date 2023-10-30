@@ -298,18 +298,21 @@ footer {
     justify-content: center;
     background-color: #1f0d93;
     padding: 10px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
-.horizontal-menu {
+.datanavbar ul {
     list-style: none;
     display: flex;
   }
   
-  .horizontal-menu li {
+  .datanavbar li {
     margin-right: 30px;
   }
   
-  .horizontal-menu li a {
+  .datanavbar li a {
     text-decoration: none;
     color: #FFD500fc;
     font-weight: bold;
