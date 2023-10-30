@@ -250,6 +250,9 @@ h3 {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8f9bb80 (Sticky meny)
 .footerbox4 {
   flex: 100%;
   padding-left: 30px;
@@ -263,10 +266,13 @@ h3 {
 
 @media screen and (max-width: 800px) {
     .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
+<<<<<<< HEAD
 =======
   @media screen and (max-width: 700px) {
     .container, .indexnavbar, ul, li {   
 >>>>>>> 0f9590b (Responsive)
+=======
+>>>>>>> 8f9bb80 (Sticky meny)
       flex-direction: column;
     }
     ul, li {
