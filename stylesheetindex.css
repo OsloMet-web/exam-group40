@@ -23,31 +23,34 @@
   justify-content: center;
   background-color: #1f0d93;
   padding: 10px;
-}
-
-.indexnavbar a {
-    display: block;
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-  }
-
-.indexnavbar a:hover {
-    color: #FFFFFF;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
 .indexnavbar ul {
   list-style: none;
   display: flex;
+  position: sticky;
 }
 
 .indexnavbar li {
   margin-right: 50px;
+  position: sticky;
 }
 
 .indexnavbar li a {
   text-decoration: none;
   color: #FFD500fc;
   font-weight: bold;
+  display: block;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.indexnavbar a:hover {
+  color: #FFFFFF;
+  position: sticky;
 }
 
 .forsidebilde img {
