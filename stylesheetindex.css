@@ -330,7 +330,11 @@ body {
   top: 0;
 }
 
+<<<<<<< HEAD
 .menu ul {
+=======
+.indexnavbar ul {
+>>>>>>> c518729 (Sticky meny)
   list-style: none;
   display: flex;
   position: sticky;
@@ -347,6 +351,24 @@ body {
   font-weight: bold;
   display: block;
   text-align: center;
+<<<<<<< HEAD
+=======
+  font-family: Helvetica, sans-serif;
+}
+
+.indexnavbar a:hover {
+  color: #FFFFFF;
+  position: sticky;
+}
+
+.forsidebilde img {
+  align-content: center;
+  max-width: 100%;
+  height: auto; 
+}
+
+.forsidebilde p {
+>>>>>>> c518729 (Sticky meny)
   font-family: Helvetica, sans-serif;
 }
 
