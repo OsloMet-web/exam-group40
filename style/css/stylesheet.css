@@ -552,9 +552,14 @@ padding-top: 2%;
     background-color: #899878;
     padding: 10px;
     position: -webkit-sticky; /* Safari */
+<<<<<<< HEAD
     /*position: sticky;
     z-index: 100; /*hjelp av chat?? men funker*/
    /* top: 0;
+=======
+    position: sticky;
+    top: 0;
+>>>>>>> 42e5224 (eeEW)
 }
 
 .datanavbar ul {
