@@ -1,56 +1,114 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/css/stylesheet.css">
-    <title>Kantina - OsloMet Campus</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style/css/stylesheet.css">
+ <title>Kantina - OsloMet Campus</title>
+ <link rel="icon" type="image/x-icon" href="style/img/favicon.png"> 
 </head>
-<body class="kantina-body">
 
-    <!-- Header-seksjonen -->
-    <header id="page-header">
-        <div class="header">
-            <nav>
-                <ul class="horizontal-menu">
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="accessibility.html">Accessibility</a></li>
-                    <li><a href="topical.html">Topical</a></li>
-                    <li><a href="kantina.html">Kantina</a></li>
-                    <li><a href="datatorget.html">Datatorget</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<!-- Header -->
+<header><div class="Kantinaheader">
+<img src="style/img/logo.png" alt="OsloMet Logo">
+<h1>Velkommen til kantina!</h1>
+</div></header>
 
-    <!-- Hovedinnhold-->
-    <main>
-        <div class="content">
-            <h1 id="kantine-heading">Kantina</h1>
-            <p class="kantine-paragraph" id="kantine-info">Få informasjon om campuskantinen.</p>
-            <img id="kantine-bilde" src="images/canteen_image.jpg" alt="Bilde av kantinen">
+<body>
+
+<!-- Navigasjonsmeny -->
+<div class="kantinanavbar">
+    <nav>
+        <ul class="horizontal-menu">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+            <li><a href="topical.html">Topical</a></li>
+            <li><a href="kantina.html">Kantina</a></li>
+            <li><a href="datatorget.html">Datatorget</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="forsidebilde_kantina">
+  <img src="https://sio-xp7prod-master.enonic.cloud/api/_/image/b19bce37-bc8b-4745-936a-4fae064d5489:0e4f2567c4aa2ffb28f18d6e4f1433fdf2c166e5/width-2048/Sio%20-%20Olaf-%20Foto%20Svein%20Finneide-3.jpg.jpg?quality=65" alt="Olaf Spiseri">
+  <p>OsloMet Campus Pilestredet, P35. Foto: OsloMet</p>
+</div>
+
+    <!-- Hovedinnhold -->
+
+<main class="container">
+    <section class="flexbox1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.7273756656903!2d10.73320887678545!3d59.92007177490578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7be22c2035%3A0xf51095d184aa1954!2sPilestredet%2032%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1697468015029!5m2!1sno!2sno" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!--Koden over (iframe) er generert av Google Maps ved hjelp av "bygg inn kart"-funksjonen.-->
+    </section>
+
+<article class="flexbox2">
+    <h1>Kantina</h1>
+        <p>Olaf Spiseri på Oslomet har utviklet seg til å bli mer enn bare en kantine. 
+            Det er et levende knutepunkt for sosial samling, hvor studenter og ansatte ofte møtes for å diskutere prosjekter, 
+            idéer, eller bare for å slappe av i et vennlig miljø. 
+            Spiseriet har også tilrettelagt for ulike kostholdspreferanser, med et utvalg av vegetariske, 
+            veganske og glutenfrie alternativer, som gjør det til et inkluderende sted for alle. 
+            Spiseriets interiør er moderne og innbydende, med komfortable sitteplasser og naturlig belysning som skaper en trivelig atmosfære for besøkende.</p>
+        <p>Olaf Spiseri har et dedikert team som jobber hardt for å tilby gjestene ferske og smakfulle måltider. 
+            Maten blir tilberedt med omhu, og kvaliteten er alltid i fokus. 
+            Dette gjør spiseriet til et flott sted å nyte et velsmakende måltid når som helst på dagen. 
+            Enten det er en rask lunsj i travle studiepauser eller en rolig kaffe og kakepause, har Olaf Spiseri det du trenger.</p>
+        <p>Med sin sentrale beliggenhet på Oslomet's campus, er Olaf Spiseri ikke bare et sted å spise, men en integrert del av universitetets samfunn. 
+            Det er et sted der ideer utveksles, vennskap dannes, og det sosiale livet blomstrer. 
+            Olaf Spiseri har satt en ny standard for kantiner ved å kombinere velsmakende mat, god atmosfære og et sterkt samfunnsengasjement, 
+            og det er uten tvil et sted som beriker opplevelsen for alle som besøker Oslomet.</p>
+        <!--Teksten er en AI-generert tekst-->
+</article>
             
-            <!-- Artikkel om åpningstider -->
-            <article id="kantine-article">
-                <h2>Åpningstider</h2>
-                <p class="kantine-paragraph">Kantina er åpen fra mandag til fredag fra 9:00 til 16:00.</p>
-            </article>
+    <!-- Artikkel om åpningstider -->
+<aside class="flexbox3">
+    <h2>Meny og åpningstider</h2>
+        <p>Kantina er åpen fra mandag til fredag fra 8:00 til 15:30.</p>
+    <h3>Mandag - fredag</h3>
+        <b>Buffet</b>
+        <p>Buffet med et utvalg av varme retter og mye godt tilbehør. Allergener: se merking på buffeten.</p>
+        <b>Pris</b>
+        <p>Grønn buffet løsvekt kr 15,90 pr. hg. // full buffet løsvekt kr 17,20 pr. hg. </p>
+        <!--Teksten er kopiert fra Sio sine hjemmesider-->
+</aside>
 
-            <!-- Aside-seksjon med spesielle tilbud -->
-            <aside id="special-offers">
-                <h2 id="special-offers-heading">Spesielle tilbud</h2>
-                <p id="special-offers-description">Få vite om våre spesielle tilbud og kampanjer i kantina denne uken.</p>
-                <ul id="special-offers-list">
-                    <li>Gratis kaffe hver onsdag.</li>
-                    <li>Studentrabatt på lunsjretter.</li>
-                </ul>
-            </aside>
-        </div>
-    </main>
+</main>
 
     <!-- Footer-seksjonen -->
-    <footer id="page-footer">
-        <p>&copy; 2023 Nellie Isaksen</p>
-    </footer>
+    <footer class="indexfooter">
+
+        <div class="footerbox1">
+          <b>Adresse</b>
+          <p>Pilestredet 32 - 54</p>
+          <a href="https://www.facebook.com/oslomet/"><img src="style/img/facebook.png" alt="Facebook-ikon"></a>
+          <a href="https://www.instagram.com/oslomet/"><img src="style/img/instagram.png" alt="Instagram-ikon"></a>
+          <a href="https://www.linkedin.com/school/oslomet/"><img src="style/img/linkedin.png" alt="Linkedin-ikon"></a>
+        </div>
+    
+        <div class="footerbox2">
+          <b>Resepsjon</b>
+        <p>Telefon: +47 67 23 60 00<br>
+           Åpningstid: 08:00 - 15:00 (man-fre)<br>
+           Addresse: Pilestredet 46</p>
+        </div>
+    
+        <div class="footerbox3">
+          <b>Studentsenteret</b>
+        <p>Telefon: +47 67 23 77 78<br>
+           Åpningstid: 10:00 - 14:00 (man-fre)<br>
+           Adresse: Pilestredet 52</p>
+        </div>
+    
+        <div class="footerbox4">
+          <img src="style/img/OsloMet_LogoFull.png" alt="OsloMet Logo">
+          <p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p>
+        </div>
+      </footer>
+    
+      </body>
+    </html>
+    
 </body>
 </html>
+

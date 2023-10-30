@@ -131,116 +131,94 @@ text-decoration: none;
 
 
 
-/*Nellie jobber hardt*/
+/*Nellie*/
 
-/* Styling ilregler for body med klassen .kantina-body */
+/* Header */
+.Kantinaheader {
+    padding: 60px;
+    text-align: center;
+    background-color: #FFD500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Kantinaheader img {
+    max-width: 100%;
+    height: 0;
+    margin: 0;
+
+}
+
+/* Navigasjonsmeny */
+.kantinanavbar {
+    display: flex;
+    justify-content: center;
+    background-color: #1f0d93;
+    padding: 25px;
+}
+
 .horizontal-menu {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-/* Styling for menyen */
 .horizontal-menu li {
-    margin-right: 20px; /* Legg til mellomrom mellom menyelementene */
+    margin-right: 40px;
 }
 
-/* Styling for lenkene (a) i menyen */
 .horizontal-menu li a {
     text-decoration: none;
-    color: #FFD500fc;
+    color: #FFD500;
     font-weight: bold;
 }
 
-.kantina-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #000000;
-    padding: 0;
-    margin: 0;
+/* Forsidebilde */
+.forsidebilde_kantina {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    margin-top: 0px;
+}
+
+.forsidebilde_kantina img {
+    max-width: 90%;
+    height: auto;
+}
+
+.forsidebilde_kantina p {
+    font-size: 12px;
+    color: #3d3d3d;
+    text-align: center; 
+}
+
+/* Hovedinnhold */
+.container {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-wrap: wrap; /* Legger til wrap for å håndtere mindre skjermer */
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Styling for header med ID */
-#page-header {
-    background-color: #1f0d93;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.flexbox2, .flexbox1, .flexbox3 {
+    flex: 1;
+    padding: 15px;
 }
 
-/* Styling for .header klasse innenfor header */
-.header {
-    display: flex;
-}
-
-/* Styling for hovedinnholdet med klassen .content */
-main .content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Styling for h1 med ID */
-#kantine-heading {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-/* Styling for .kantine-paragraph klasse */
-.kantine-paragraph {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Styling for bilder i kantine */
 #kantine-bilde {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Styling for artikkelen med ID */
-#kantine-article {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-/* Styling for aside med ID */
-#special-offers {
-    background-color: #fff018;
-    padding: 15px;
-    border: 1px solid #f0c617;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-/* Styling for footer med ID */
-#page-footer {
-    background-color: #1f0d93;
-    color: white;
+/* Footer-seksjon */
+footer {
     text-align: center;
-    background-color: #FFD500;
-    font-family: Helvetica;
-}
-
-.index.container {
-   display: flex;
-   flex-direction: row;
-}
-
-.index.navbar {
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background: #FFD500;
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    
 }
 
 /* Ange-Clara */
@@ -343,8 +321,45 @@ main .content {
     height: auto; 
   }
 
-  @media screen and (max-width: 1000px) {
-    .container, .datanavbar {   
+  @media screen and (max-width: 800px) {
+    .container, .datanavbar, .indexfooter {   
       flex-direction: column;
     }
   }
+
+  .indexfooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px 50px 50px 70px;
+    background: #FFD500;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.indexfooter p {
+  line-height: 1.5em;
+}
+
+.footerbox1, .footerbox2, .footerbox3 {
+    flex: 30%;
+    padding-left: 30px;
+  }
+
+.footerbox1 img {
+    width: 7%;
+    height: auto;
+    padding: 3px;
+}
+
+.footerbox4 {
+  flex: 100%;
+  padding-left: 30px;
+  padding-top: 2%;
+}
+
+.footerbox4 img {
+    max-width: 20%;
+    height: auto;
+}
