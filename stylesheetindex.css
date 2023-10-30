@@ -635,6 +635,7 @@ p {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .footerboks4 {
 =======
 =======
@@ -643,6 +644,10 @@ p {
 >>>>>>> 860c372 (fiksa main)
 =======
 >>>>>>> 38fea99 (.)
+=======
+=======
+>>>>>>> 8f9bb80 (Sticky meny)
+>>>>>>> 744e714 (Sticky meny)
 .footerbox4 {
 >>>>>>> 1176b31 (Sticky meny)
   flex: 100%;
@@ -682,11 +687,17 @@ p {
 =======
 @media screen and (max-width: 800px) {
     .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
+<<<<<<< HEAD
 =======
   @media screen and (max-width: 700px) {
     .container, .indexnavbar, ul, li {   
 >>>>>>> 0f9590b (Responsive)
+<<<<<<< HEAD
 >>>>>>> 38fea99 (.)
+=======
+=======
+>>>>>>> 8f9bb80 (Sticky meny)
+>>>>>>> 744e714 (Sticky meny)
       flex-direction: column;
     }
     ul, li {
