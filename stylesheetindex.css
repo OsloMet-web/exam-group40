@@ -3,6 +3,7 @@
   font-family: Raleway;
 }
 
+<<<<<<< HEAD
 body {
   color: black;
   background-color: #f7f7f2;
@@ -283,6 +284,9 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 =======
 >>>>>>> c3e8e16 (Layout)
 p {
+=======
+.flexbox2, .flexbox1 p {
+>>>>>>> 1176b31 (Sticky meny)
   line-height: 1.5em;
   font-family: Helvetica, Arial, sans-serif;
   }
@@ -300,10 +304,19 @@ p {
   padding: 30px 2px;
 }
 
+<<<<<<< HEAD
 .welcome-column img {
   width: 100%;
   height: 100%;
   opacity: 0.5;
+=======
+.indexcontainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-left: 70px;
+   font-family: Arial, Helvetica, sans-serif;
+>>>>>>> 1176b31 (Sticky meny)
 }
 
 .p35-kolonne a {
@@ -364,7 +377,11 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
     padding: 3px;
 }
 
+<<<<<<< HEAD
 .footerboks4 {
+=======
+.footerbox4 {
+>>>>>>> 1176b31 (Sticky meny)
   flex: 100%;
   padding-left: 30px;
   padding-top: 2%;
@@ -375,8 +392,13 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
     height: auto;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 700px) {
    .menu, ul, li, .footer, .rad {   
+=======
+@media screen and (max-width: 800px) {
+    .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
+>>>>>>> 1176b31 (Sticky meny)
       flex-direction: column;
     }
     ul, li {
