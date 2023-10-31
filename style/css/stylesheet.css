@@ -437,7 +437,11 @@ footer {
   }
 
   .flexbox4 {
+<<<<<<< HEAD
     flex: 30%;
+=======
+    flex: 20%;
+>>>>>>> 7199275 (hhyhhy)
   }
 
   .ansatt {
