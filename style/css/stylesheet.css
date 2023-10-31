@@ -324,6 +324,33 @@ footer {
     height: auto; 
   }
 
+  .flexbox4 {
+    flex: 20%;
+  }
+
+  .ansatt {
+    box-shadow: 0 4px 8px 0 #edb57a33;
+    transition: 0.3s;
+    width: 40%;
+  }
+
+  .ansatt img {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  /* On mouse-over, add a deeper shadow */
+  .ansatt:hover {
+    box-shadow: 0 8px 16px 0 #c29e9e33;
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    text-align: end;
+  }
+
   @media screen and (max-width: 800px) {
     .container, .datanavbar, .indexfooter {   
       flex-direction: column;
