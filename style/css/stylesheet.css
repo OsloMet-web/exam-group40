@@ -402,7 +402,11 @@ padding-top: 2%;
   }
 
   .flexbox4 {
+<<<<<<< HEAD
     flex: 30%;
+=======
+    flex: 20%;
+>>>>>>> 0fb2b52 (hhyhhy)
   }
 
   .ansatt {
