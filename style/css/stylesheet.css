@@ -587,6 +587,7 @@ padding-top: 2%;
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   .ansatt {
     box-shadow: 0 4px 8px 0 #edb57a33;
     transition: 0.3s;
@@ -594,13 +595,20 @@ padding-top: 2%;
 =======
   .flexbox4 {
     flex: 30%;
+=======
+  .flexbox4 {
+    flex: 20%;
+>>>>>>> 0fb2b52 (hhyhhy)
   }
 
   .ansatt {
     box-shadow: 0 4px 8px 0 #edb57a33;
     transition: 0.3s;
     width: 40%;
+<<<<<<< HEAD
 >>>>>>> 17015a0 (hhyhhy)
+=======
+>>>>>>> 0fb2b52 (hhyhhy)
   }
 
   .ansatt img {
@@ -611,11 +619,14 @@ padding-top: 2%;
   
   /* On mouse-over, add a deeper shadow */
 <<<<<<< HEAD
+<<<<<<< HEAD
   /*.ansatt:hover {
     box-shadow: 0 8px 16px 0 #c29e9e33;
   }
   
 =======
+=======
+>>>>>>> 0fb2b52 (hhyhhy)
   .ansatt:hover {
     box-shadow: 0 8px 16px 0 #c29e9e33;
   }
@@ -625,7 +636,10 @@ padding-top: 2%;
     padding: 2px 16px;
     text-align: end;
   }
+<<<<<<< HEAD
 >>>>>>> 17015a0 (hhyhhy)
+=======
+>>>>>>> 0fb2b52 (hhyhhy)
 
   @media screen and (max-width: 800px) {
     .datacontainer, .datanavbar, .indexfooter {   
