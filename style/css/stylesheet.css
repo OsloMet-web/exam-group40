@@ -234,18 +234,21 @@ footer {
  }
  
  .flexbox1 {
-     flex: 10%;
-     padding: 40px;
+     flex: 20%;
+     padding: 10px;
+     text-align: left;
  }
  
  .flexbox2 {
-     flex: 50%;
-     padding: 30px;
+     flex: 40%;
+     padding: 10px;
+     text-align: left;
  }
  
  .flexbox3 {
-     flex: 10%;
-     padding: 30px;
+     flex: 20%;
+     padding: 10px;
+     text-align: left;
  }
 
  .orakel img {
@@ -323,7 +326,7 @@ footer {
   }
 
   .flexbox4 {
-    flex: 20%;
+    flex: 30%;
   }
 
   .ansatt {
