@@ -581,10 +581,21 @@ padding-top: 2%;
     flex: 30%;
   }
 
+<<<<<<< HEAD
   .ansatt {
     box-shadow: 0 4px 8px 0 #edb57a33;
     transition: 0.3s;
     width: 10%;
+=======
+  .flexbox4 {
+    flex: 20%;
+  }
+
+  .ansatt {
+    box-shadow: 0 4px 8px 0 #edb57a33;
+    transition: 0.3s;
+    width: 40%;
+>>>>>>> 17015a0 (hhyhhy)
   }
 
   .ansatt img {
@@ -594,10 +605,22 @@ padding-top: 2%;
 
   
   /* On mouse-over, add a deeper shadow */
+<<<<<<< HEAD
   /*.ansatt:hover {
     box-shadow: 0 8px 16px 0 #c29e9e33;
   }
   
+=======
+  .ansatt:hover {
+    box-shadow: 0 8px 16px 0 #c29e9e33;
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    text-align: end;
+  }
+>>>>>>> 17015a0 (hhyhhy)
 
   @media screen and (max-width: 800px) {
     .datacontainer, .datanavbar, .indexfooter {   
