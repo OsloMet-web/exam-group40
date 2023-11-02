@@ -343,12 +343,18 @@ padding-top: 2%;
  .dtorget img {
     width: 400px;
     border: 2px solid #000000;
+    animation-name: slideLeft;
+    animation-duration: 3s;
+ }
+
+ @keyframes slideLeft{
+    from{transform: translateX(300%)} 
  }
 
  .dtorget b {
     font-family: Helvetica, sans-serif;
   font-size: 12px;
-  color: #FFD500;
+  color: #899878;
   padding: 5px;
   background-color: #1f0d93;
  }
@@ -356,7 +362,7 @@ padding-top: 2%;
  .dataheader {
     padding: 60px;
     text-align: center;
-    background-color: #FFD500;
+    background-color: #e4e6c3;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -380,7 +386,7 @@ padding-top: 2%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #1f0d93;
+    background-color: #899878;
     padding: 10px;
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -398,7 +404,7 @@ padding-top: 2%;
   
   .datanavbar li a {
     text-decoration: none;
-    color: #FFD500fc;
+    color: #f7f7f2;
     font-weight: bold;
   }
   
@@ -415,7 +421,7 @@ padding-top: 2%;
   .ansatt {
     box-shadow: 0 4px 8px 0 #edb57a33;
     transition: 0.3s;
-    width: 40%;
+    width: 10%;
   }
 
   .ansatt img {
@@ -448,7 +454,7 @@ padding-top: 2%;
     justify-content: center;
     margin-top: 50px;
     padding: 50px 50px 50px 70px;
-    background: #FFD500;
+    background: #899878;
     font-family: Helvetica, Arial, sans-serif;
 }
 
