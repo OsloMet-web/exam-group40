@@ -1,27 +1,21 @@
-.indexheader {
-    padding: 60px;
-    text-align: center;
-    background-color: #FFD500;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .indexheader img {
   align-content: center;
-  max-width: 10%;
+  max-width: 100%;
   height: auto; 
 }
 
-.indexheader h1 {
-  text-align: center;
-  font-weight: 500;
-  font-size: 3rem;
+.indexheader p {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  color: #3d3d3d;
+  margin-left: 1%;
 }
 
 .indexnavbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #1f0d93;
+  background-color: #F7F7F2;
   padding: 10px;
   position: sticky;
   position: -webkit-sticky;
@@ -41,7 +35,7 @@
 
 .indexnavbar li a {
   text-decoration: none;
-  color: #FFD500fc;
+  color: #899878;
   font-weight: bold;
   display: block;
   text-align: center;
@@ -51,19 +45,6 @@
 .indexnavbar a:hover {
   color: #FFFFFF;
   position: sticky;
-}
-
-.forsidebilde img {
-  align-content: center;
-  max-width: 100%;
-  height: auto; 
-}
-
-.forsidebilde p {
-  font-family: Helvetica, sans-serif;
-  font-size: 12px;
-  color: #3d3d3d;
-  margin-left: 1%;
 }
 
 .flexbox2, .flexbox1 p {
