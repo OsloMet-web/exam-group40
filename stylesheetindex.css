@@ -347,6 +347,7 @@ p {
   position: sticky;
 }
 
+<<<<<<< HEAD
 >>>>>>> ac6b505 (Meny)
 .flexbox2, .flexbox1 p {
 >>>>>>> 1176b31 (Sticky meny)
@@ -373,6 +374,8 @@ p {
   height: 100%;
   opacity: 0.5;
 =======
+=======
+>>>>>>> 746e48e (reorganisering)
 .indexcontainer {
    display: flex;
    justify-content: center;
