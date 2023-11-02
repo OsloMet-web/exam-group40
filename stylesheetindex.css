@@ -297,7 +297,7 @@ p {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(style/img/Pilestredet_campus.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/Pilestredet_campus.jpeg);
   background-position: center;
   background-size: cover;
 >>>>>>> 2485467 (header)
@@ -425,7 +425,11 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
     justify-content: center;
     margin-top: 50px;
     padding: 50px 50px 50px 70px;
+<<<<<<< HEAD
     background: #E4E6C3;
+=======
+    background: #F7F7F2;
+>>>>>>> 693e08e (Header)
     font-family: Helvetica, Arial, sans-serif;
 }
 
