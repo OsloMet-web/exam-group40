@@ -1066,10 +1066,19 @@ footer {
   background-color: #1f0d93;
  }
 
+<<<<<<< HEAD
 /*.header img {
   align-content: left;
   width: 5px;
 }*/
+=======
+ .dataheader {
+    padding: 60px;
+    text-align: center;
+    background-color: #e4e6c3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+>>>>>>> 1fd0e10 (dd)
 
 /*.datanavbar a {
     display: block;
@@ -1215,7 +1224,7 @@ footer {
   .ansatt {
     box-shadow: 0 4px 8px 0 #edb57a33;
     transition: 0.3s;
-    width: 40%;
+    width: 10%;
   }
 
   .ansatt img {
