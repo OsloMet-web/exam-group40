@@ -406,6 +406,7 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .forsidebilde img {
   align-content: center;
   max-width: 100%;
@@ -545,6 +546,8 @@ p {
   line-height: 1.5em;
 }
 
+=======
+>>>>>>> 6f29303 (reorganisering)
 .indexcontainer {
    display: flex;
    justify-content: center;
