@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   font-size: 12px;
   font-family: Raleway;
@@ -285,6 +286,57 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 >>>>>>> c3e8e16 (Layout)
 p {
 =======
+=======
+.indexheader img {
+  align-content: center;
+  max-width: 100%;
+  height: auto; 
+}
+
+.indexheader p {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  color: #3d3d3d;
+  margin-left: 1%;
+}
+
+.indexnavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F7F7F2;
+  padding: 10px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.indexnavbar ul {
+  list-style: none;
+  display: flex;
+  position: sticky;
+}
+
+.indexnavbar li {
+  margin-right: 50px;
+  position: sticky;
+}
+
+.indexnavbar li a {
+  text-decoration: none;
+  color: #899878;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.indexnavbar a:hover {
+  color: #FFFFFF;
+  position: sticky;
+}
+
+>>>>>>> ac6b505 (Meny)
 .flexbox2, .flexbox1 p {
 >>>>>>> 1176b31 (Sticky meny)
   line-height: 1.5em;
