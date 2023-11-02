@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
 }
@@ -17,6 +18,19 @@ body {
   font-size: 5vw;
   font-family: "Raleway";
   color: #FFFFFF;
+=======
+.indexheader img {
+  align-content: center;
+  max-width: 100%;
+  height: auto; 
+}
+
+.indexheader p {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  color: #3d3d3d;
+  margin-left: 1%;
+>>>>>>> a2d3b1e (Meny)
 }
 
 .menu {
@@ -47,7 +61,11 @@ body {
 
 .menu li a {
   text-decoration: none;
+<<<<<<< HEAD
   color: #343f3e;
+=======
+  color: #899878;
+>>>>>>> a2d3b1e (Meny)
   font-weight: bold;
   display: block;
   text-align: center;
@@ -61,6 +79,7 @@ body {
   position: sticky;
 }
 
+<<<<<<< HEAD
 .forsidebilde img {
   align-content: center;
   max-width: 100%;
@@ -89,6 +108,8 @@ body {
   padding-bottom: 50px;
   text-align: left;
 =======
+=======
+>>>>>>> a2d3b1e (Meny)
 .flexbox2, .flexbox1 p {
   line-height: 1.5em;
 }
