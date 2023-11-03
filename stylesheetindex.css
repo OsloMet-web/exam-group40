@@ -343,7 +343,7 @@ body {
 
 .indexnavbar li a {
   text-decoration: none;
-  color: #899878;
+  color: #343f3e;
   font-weight: bold;
   display: block;
   text-align: center;
@@ -433,6 +433,7 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
 .footer {
 =======
    flex-wrap: wrap;
+   justify-content: space-between;
    font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -447,13 +448,11 @@ h1, h2 {
 .indexarticle {
     width: 40vw;
     padding: 30px 30px 30px 100px;
-    border: solid;
 }
 
 .indexsidebar {
     width: 40vw;
     padding: 4em;
-    border: solid;
 }
 
 #kart {
@@ -463,7 +462,7 @@ h1, h2 {
 
 .indexbox1 {
   width: 50vw;
-  border: solid;
+  align-self: left;
 }
 
 .indexbox1 img{
@@ -474,7 +473,6 @@ h1, h2 {
 .indexbox2 {
   max-width: 300px;
   padding: 10rem;
-  border: solid;
 }
 
 .indexfooter {
@@ -486,10 +484,14 @@ h1, h2 {
     margin-top: 50px;
     padding: 50px 50px 50px 70px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #E4E6C3;
 =======
     background: #F7F7F2;
 >>>>>>> 693e08e (Header)
+=======
+    background: #E4E6C3;
+>>>>>>> 9b3edda (flex)
     font-family: Helvetica, Arial, sans-serif;
 }
 
