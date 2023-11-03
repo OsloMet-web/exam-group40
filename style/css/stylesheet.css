@@ -1067,6 +1067,7 @@ footer {
  }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*.header img {
   align-content: left;
   width: 5px;
@@ -1077,20 +1078,29 @@ footer {
     text-align: center;
     background-color: #e4e6c3;
     font-family: Arial, Helvetica, sans-serif;
+=======
+.header img {
+  align-content: left;
+  width: 5px;
+>>>>>>> 41363ec (endring)
 }
 >>>>>>> 1fd0e10 (dd)
 
+<<<<<<< HEAD
 /*.datanavbar a {
+=======
+.header a {
+>>>>>>> 41363ec (endring)
     display: block;
     text-align: center;
     font-family: Helvetica, sans-serif;
   }
 
-.datanavbar a:hover {
+.header a:hover {
     color: #FFFFFF;
   }
 
-.datanavbar {
+.header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1112,21 +1122,22 @@ footer {
 >>>>>>> 4407e79 (eeEW)
 }
 
-.datanavbar ul {
+.header ul {
     list-style: none;
     display: flex;
   }
   
-  .datanavbar li {
+  .header li {
     margin-right: 30px;
   }
   
-  .datanavbar li a {
+  .header li a {
     text-decoration: none;
     color: #f7f7f2;
     font-weight: bold;
   }
   
+<<<<<<< HEAD
 <<<<<<< HEAD
   .flexbox4 {
 <<<<<<< HEAD
@@ -1217,6 +1228,8 @@ footer {
 <<<<<<< HEAD
 >>>>>>> 95a634f (Squashed commit of the following:)
 =======
+=======
+>>>>>>> 41363ec (endring)
   .flexbox4 {
     flex: 30%;
   }
