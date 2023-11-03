@@ -90,10 +90,14 @@ body {
 .menu li a {
   text-decoration: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #343f3e;
 =======
   color: #899878;
 >>>>>>> a2d3b1e (Meny)
+=======
+  color: #343f3e;
+>>>>>>> 3ac6621 (flex)
   font-weight: bold;
   display: block;
   text-align: center;
@@ -280,6 +284,7 @@ h3 {
   width: 100%;
 =======
    flex-wrap: wrap;
+   justify-content: space-between;
    font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -294,13 +299,11 @@ h1, h2 {
 .indexarticle {
     width: 40vw;
     padding: 30px 30px 30px 100px;
-    border: solid;
 }
 
 .indexsidebar {
     width: 40vw;
     padding: 4em;
-    border: solid;
 }
 
 #kart {
@@ -310,7 +313,7 @@ h1, h2 {
 
 .indexbox1 {
   width: 50vw;
-  border: solid;
+  align-self: left;
 }
 
 .indexbox1 img{
@@ -321,8 +324,11 @@ h1, h2 {
 .indexbox2 {
   max-width: 300px;
   padding: 10rem;
+<<<<<<< HEAD
   border: solid;
 >>>>>>> 298ad32 (layout)
+=======
+>>>>>>> 3ac6621 (flex)
 }
 
 .indexfooter {
@@ -333,10 +339,14 @@ h1, h2 {
     margin-top: 50px;
     padding: 50px 50px 50px 70px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #E4E6C3;
 =======
     background: #F7F7F2;
 >>>>>>> fc170eb (Header)
+=======
+    background: #E4E6C3;
+>>>>>>> 3ac6621 (flex)
     font-family: Helvetica, Arial, sans-serif;
 }
 
