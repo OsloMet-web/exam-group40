@@ -258,11 +258,13 @@ h1, h2 {
 .indexarticle {
     width: 40vw;
     padding: 30px 30px 30px 100px;
+    border: solid;
 }
 
 .indexsidebar {
     width: 40vw;
     padding: 4em;
+    border: solid;
 }
 
 #kart {
@@ -273,6 +275,7 @@ h1, h2 {
 .indexbox1 {
   width: 50vw;
   align-self: left;
+  border: solid;
 }
 
 .indexbox1 img{
@@ -281,6 +284,7 @@ h1, h2 {
 }
 
 .indexbox2 {
+<<<<<<< HEAD
   max-width: 300px;
   padding: 10rem;
 <<<<<<< HEAD
@@ -288,6 +292,19 @@ h1, h2 {
 >>>>>>> 298ad32 (layout)
 =======
 >>>>>>> 3ac6621 (flex)
+=======
+  width: 40vw;
+  padding: 10em 5em 5em 0;
+  border: solid;
+}
+
+.indexbox2 h2 {
+  font-size: 2em;
+  }
+
+.indexbox2 p {
+font-size: 1.2em;
+>>>>>>> 4651dd4 (    border: solid;)
 }
 
 .indexfooter {
@@ -335,7 +352,7 @@ h1, h2 {
     height: auto;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
     .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
 <<<<<<< HEAD
 =======
