@@ -448,11 +448,13 @@ h1, h2 {
 .indexarticle {
     width: 40vw;
     padding: 30px 30px 30px 100px;
+    border: solid;
 }
 
 .indexsidebar {
     width: 40vw;
     padding: 4em;
+    border: solid;
 }
 
 #kart {
@@ -463,6 +465,7 @@ h1, h2 {
 .indexbox1 {
   width: 50vw;
   align-self: left;
+  border: solid;
 }
 
 .indexbox1 img{
@@ -471,8 +474,17 @@ h1, h2 {
 }
 
 .indexbox2 {
-  max-width: 300px;
-  padding: 10rem;
+  width: 40vw;
+  padding: 10em 5em 5em 0;
+  border: solid;
+}
+
+.indexbox2 h2 {
+  font-size: 2em;
+  }
+
+.indexbox2 p {
+font-size: 1.2em;
 }
 
 .indexfooter {
@@ -527,6 +539,7 @@ h1, h2 {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (max-width: 700px) {
    .menu, ul, li, .footer, .rad {   
 =======
@@ -534,6 +547,9 @@ h1, h2 {
 =======
 @media screen and (max-width: 1000px) {
 >>>>>>> fd9df0f (layout)
+=======
+@media screen and (max-width: 700px) {
+>>>>>>> 7b9e691 (    border: solid;)
     .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
 >>>>>>> 1176b31 (Sticky meny)
       flex-direction: column;
