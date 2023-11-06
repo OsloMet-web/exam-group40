@@ -430,11 +430,18 @@ body {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .forsidebilde img {
   align-content: center;
   max-width: 100%;
   height: auto; 
 }
+=======
+.flexbox2, .flexbox1 p {
+  line-height: 1.5em;
+  font-family: Helvetica, Arial, sans-serif;
+  }
+>>>>>>> 643c42f (.)
 
 .forsidebilde p {
 >>>>>>> c518729 (Sticky meny)
