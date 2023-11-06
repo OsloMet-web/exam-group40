@@ -132,8 +132,8 @@ text-decoration: none;
 
 
 /*Nellie*/
-
 /* Header */
+<<<<<<< HEAD
 <<<<<<< HEAD
 .Kantinaheader {
 <<<<<<< HEAD
@@ -244,6 +244,14 @@ text-decoration: none;
   }
 >>>>>>> f8fc7bc (Navbar)
 =======
+=======
+.Kantinaheader {
+    padding: 60px;
+    text-align: center;
+    background-color: #F7F7F2; /* Endret farge til gull (#FFD500) */
+    font-family: Arial, Helvetica, sans-serif;
+}
+>>>>>>> d27c7bb (Header)
 
 .meny {
   display: flex;
