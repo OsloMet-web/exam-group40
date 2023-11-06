@@ -134,10 +134,12 @@ text-decoration: none;
 /*Nellie*/
 /* Header */
 .Kantinaheader {
+    margin: 0;
     padding: 20px;
     text-align: center;
-    background-color: #F7F7F2; /* Endret farge til gull (#FFD500) */
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F7F2; 
+    font-family: "Raleway";
+
 }
 
 .Kantinaheader img {
@@ -149,17 +151,21 @@ text-decoration: none;
 /* Navigasjonsmeny */
 .kantinanavbar {
     display: flex;
-    color: #343f3e;
+    flex-direction: row;
     justify-content: center;
-    background-color: #F7F7F2; /* Endret farge til mørk blå (#1f0d93) */
-    padding: 20px;
+    background-color: #F7F7F2;
+    padding: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
 .horizontal-menu {
     list-style: none;
+    background-color:#343f3e
     display: flex;
-    margin: 0;
-    padding: 0;
+    position: sticky;
+
 }
 
 .horizontal-menu li {
@@ -168,8 +174,11 @@ text-decoration: none;
 
 .horizontal-menu li a {
     text-decoration: none;
-    color: #343f3e; /* Endret farge til gull (#FFD500) */
+    color: #343f3e;
     font-weight: bold;
+    display: block;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
 }
 
 /* Forsidebilde */
