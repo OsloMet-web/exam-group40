@@ -211,6 +211,7 @@ h3 {
     padding: 3px;
 }
 
+<<<<<<< HEAD
 .footerbox4 {
   flex: 100%;
   padding-left: 30px;
@@ -222,8 +223,12 @@ h3 {
     height: auto;
 }
 
-@media screen and (max-width: 700px) {
-   .menu, ul, li, .indexfooter, .row {   
+@media screen and (max-width: 800px) {
+    .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
+=======
+  @media screen and (max-width: 700px) {
+    .container, .indexnavbar, ul, li {   
+>>>>>>> 0f9590b (Responsive)
       flex-direction: column;
     }
     ul, li {
