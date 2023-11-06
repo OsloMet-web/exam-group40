@@ -309,10 +309,19 @@ position: -webkit-sticky;
 top: 0;
 =======
 .Kantinaheader {
+<<<<<<< HEAD
     padding: 60px;
     text-align: center;
     background-color: #FFD500; /* Endret farge til gull (#FFD500) */
     font-family: Arial, Helvetica, sans-serif;
+=======
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #F7F7F2; 
+    font-family: "Raleway";
+
+>>>>>>> c870b8c (Header)
 }
 
 .Kantinaheader img {
@@ -325,6 +334,7 @@ top: 0;
 /* Navigasjonsmeny */
 .kantinanavbar {
     display: flex;
+<<<<<<< HEAD
     justify-content: center;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -332,6 +342,7 @@ top: 0;
 <<<<<<< HEAD
     background-color: #1f0d93; /* Endret farge til mørk blå (#1f0d93) */
     padding: 25px;
+<<<<<<< HEAD
 >>>>>>> 1c80b35 (.)
 =======
     background-color: #F7F7F2; /* Endret farge til mørk blå (#1f0d93) */
@@ -344,11 +355,17 @@ list-style: none;
 display: flex;
 position: sticky;
 =======
+=======
+=======
+    flex-direction: row;
+    justify-content: center;
+>>>>>>> 6947f4c (Header)
     background-color: #F7F7F2;
     padding: 10px;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+<<<<<<< HEAD
   }
   
   .horizontal-menu {
@@ -358,11 +375,15 @@ position: sticky;
     background-color: #1f0d93; /* Endret farge til mørk blå (#1f0d93) */
 >>>>>>> 732907c (header)
     padding: 25px;
+=======
+>>>>>>> c870b8c (Header)
+>>>>>>> 6947f4c (Header)
 }
 
 .horizontal-menu {
 >>>>>>> c660291 (.)
     list-style: none;
+<<<<<<< HEAD
     position: center;
     display: flex;
 <<<<<<< HEAD
@@ -401,22 +422,36 @@ position: sticky;
   .horizontal-menu li {
     position: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+=======
+    background-color:#343f3e
+    display: flex;
+>>>>>>> 6947f4c (Header)
     position: sticky;
 
 }
 
 .horizontal-menu li {
+<<<<<<< HEAD
 >>>>>>> 816188e (Header)
 =======
 >>>>>>> 9ea6e30 (Navbar)
+=======
+>>>>>>> c870b8c (Header)
+>>>>>>> 6947f4c (Header)
     margin-right: 40px;
   }
   
   .horizontal-menu li a {
 >>>>>>> 619b39a (Navbar)
     text-decoration: none;
+<<<<<<< HEAD
     color: #FFD500; /* Endret farge til gull (#FFD500) */
+=======
+    color: #343f3e;
+>>>>>>> c870b8c (Header)
     font-weight: bold;
 <<<<<<< HEAD
 >>>>>>> 1c80b35 (.)
@@ -424,6 +459,7 @@ position: sticky;
     display: block;
     text-align: center;
     font-family: Helvetica, sans-serif;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -438,6 +474,12 @@ position: sticky;
 =======
   }
 >>>>>>> 9ea6e30 (Navbar)
+=======
+  }
+=======
+}
+>>>>>>> c870b8c (Header)
+>>>>>>> 6947f4c (Header)
 
 /* Forsidebilde */
 .forsidebilde_kantina {
