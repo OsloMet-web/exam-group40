@@ -55,7 +55,7 @@ body {
   position: sticky;
 }
 
-p {
+.flexbox2, .flexbox1 p {
   line-height: 1.5em;
   font-family: Helvetica, Arial, sans-serif;
   }
