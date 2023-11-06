@@ -531,10 +531,12 @@ position: sticky;
 =======
 =======
 .Kantinaheader {
+    margin: 0;
     padding: 20px;
     text-align: center;
-    background-color: #F7F7F2; /* Endret farge til gull (#FFD500) */
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F7F2; 
+    font-family: "Raleway";
+
 }
 >>>>>>> d27c7bb (Header)
 
