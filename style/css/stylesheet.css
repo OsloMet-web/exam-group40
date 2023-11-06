@@ -312,21 +312,23 @@ top: 0;
     margin: 0;
     padding: 20px;
     text-align: center;
-    background-color: #F7F7F2;
-    font-family: "Raleway";
-  }
-  
-  .Kantinaheader img {
+    background-color: #FFD500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Kantinaheader img {
     max-width: 100%;
     height: 0;
     margin: 0;
-  }
-  
-  /* Navigasjonsmeny */
-  .horizontal-menu {
+
+}
+
+/* Navigasjonsmeny */
+.kantinanavbar {
     display: flex;
     flex-direction: row;
     justify-content: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     background-color: #1f0d93; /* Endret farge til mørk blå (#1f0d93) */
@@ -351,6 +353,13 @@ position: sticky;
   }
   
   .horizontal-menu {
+=======
+    background-color: #1f0d93;
+    padding: 25px;
+}
+
+.horizontal-menu {
+>>>>>>> c660291 (.)
     list-style: none;
     position: center;
     display: flex;
@@ -405,7 +414,7 @@ position: sticky;
   .horizontal-menu li a {
 >>>>>>> 619b39a (Navbar)
     text-decoration: none;
-    color: #343f3e;
+    color: #FFD500;
     font-weight: bold;
 <<<<<<< HEAD
 >>>>>>> 1c80b35 (.)
@@ -516,6 +525,7 @@ padding: 20px;
 /* Footer-seksjon */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .kantina_footer {
   display: flex;
   flex-direction: row;
@@ -608,6 +618,15 @@ footer {
       margin: 1%;
     }
 >>>>>>> 3f50630 (footer)
+=======
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #FFD500;
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    
+>>>>>>> c660291 (.)
 }
 
 /* Ange-Clara */
