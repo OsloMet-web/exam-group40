@@ -526,6 +526,7 @@ padding: 20px;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .kantina_footer {
   display: flex;
   flex-direction: row;
@@ -577,6 +578,8 @@ footer {
     width: 100%;
 >>>>>>> 1c80b35 (.)
 =======
+=======
+>>>>>>> c3307c7 (footer)
 .kantina_footer {
     display: flex;
     flex-direction: row;
@@ -617,6 +620,7 @@ footer {
     ul, li {
       margin: 1%;
     }
+<<<<<<< HEAD
 >>>>>>> 3f50630 (footer)
 =======
 footer {
@@ -627,6 +631,8 @@ footer {
     width: 100%;
     
 >>>>>>> c660291 (.)
+=======
+>>>>>>> c3307c7 (footer)
 }
 
 /* Ange-Clara */
