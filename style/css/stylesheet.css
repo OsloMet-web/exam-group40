@@ -656,6 +656,7 @@ padding: 20px;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .kantina_footer {
   display: flex;
   flex-direction: row;
@@ -709,6 +710,8 @@ footer {
 =======
 =======
 >>>>>>> c3307c7 (footer)
+=======
+>>>>>>> 7de8b8f (footer)
 .kantina_footer {
     display: flex;
     flex-direction: row;
@@ -716,6 +719,7 @@ footer {
     justify-content: center;
     margin-top: 50px;
     padding: 50px 50px 50px 70px;
+<<<<<<< HEAD
     background: #E4E6C3;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -767,9 +771,41 @@ footer {
 footer {
     text-align: center;
     padding: 20px;
+=======
+>>>>>>> 7de8b8f (footer)
     background: #E4E6C3;
-    font-family: Helvetica, sans-serif;
-    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.footerbox1, .footerbox2, .footerbox3 {
+    flex: 30%;
+    padding-left: 30px;
+  }
+
+.footerbox1 img {
+    width: 7%;
+    height: auto;
+    padding: 3px;
+}
+
+.footerbox4 {
+  flex: 100%;
+  padding-left: 30px;
+  padding-top: 2%;
+}
+
+.footerbox4 img {
+    max-width: 20%;
+    height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
+      flex-direction: column;
+    }
+    ul, li {
+      margin: 1%;
+    }
 }
 
 >>>>>>> 871afb2 (endring)
