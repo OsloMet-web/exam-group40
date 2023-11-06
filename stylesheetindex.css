@@ -350,6 +350,7 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+<<<<<<< HEAD
 .menu a:hover {
   color: #FFFFFF;
   position: sticky;
@@ -441,6 +442,15 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
 =======
 >>>>>>> 912144f (Layout)
 p {
+=======
+<<<<<<< HEAD
+=======
+.flexbox2, .flexbox1 p {
+  line-height: 1.5em;
+}
+
+.flexbox2, .flexbox1 p {
+>>>>>>> 1c80b35 (.)
   line-height: 1.5em;
   font-family: Helvetica, Arial, sans-serif;
   }

@@ -280,6 +280,7 @@ font-size: medium;
 
 /*Nellie*/
 /* Header */
+<<<<<<< HEAD
 .header {
 =======
 body {
@@ -306,6 +307,27 @@ padding: 5px;
 position: sticky;
 position: -webkit-sticky;
 top: 0;
+=======
+.Kantinaheader {
+    padding: 60px;
+    text-align: center;
+    background-color: #FFD500; /* Endret farge til gull (#FFD500) */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Kantinaheader img {
+    max-width: 100%;
+    height: 0;
+    margin: 0;
+}
+
+/* Navigasjonsmeny */
+.kantinanavbar {
+    display: flex;
+    justify-content: center;
+    background-color: #1f0d93; /* Endret farge til mørk blå (#1f0d93) */
+    padding: 25px;
+>>>>>>> 1c80b35 (.)
 }
 
 .meny ul {
@@ -319,6 +341,7 @@ margin-right: 50px;
 position: sticky;
 }
 
+<<<<<<< HEAD
 .meny li a {
 text-decoration: none;
 color: #343f3e;
@@ -331,6 +354,12 @@ font-family: Helvetica, sans-serif;
 .meny a:hover {
 color: #FFFFFF;
 position: sticky;
+=======
+.horizontal-menu li a {
+    text-decoration: none;
+    color: #FFD500; /* Endret farge til gull (#FFD500) */
+    font-weight: bold;
+>>>>>>> 1c80b35 (.)
 }
 
 /* Forsidebilde */
@@ -347,6 +376,7 @@ position: sticky;
 }
 
 .forsidebilde_kantina p {
+<<<<<<< HEAD
   font-size: 0;
   color: #3d3d3d;
   text-align: center;
@@ -367,6 +397,19 @@ padding: 20px;
 .boks-holder {
 display: flex;
 align-items: flex-start;
+=======
+    font-size: 12px;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+/* Hovedinnhold */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+>>>>>>> 1c80b35 (.)
 }
 
 .info-box {
@@ -405,6 +448,7 @@ padding: 20px;
 }
 
 /* Footer-seksjon */
+<<<<<<< HEAD
 .kantina_footer {
   display: flex;
   flex-direction: row;
@@ -447,6 +491,14 @@ padding-top: 2%;
   ul, li {
     margin: 1%;
   }
+=======
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #FFD500; /* Endret farge til gull (#FFD500) */
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+>>>>>>> 1c80b35 (.)
 }
 
 /* Ange-Clara */
