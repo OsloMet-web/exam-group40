@@ -355,6 +355,7 @@ position: sticky;
     position: center;
     display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
     position: sticky;
 
 >>>>>>> 23b98dd (Header)
@@ -385,6 +386,13 @@ position: sticky;
   
   .horizontal-menu li {
     position: center;
+=======
+    position: sticky;
+
+}
+
+.horizontal-menu li {
+>>>>>>> 816188e (Header)
     margin-right: 40px;
   }
   
@@ -400,11 +408,15 @@ position: sticky;
     text-align: center;
     font-family: Helvetica, sans-serif;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 23b98dd (Header)
 }
 =======
   }
 >>>>>>> 619b39a (Navbar)
+=======
+}
+>>>>>>> 816188e (Header)
 
 /* Forsidebilde */
 .forsidebilde_kantina {
