@@ -5,7 +5,11 @@
     margin:0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
     overflow-x: hidden; /**Fjerner den eksta marginen på siden**/
+=======
+    overflow-x: hidden;
+>>>>>>> 88c92df (.)
 }
 
 .topical-article{
@@ -84,11 +88,16 @@ font-size: medium;
    transform: translate(-50%, -50%);
 }
 
+<<<<<<< HEAD
 #pagetitle>img{
   width: 100%;
   height: auto;
   box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
   background: linear-gradient(#004092, #020202, transparent)
+=======
+.flexbox {
+    display: flex;
+>>>>>>> 88c92df (.)
 }
 
 
@@ -160,6 +169,7 @@ font-size: medium;
     100% {color: rgb(207,33,33);}
   }
 
+<<<<<<< HEAD
 /**Inspirert av W3Schools, flipboxer med bilder og info**/
   .flip-box {
     background-color: transparent;
@@ -271,6 +281,52 @@ font-size: medium;
     
 }
 
+=======
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px;
+  }
+  .timeline img{
+    width:100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+
+
+.container {
+    padding: 10px;
+    position: relative;
+    width: 50%;
+    border-radius: 10px;
+}
+
+/**Sirklene på tidslinjen**/
+.container::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    top: 0px;
+    left: 50%;
+    margin-left: -3px;
+   z-index: -1;
+}
+
+/**Selve teksten**/
+  .content{
+    padding: 20px 30px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  
+
+
+
+
+>>>>>>> 88c92df (.)
     
 
 
