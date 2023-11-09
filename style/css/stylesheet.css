@@ -356,6 +356,7 @@ position: sticky;
     display: flex;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     position: sticky;
 
 >>>>>>> 23b98dd (Header)
@@ -382,10 +383,13 @@ position: sticky;
 =======
 .horizontal-menu li a {
 =======
+=======
+>>>>>>> 9ea6e30 (Navbar)
   }
   
   .horizontal-menu li {
     position: center;
+<<<<<<< HEAD
 =======
     position: sticky;
 
@@ -393,6 +397,8 @@ position: sticky;
 
 .horizontal-menu li {
 >>>>>>> 816188e (Header)
+=======
+>>>>>>> 9ea6e30 (Navbar)
     margin-right: 40px;
   }
   
@@ -409,6 +415,7 @@ position: sticky;
     font-family: Helvetica, sans-serif;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 23b98dd (Header)
 }
 =======
@@ -417,6 +424,9 @@ position: sticky;
 =======
 }
 >>>>>>> 816188e (Header)
+=======
+  }
+>>>>>>> 9ea6e30 (Navbar)
 
 /* Forsidebilde */
 .forsidebilde_kantina {
