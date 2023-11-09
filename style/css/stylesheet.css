@@ -510,7 +510,7 @@ padding-top: 2%;
     flex-direction: column; 
     width: 60%;
     min-height: 100px; 
-    background-color: orange;
+    background-color: white;
     margin: auto;
 }
 
@@ -519,7 +519,7 @@ padding-top: 2%;
     flex-direction: row; 
     width: 100%;
     min-height: 50px;
-    background-color: lightgray;
+    border: 5px solid black;
     align-items: center;
     padding-left: 2%;
 }
@@ -529,7 +529,7 @@ padding-top: 2%;
     flex-direction: row;
     width: 100%;
     min-height: 30px;
-    background-color: lightgray;
+    border: 5px solid black;
     margin-top: 10px;
     justify-content: center; 
     align-items: center; 
@@ -540,7 +540,7 @@ padding-top: 2%;
     flex-direction: row; 
     width: 100%;
     min-height: 100px;
-    background-color: lightgray;
+    border: 5px solid black;
     margin-top: 10px;
     justify-content: center; 
     align-items: center; 
@@ -559,7 +559,7 @@ padding-top: 2%;
     display: flex; 
     flex-direction: row;
     flex-basis: 20%;
-    background-color: lightgray;            
+    border: 5px solid black;         
     justify-content: center; 
     align-items: center;
 }
@@ -568,7 +568,7 @@ padding-top: 2%;
     display: flex;
     flex-direction: row;
     flex-basis: 75%;
-    background-color: lightgray;
+    border: 5px solid black;
     justify-content: center; 
     align-items: center;
 }
@@ -586,7 +586,7 @@ padding-top: 2%;
     display: flex;
     flex-direction: row;
     flex-basis: 75%;
-    background-color: lightgray;
+    border: 5px solid black;
     justify-content: center; 
     align-items: center;
 }
@@ -595,7 +595,7 @@ padding-top: 2%;
     display: flex; 
     flex-direction: row;
     flex-basis: 20%;
-    background-color: lightgray;            
+    border: 5px solid black;          
     justify-content: center; 
     align-items: center;
 }
@@ -613,7 +613,7 @@ padding-top: 2%;
     display: flex; 
     flex-direction: row;
     flex-basis: 20%;
-    background-color: lightgray;            
+    border: 5px solid black;        
     justify-content: center; 
     align-items: center;
 }
@@ -622,7 +622,7 @@ padding-top: 2%;
     display: flex;
     flex-direction: row;
     flex-basis: 75%;
-    background-color: lightgray;
+    border: 5px solid black;
     justify-content: center; 
     align-items: center;
 }
@@ -632,7 +632,8 @@ padding-top: 2%;
     flex-direction: row;
     width: 100%;
     min-height: 50px;
-    background-color: lightgray;
+    border: 5px solid black;
+    background-color: white; /*bare for å overkjære en kode over*/
     margin-top: 10px; 
     justify-content: center; 
     align-items: center; 
