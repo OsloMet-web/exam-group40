@@ -93,12 +93,41 @@ p {
 }
 
 .p35-column {
-  flex-basis: 35%;
+  flex-basis: 32%;
   background: #F7F7F2;
   border-radius: 10px;
-  margin: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.p35-column img {
+  width: 100%;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(137, 152, 120, 0.8);
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #FFFFFF;
+  font-size: 2em;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
 }
 
 .bibliotek {
