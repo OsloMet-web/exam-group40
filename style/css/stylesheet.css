@@ -163,11 +163,10 @@ text-decoration: none;
     list-style: none;
     position: center;
     display: flex;
-    position: sticky;
-
-}
-
-.horizontal-menu li {
+  }
+  
+  .horizontal-menu li {
+    position: center;
     margin-right: 40px;
   }
   
@@ -178,7 +177,7 @@ text-decoration: none;
     display: block;
     text-align: center;
     font-family: Helvetica, sans-serif;
-}
+  }
 
 /* Forsidebilde */
 .forsidebilde_kantina {
