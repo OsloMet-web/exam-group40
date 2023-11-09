@@ -279,7 +279,9 @@ font-size: medium;
 
 
 /*Nellie*/
+
 /* Header */
+<<<<<<< HEAD
 <<<<<<< HEAD
 .header {
 =======
@@ -308,6 +310,8 @@ position: sticky;
 position: -webkit-sticky;
 top: 0;
 =======
+=======
+>>>>>>> 871afb2 (endring)
 .Kantinaheader {
 <<<<<<< HEAD
     padding: 60px;
@@ -519,7 +523,47 @@ position: sticky;
 =======
   }
 >>>>>>> f8fc7bc (Navbar)
+<<<<<<< HEAD
 >>>>>>> 781b107 (Navbar)
+=======
+=======
+
+.meny {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F7F7F2;
+  padding: 30px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.meny ul {
+  list-style: none;
+  display: flex;
+  position: sticky;
+}
+
+.meny li {
+  margin-right: 50px;
+  position: sticky;
+}
+
+.meny li a {
+  text-decoration: none;
+  color: #343f3e;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.meny a:hover {
+  color: #FFFFFF;
+  position: sticky;
+}
+>>>>>>> d971ec0 (endring)
+>>>>>>> 871afb2 (endring)
 
 /* Forsidebilde */
 .forsidebilde_kantina {
@@ -559,13 +603,13 @@ align-items: flex-start;
 =======
     font-size: 12px;
     color: #3d3d3d;
-    text-align: center;
+    text-align: center; 
 }
 
 /* Hovedinnhold */
 .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Legger til wrap for å håndtere mindre skjermer */
     justify-content: space-evenly;
     font-family: Arial, Helvetica, sans-serif;
 >>>>>>> 1c80b35 (.)
@@ -607,6 +651,7 @@ padding: 20px;
 }
 
 /* Footer-seksjon */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -718,6 +763,17 @@ footer {
 =======
 >>>>>>> c3307c7 (footer)
 }
+=======
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #FFD500;
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    
+}
+
+>>>>>>> 871afb2 (endring)
 
 /* Ange-Clara */
 
