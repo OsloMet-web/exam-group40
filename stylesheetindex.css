@@ -63,8 +63,6 @@
   margin-left: 1%;
 }
 
-<<<<<<< HEAD
-=======
 .flexbox2, .flexbox1 p {
   line-height: 1.5em;
 }
@@ -73,7 +71,6 @@
   line-height: 1.5em;
 }
 
->>>>>>> d0b4899 (Linjeavstand)
 .indexcontainer {
    display: flex;
    justify-content: center;
