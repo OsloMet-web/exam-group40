@@ -505,7 +505,7 @@ padding-top: 2%;
     flex-direction: column;
 }
 
-.data-main {
+.data-main { /*samme som wrapper i eksempel*/
     display: flex; 
     flex-direction: column; 
     width: 60%;
@@ -534,6 +534,43 @@ padding-top: 2%;
     justify-content: center; 
     align-items: center; 
 }
+
+.data-nav a:hover {
+    color: #FFFFFF;
+  }
+
+.data-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #899878;
+    padding: 10px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    z-index: 100; /*hjelp av chat?? men funker*/
+    top: 0;
+}
+
+.data-nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .data-nav li {
+    margin-right: 30px;
+  }
+  
+  .data-nav li a {
+    text-decoration: none;
+    color: #f7f7f2;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .datacontainer, .data-nav, .indexfooter {   
+      flex-direction: column;
+    }
+  }
 
 .data-header {
     display: flex;
@@ -638,3 +675,4 @@ padding-top: 2%;
     justify-content: center; 
     align-items: center; 
 }
+
