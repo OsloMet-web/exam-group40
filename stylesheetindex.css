@@ -30,6 +30,7 @@ body {
   height: auto; 
 }
 
+<<<<<<< HEAD
 .indexheader p {
   font-family: Helvetica, sans-serif;
   font-size: 12px;
@@ -61,6 +62,8 @@ body {
 >>>>>>> 8f1999e (header)
 }
 
+=======
+>>>>>>> c3e8e16 (Layout)
 .menu {
   display: flex;
   flex-direction: row;
@@ -73,10 +76,14 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .menu ul {
 =======
 .indexnavbar ul {
 >>>>>>> c518729 (Sticky meny)
+=======
+.menu ul {
+>>>>>>> c3e8e16 (Layout)
   list-style: none;
   display: flex;
   position: sticky;
@@ -106,11 +113,12 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-.indexnavbar a:hover {
+.menu a:hover {
   color: #FFFFFF;
   position: sticky;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 .forsidebilde img {
@@ -247,12 +255,23 @@ p {
    font-family: Helvetica, Arial, sans-serif;
 }
 
+=======
+>>>>>>> c3e8e16 (Layout)
 p {
   line-height: 1.5em;
+  font-family: Helvetica, Arial, sans-serif;
   }
 
-h1, h2 {
+.welcome {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h2 {
   font-family: "Raleway";
+<<<<<<< HEAD
 }
 
 .indexarticle {
@@ -295,12 +314,45 @@ h1, h2 {
 }
 
 .indexbox2 h2 {
+=======
+>>>>>>> c3e8e16 (Layout)
   font-size: 2em;
-  }
+}
 
+<<<<<<< HEAD
 .indexbox2 p {
 font-size: 1.2em;
 >>>>>>> 4651dd4 (    border: solid;)
+=======
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.bibliotek {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.bibliotek-row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bibliotek-column {
+  flex-basis: 31%;
+  background: #F7F7F2;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+>>>>>>> c3e8e16 (Layout)
 }
 
 .indexfooter {
@@ -349,6 +401,7 @@ font-size: 1.2em;
 }
 
 @media screen and (max-width: 700px) {
+<<<<<<< HEAD
     .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
 <<<<<<< HEAD
 =======
@@ -357,6 +410,9 @@ font-size: 1.2em;
 >>>>>>> 0f9590b (Responsive)
 =======
 >>>>>>> 8f9bb80 (Sticky meny)
+=======
+   .menu, ul, li, .indexfooter, .bibliotek-row {   
+>>>>>>> c3e8e16 (Layout)
       flex-direction: column;
     }
     ul, li {
