@@ -3,54 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Hentet fra font.google.com-->
     <title>accessibility</title>
     <link rel="icon" type="image/x-icon" href="style/img/logo.png"> <!--favicon bilde-->
     <!-- <link rel="stylesheet" href="style/css/stylesheet.css">*/ -->
     <style>
 
-        .accessibility-header-container {
-            display: grid;
-            grid-template-areas: 'header header header';
-            grid-template-columns: none;
-            padding: 10px;
+        :root {
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .nav-container {
-            display: grid;
+        body {
+            color: black;
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            min-width: 100vh;
         }
+
+        .navbar {
+            display: flex;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            width: 100%;
+            height: 5rem;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #46494c;
+        }
+
+        .nav-group{
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-wrapper{
+            display: flex;
+            flex: 0.3;
+            align-items: center;
+            margin-left: 2rem;
+            padding: 0;
+            background: #e4e6c300;
+        }
+
+        /*.navbar img {
+            max-width: 5rem;
+            height: auto;
+            background-color: rgba(240, 248, 255, 0);
+        }*/
+
+        .logo-icon {
+            display: block;
+            background-image: url(style/img/logo_lightgreen.png);
+            background-size: cover;
+            width: 5rem;
+            height: 3.5rem;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .logo-icon:hover {
+            background-image: url(style/img/logo_powdercolor.png);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .navbar-menu-wrapper{
+            display: flex;
+        }
+
+        .nav-group ul {
+            display: flex;
+            gap: 2.5rem;
+            position: relative;
+            background-color: rgba(0, 169, 169, 0);
+            list-style: none;
+            margin-right: 2rem;
+        }
+
+        .nav-group li {
+            list-style: none;
+            background-color: rgba(217, 213, 0, 0);
+
+        }
+
+        .nav-group a {
+            position: relative;
+            font-size: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            color: #e4e6c3;
+            background-color: rgba(70, 0, 0, 0);
+        }
+
+        .nav-group a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -2px;
+            background: #f7f7f2;
+            transform: scaleX(0);
+            transition: transform 0.5s ease-in-out;
+            transform-origin: right;
+        }
+
+        .nav-group a:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .nav-group a:hover {
+            color: #f7f7f2;
+            transition: transform 0.5s ease-in;
+        }
+
+        .nav-toggle {
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            z-index: 10;
+            font-size: 1rem;
+            background-color: #ff0ad6;
+            display: none;
+        }
+
+        .nav-toggle span { 
+            /*font-size: 1.5rem;*/
+            cursor: pointer;
+            z-index: 10001;
+            background-color: antiquewhite;
+        }
+
+        @media (max-width: 700px) {
+            .nav-toggle {
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            z-index: 10;
+            font-size: 1rem;
+            background-color: #ff0ad6;
+            }
+
+            .nav-toggle span { 
+                /*font-size: 1.5rem;*/
+                cursor: pointer;
+                z-index: 10001;
+                background-color: antiquewhite;
+            }
+
+        }
+
+        
+        #nav-icons {
+            font-size: 1rem;
+            display: none;
+        }
+
+        .nav-link-text{
+            /*display: none;*/
+        }
+
+        .accessibility-header {
+            margin-top: 5rem;
+            text-align: center;
+            background-color: #2a1515b4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .accessibility-header img {
+            align-content: center;
+            max-width: 100%;
+            height: 100%; 
+        }
+
+        .accessibility-header h1 {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-weight: 500;
+            font-size: 3rem;
+            color: aliceblue;
+        }
+
 
         .accessibility-main-container {
-            display: grid;
-            grid-template-columns: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*margin-left: 5rem;*/
+            padding-left: 6rem;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .footer-container {
-            display: grid;
-            grid-template-columns: auto auto;
-        }
+        .access-article {
+            flex: 60%;
+            padding: 30px;
+        }  
 
-        #main {
-            display: inline;
-        }
 
         .access-footer {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: 50px;
-            padding: 50px 50px 50px 70px;
-            background: #FFD500;
+            margin-top: 4rem;
+            /*margin-left: 5rem;*/
+            padding: 4rem 4rem 4rem 6rem;
+            background: #46494c;
             font-family: Helvetica, Arial, sans-serif;
         }
 
         .access-footer p {
             line-height: 1.5em;
+            color: #f7f7f2;
         }
 
         .footerbox1, .footerbox2, .footerbox3 {
             flex: 30%;
-            padding-left: 30px;
+            padding-left: 2.5rem;
         }
 
         .footerbox1 img {
@@ -70,50 +246,82 @@
             height: auto;
         }
 
-        .accessibility-header {
-            grid-area: header;
-            background-color: blue;
-            max-width: 100%;
-            height: 100%;
-        }
-
-        #logophoto{
-            width: 50px;
-            height: 34px;
-        }
-
-        #accessibility-header-text {
-            color: white;
-        }
-
     </style>
 </head>
 <body>
+    <!--Navigation bar-->
+    <nav class="navbar">
+
+        <div class="logo-wrapper">
+            <a href="index.html" class="nav-logo">
+                <!--<img src="style/img/logo_lightgreen.png" alt="Hjemme">-->
+                <span class="logo-icon"></span>
+           </a>
+        </div>
+
+        <menu class="nav-group">
+            <div class="navbar-menu-wrapper">
+                <ul class="navbar-menu"> 
+                    <li class="nav-list">
+                        <a href="index.html" class="nav-link">
+                            <span class="material-symbols-outlined" id="nav-icons">
+                                home
+                            </span>
+                            <span class="nav-link-text">Hjemme</span>
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="topical.html" class="nav-link">
+                            <span class="material-symbols-outlined" id="nav-icons">
+                                    home
+                            </span>
+                            <span class="nav-link-text">Topical</span>
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="kantina.html" class="nav-link">
+                            <span class="material-symbols-outlined" id="nav-icons">
+                                    lunch_dining
+                            </span>
+                            <span class="nav-link-text">Kantine</span>
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="datatorget.html" class="nav-link">
+                            <span class="material-symbols-outlined" id="nav-icons">
+                                    devices
+                            </span>
+                            <span class="nav-link-text">Datatorget</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="nav-toggle">
+                <span class="material-symbols-outlined" class="nav-toggle-open">
+                menu
+                </span>
+                <span class="material-symbols-outlined" class="nav-toggle-close">
+                    close
+                    </span>
+                <div class="toggle-text">Meny</div>
+            </div>
+        </nav>
+        </menu>
+        <!--end Navigation bar-->
 
     <!--header-->
-    <header class="accessibility-header-container">
-        <div class="accessibility-header">
-            <img id="logophoto" src="style/img/logo.png" alt="OsloMet Logo">
-             <h1 id="accessibility-header-text">Accessibility</h1>
-        </div>
-    </header>
+        <header class="accessibility-header">
+          <img src="style/img/pilestredet.jpeg" alt="OsloMet Logo">
+          <h1>CAMPUS PILESTREDET</h1>
+        </header>
 
     <!--end header-->
 
-    <!--Navigation bar-->
-    <nav class="nav-container">
-            <div id="navbar">
-                <ul class="menu">
-                    <li id="main"><a href="index.html">Home</a></li>
-                    <li id="main"><a href="kantina.html">Kantina</a></li>
-                    <li id="main"><a href="datatorget.html">Datatorget</a></li>
-                </ul>
-            </div>
-    </nav>
-        <!--end Navigation bar-->
 
-    <main class="accessiblity-main-container">
-        <div id="main-content">
+
+    <main class="accessibility-main-container">
+        <article class="access-article">
             <h2>accessibility</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -140,7 +348,7 @@
                 Nunc pulvinar sapien et ligula. 
                 Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim.
             </p>
-        </div>
+        </article>
     </main>
     <footer class="access-footer">
 
