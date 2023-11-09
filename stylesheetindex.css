@@ -352,6 +352,7 @@ body {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .menu a:hover {
   color: #FFFFFF;
   position: sticky;
@@ -458,12 +459,30 @@ p {
 
 =======
 >>>>>>> 860c372 (fiksa main)
+=======
+>>>>>>> 59a069c (lagt til diverse!)
 .welcome {
   width: 80%;
   margin: auto;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: left;
+=======
+.flexbox2, .flexbox1 p {
+  line-height: 1.5em;
+}
+
+.flexbox2, .flexbox1 p {
+  line-height: 1.5em;
+}
+
+.indexcontainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-left: 70px;
+   font-family: Arial, Helvetica, sans-serif;
+>>>>>>> c199ae7 (lagt til diverse!)
 }
 
 .welcome-column {
