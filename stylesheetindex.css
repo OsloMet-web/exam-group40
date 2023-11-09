@@ -265,7 +265,7 @@ p {
 .welcome {
   width: 80%;
   margin: auto;
-  text-align: center;
+  text-align: left;
   padding-top: 100px;
 }
 
@@ -317,6 +317,7 @@ h2 {
 =======
 >>>>>>> c3e8e16 (Layout)
   font-size: 2em;
+  text-align: center;
 }
 
 <<<<<<< HEAD
