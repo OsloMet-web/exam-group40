@@ -318,8 +318,9 @@ top: 0;
     margin: 0;
     padding: 20px;
     text-align: center;
-    background-color: #F7F7F2; 
+    background-color: #F7F7F2;
     font-family: "Raleway";
+<<<<<<< HEAD
 
 >>>>>>> c870b8c (Header)
 }
@@ -333,6 +334,18 @@ top: 0;
 
 /* Navigasjonsmeny */
 .kantinanavbar {
+=======
+  }
+  
+  .Kantinaheader img {
+    max-width: 100%;
+    height: 0;
+    margin: 0;
+  }
+  
+  /* Navigasjonsmeny */
+  .horizontal-menu {
+>>>>>>> f8fc7bc (Navbar)
     display: flex;
 <<<<<<< HEAD
     justify-content: center;
@@ -366,6 +379,7 @@ position: sticky;
     position: -webkit-sticky;
     top: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   }
   
   .horizontal-menu {
@@ -376,6 +390,8 @@ position: sticky;
 >>>>>>> 732907c (header)
     padding: 25px;
 =======
+=======
+>>>>>>> 781b107 (Navbar)
 >>>>>>> c870b8c (Header)
 >>>>>>> 6947f4c (Header)
 }
@@ -440,7 +456,22 @@ position: sticky;
 >>>>>>> 9ea6e30 (Navbar)
 =======
 >>>>>>> c870b8c (Header)
+<<<<<<< HEAD
 >>>>>>> 6947f4c (Header)
+=======
+=======
+  }
+  
+  .horizontal-menu {
+    list-style: none;
+    position: center;
+    display: flex;
+  }
+  
+  .horizontal-menu li {
+    position: center;
+>>>>>>> f8fc7bc (Navbar)
+>>>>>>> 781b107 (Navbar)
     margin-right: 40px;
   }
   
@@ -463,6 +494,7 @@ position: sticky;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 23b98dd (Header)
 }
 =======
@@ -475,11 +507,19 @@ position: sticky;
   }
 >>>>>>> 9ea6e30 (Navbar)
 =======
+=======
+>>>>>>> 781b107 (Navbar)
   }
 =======
 }
 >>>>>>> c870b8c (Header)
+<<<<<<< HEAD
 >>>>>>> 6947f4c (Header)
+=======
+=======
+  }
+>>>>>>> f8fc7bc (Navbar)
+>>>>>>> 781b107 (Navbar)
 
 /* Forsidebilde */
 .forsidebilde_kantina {
