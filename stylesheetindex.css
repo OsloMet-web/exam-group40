@@ -64,14 +64,23 @@ p {
 .welcome {
   width: 80%;
   margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: left;
-  padding-top: 100px;
+}
+
+.welcome-column {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.welcome-column img {
+  width: 100%;
 }
 
 h2 {
   font-family: "Raleway";
   font-size: 2em;
-  text-align: center;
 }
 
 .indexcontainer {
@@ -88,26 +97,66 @@ h3 {
   margin: 10px 0;
 }
 
+.p35 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.p35-column {
+  flex-basis: 35%;
+  background: #F7F7F2;
+  border-radius: 10px;
+  margin: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
 .bibliotek {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/bibliotek.jpg);
+  background-size: cover;
+  border-radius: 50px;
 }
 
-.bibliotek-row {
-  margin-top: 5%;
+.row {
+  margin-top: 2%;
   display: flex;
   justify-content: space-between;
 }
 
 .bibliotek-column {
-  flex-basis: 31%;
+  flex-basis: 35%;
   background: #F7F7F2;
   border-radius: 10px;
-  margin-bottom: 5%;
+  margin: 5%;
   padding: 20px 12px;
   box-sizing: border-box;
+}
+
+.bibliotek h2 {
+  color: #FFFFFF;
+  font-size: 3em;
+}
+
+.bibliotek > p {
+  color: #FFFFFF;
+  font-size: 1.2em
+}
+
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.location iframe {
+  width: 100%;
 }
 
 .indexfooter {
@@ -144,7 +193,7 @@ h3 {
 }
 
 @media screen and (max-width: 700px) {
-   .menu, ul, li, .indexfooter, .bibliotek-row {   
+   .menu, ul, li, .indexfooter, .row {   
       flex-direction: column;
     }
     ul, li {
