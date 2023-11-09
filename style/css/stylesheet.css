@@ -132,52 +132,43 @@ text-decoration: none;
 
 
 /*Nellie*/
+
 /* Header */
-.Kantinaheader {
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    background-color: #F7F7F2;
-    font-family: "Raleway";
-  }
-  
-  .Kantinaheader img {
-    max-width: 100%;
-    height: 0;
-    margin: 0;
-  }
-  
-  /* Navigasjonsmeny */
-  .horizontal-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #F7F7F2;
-    padding: 10px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-  }
-  
-  .horizontal-menu {
-    list-style: none;
-    position: center;
-    display: flex;
-  }
-  
-  .horizontal-menu li {
-    position: center;
-    margin-right: 40px;
-  }
-  
-  .horizontal-menu li a {
-    text-decoration: none;
-    color: #343f3e;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-  }
+
+.meny {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F7F7F2;
+  padding: 30px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.meny ul {
+  list-style: none;
+  display: flex;
+  position: sticky;
+}
+
+.meny li {
+  margin-right: 50px;
+  position: sticky;
+}
+
+.meny li a {
+  text-decoration: none;
+  color: #343f3e;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.meny a:hover {
+  color: #FFFFFF;
+  position: sticky;
+}
 
 /* Forsidebilde */
 .forsidebilde_kantina {
@@ -194,13 +185,13 @@ text-decoration: none;
 .forsidebilde_kantina p {
     font-size: 12px;
     color: #3d3d3d;
-    text-align: center;
+    text-align: center; 
 }
 
 /* Hovedinnhold */
 .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Legger til wrap for å håndtere mindre skjermer */
     justify-content: space-evenly;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -218,47 +209,15 @@ text-decoration: none;
 }
 
 /* Footer-seksjon */
-.kantina_footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
-    padding: 50px 50px 50px 70px;
-    background: #E4E6C3;
-    font-family: Helvetica, Arial, sans-serif;
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #FFD500;
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    
 }
 
-.footerbox1, .footerbox2, .footerbox3 {
-    flex: 30%;
-    padding-left: 30px;
-  }
-
-.footerbox1 img {
-    width: 7%;
-    height: auto;
-    padding: 3px;
-}
-
-.footerbox4 {
-  flex: 100%;
-  padding-left: 30px;
-  padding-top: 2%;
-}
-
-.footerbox4 img {
-    max-width: 20%;
-    height: auto;
-}
-
-@media screen and (max-width: 1000px) {
-    .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
-      flex-direction: column;
-    }
-    ul, li {
-      margin: 1%;
-    }
-}
 
 /* Ange-Clara */
 
