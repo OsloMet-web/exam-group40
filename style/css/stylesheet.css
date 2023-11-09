@@ -1351,7 +1351,7 @@ footer {
     flex-direction: column;
 }
 
-.data-main {
+.data-main { /*samme som wrapper i eksempel*/
     display: flex; 
     flex-direction: column; 
     width: 60%;
@@ -1475,6 +1475,7 @@ footer {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #data-header {
     margin: 0;
     padding: 0;
@@ -1498,6 +1499,45 @@ footer {
     /*font-family: Helvetica, Arial, Helvetica, sans-serif;*/
   
 =======
+=======
+.data-nav a:hover {
+    color: #FFFFFF;
+  }
+
+.data-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #899878;
+    padding: 10px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    z-index: 100; /*hjelp av chat?? men funker*/
+    top: 0;
+}
+
+.data-nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .data-nav li {
+    margin-right: 30px;
+  }
+  
+  .data-nav li a {
+    text-decoration: none;
+    color: #f7f7f2;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .datacontainer, .data-nav, .indexfooter {   
+      flex-direction: column;
+    }
+  }
+
+>>>>>>> a59d8aa (forsøk)
 .data-header {
     display: flex;
     flex-direction: row; 
@@ -1847,6 +1887,7 @@ footer {
     align-items: center; 
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 @media screen and (max-width: 700px) {
     .data-nav, ul, li, .data-section1, .data-section2, .data-section3 {   
@@ -1858,3 +1899,6 @@ footer {
  }
 =======
 >>>>>>> c6fe1cb (endringer)
+=======
+
+>>>>>>> a59d8aa (forsøk)
