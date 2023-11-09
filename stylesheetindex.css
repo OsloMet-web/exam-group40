@@ -167,14 +167,23 @@ p {
 .welcome {
   width: 80%;
   margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: left;
-  padding-top: 100px;
+}
+
+.welcome-column {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.welcome-column img {
+  width: 100%;
 }
 
 h2 {
   font-family: "Raleway";
   font-size: 2em;
-  text-align: center;
 }
 
 h3 {
@@ -183,14 +192,12 @@ h3 {
   font-weight: 500;
   text-align: center;
   margin: 10px 0;
->>>>>>> 912144f (Layout)
 }
 
 .bibliotek {
   width: 80%;
   margin: auto;
   text-align: center;
-<<<<<<< HEAD
   padding-top: 80px;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/bibliotek.jpg);
   background-size: cover;
@@ -199,19 +206,11 @@ h3 {
 
 .row {
   margin-top: 2%;
-=======
-  padding-top: 100px;
-}
-
-.bibliotek-row {
-  margin-top: 5%;
->>>>>>> 912144f (Layout)
   display: flex;
   justify-content: space-between;
 }
 
 .bibliotek-column {
-<<<<<<< HEAD
   flex-basis: 35%;
   background: #F7F7F2;
   border-radius: 10px;
@@ -239,14 +238,6 @@ h3 {
 
 .location iframe {
   width: 100%;
-=======
-  flex-basis: 31%;
-  background: #F7F7F2;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
->>>>>>> 912144f (Layout)
 }
 
 .indexfooter {
@@ -283,11 +274,7 @@ h3 {
 }
 
 @media screen and (max-width: 700px) {
-<<<<<<< HEAD
    .menu, ul, li, .indexfooter, .row {   
-=======
-   .menu, ul, li, .indexfooter, .bibliotek-row {   
->>>>>>> 912144f (Layout)
       flex-direction: column;
     }
     ul, li {
