@@ -6,10 +6,14 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 <<<<<<< HEAD
+<<<<<<< HEAD
     overflow-x: hidden; /**Fjerner den eksta marginen på siden**/
 =======
     overflow-x: hidden;
 >>>>>>> 88c92df (.)
+=======
+    overflow-x: hidden; /**Fjerner den eksta marginen på siden**/
+>>>>>>> fad956a (...)
 }
 
 .topical-article{
@@ -291,6 +295,7 @@ font-size: medium;
     width:100px;
     height: 100px;
     border-radius: 100px;
+    
   }
 
 
@@ -301,7 +306,6 @@ font-size: medium;
     border-radius: 10px;
 }
 
-/**Sirklene på tidslinjen**/
 .container::after {
     content: '';
     position: absolute;
@@ -311,17 +315,20 @@ font-size: medium;
     left: 50%;
     margin-left: -3px;
    z-index: -1;
+   background-color: rgb(88, 35, 29);
 }
 
-/**Selve teksten**/
   .content{
-    padding: 20px 30px;
-    background-color: #fff;
     position: relative;
-    border-radius: 6px;
-    font-size: 15px;
+    border-radius: 10px;
   }
   
+  #linjetittel {
+    font-family: fantasy;
+    font-weight: lighter;
+    color:rgb(23,71,117);
+    text-align: inherit;
+  }
 
 
 
