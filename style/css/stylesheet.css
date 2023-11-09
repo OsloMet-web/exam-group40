@@ -137,19 +137,18 @@ text-decoration: none;
     margin: 0;
     padding: 20px;
     text-align: center;
-    background-color: #F7F7F2; 
+    background-color: #F7F7F2;
     font-family: "Raleway";
-
-}
-
-.Kantinaheader img {
+  }
+  
+  .Kantinaheader img {
     max-width: 100%;
     height: 0;
     margin: 0;
-}
-
-/* Navigasjonsmeny */
-.kantinanavbar {
+  }
+  
+  /* Navigasjonsmeny */
+  .horizontal-menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -158,28 +157,27 @@ text-decoration: none;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-}
-
-.horizontal-menu {
+  }
+  
+  .horizontal-menu {
     list-style: none;
-    background-color:#343f3e
+    position: center;
     display: flex;
-    position: sticky;
-
-}
-
-.horizontal-menu li {
+  }
+  
+  .horizontal-menu li {
+    position: center;
     margin-right: 40px;
-}
-
-.horizontal-menu li a {
+  }
+  
+  .horizontal-menu li a {
     text-decoration: none;
     color: #343f3e;
     font-weight: bold;
     display: block;
     text-align: center;
     font-family: Helvetica, sans-serif;
-}
+  }
 
 /* Forsidebilde */
 .forsidebilde_kantina {
