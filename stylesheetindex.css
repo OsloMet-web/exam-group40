@@ -17,37 +17,40 @@
   font-size: 3rem;
 }
 
-.indexnavbar a {
-    display: block;
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-  }
-
-.indexnavbar a:hover {
-    color: #FFFFFF;
-  }
-
 .indexnavbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #1f0d93;
-    padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #1f0d93;
+  padding: 10px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
-.horizontal-menu {
+.indexnavbar ul {
   list-style: none;
   display: flex;
+  position: sticky;
 }
 
-.horizontal-menu li {
+.indexnavbar li {
   margin-right: 50px;
+  position: sticky;
 }
 
-.horizontal-menu li a {
+.indexnavbar li a {
   text-decoration: none;
   color: #FFD500fc;
   font-weight: bold;
+  display: block;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.indexnavbar a:hover {
+  color: #FFFFFF;
+  position: sticky;
 }
 
 .forsidebilde img {
@@ -67,43 +70,78 @@
   line-height: 1.5em;
 }
 
-.container {
+.flexbox2, .flexbox1 p {
+  line-height: 1.5em;
+}
+
+.indexcontainer {
    display: flex;
-   justify-content: space-evenly;
+   justify-content: center;
+   align-items: center;
+   padding-left: 70px;
    font-family: Arial, Helvetica, sans-serif;
 }
 
-.flexbox1 {
-    flex: 20%;
-    padding: 40px;
+.indexarticle {
+    flex: 60%;
+    padding: 30px;
 }
 
-.flexbox2 {
+.indexsidebar {
     flex: 40%;
-    padding: 30px;
+    padding: 50px 30px 30px 30px;
+    align-items: center;
 }
 
-.flexbox3 {
-    flex: 20%;
-    padding: 30px;
+.indexarticle img {
+  width: 7%;
+  height: auto;
+  padding: 3px;
+}
+
+.indexarticle, .indexsidebar p {
+line-height: 1.5em;
 }
 
 .indexfooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 50px;
-    padding: 50px;
-    text-align: center;
+    padding: 50px 50px 50px 70px;
     background: #FFD500;
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.indexfooter p {
+  line-height: 1.5em;
+}
+
+.footerbox1, .footerbox2, .footerbox3 {
+    flex: 30%;
+    padding-left: 30px;
   }
 
-  .indexfooter img {
-    align-content: center;
-    max-width: 30%;
+.footerbox1 img {
+    width: 7%;
     height: auto;
-  }
+    padding: 3px;
+}
 
-  @media screen and (max-width: 700px) {
-    .container, .indexnavbar, ul, li {   
+.footerbox4 {
+  flex: 100%;
+  padding-left: 30px;
+  padding-top: 2%;
+}
+
+.footerbox4 img {
+    max-width: 20%;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
       flex-direction: column;
     }
     ul, li {

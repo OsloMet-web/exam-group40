@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        header {
-            background-color: bisque;
-            padding: auto;
-            color: darkblue;
-        }
-        h1 {
-            margin: 90px;
-        }
-        .logo {
-            max-width: 100px;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-    </style>
     <meta lang="nb">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/css/stylesheet.css">
     <title>Datatorget</title>
+    <link rel="icon" type="image/x-icon" href="style/img/favicon.ico"> 
+    <!--Icon er hentet fra Oslomet sin kode-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Oslomet" class="logo">
-        <!-- gøy om man kan trykke på logoen og komme til startsiden-->
-        <h1>Velkommen til datatorget P35</h1>
-        <a href="nettsiden til oslomet?">Home</a>
-        <!--Noe mer her? se notat html Notion-->
+    <header class="dataheader">
+        <img src="style/img/logo.png" alt="OsloMet Logo">
+        <h1>VELKOMMEN TIL DATATORGET</h1>
     </header>
+    
+      <nav class="datanavbar">
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+           <li><a href="accessibility.html">Accessibility</a></li>
+           <li><a href="topical.html">Topical</a></li>
+           <li><a href="datatorget.html">Datatorget</a></li>
+           <li><a href="kantina.html">Kantine</a></li>
+          </ul>
+       </nav>
 
-    <a href="https://student.oslomet.no/auditorier-undervisningsrom/-/undervisningsrom/campus/PIL/bygning/P35"
-        <picture>
-        <img src="style/img/p35.jpeg"
-            alt="Bildet av utsiden til bygget P35"
-            height="200"/>
-        </picture>
-    </a>
-    <!--Bildet av P35 som kan klikkes på å ta deg til en oversikt over alle rom i p35-->
+    <main class="container">
+        <section class="flexbox1">
+            <b>Adresse:</b>
+            <p>Pilestredet 35, 4.etasje</p>
+            <b>Åpningstid Orakeltjenesten:</b>
+            <p>Tirsdag & Fredag 12.30-1630</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.8756571957914!2d10.7347696!3d59.9196745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f1fc5920b79%3A0xe72cf5d0dee0de6f!2sOsloMet%20-%20Handelsh%C3%B8yskolen!5e0!3m2!1sno!2sno!4v1697620383279!5m2!1sno!2sno" width="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p><b>Kontakt Orakeltjenesten og stell deg i kø:</b></p>
+            <p><a href="https://orakeloslomet.github.io/Orakel_Queue_Client/">Kø til Orakeltjenesten</a></p>
+            <div class = "orakel">
+                <a href="https://www.facebook.com/OrakelOsloMet/?locale=nb_NO">
+                    <picture>
+                        <img src="style/img/orakel.png"
+                            alt="Orakeltjenesten sin facebook"/>
+                    </picture>
+                </a>
+                </div>
+        </section>
+    
+        <article class="flexbox2">
+
+    
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac urna non arcu gravida tristique. Quisque a felis ut elit consequat vestibulum. Phasellus vehicula, urna id facilisis lacinia, dui metus convallis est, id fringilla mauris mauris sit amet ligula. Integer eu urna ut libero lacinia scelerisque vel nec nisi. Curabitur euismod, neque eu aliquet congue, lorem felis congue sapien, ut congue urna tortor in dui. Sed sit amet dolor ut ex iaculis varius. In in justo non tortor aliquet tincidunt vel et massa. Sed vel consequat justo, vel bibendum ex. Nulla facilisi. Vestibulum euismod scelerisque tristique.</p>
     <h2>Arbeidsrom</h2>
@@ -57,25 +65,71 @@
             <li>For de som ønsker å ta notater eller arbeide mens de leser.</li>
         </ul>
     </ul>
+    <!--Generert av ChatGPT-->
 
     <h2>dlab</h2>
     <h3>Orkaltjeneste</h3>
-    <a href="https://www.facebook.com/OrakelOsloMet/?locale=nb_NO"
+    <p>Orakeltjenesten på OsloMet er en vennlig og hjelpsom informasjonskilde for på dataingeniør. 
+        Den er der for å besvare alle spørsmål og få hjelp innenfor studie. Orakeltjensten skal veilede deg i riktig retning og bistå med hjelp.</p>
+        <!--Teksten er inspirert av en AI-generert tekst-->
+        </article>
+    <aside class="flexbox3">
+        
+        <div class="dtorget">
+    <a href="https://student.oslomet.no/auditorier-undervisningsrom/-/undervisningsrom/campus/PIL/bygning/P35">
         <picture>
-            <img src="style/img/orakel.jpeg"
-                alt="Orakeltjenesten sin logo"
-                height="200"/>
+        <img src="style/img/dtorget.JPG"
+            alt="Bilde av datatorget"/>
         </picture>
     </a>
-    <!--Oppretter et bilde du kan trykke på, som tar deg videre til orakel sin nettside*/
+    <b>Datatorget. Foto: Privat</b>
+        </div>
 
-    /*bruk flex bokser+formatere layout på siden*/ -->
+    <!--Bildet av P35 som kan klikkes på å ta deg til en oversikt over alle rom i p35-->
+    </aside>
 
-    <!--Ha en footer med button til kantine siden-->
-    <footer>
-        <a href="kantina.html">
-            <button>Kantina i P35</button> 
-        </a>
-    </footer>
+    <aside class="flexbox4">
+        <div class ="ansatt">
+        <img src="style/img/rektor.png" alt="Avatar">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <br>
+          <p>Architect & Engineer</p>
+        </div>
+        </div> 
+    </aside>
+    </main>
+
+    
+    <footer class="indexfooter">
+
+        <div class="footerbox1">
+          <b>Adresse</b>
+          <p>Pilestredet 32 - 54</p>
+          <a href="https://www.facebook.com/oslomet/"><img src="style/img/facebook.png" alt="Facebook-ikon"></a>
+          <a href="https://www.instagram.com/oslomet/"><img src="style/img/instagram.png" alt="Instagram-ikon"></a>
+          <a href="https://www.linkedin.com/school/oslomet/"><img src="style/img/linkedin.png" alt="Linkedin-ikon"></a>
+        </div>
+    
+        <div class="footerbox2">
+          <b>Resepsjon</b>
+        <p>Telefon: +47 67 23 60 00<br>
+           Åpningstid: 08:00 - 15:00 (man-fre)<br>
+           Addresse: Pilestredet 46</p>
+        </div>
+    
+        <div class="footerbox3">
+          <b>Studentsenteret</b>
+        <p>Telefon: +47 67 23 77 78<br>
+           Åpningstid: 10:00 - 14:00 (man-fre)<br>
+           Adresse: Pilestredet 52</p>
+        </div>
+    
+        <div class="footerbox4">
+          <img src="style/img/OsloMet_LogoFull.png" alt="OsloMet Logo">
+          <p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p>
+        </div>
+      </footer>
+    
 </body>
 </html>
