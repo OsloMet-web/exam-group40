@@ -1356,7 +1356,7 @@ footer {
     flex-direction: column; 
     width: 60%;
     min-height: 100px; 
-    background-color: orange;
+    background-color: white;
     margin: auto;
 >>>>>>> c6fe1cb (endringer)
 }
@@ -1369,8 +1369,12 @@ footer {
     border: 5px solid black;
 =======
     min-height: 50px;
+<<<<<<< HEAD
     background-color: lightgray;
 >>>>>>> c6fe1cb (endringer)
+=======
+    border: 5px solid black;
+>>>>>>> cad00d4 (borders)
     align-items: center;
     padding-left: 2%;
 }
@@ -1459,8 +1463,12 @@ footer {
 =======
     width: 100%;
     min-height: 30px;
+<<<<<<< HEAD
     background-color: lightgray;
 >>>>>>> c6fe1cb (endringer)
+=======
+    border: 5px solid black;
+>>>>>>> cad00d4 (borders)
     margin-top: 10px;
     justify-content: center; 
     align-items: center; 
@@ -1495,7 +1503,7 @@ footer {
     flex-direction: row; 
     width: 100%;
     min-height: 100px;
-    background-color: lightgray;
+    border: 5px solid black;
     margin-top: 10px;
     justify-content: center; 
     align-items: center; 
@@ -1560,8 +1568,12 @@ footer {
     display: flex; 
     flex-direction: row;
     flex-basis: 20%;
+<<<<<<< HEAD
     background-color: lightgray;            
 >>>>>>> c6fe1cb (endringer)
+=======
+    border: 5px solid black;         
+>>>>>>> cad00d4 (borders)
     justify-content: center; 
     align-items: center;
 }
@@ -1580,7 +1592,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-basis: 75%;
-    background-color: lightgray;
+    border: 5px solid black;
     justify-content: center; 
     align-items: center;
 }
@@ -1655,7 +1667,7 @@ footer {
 =======
     flex-direction: row;
     flex-basis: 75%;
-    background-color: lightgray;
+    border: 5px solid black;
     justify-content: center; 
     align-items: center;
 }
@@ -1664,7 +1676,7 @@ footer {
     display: flex; 
     flex-direction: row;
     flex-basis: 20%;
-    background-color: lightgray;            
+    border: 5px solid black;          
     justify-content: center; 
     align-items: center;
 >>>>>>> c6fe1cb (endringer)
@@ -1752,7 +1764,7 @@ footer {
 =======
     flex-direction: row;
     flex-basis: 20%;
-    background-color: lightgray;            
+    border: 5px solid black;        
     justify-content: center; 
     align-items: center;
 >>>>>>> c6fe1cb (endringer)
@@ -1808,7 +1820,7 @@ footer {
 =======
     flex-direction: row;
     flex-basis: 75%;
-    background-color: lightgray;
+    border: 5px solid black;
     justify-content: center; 
     align-items: center;
 >>>>>>> c6fe1cb (endringer)
@@ -1820,11 +1832,16 @@ footer {
     width: 100%;
     min-height: 50px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     border: 5px solid black;
     background-color: white; /*bare for å overkjære en kode over*/
 =======
     background-color: lightgray;
 >>>>>>> c6fe1cb (endringer)
+=======
+    border: 5px solid black;
+    background-color: white; /*bare for å overkjære en kode over*/
+>>>>>>> cad00d4 (borders)
     margin-top: 10px; 
     justify-content: center; 
     align-items: center; 
