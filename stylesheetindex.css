@@ -63,6 +63,14 @@
   margin-left: 1%;
 }
 
+.flexbox2, .flexbox1 p {
+  line-height: 1.5em;
+}
+
+.flexbox2, .flexbox1 p {
+  line-height: 1.5em;
+}
+
 .indexcontainer {
    display: flex;
    justify-content: center;
