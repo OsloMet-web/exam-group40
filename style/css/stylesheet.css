@@ -133,145 +133,21 @@ text-decoration: none;
 
 /*Nellie*/
 /* Header */
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .Kantinaheader {
-<<<<<<< HEAD
     padding: 60px;
     text-align: center;
-    background-color: #FFD500; /* Endret farge til gull (#FFD500) */
+    background-color: #FFD500;
     font-family: Arial, Helvetica, sans-serif;
-=======
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    background-color: #F7F7F2;
-    font-family: "Raleway";
-<<<<<<< HEAD
-
->>>>>>> c870b8c (Header)
-}
-
-.Kantinaheader img {
-    max-width: 100%;
-    height: 0;
-    margin: 0;
-
-}
-
-/* Navigasjonsmeny */
-.kantinanavbar {
-=======
-  }
-  
-  .Kantinaheader img {
-    max-width: 100%;
-    height: 0;
-    margin: 0;
-  }
-  
-  /* Navigasjonsmeny */
-  .horizontal-menu {
->>>>>>> f8fc7bc (Navbar)
-    display: flex;
-<<<<<<< HEAD
-    justify-content: center;
-    background-color: #1f0d93; /* Endret farge til mørk blå (#1f0d93) */
-    padding: 25px;
-=======
-    flex-direction: row;
-    justify-content: center;
-    background-color: #F7F7F2;
-    padding: 10px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-<<<<<<< HEAD
->>>>>>> c870b8c (Header)
-}
-
-.horizontal-menu {
-    list-style: none;
-<<<<<<< HEAD
-    position: center;
-    display: flex;
-  }
-  
-  .horizontal-menu li {
-    position: center;
-=======
-    background-color:#343f3e
-    display: flex;
-    position: sticky;
-
-}
-
-.horizontal-menu li {
->>>>>>> c870b8c (Header)
-=======
-  }
-  
-  .horizontal-menu {
-    list-style: none;
-    position: center;
-    display: flex;
-  }
-  
-  .horizontal-menu li {
-    position: center;
->>>>>>> f8fc7bc (Navbar)
-    margin-right: 40px;
-  }
-  
-  .horizontal-menu li a {
-    text-decoration: none;
-<<<<<<< HEAD
-    color: #FFD500; /* Endret farge til gull (#FFD500) */
-=======
-    color: #343f3e;
->>>>>>> c870b8c (Header)
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  }
-=======
-}
->>>>>>> c870b8c (Header)
-=======
-  }
->>>>>>> f8fc7bc (Navbar)
-=======
-=======
-.Kantinaheader {
-    margin: 0;
-    padding: 0px;
-    text-align: center;
-    background-color: #F7F7F2;
-    font-family: "Raleway";
-
-=======
-.header {
-=======
-body {
-  margin: 0;
 }
 
 #header {
->>>>>>> 020d950 (endrineer)
   margin: 0;
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/images.jpeg);
   background-position: center;
   background-size: cover;
->>>>>>> b87d5f0 (endringer i header)
 }
->>>>>>> d27c7bb (Header)
 
 #header h1 {
   margin: 0;
@@ -281,81 +157,67 @@ body {
   color: #FFFFFF;
 }
 
-.meny {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #F7F7F2;
-  padding: 10px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+/* Navigasjonsmeny */
+.kantinanavbar {
+    display: flex;
+    justify-content: center;
+    background-color: #1f0d93;
+    padding: 25px;
 }
 
-.meny ul {
-  list-style: none;
-  display: flex;
-  position: sticky;
+.horizontal-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-.meny li {
-  margin-right: 50px;
-  position: sticky;
+.horizontal-menu li {
+    margin-right: 40px;
 }
 
-.menu li a {
-  text-decoration: none;
-  color: #343f3e;
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  font-family: Helvetica, sans-serif;
+.horizontal-menu li a {
+    text-decoration: none;
+    color: #FFD500;
+    font-weight: bold;
 }
 
-.menu a:hover {
-  color: #FFFFFF;
-  position: sticky;
-}
->>>>>>> d971ec0 (endring)
-
-.flexbox2, .flexbox1 p {
-  line-height: 1.5em;
-  font-family: Helvetica, Arial, sans-serif;
-  }
-
-.welcome {
-  width: 80%;
-  margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: left;
+/* Forsidebilde */
+.forsidebilde_kantina {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    margin-top: 0px;
 }
 
-.welcome-column {
-  flex-basis: 48%;
-  padding: 30px 2px;
+.forsidebilde_kantina img {
+    max-width: 90%;
+    height: auto;
 }
 
-.welcome-column img {
-  width: 100%;
+.forsidebilde_kantina p {
+    font-size: 12px;
+    color: #3d3d3d;
+    text-align: center; 
 }
 
-h2 {
-  font-family: "Raleway";
-  font-size: 2em;
+/* Hovedinnhold */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Legger til wrap for å håndtere mindre skjermer */
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h3 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: 500;
-  text-align: center;
-  margin: 10px 0;
+.flexbox2, .flexbox1, .flexbox3 {
+    flex: 1;
+    padding: 15px;
 }
 
-p {
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5em;
+#kantine-bilde {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Footer-seksjon */
@@ -475,49 +337,6 @@ p {
     align-content: center;
     max-width: 100%;
     height: auto; 
-  }
-
-  .flexbox4 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    flex: 30%;
-=======
-    flex: 20%;
->>>>>>> 7199275 (hhyhhy)
-=======
-    flex: 30%;
->>>>>>> 2884463 (endres)
-=======
-    flex: 20%;
->>>>>>> f986aa5 (hhyhhy)
-=======
-    flex: 30%;
->>>>>>> 0cc24de (endres)
-  }
-
-  .ansatt {
-    box-shadow: 0 4px 8px 0 #edb57a33;
-    transition: 0.3s;
-    width: 40%;
-  }
-
-  .ansatt img {
-    width: 100%;
-    height: auto;
-  }
-
-  
-  /* On mouse-over, add a deeper shadow */
-  .ansatt:hover {
-    box-shadow: 0 8px 16px 0 #c29e9e33;
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-    text-align: end;
   }
 
   @media screen and (max-width: 800px) {
