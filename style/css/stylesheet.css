@@ -133,13 +133,13 @@ text-decoration: none;
 
 /*Nellie*/
 /* Header */
-.Kantinaheader {
-    margin: 0;
-    padding: 0px;
-    text-align: center;
-    background-color: #F7F7F2;
-    font-family: "Raleway";
-
+.header {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/);
+  background-position: center;
+  background-size: cover;
 }
 
 .meny {
