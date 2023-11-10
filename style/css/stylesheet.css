@@ -532,7 +532,7 @@ position: sticky;
 =======
 .Kantinaheader {
     margin: 0;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     background-color: #F7F7F2;
     font-family: "Raleway";
@@ -578,6 +578,7 @@ position: sticky;
 >>>>>>> 871afb2 (endring)
 
 /* Forsidebilde */
+<<<<<<< HEAD
 .forsidebilde_kantina {
   text-align: center;
   font-family: Helvetica, sans-serif;
@@ -613,6 +614,20 @@ padding: 20px;
 display: flex;
 align-items: flex-start;
 =======
+=======
+.Kantinaheader {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    margin-top: 0px;
+}
+
+.Kantinaheader img {
+    max-width: 0%;
+    height: auto;
+}
+
+.Kantinaheader p {
+>>>>>>> dd836e8 (endringer i header)
     font-size: 12px;
     color: #3d3d3d;
     text-align: center;
