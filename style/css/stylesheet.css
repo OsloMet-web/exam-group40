@@ -285,6 +285,7 @@ font-size: medium;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .header {
 =======
 body {
@@ -320,12 +321,14 @@ top: 0;
 >>>>>>> bd68d78 (endringer i header)
 =======
 >>>>>>> 22b31c5 (endrineer)
+=======
+>>>>>>> 95a634f (Squashed commit of the following:)
 .Kantinaheader {
-<<<<<<< HEAD
     padding: 60px;
     text-align: center;
-    background-color: #FFD500; /* Endret farge til gull (#FFD500) */
+    background-color: #FFD500;
     font-family: Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
 =======
     margin: 0;
     padding: 20px;
@@ -548,19 +551,18 @@ position: sticky;
 =======
 body {
   margin: 0;
+=======
+>>>>>>> 95a634f (Squashed commit of the following:)
 }
 
 #header {
->>>>>>> 020d950 (endrineer)
   margin: 0;
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/images.jpeg);
   background-position: center;
   background-size: cover;
->>>>>>> b87d5f0 (endringer i header)
 }
->>>>>>> d27c7bb (Header)
 
 #header h1 {
   margin: 0;
@@ -570,37 +572,32 @@ body {
   color: #FFFFFF;
 }
 
-.meny {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #F7F7F2;
-  padding: 10px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+/* Navigasjonsmeny */
+.kantinanavbar {
+    display: flex;
+    justify-content: center;
+    background-color: #1f0d93;
+    padding: 25px;
 }
 
-.meny ul {
-  list-style: none;
-  display: flex;
-  position: sticky;
+.horizontal-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-.meny li {
-  margin-right: 50px;
-  position: sticky;
+.horizontal-menu li {
+    margin-right: 40px;
 }
 
-.menu li a {
-  text-decoration: none;
-  color: #343f3e;
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  font-family: Helvetica, sans-serif;
+.horizontal-menu li a {
+    text-decoration: none;
+    color: #FFD500;
+    font-weight: bold;
 }
 
+<<<<<<< HEAD
 .menu a:hover {
   color: #FFFFFF;
   position: sticky;
@@ -664,13 +661,21 @@ align-items: flex-start;
   padding-bottom: 50px;
   text-align: left;
 >>>>>>> 22b31c5 (endrineer)
+=======
+/* Forsidebilde */
+.forsidebilde_kantina {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    margin-top: 0px;
+>>>>>>> 95a634f (Squashed commit of the following:)
 }
 
-.welcome-column {
-  flex-basis: 48%;
-  padding: 30px 2px;
+.forsidebilde_kantina img {
+    max-width: 90%;
+    height: auto;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .Kantinaheader p {
 >>>>>>> dd836e8 (endringer i header)
@@ -734,24 +739,32 @@ padding: 20px;
 =======
 .welcome-column img {
   width: 100%;
+=======
+.forsidebilde_kantina p {
+    font-size: 12px;
+    color: #3d3d3d;
+    text-align: center; 
+>>>>>>> 95a634f (Squashed commit of the following:)
 }
 
-h2 {
-  font-family: "Raleway";
-  font-size: 2em;
+/* Hovedinnhold */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Legger til wrap for å håndtere mindre skjermer */
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h3 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: 500;
-  text-align: center;
-  margin: 10px 0;
+.flexbox2, .flexbox1, .flexbox3 {
+    flex: 1;
+    padding: 15px;
 }
 
-p {
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5em;
+#kantine-bilde {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Footer-seksjon */
@@ -1048,6 +1061,7 @@ footer {
     font-weight: bold;
   }
   
+<<<<<<< HEAD
   .flexbox4 {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1127,6 +1141,14 @@ footer {
 =======
 >>>>>>> 0fb2b52 (hhyhhy)
 
+=======
+  .forsidebilde img {
+    align-content: center;
+    max-width: 100%;
+    height: auto; 
+  }
+
+>>>>>>> 95a634f (Squashed commit of the following:)
   @media screen and (max-width: 800px) {
     .datacontainer, .datanavbar, .indexfooter {   
       flex-direction: column;

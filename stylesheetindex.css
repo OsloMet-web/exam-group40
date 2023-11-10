@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 :root {
   font-size: 12px;
   font-family: Raleway;
@@ -333,47 +334,28 @@ body {
   font-family: "Raleway";
   color: #FFFFFF;
 =======
+=======
+.indexheader {
+    padding: 60px;
+    text-align: center;
+    background-color: #FFD500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+>>>>>>> 95a634f (Squashed commit of the following:)
 .indexheader img {
   align-content: center;
-  max-width: 100%;
+  max-width: 10%;
   height: auto; 
 }
 
-<<<<<<< HEAD
-.indexheader p {
-  font-family: Helvetica, sans-serif;
-  font-size: 12px;
-  color: #3d3d3d;
-  margin-left: 1%;
->>>>>>> a2d3b1e (Meny)
-=======
-.headercontainer {
-=======
->>>>>>> 298ad32 (layout)
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/Pilestredet_campus.jpeg);
-  background-position: center;
-  background-size: cover;
+.indexheader h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem;
 }
 
-#header h1 {
-  margin: 0;
-<<<<<<< HEAD
-  padding: 20%;
->>>>>>> 405bbb7 (header)
-=======
-  padding: 20% 20% 20% 50%;
-  font-size: 5vw;
-  font-family: "Raleway";
-  color: #FFFFFF;
->>>>>>> 8f1999e (header)
-}
-
-=======
->>>>>>> c3e8e16 (Layout)
-.menu {
+.indexnavbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -384,15 +366,17 @@ body {
   top: 0;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.menu ul {
-=======
+.indexnavbar a {
+    display: block;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+  }
+
+.indexnavbar a:hover {
+    color: #FFFFFF;
+}
+
 .indexnavbar ul {
->>>>>>> c518729 (Sticky meny)
-=======
-.menu ul {
->>>>>>> c3e8e16 (Layout)
   list-style: none;
   display: flex;
   position: sticky;
@@ -405,44 +389,31 @@ body {
 
 .menu li a {
   text-decoration: none;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  color: #343f3e;
-=======
-  color: #899878;
->>>>>>> a2d3b1e (Meny)
-=======
-  color: #343f3e;
->>>>>>> 3ac6621 (flex)
+  color: #FFD500fc;
   font-weight: bold;
-  display: block;
-  text-align: center;
-<<<<<<< HEAD
-=======
-  font-family: Helvetica, sans-serif;
 }
 
-.menu a:hover {
-  color: #FFFFFF;
-  position: sticky;
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .forsidebilde img {
   align-content: center;
   max-width: 100%;
   height: auto; 
 }
+
+.forsidebilde p {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  color: #3d3d3d;
+  margin-left: 1%;
+}
+
+<<<<<<< HEAD
 =======
 .flexbox2, .flexbox1 p {
   line-height: 1.5em;
   font-family: Helvetica, Arial, sans-serif;
   }
->>>>>>> 643c42f (.)
 
+<<<<<<< HEAD
 .forsidebilde p {
 >>>>>>> c518729 (Sticky meny)
   font-family: Helvetica, sans-serif;
@@ -559,272 +530,67 @@ p {
 >>>>>>> 860c372 (fiksa main)
 =======
 >>>>>>> 59a069c (lagt til diverse!)
+=======
+>>>>>>> 95a634f (Squashed commit of the following:)
 .welcome {
   width: 80%;
   margin: auto;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: left;
-=======
-=======
->>>>>>> a2d3b1e (Meny)
-.flexbox2, .flexbox1 p {
+}
+
+.welcome-column {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.welcome-column img {
+  width: 100%;
+}
+
+h2 {
+  font-family: "Raleway";
+  font-size: 2em;
+}
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5em;
 }
 
-.flexbox2, .flexbox1 p {
-  line-height: 1.5em;
-}
-
-=======
->>>>>>> 6f29303 (reorganisering)
+>>>>>>> d0b4899 (Linjeavstand)
 .indexcontainer {
    display: flex;
-<<<<<<< HEAD
    justify-content: center;
    align-items: center;
    padding-left: 70px;
    font-family: Arial, Helvetica, sans-serif;
->>>>>>> c199ae7 (lagt til diverse!)
-}
-
-.welcome-column {
-  flex-basis: 48%;
-  padding: 30px 2px;
-}
-
-.welcome-column img {
-  width: 100%;
-}
-
-h2 {
-  font-family: "Raleway";
-  font-size: 2em;
-}
-
-h3 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: 500;
-  text-align: center;
-  margin: 10px 0;
-}
-
-p {
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5em;
-}
-
-.p35 {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 80px;
-}
-
-.p35-column {
-  flex-basis: 35%;
-  background: #F7F7F2;
-  border-radius: 10px;
-  margin: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-}
-
-.bibliotek {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 80px;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/bibliotek.jpg);
-  background-size: cover;
-  border-radius: 50px;
-}
-
-.row {
-  margin-top: 2%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.bibliotek-column {
-  flex-basis: 35%;
-  background: #F7F7F2;
-  border-radius: 10px;
-  margin: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-}
-
-.bibliotek h2 {
-  color: #FFFFFF;
-  font-size: 3em;
-}
-
-.bibliotek > p {
-  color: #FFFFFF;
-  font-size: 1.2em
-}
-
-.location {
-  width: 80%;
-  margin: auto;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.location iframe {
-  width: 100%;
-=======
-   flex-wrap: wrap;
-   justify-content: space-between;
-   font-family: Helvetica, Arial, sans-serif;
-}
-
-=======
->>>>>>> c3e8e16 (Layout)
-p {
-  line-height: 1.5em;
-  font-family: Helvetica, Arial, sans-serif;
-  }
-
-.welcome {
-  width: 80%;
-  margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: left;
-}
-
-.welcome-column {
-  flex-basis: 48%;
-  padding: 30px 2px;
-}
-
-.welcome-column img {
-  width: 100%;
-}
-
-h2 {
-  font-family: "Raleway";
-<<<<<<< HEAD
 }
 
 .indexarticle {
-    width: 40vw;
-    padding: 30px 30px 30px 100px;
+    flex: 60%;
+    padding: 30px;
 }
 
 .indexsidebar {
-    width: 40vw;
-    padding: 4em;
+    flex: 40%;
+    padding: 50px 30px 30px 30px;
+    align-items: center;
 }
 
-#kart {
-  width: 40vw;
-  height: 50vh;
-}
-
-.indexbox1 {
-  width: 50vw;
-  align-self: left;
-}
-
-.indexbox1 img{
-  width: 100%;
+.indexarticle img {
+  width: 7%;
   height: auto;
-}
-
-.indexbox2 {
-<<<<<<< HEAD
-  max-width: 300px;
-  padding: 10rem;
-<<<<<<< HEAD
-  border: solid;
->>>>>>> 298ad32 (layout)
-=======
->>>>>>> 3ac6621 (flex)
-=======
-  width: 40vw;
-  padding: 10em 5em 5em 0;
-}
-
-.indexbox2 h2 {
-=======
->>>>>>> c3e8e16 (Layout)
-  font-size: 2em;
-}
-
-<<<<<<< HEAD
-.indexbox2 p {
-font-size: 1.2em;
->>>>>>> 4651dd4 (    border: solid;)
-=======
-h3 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: 500;
-  text-align: center;
-  margin: 10px 0;
-}
-
-.p35 {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 80px;
-}
-
-.p35-column {
-  flex-basis: 35%;
-  background: #F7F7F2;
-  border-radius: 10px;
-  margin: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-}
-
-.bibliotek {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 80px;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/bibliotek.jpg);
-  background-size: cover;
-  border-radius: 50px;
-}
-
-.row {
-  margin-top: 2%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.bibliotek-column {
-  flex-basis: 35%;
-  background: #F7F7F2;
-  border-radius: 10px;
-  margin: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
->>>>>>> c3e8e16 (Layout)
-}
-
-.bibliotek h2 {
-  color: #FFFFFF;
-  font-size: 3em;
-}
-
-.bibliotek > p {
-  color: #FFFFFF;
-  font-size: 1.2em
-}
-
-.location {
-  width: 80%;
-  margin: auto;
-  padding: 80px 0;
-  text-align: center;
+  padding: 3px;
 }
 
 .location iframe {
@@ -839,6 +605,7 @@ h3 {
     justify-content: center;
     margin-top: 50px;
     padding: 50px 50px 50px 70px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -864,6 +631,9 @@ h3 {
     background: #E4E6C3;
 >>>>>>> 3ac6621 (flex)
 >>>>>>> aabe3d7 (flex)
+=======
+    background: #FFD500;
+>>>>>>> 95a634f (Squashed commit of the following:)
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -882,6 +652,7 @@ h3 {
     padding: 3px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -930,6 +701,8 @@ h3 {
 =======
 >>>>>>> 9f0771e (fiksa main)
 >>>>>>> 6b68a02 (fiksa main)
+=======
+>>>>>>> 95a634f (Squashed commit of the following:)
 .footerbox4 {
 >>>>>>> 1176b31 (Sticky meny)
   flex: 100%;
@@ -942,6 +715,7 @@ h3 {
     height: auto;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -982,12 +756,15 @@ h3 {
 >>>>>>> fbe6602 (Layout)
 =======
 >>>>>>> ed4d87e (Layout)
+=======
+@media screen and (max-width: 800px) {
+>>>>>>> 95a634f (Squashed commit of the following:)
     .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
-<<<<<<< HEAD
 =======
   @media screen and (max-width: 700px) {
     .container, .indexnavbar, ul, li {   
 >>>>>>> 0f9590b (Responsive)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 38fea99 (.)
 =======
@@ -1006,6 +783,8 @@ h3 {
    .menu, ul, li, .indexfooter, .row {   
 >>>>>>> d9a819b (Layout)
 >>>>>>> ed4d87e (Layout)
+=======
+>>>>>>> 95a634f (Squashed commit of the following:)
       flex-direction: column;
     }
     ul, li {
