@@ -493,6 +493,10 @@ padding-top: 2%;
 
 /*oppdatert stylesheet tomine*/
 
+:root {
+    font-size: 12px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -508,9 +512,9 @@ padding-top: 2%;
 .data-main { /*samme som wrapper i eksempel*/
     display: flex; 
     flex-direction: column; 
-    width: 60%;
+    width: 80%;
     min-height: 100px; 
-    background-color: white;
+    background-color: #E4E6C3;
     margin: auto;
 }
 
@@ -533,44 +537,12 @@ padding-top: 2%;
     margin-top: 10px;
     justify-content: center; 
     align-items: center; 
-}
 
-.data-nav a:hover {
-    color: #FFFFFF;
-  }
-
-.data-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #899878;
-    padding: 10px;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     z-index: 100; /*hjelp av chat?? men funker*/
     top: 0;
 }
-
-.data-nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  .data-nav li {
-    margin-right: 30px;
-  }
-  
-  .data-nav li a {
-    text-decoration: none;
-    color: #f7f7f2;
-    font-weight: bold;
-  }
-  
-  @media screen and (max-width: 800px) {
-    .datacontainer, .data-nav, .indexfooter {   
-      flex-direction: column;
-    }
-  }
 
 .data-header {
     display: flex;
@@ -592,23 +564,57 @@ padding-top: 2%;
     justify-content: space-between;
 }
 
+.data-article1 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    background-color: #F7F7F2;
+    justify-content: center; 
+    align-items: flex-start;
+    /*align-items: center;*/
+}
+
+.h2-article1 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 15%;
+    text-align: center;
+    padding: 10px;
+    margin:0;
+    font-size:1.5rem;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0, 0, 0);
+    width: 100%;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.p-article1 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    padding: 40px;
+    font-size: 1.2rem;
+    align-content: center;
+    justify-content: center; 
+}
+
+/*hentet fra w3school https://www.w3schools.com/tags/tag_hr.asp*/
+
 .data-aside1 {
     display: flex; 
     flex-direction: row;
-    flex-basis: 20%;
-    border: 5px solid black;         
+    flex-basis: 38%;      
     justify-content: center; 
     align-items: center;
 }
 
-.data-article1 {
-    display: flex;
-    flex-direction: row;
-    flex-basis: 75%;
-    border: 5px solid black;
-    justify-content: center; 
-    align-items: center;
+.data-aside1 img {
+    width: 100%;
+    height: 100%;
 }
+
 
 .data-section2 {
     display: flex;
@@ -621,20 +627,56 @@ padding-top: 2%;
 
 .data-article2 {
     display: flex;
-    flex-direction: row;
-    flex-basis: 75%;
+    flex-direction: column;
+    flex-basis: 62%;
     border: 5px solid black;
+    background-color: #E4E6C3;
     justify-content: center; 
     align-items: center;
+}
+
+.h2-article2 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 15%;
+    background-color: #989bb9;
+    text-align: center;
+    padding: 10px;
+    margin:0;
+    font-size:1.5rem;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0, 0, 0);
+    width: 100%;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.ul-article2 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    background-color: #FFD500;
+    padding: 40px;
+    font-size: 1.4rem;
+    align-content: center;
+    justify-content: center;  
 }
 
 .data-aside2 {
     display: flex; 
     flex-direction: row;
-    flex-basis: 20%;
+    flex-basis: 37%;
     border: 5px solid black;          
     justify-content: center; 
     align-items: center;
+    overflow: hidden;
+}
+
+.data-aside2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .data-section3 {
@@ -648,21 +690,107 @@ padding-top: 2%;
 
 .data-aside3 {
     display: flex; 
-    flex-direction: row;
-    flex-basis: 20%;
+    flex-direction: column;
+    flex-basis: 37%;
     border: 5px solid black;        
     justify-content: center; 
     align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.orakel-logo {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    background-color: #FFD500;
+    padding: 20px;
+}
+
+.orakel-logo b {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+    background-color: #00ffc3;
+    font-size: 1rem; 
+    padding-bottom: 10px;
+}
+
+.orakel-logo img {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 20%;
+        width: 200px;
+        border: 2px solid #1f0d93;
+        border-radius: 15px 50px;
+}
+
+.orakeltjenesten {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    border-radius: 100%;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+    text-align: center;
+}
+
+.orakeltjenesten b{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+
+.orakeltjenesten p{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+    font-size: 1.5rem;
+    padding-top: 10px;
 }
 
 .data-article3 {
     display: flex;
-    flex-direction: row;
-    flex-basis: 75%;
+    flex-direction: column;
+    flex-basis: 62%;
     border: 5px solid black;
     justify-content: center; 
     align-items: center;
 }
+
+.data-article3 h2 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 15%;
+    background-color: #989bb9;
+    text-align: center;
+    padding: 10px;
+    margin:0;
+    font-size:2rem;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0, 0, 0);
+    width: 100%;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.data-article3 p {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    background-color: #FFD500;
+    padding: 40px;
+    font-size: 1.6rem;
+    align-content: center;
+    justify-content: center;  
+}
+
+
 
 .data-footer {
     display: flex;
