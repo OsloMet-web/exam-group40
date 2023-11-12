@@ -1360,11 +1360,14 @@ footer {
 .data-main { /*samme som wrapper i eksempel*/
     display: flex; 
     flex-direction: column; 
-    width: 80%;
+    width: 80%; /* Bredden på selve nettsiden*/
     min-height: 100px; 
-    background-color: #E4E6C3;
     margin: auto;
+<<<<<<< HEAD
 >>>>>>> c6fe1cb (endringer)
+=======
+    font-size: 2.5vw;
+>>>>>>> 934ae8e (endringer)
 }
 
 .logo {
@@ -1525,6 +1528,7 @@ footer {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .data-nav ul {
     list-style: none;
     display: flex;
@@ -1550,16 +1554,40 @@ footer {
 =======
 >>>>>>> b7d33aa (fiksa innhold i flexbokser)
 .data-header {
+=======
+#data-header {
+>>>>>>> 934ae8e (endringer)
     display: flex;
     flex-direction: row; 
-    width: 100%;
-    min-height: 100px;
+    height: 300px;
     border: 5px solid black;
     margin-top: 10px;
     justify-content: center; 
     align-items: center; 
 }
 >>>>>>> c6fe1cb (endringer)
+
+#data-header {
+    margin: 0;
+    padding: 0;
+    background-image: url(/style/img/mac.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+
+  }
+  
+  #data-header h1 {
+    margin: 0;
+    padding: 5px;
+    /*padding: 10% 15% 40% 15%; paddingen bestemmer hvor overskriften plasseres*/
+    font-size: 5vw;
+    font-family: "Raleway";
+    color: #FFFFFF;
+    position: absolute; /* for å plassere tekst oppå bilde*/
+    /*font-family: Helvetica, Arial, Helvetica, sans-serif;*/
+  } 
 
 .data-section1 {
     display: flex;
@@ -1583,11 +1611,17 @@ footer {
     align-items: flex-start;
     /*align-items: center;*/
 <<<<<<< HEAD
+<<<<<<< HEAD
     border: 5px solid #899878; 
     border-radius: 5px; /*for å få rund kant på bildet*/
     /*font-size: 2.5vw;*/
 =======
 >>>>>>> b7d33aa (fiksa innhold i flexbokser)
+=======
+    border: 5px solid #899878; 
+    border-radius: 5px; /*for å få rund kant på bildet*/
+    /*font-size: 2.5vw;*/
+>>>>>>> 934ae8e (endringer)
 }
 
 .h2-article1 {
@@ -1598,9 +1632,12 @@ footer {
     padding: 10px;
     margin:0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     font-size:1.5rem;
 >>>>>>> b7d33aa (fiksa innhold i flexbokser)
+=======
+>>>>>>> 934ae8e (endringer)
     border-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-color: rgb(0, 0, 0);
@@ -1615,9 +1652,12 @@ footer {
     flex-basis: 70%;
     padding: 40px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     font-size: 1.2rem;
 >>>>>>> b7d33aa (fiksa innhold i flexbokser)
+=======
+>>>>>>> 934ae8e (endringer)
     align-content: center;
     justify-content: center; 
 }
@@ -1675,6 +1715,8 @@ footer {
 .data-aside1 img {
     width: 100%;
     height: 100%;
+    border: 5px solid #899878; 
+    border-radius: 5px; /*for å få rund kant på bildet*/
 }
 
 
@@ -1696,6 +1738,7 @@ footer {
     flex-basis: 62%;
     border: 5px solid #899878;
     background-color: #F7F7F2;
+<<<<<<< HEAD
     justify-content: center; 
     align-items: center;
     border-radius: 5px;
@@ -1755,19 +1798,21 @@ footer {
 >>>>>>> b7d33aa (fiksa innhold i flexbokser)
     border: 5px solid black;
     background-color: #E4E6C3;
+=======
+>>>>>>> 934ae8e (endringer)
     justify-content: center; 
     align-items: center;
+    border-radius: 5px;
+    /*font-size: 2.5vw;*/
 }
 
 .h2-article2 {
     display: flex;
     flex-direction: row;
     flex-basis: 15%;
-    background-color: #989bb9;
     text-align: center;
     padding: 10px;
     margin:0;
-    font-size:1.5rem;
     border-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-color: rgb(0, 0, 0);
@@ -1776,16 +1821,18 @@ footer {
     align-items: center; 
 }
 
+
 .ul-article2 {
     display: flex;
     flex-direction: row;
     flex-basis: 70%;
-    background-color: #FFD500;
+    background-color: #F7F7F2;
     padding: 40px;
-    font-size: 1.4rem;
     align-content: center;
     justify-content: center;  
 }
+
+
 
 .data-aside2 {
     display: flex; 
@@ -1798,6 +1845,8 @@ footer {
 >>>>>>> c6fe1cb (endringer)
 =======
     overflow: hidden;
+    border: 5px solid #899878;
+    border-radius: 5px;
 }
 
 .data-aside2 img {
@@ -1897,7 +1946,8 @@ footer {
 =======
     flex-direction: column;
     flex-basis: 37%;
-    border: 5px solid black;        
+    border: 5px solid #899878;   
+    border-radius: 5px;     
     justify-content: center; 
     align-items: center;
     overflow: hidden;
@@ -1908,18 +1958,20 @@ footer {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-    background-color: #FFD500;
     padding: 20px;
+    align-items: center;
 }
 
 .orakel-logo b {
     display: flex;
     flex-direction: row;
     flex-basis: 20%;
-    background-color: #00ffc3;
     font-size: 1rem; 
     padding-bottom: 10px;
 }
+
+
+
 
 .orakel-logo img {
         display: flex;
@@ -1935,11 +1987,13 @@ footer {
     flex-direction: column;
     flex-basis: 50%;
     border-radius: 100%;
-    background: #73AD21;
+    background: #899878;
     padding: 20px; 
     width: 200px;
     height: 150px; 
     text-align: center;
+    margin-bottom: 12px;
+    border: 5px solid #F7F7F2;
 }
 
 .orakeltjenesten b{
@@ -1947,7 +2001,8 @@ footer {
     flex-direction: row;
     flex-basis: 20%;
     font-size: 1.5rem;
-    padding-top: 20px;
+    padding-top: 15px;
+    color: #F7F7F2;
 }
 
 .orakeltjenesten p{
@@ -1956,7 +2011,11 @@ footer {
     flex-basis: 20%;
     font-size: 1.5rem;
     padding-top: 10px;
+<<<<<<< HEAD
 >>>>>>> b7d33aa (fiksa innhold i flexbokser)
+=======
+    color: #F7F7F2;
+>>>>>>> 934ae8e (endringer)
 }
 
 .data-article3 {
@@ -1966,6 +2025,7 @@ footer {
     flex-direction: column;
     flex-basis: 62%;
     border: 5px solid #899878;
+<<<<<<< HEAD
     justify-content: center; 
     align-items: center;
     background-color: #F7F7F2;
@@ -2018,13 +2078,18 @@ footer {
     justify-content: center; 
     align-items: center;
 >>>>>>> c6fe1cb (endringer)
+=======
+    justify-content: center; 
+    align-items: center;
+    background-color: #F7F7F2;
+    border-radius: 5px;
+>>>>>>> 934ae8e (endringer)
 }
 
 .data-article3 h2 {
     display: flex;
     flex-direction: row;
     flex-basis: 15%;
-    background-color: #989bb9;
     text-align: center;
     padding: 10px;
     margin:0;
@@ -2041,7 +2106,6 @@ footer {
     display: flex;
     flex-direction: row;
     flex-basis: 70%;
-    background-color: #FFD500;
     padding: 40px;
     font-size: 1.6rem;
     align-content: center;
