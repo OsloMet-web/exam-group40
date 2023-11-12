@@ -470,10 +470,10 @@ text-decoration: none;
 .data-main { /*samme som wrapper i eksempel*/
     display: flex; 
     flex-direction: column; 
-    width: 80%;
+    width: 80%; /* Bredden på selve nettsiden*/
     min-height: 100px; 
-    background-color: #E4E6C3;
     margin: auto;
+    font-size: 2.5vw;
 }
 
 .logo {
@@ -502,16 +502,37 @@ text-decoration: none;
     top: 0;
 }
 
-.data-header {
+#data-header {
     display: flex;
     flex-direction: row; 
-    width: 100%;
-    min-height: 100px;
+    height: 300px;
     border: 5px solid black;
     margin-top: 10px;
     justify-content: center; 
     align-items: center; 
 }
+
+#data-header {
+    margin: 0;
+    padding: 0;
+    background-image: url(/style/img/mac.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+
+  }
+  
+  #data-header h1 {
+    margin: 0;
+    padding: 5px;
+    /*padding: 10% 15% 40% 15%; paddingen bestemmer hvor overskriften plasseres*/
+    font-size: 5vw;
+    font-family: "Raleway";
+    color: #FFFFFF;
+    position: absolute; /* for å plassere tekst oppå bilde*/
+    /*font-family: Helvetica, Arial, Helvetica, sans-serif;*/
+  } 
 
 .data-section1 {
     display: flex;
@@ -530,6 +551,9 @@ text-decoration: none;
     justify-content: center; 
     align-items: flex-start;
     /*align-items: center;*/
+    border: 5px solid #899878; 
+    border-radius: 5px; /*for å få rund kant på bildet*/
+    /*font-size: 2.5vw;*/
 }
 
 .h2-article1 {
@@ -539,7 +563,6 @@ text-decoration: none;
     text-align: center;
     padding: 10px;
     margin:0;
-    font-size:1.5rem;
     border-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-color: rgb(0, 0, 0);
@@ -553,7 +576,6 @@ text-decoration: none;
     flex-direction: row;
     flex-basis: 70%;
     padding: 40px;
-    font-size: 1.2rem;
     align-content: center;
     justify-content: center; 
 }
@@ -571,6 +593,8 @@ text-decoration: none;
 .data-aside1 img {
     width: 100%;
     height: 100%;
+    border: 5px solid #899878; 
+    border-radius: 5px; /*for å få rund kant på bildet*/
 }
 
 
@@ -587,21 +611,21 @@ text-decoration: none;
     display: flex;
     flex-direction: column;
     flex-basis: 62%;
-    border: 5px solid black;
-    background-color: #E4E6C3;
+    border: 5px solid #899878;
+    background-color: #F7F7F2;
     justify-content: center; 
     align-items: center;
+    border-radius: 5px;
+    /*font-size: 2.5vw;*/
 }
 
 .h2-article2 {
     display: flex;
     flex-direction: row;
     flex-basis: 15%;
-    background-color: #989bb9;
     text-align: center;
     padding: 10px;
     margin:0;
-    font-size:1.5rem;
     border-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-color: rgb(0, 0, 0);
@@ -610,16 +634,18 @@ text-decoration: none;
     align-items: center; 
 }
 
+
 .ul-article2 {
     display: flex;
     flex-direction: row;
     flex-basis: 70%;
-    background-color: #FFD500;
+    background-color: #F7F7F2;
     padding: 40px;
-    font-size: 1.4rem;
     align-content: center;
     justify-content: center;  
 }
+
+
 
 .data-aside2 {
     display: flex; 
@@ -629,6 +655,8 @@ text-decoration: none;
     justify-content: center; 
     align-items: center;
     overflow: hidden;
+    border: 5px solid #899878;
+    border-radius: 5px;
 }
 
 .data-aside2 img {
@@ -650,7 +678,8 @@ text-decoration: none;
     display: flex; 
     flex-direction: column;
     flex-basis: 37%;
-    border: 5px solid black;        
+    border: 5px solid #899878;   
+    border-radius: 5px;     
     justify-content: center; 
     align-items: center;
     overflow: hidden;
@@ -661,18 +690,20 @@ text-decoration: none;
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-    background-color: #FFD500;
     padding: 20px;
+    align-items: center;
 }
 
 .orakel-logo b {
     display: flex;
     flex-direction: row;
     flex-basis: 20%;
-    background-color: #00ffc3;
     font-size: 1rem; 
     padding-bottom: 10px;
 }
+
+
+
 
 .orakel-logo img {
         display: flex;
@@ -688,11 +719,13 @@ text-decoration: none;
     flex-direction: column;
     flex-basis: 50%;
     border-radius: 100%;
-    background: #73AD21;
+    background: #899878;
     padding: 20px; 
     width: 200px;
     height: 150px; 
     text-align: center;
+    margin-bottom: 12px;
+    border: 5px solid #F7F7F2;
 }
 
 .orakeltjenesten b{
@@ -700,7 +733,8 @@ text-decoration: none;
     flex-direction: row;
     flex-basis: 20%;
     font-size: 1.5rem;
-    padding-top: 20px;
+    padding-top: 15px;
+    color: #F7F7F2;
 }
 
 .orakeltjenesten p{
@@ -709,22 +743,24 @@ text-decoration: none;
     flex-basis: 20%;
     font-size: 1.5rem;
     padding-top: 10px;
+    color: #F7F7F2;
 }
 
 .data-article3 {
     display: flex;
     flex-direction: column;
     flex-basis: 62%;
-    border: 5px solid black;
+    border: 5px solid #899878;
     justify-content: center; 
     align-items: center;
+    background-color: #F7F7F2;
+    border-radius: 5px;
 }
 
 .data-article3 h2 {
     display: flex;
     flex-direction: row;
     flex-basis: 15%;
-    background-color: #989bb9;
     text-align: center;
     padding: 10px;
     margin:0;
@@ -741,7 +777,6 @@ text-decoration: none;
     display: flex;
     flex-direction: row;
     flex-basis: 70%;
-    background-color: #FFD500;
     padding: 40px;
     font-size: 1.6rem;
     align-content: center;
