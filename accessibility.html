@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--Hentet fra font.google.com-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>accessibility</title>
     <link rel="icon" type="image/x-icon" href="style/img/logo.png"> <!--favicon bilde-->
     <!-- <link rel="stylesheet" href="style/css/stylesheet.css">*/ -->
@@ -12,12 +13,12 @@
 
         :root {
             font-size: 12px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Raleway;
         }
 
         body {
             color: black;
-            background-color: rgb(255, 255, 255);
+            background-color: #f7f7f2;
             margin: 0;
             padding: 0;
             min-height: 100vh;
@@ -30,15 +31,9 @@
             top: 0px;
             right: 0px;
             width: 100%;
-            height: 5rem;
-            align-items: center;
+            height: 6rem;
             justify-content: space-between;
-            background-color: #46494c;
-        }
-
-        .nav-group{
-            display: flex;
-            align-items: center;
+            background-color: #e4e6c3;
         }
 
         .logo-wrapper{
@@ -50,31 +45,25 @@
             background: #e4e6c300;
         }
 
-        /*.navbar img {
-            max-width: 5rem;
-            height: auto;
-            background-color: rgba(240, 248, 255, 0);
-        }*/
-
         .logo-icon {
             display: block;
-            background-image: url(style/img/logo_lightgreen.png);
+            background-image: url(style/img/logo-gråmørk.png);
             background-size: cover;
             width: 5rem;
             height: 3.5rem;
-            transition: transform 0.5s ease-in-out;
         }
 
         .logo-icon:hover {
-            background-image: url(style/img/logo_powdercolor.png);
+            background-image: url(style/img/logo-maincolor.png);
             transition: transform 0.5s ease-in-out;
         }
 
-        .navbar-menu-wrapper{
+        .nav-group{
             display: flex;
+            align-items: center;
         }
 
-        .nav-group ul {
+        .navbar-menu {
             display: flex;
             gap: 2.5rem;
             position: relative;
@@ -95,7 +84,7 @@
             text-decoration: none;
             text-transform: uppercase;
             letter-spacing: 0.1rem;
-            color: #e4e6c3;
+            color: #46494c;
             background-color: rgba(70, 0, 0, 0);
         }
 
@@ -105,7 +94,7 @@
             width: 100%;
             height: 2px;
             bottom: -2px;
-            background: #f7f7f2;
+            background: #343434;
             transform: scaleX(0);
             transition: transform 0.5s ease-in-out;
             transform-origin: right;
@@ -117,44 +106,62 @@
         }
 
         .nav-group a:hover {
-            color: #f7f7f2;
-            transition: transform 0.5s ease-in;
+            color: #343434;
+            transition: transform 1s ease-in;
         }
 
-        .nav-toggle {
-            display: flex;
-            align-items: center;
+        #nav-toggle-open, #nav-toggle-close {
+            position: relative;
             margin-right: 2rem;
-            margin-left: 2rem;
-            z-index: 10;
-            font-size: 1rem;
-            background-color: #ff0ad6;
+            color: #343f3e;
+            background-color: #ff0ad600;
+            cursor: pointer;
+            z-index: 10001;
+            background-color: rgba(250, 235, 215, 0);
             display: none;
         }
 
-        .nav-toggle span { 
-            /*font-size: 1.5rem;*/
-            cursor: pointer;
-            z-index: 10001;
-            background-color: antiquewhite;
+        #burgertoggle{
+            display: none;
         }
 
         @media (max-width: 700px) {
-            .nav-toggle {
-            display: flex;
-            align-items: center;
-            margin-right: 2rem;
-            margin-left: 2rem;
-            z-index: 10;
-            font-size: 1rem;
-            background-color: #ff0ad6;
+
+            #burger-toggle{
+                opacity: 0;
             }
 
-            .nav-toggle span { 
-                /*font-size: 1.5rem;*/
-                cursor: pointer;
-                z-index: 10001;
-                background-color: antiquewhite;
+            .navbar-menu {
+                flex-direction: column;
+                position: fixed;
+                top: 0rem;
+                right: -300px;
+                width: 20rem;
+                height: 20rem;
+                justify-content: start;
+                margin-right: 0;
+                align-items: center;
+                background-color: #e4e6c3;
+                padding-top: 6rem;
+                transition: 0.5s ease;
+            }
+
+            #nav-toggle-open {
+                display: block;
+            }
+
+            .nav-group input:checked ~ #nav-toggle-open {
+                display: none;
+
+            }
+
+            .nav-group input:checked ~ #nav-toggle-close {
+                display: block;
+
+            }
+
+            .nav-group input:checked ~ .navbar-menu {
+               right: 0;
             }
 
         }
@@ -170,10 +177,14 @@
         }
 
         .accessibility-header {
-            margin-top: 5rem;
+            margin-top: 6rem;
             text-align: center;
             background-color: #2a1515b4;
-            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/pilestredet.jpeg);
+            background-position: center;
+            background-size: cover;
         }
 
         .accessibility-header img {
@@ -183,12 +194,14 @@
         }
 
         .accessibility-header h1 {
+            position: relative;
+            top: 0rem;
+            right: 6 rem;
+            left: 24;
             margin: 0;
-            padding: 0;
-            text-align: center;
-            font-weight: 500;
-            font-size: 3rem;
-            color: aliceblue;
+            padding: 18rem 2rem 1rem 40rem;
+            font-size: 5rem;
+            color: #f7f7f2;
         }
 
 
@@ -259,61 +272,61 @@
            </a>
         </div>
 
-        <menu class="nav-group">
-            <div class="navbar-menu-wrapper">
-                <ul class="navbar-menu"> 
-                    <li class="nav-list">
-                        <a href="index.html" class="nav-link">
-                            <span class="material-symbols-outlined" id="nav-icons">
+        <menu class="nav-group" for="burgertoggle">
+
+            <input id="burgertoggle" type="checkbox">
+
+            <label id="nav-toggle-open" for="burgertoggle">
+                <span class="material-symbols-outlined">menu</span>
+            </label>
+
+            <label for="burgertoggle" id="nav-toggle-close">
+                <span class="material-symbols-outlined">close</span>
+            </label>
+
+            <ul class="navbar-menu" for="burgertoggle"> 
+                <li class="nav-list">
+                    <a href="index.html" class="nav-link">
+                        <span class="material-symbols-outlined" id="nav-icons">
+                            home
+                        </span>
+                        <span class="nav-link-text">Hjemme</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="topical.html" class="nav-link">
+                        <span class="material-symbols-outlined" id="nav-icons">
                                 home
-                            </span>
-                            <span class="nav-link-text">Hjemme</span>
-                        </a>
-                    </li>
-                    <li class="nav-list">
-                        <a href="topical.html" class="nav-link">
-                            <span class="material-symbols-outlined" id="nav-icons">
-                                    home
-                            </span>
-                            <span class="nav-link-text">Topical</span>
-                        </a>
-                    </li>
-                    <li class="nav-list">
-                        <a href="kantina.html" class="nav-link">
-                            <span class="material-symbols-outlined" id="nav-icons">
-                                    lunch_dining
-                            </span>
-                            <span class="nav-link-text">Kantine</span>
-                        </a>
-                    </li>
-                    <li class="nav-list">
-                        <a href="datatorget.html" class="nav-link">
-                            <span class="material-symbols-outlined" id="nav-icons">
-                                    devices
-                            </span>
-                            <span class="nav-link-text">Datatorget</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                        </span>
+                        <span class="nav-link-text">Topical</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="kantina.html" class="nav-link">
+                        <span class="material-symbols-outlined" id="nav-icons">
+                                lunch_dining
+                        </span>
+                        <span class="nav-link-text">Kantine</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="datatorget.html" class="nav-link">
+                        <span class="material-symbols-outlined" id="nav-icons">
+                                devices
+                        </span>
+                        <span class="nav-link-text">Datatorget</span>
+                    </a>
+                </li>
+            </ul>
     
-            <div class="nav-toggle">
-                <span class="material-symbols-outlined" class="nav-toggle-open">
-                menu
-                </span>
-                <span class="material-symbols-outlined" class="nav-toggle-close">
-                    close
-                    </span>
-                <div class="toggle-text">Meny</div>
-            </div>
-        </nav>
+            
         </menu>
+    </nav>
         <!--end Navigation bar-->
 
     <!--header-->
         <header class="accessibility-header">
-          <img src="style/img/pilestredet.jpeg" alt="OsloMet Logo">
-          <h1>CAMPUS PILESTREDET</h1>
+          <h1>ACCESSIBILITY</h1>
         </header>
 
     <!--end header-->
@@ -321,34 +334,9 @@
 
 
     <main class="accessibility-main-container">
+        <menu></menu>
         <article class="access-article">
             <h2>accessibility</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Quis varius quam quisque id diam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Nulla at volutpat diam ut. At imperdiet dui accumsan sit.
-                Nulla at volutpat diam ut. At imperdiet dui accumsan sit. Neque viverra justo nec ultrices dui sapien eget mi proin.
-                Hendrerit gravida rutrum quisque non tellus orci ac.
-                Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. 
-                Euismod quis viverra nibh cras pulvinar mattis nunc. Viverra adipiscing at in tellus.
-                Et malesuada fames ac turpis egestas maecenas pharetra. Vitae semper quis lectus nulla.
-                Nec nam aliquam sem et. Ante metus dictum at tempor commodo ullamcorper a.
-                Justo donec enim diam vulputate ut pharetra sit amet. Sem viverra aliquet eget sit amet tellus cras adipiscing.
-                Vitae tempus quam pellentesque nec nam aliquam.
-                Quis varius quam quisque id. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.
-                Vulputate enim nulla aliquet porttitor lacus.
-            </p>
-            <p>
-                Semper eget duis at tellus at urna condimentum mattis. Tellus cras adipiscing enim eu turpis egestas pretium.
-                Pellentesque eu tincidunt tortor aliquam nulla facilisi. Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus.
-                Mauris pharetra et ultrices neque ornare aenean euismod elementum. Tortor aliquam nulla facilisi cras. 
-                Hendrerit dolor magna eget est lorem ipsum dolor sit amet.
-                Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Mattis ullamcorper velit sed ullamcorper morbi.
-                Et malesuada fames ac turpis egestas sed tempus urna.
-                Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus.
-                Nunc pulvinar sapien et ligula. 
-                Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim.
-            </p>
-        </article>
     </main>
     <footer class="access-footer">
 
