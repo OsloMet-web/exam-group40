@@ -655,13 +655,14 @@ Bildet er et stock-bilde lastet ned fra iStock med lisens (https://www.istockpho
 .p35-kolonne a:hover {
   background: rgba(137, 152, 120, 0.8);
 }
-/*P35 - Styling tre bokser med hvert sitt bilde og lenker til sider. Bakgrunnen er satt til svart og transparens på bilder
+/*P35 - Styling tre bokser med hvert sitt bilde og lenker til sider. Bakgrunnen er satt til svart, og transparens på bildene
 er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjonert midt på boksene*/
 
 .kart {
   width: 80%;
   margin: auto;
-  padding: 80px 0;
+  padding-top: 5em;
+  padding-bottom: 5em;
   text-align: center;
 }
 
