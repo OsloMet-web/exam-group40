@@ -2,6 +2,24 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-family: "Raleway";
+  font-size: 2em;
+}
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+}
+
 #header {
   margin: 0;
   width: 100%;
@@ -50,7 +68,13 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-.welcome {
+.rad {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.velkommen {
   width: 80%;
   margin: auto;
   padding-top: 50px;
@@ -58,7 +82,7 @@ body {
   text-align: left;
 }
 
-.welcome-column {
+.velkommen-kolonne {
   flex-basis: 48%;
   padding: 30px 2px;
 }
@@ -143,13 +167,7 @@ h3 {
   border-radius: 50px;
 }
 
-.row {
-  margin-top: 2%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.bibliotek-column {
+.bibliotek-kolonne {
   flex-basis: 35%;
   background: #F7F7F2;
   border-radius: 10px;
@@ -233,7 +251,7 @@ h2 {
   width: 100%;
 }
 
-.indexfooter {
+.footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -244,30 +262,30 @@ h2 {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.footerbox1, .footerbox2, .footerbox3 {
+.footerboks1, .footerboks2, .footerboks3 {
     flex: 30%;
     padding-left: 30px;
   }
 
-.footerbox1 img {
+.footerboks1 img {
     width: 7%;
     height: auto;
     padding: 3px;
 }
 
-.footerbox4 {
+.footerboks4 {
   flex: 100%;
   padding-left: 30px;
   padding-top: 2%;
 }
 
-.footerbox4 img {
+.footerboks4 img {
     max-width: 20%;
     height: auto;
 }
 
 @media screen and (max-width: 700px) {
-   .menu, ul, li, .indexfooter, .row {   
+   .menu, ul, li, .footer, .rad {   
       flex-direction: column;
     }
     ul, li {
