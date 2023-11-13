@@ -20,6 +20,7 @@ p {
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5em;
 }
+/*Valgt fonten Raleway fra Google Fonts som font for overskrifter, og Helvetica som font for brødtekst*/
 
 #header {
   margin: 0;
@@ -37,6 +38,8 @@ p {
   font-family: "Raleway";
   color: #FFFFFF;
 }
+/*Styling av header - valgt å sette bildet i header som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
+viewheight og viewwidth for bedre skalering. Bruker padding for å plassere overskriften (litt mot venstre).*/
 
 .menu {
   display: flex;
@@ -70,6 +73,7 @@ p {
   text-align: center;
   font-family: Helvetica, sans-serif;
 }
+/*Styling av meny - Ange-Clara fikser?*/
 
 .rad {
   margin-top: 2%;
@@ -232,6 +236,7 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
   width: 100%;
 }
 
+/*Endre footer?*/
 .footer {
     display: flex;
     flex-direction: row;
