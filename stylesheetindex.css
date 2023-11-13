@@ -80,18 +80,34 @@ p {
 .velkommen {
   width: 80%;
   margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   text-align: left;
 }
 
 .velkommen-kolonne {
   flex-basis: 48%;
-  padding: 30px 2px;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
 }
 
-.welcome-column img {
+.velkommen-kolonne img {
   width: 100%;
+}
+
+h2 {
+  font-family: "Raleway";
+  font-size: 2em;
+}
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0;
 }
 
 h2 {
@@ -113,54 +129,6 @@ p {
 }
 
 .p35 {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 80px;
-}
-
-.p35-column {
-  flex-basis: 32%;
-  background: #F7F7F2;
-  border-radius: 10px;
-  margin: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-=======
-  font-family: Helvetica, Arial, sans-serif;
-  }
-
-.welcome {
-  width: 80%;
-  margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: left;
-}
-
-.welcome-column {
-  flex-basis: 48%;
-  padding: 30px 2px;
-}
-
-.welcome-column img {
-  width: 100%;
-}
-
-h2 {
-  font-family: "Raleway";
-  font-size: 2em;
-}
-
-h3 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: 500;
-  text-align: center;
-  margin: 10px 0;
-}
-
-.bibliotek {
   width: 80%;
   margin: auto;
   text-align: center;
@@ -189,7 +157,7 @@ h3 {
   font-size: 1.2em
 }
 
-.location {
+.p35 {
   width: 80%;
   margin: auto;
   padding: 80px 0;
