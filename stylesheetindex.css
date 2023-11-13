@@ -2,11 +2,32 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-family: "Raleway";
+  font-size: 2em;
+}
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+}
+/*Valgt fonten Raleway fra Google Fonts som font for overskrifter, og Helvetica som font for brødtekst*/
+
 #header {
   margin: 0;
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/Pilestredet_campus.jpeg);
+  /*Bildet er hentet fra OsloMet sine nettsider: https://www.oslomet.no/en/about/get-to-know-oslomet*/
   background-position: center;
   background-size: cover;
 }
@@ -18,13 +39,15 @@ body {
   font-family: "Raleway";
   color: #FFFFFF;
 }
+/*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
+viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften (litt mot venstre).*/
 
 .menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: #F7F7F2;
-  padding: 10px;
+  padding: 0.5em;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -34,11 +57,13 @@ body {
   list-style: none;
   display: flex;
   position: sticky;
+  position: -webkit-sticky;
 }
 
 .menu li {
-  margin-right: 50px;
+  margin-right: 2.5em;
   position: sticky;
+  position: -webkit-sticky;
 }
 
 .menu li a {
@@ -49,82 +74,47 @@ body {
   text-align: center;
   font-family: Helvetica, sans-serif;
 }
+/*Styling av meny - Ange-Clara fikser?*/
 
-.welcome {
-  width: 80%;
-  margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: left;
-}
-
-.welcome-column {
-  flex-basis: 48%;
-  padding: 30px 2px;
-}
-
-.welcome-column img {
-  width: 100%;
-}
-
-h2 {
-  font-family: "Raleway";
-  font-size: 2em;
-}
-
-h3 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: 500;
-  text-align: center;
-  margin: 10px 0;
-}
-
-p {
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5em;
-}
-
-.p35 {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 80px;
-}
-
-.p35-column {
-  flex-basis: 35%;
-  background: #F7F7F2;
-  border-radius: 10px;
-  margin: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-}
-
-.bibliotek {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 80px;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/bibliotek.jpg);
-  background-size: cover;
-  border-radius: 50px;
-}
-
-.row {
+.rad {
   margin-top: 2%;
   display: flex;
   justify-content: space-between;
 }
 
-.bibliotek-column {
-  flex-basis: 35%;
-  background: #F7F7F2;
-  border-radius: 10px;
-  margin: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
+.velkommen {
+  width: 80%;
+  margin: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: left;
 }
+
+.velkommen-kolonne {
+  flex-basis: 48%;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
+
+.velkommen-kolonne img {
+  width: 100%;
+}
+/*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for alle delene. Koden for kolonnene varierer,
+avhengig av innhold.*/
+
+.bibliotek {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5em;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(style/img/bibliotek.jpg);
+  background-size: cover;
+  border-radius: 3em;
+}
+/*Bibliotek-delen har et bakgrunnsbilde, med en mørk transparant farge over for bedre lesbarhet. 
+Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockphoto.com/*/
 
 .bibliotek h2 {
   color: #FFFFFF;
@@ -136,18 +126,75 @@ p {
   font-size: 1.2em
 }
 
-.location {
+.bibliotek-kolonne {
+  flex-basis: 35%;
+  background: #F7F7F2;
+  border-radius: 2em;
+  margin: 5%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+/*Styling av overskrift, tekst og boksene i bibliotek-delen*/
+
+.p35 {
   width: 80%;
   margin: auto;
-  padding: 80px 0;
+  text-align: center;
+  padding-top: 5em;
+}
+
+.p35-kolonne {
+  flex-basis: 32%;
+  border-radius: 0.5em;
+  margin-bottom: 1.5em;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+}
+
+.p35-kolonne img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.p35-kolonne a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  transition: 0.5s;
+  font-weight: 500;
+  font-family: "Raleway";
+  color: #FFFFFF;
+  font-size: 2em;
+  padding: 0.5em;
+  text-decoration: none;
+  border: solid;
+  border-color: #FFFFFF;
+}
+
+.p35-kolonne a:hover {
+  background: rgba(137, 152, 120, 0.8);
+}
+/*P35 - Styling tre bokser med hvert sitt bilde og lenker til sider. Bakgrunnen er satt til svart, og transparens på bildene
+er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjonert midt på boksene*/
+
+.kart {
+  width: 80%;
+  margin: auto;
+  padding-top: 5em;
+  padding-bottom: 5em;
   text-align: center;
 }
 
-.location iframe {
+.kart iframe {
   width: 100%;
 }
 
-.indexfooter {
+/*Endre footer?*/
+.footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -158,30 +205,30 @@ p {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.footerbox1, .footerbox2, .footerbox3 {
+.footerboks1, .footerboks2, .footerboks3 {
     flex: 30%;
     padding-left: 30px;
   }
 
-.footerbox1 img {
+.footerboks1 img {
     width: 7%;
     height: auto;
     padding: 3px;
 }
 
-.footerbox4 {
+.footerboks4 {
   flex: 100%;
   padding-left: 30px;
   padding-top: 2%;
 }
 
-.footerbox4 img {
+.footerboks4 img {
     max-width: 20%;
     height: auto;
 }
 
 @media screen and (max-width: 700px) {
-   .menu, ul, li, .indexfooter, .row {   
+   .menu, ul, li, .footer, .rad {   
       flex-direction: column;
     }
     ul, li {
