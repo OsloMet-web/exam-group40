@@ -1,25 +1,23 @@
-body {
-  margin: 0;
+.indexheader {
+    padding: 60px;
+    text-align: center;
+    background-color: #FFD500;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#header {
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/Pilestredet_campus.jpeg);
-  background-position: center;
-  background-size: cover;
+.indexheader img {
+  align-content: center;
+  max-width: 10%;
+  height: auto; 
 }
 
-#header h1 {
-  margin: 0;
-  padding: 20% 20% 20% 50%;
-  font-size: 5vw;
-  font-family: "Raleway";
-  color: #FFFFFF;
+.indexheader h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem;
 }
 
-.menu {
+.indexnavbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -30,7 +28,17 @@ body {
   top: 0;
 }
 
-.menu ul {
+.indexnavbar a {
+    display: block;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+  }
+
+.indexnavbar a:hover {
+    color: #FFFFFF;
+}
+
+.indexnavbar ul {
   list-style: none;
   display: flex;
   position: sticky;
@@ -43,12 +51,29 @@ body {
 
 .menu li a {
   text-decoration: none;
-  color: #343f3e;
+  color: #FFD500fc;
   font-weight: bold;
-  display: block;
-  text-align: center;
-  font-family: Helvetica, sans-serif;
 }
+
+.forsidebilde img {
+  align-content: center;
+  max-width: 100%;
+  height: auto; 
+}
+
+.forsidebilde p {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  color: #3d3d3d;
+  margin-left: 1%;
+}
+
+<<<<<<< HEAD
+=======
+.flexbox2, .flexbox1 p {
+  line-height: 1.5em;
+  font-family: Helvetica, Arial, sans-serif;
+  }
 
 .welcome {
   width: 80%;
@@ -85,62 +110,30 @@ p {
   line-height: 1.5em;
 }
 
-.p35 {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 80px;
+>>>>>>> d0b4899 (Linjeavstand)
+.indexcontainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-left: 70px;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
-.p35-column {
-  flex-basis: 35%;
-  background: #F7F7F2;
-  border-radius: 10px;
-  margin: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
+.indexarticle {
+    flex: 60%;
+    padding: 30px;
 }
 
-.bibliotek {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 80px;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/bibliotek.jpg);
-  background-size: cover;
-  border-radius: 50px;
+.indexsidebar {
+    flex: 40%;
+    padding: 50px 30px 30px 30px;
+    align-items: center;
 }
 
-.row {
-  margin-top: 2%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.bibliotek-column {
-  flex-basis: 35%;
-  background: #F7F7F2;
-  border-radius: 10px;
-  margin: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-}
-
-.bibliotek h2 {
-  color: #FFFFFF;
-  font-size: 3em;
-}
-
-.bibliotek > p {
-  color: #FFFFFF;
-  font-size: 1.2em
-}
-
-.location {
-  width: 80%;
-  margin: auto;
-  padding: 80px 0;
-  text-align: center;
+.indexarticle img {
+  width: 7%;
+  height: auto;
+  padding: 3px;
 }
 
 .location iframe {
@@ -154,7 +147,7 @@ p {
     justify-content: center;
     margin-top: 50px;
     padding: 50px 50px 50px 70px;
-    background: #E4E6C3;
+    background: #FFD500;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -169,6 +162,7 @@ p {
     padding: 3px;
 }
 
+<<<<<<< HEAD
 .footerbox4 {
   flex: 100%;
   padding-left: 30px;
@@ -180,8 +174,12 @@ p {
     height: auto;
 }
 
-@media screen and (max-width: 700px) {
-   .menu, ul, li, .indexfooter, .row {   
+@media screen and (max-width: 800px) {
+    .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
+=======
+  @media screen and (max-width: 700px) {
+    .container, .indexnavbar, ul, li {   
+>>>>>>> 0f9590b (Responsive)
       flex-direction: column;
     }
     ul, li {
