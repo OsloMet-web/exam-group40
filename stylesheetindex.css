@@ -565,14 +565,17 @@ p {
 >>>>>>> d7bdd0a (Navn)
   width: 80%;
   margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   text-align: left;
 }
 
 .velkommen-kolonne {
   flex-basis: 48%;
-  padding: 30px 2px;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
 }
 
 .velkommen-kolonne img {
@@ -583,20 +586,13 @@ p {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 80px;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/bibliotek.jpg);
+  padding-top: 5em;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(style/img/bibliotek.jpg);
   background-size: cover;
-  border-radius: 50px;
+  border-radius: 3em;
 }
-
-.bibliotek-kolonne {
-  flex-basis: 35%;
-  background: #F7F7F2;
-  border-radius: 10px;
-  margin: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-}
+/*Setter en bakgrunnsbilde for bibliotek-boksene, med en mørk transparant farge over for bedre lesbarhet. 
+Bildet er et stock-bilde lastet ned fra iStock med lisens (https://www.istockphoto.com/)*/
 
 .bibliotek h2 {
   color: #FFFFFF;
@@ -607,6 +603,16 @@ p {
   color: #FFFFFF;
   font-size: 1.2em
 }
+
+.bibliotek-kolonne {
+  flex-basis: 35%;
+  background: #F7F7F2;
+  border-radius: 2em;
+  margin: 5%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+/*Styling av overskrift, tekst og boksene i bibliotek-delen*/
 
 .p35 {
   width: 80%;
