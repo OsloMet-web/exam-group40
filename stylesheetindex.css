@@ -140,7 +140,7 @@ p {
   width: 100%;
 }
 
-.side-link {
+.p35-kolonne a {
   background: transparent;
   height: 100%;
   width: 100%;
@@ -150,11 +150,11 @@ p {
   transition: 0.5s;
 }
 
-.side-link:hover {
+.p35-kolonne a:hover {
   background: rgba(137, 152, 120, 0.8);
 }
 
-.side-link h3 {
+.p35-kolonne h3 {
   width: 100%;
   font-weight: 500;
   color: #FFFFFF;
