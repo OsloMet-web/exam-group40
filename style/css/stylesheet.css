@@ -31,14 +31,20 @@ margin-top: 50px;
 
 .topical-menu{
     list-style: none;
+    display: flex;
+    position: sticky;
     
 
 }
 
 .topical-menu > li {
     margin: 10px 40px 10px 40px;
+<<<<<<< HEAD
     text-align: center;
     
+=======
+    position:sticky;
+>>>>>>> f487266 (.)
     
     
 
@@ -48,6 +54,7 @@ margin-top: 50px;
 color:#F7F7F2;
 font-weight: bold;
 text-decoration: none;
+<<<<<<< HEAD
 <<<<<<< HEAD
 text-align: center;
 <<<<<<< HEAD
@@ -59,6 +66,11 @@ font-size: medium;
 =======
 
 >>>>>>> 979e2a5 (..)
+=======
+display: block;
+text-align: center;
+font-family: Helvetica, sans-serif;
+>>>>>>> f487266 (.)
 
 
 }
@@ -71,6 +83,7 @@ font-size: medium;
 }
 
 .topical-nav {
+<<<<<<< HEAD
     display: flex;
     position: fixed;
     top: 0px;
@@ -109,10 +122,36 @@ font-size: medium;
 }
 .text-container > h1{
 >>>>>>> 9d795f3 (..)
+=======
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #899878;
+  padding: 25px;
+  position: sticky;
+  position: -webkit-sticky;
+  margin-top: -50px;
+}
+
+#pagetitle{
+  position: absolute;
+  z-index:1;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/style/img/computer.avif);
+  background-position: center;
+  background-size: cover;
+}
+
+#pagetitle > h1{
+>>>>>>> f487266 (.)
     text-align: center;
+    margin:250px 50px 0 50px;
     font-family: fantasy;
     font-weight: lighter;
     letter-spacing: 2px;
+<<<<<<< HEAD
 <<<<<<< HEAD
     color:#F7F7F2;
     font-size: xx-large;
@@ -124,6 +163,10 @@ font-size: medium;
    transform: translate(-50%, -50%);
 =======
     color: #46494C;
+=======
+    color:#F7F7F2;
+    font-size: xx-large;
+>>>>>>> f487266 (.)
 }
 
 <<<<<<< HEAD
@@ -191,7 +234,18 @@ font-size: medium;
     color: grey;
 }
 
+<<<<<<< HEAD
 /**Inspirert av W3Schools, animasjon med tekst**/
+=======
+#topical-footer{
+    background-color: bisque;
+    margin:0;
+    margin-top: 50px;
+    padding: 50px;
+    text-align: center;
+}
+/**Inspirert av W3Schools**/
+>>>>>>> f487266 (.)
 .animation {
     width: 100%;
     height: 100px;
@@ -218,6 +272,7 @@ font-size: medium;
     100% {color: rgb(207,33,33);}
   }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 /**Inspirert av W3Schools, flipboxer med bilder og info**/
@@ -346,6 +401,9 @@ font-size: medium;
 =======
 >>>>>>> 9d795f3 (..)
 
+=======
+/**Inspirert av W3Schools**/
+>>>>>>> f487266 (.)
   .flip-box {
     background-color: transparent;
     width: 300px;
