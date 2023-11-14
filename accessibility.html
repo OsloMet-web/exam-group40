@@ -25,6 +25,25 @@
             min-width: 100vh;
         }
 
+        h2 {
+        font-family: "Raleway";
+        font-size: 2rem;
+        }
+
+        h3 {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        }
+
+        p {
+        font-family: Helvetica, Arial, sans-serif;
+        line-height: 1.5rem;
+        }
+
         .navbar {
             display: flex;
             position: fixed;
@@ -193,6 +212,7 @@
 
         .accessibility-header {
             margin-top: 6rem;
+            margin-bottom: 4rem;
             text-align: center;
             background-color: #2a1515b4;
             width: 100%;
@@ -223,23 +243,27 @@
         .accessibility-main-container {
             flex-direction: column;
             align-items: center;
-            width: 100%;
-            height: auto;
-            margin-top: 2%;
+            width: 80%;
+            margin: auto;
+            background-color: rgba(0, 255, 255, 0);
         }
 
         .accessibility-main-container section {
-            margin-right: 2rem;
-            margin-left: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
+            margin: auto;
+        }
+
+        .access-welcome {
+            text-align: center;
+            width: 80%;
         }
 
 
         .test-wrapper {
             display: flex;
             flex-direction: row;
-            background-color: aqua;
+            position: relative;
+            top: 2rem;
+            background-color: rgba(0, 255, 255, 0);
         }
 
         .test-wrapper .test-article, .test-pictures {
@@ -247,13 +271,20 @@
             margin-right: 2rem;
             padding: 0.5em;
             flex: 50%;
-            background-color: red;
+            background-color: rgba(255, 0, 0, 0);
+        }
+
+        .test-pictures img {
+            width: 100%;
+            height: 100%;
         }
 
         .design-wrapper {
             display: flex;
             flex-direction: row;
-            background-color: yellowgreen;
+            position: relative;
+            top: 2rem;
+            background-color: rgba(153, 205, 50, 0);
         }
 
         .design-wrapper .design-article, .design-pictures {
@@ -261,19 +292,26 @@
             margin-right: 2rem;
             padding: 0.5em;
             flex: 50%;
-            background-color: blue;
+            background-color: rgba(0, 0, 255, 0);
         }
 
         .design-pictures {
             display: flex;
             flex-direction: column;
-            background-color: violet;
+            justify-content: center;
+            background-color: rgba(238, 130, 238, 0);
+        }
+
+        .design-pictures img {
+            width: 100%;
+            height: 100%;
         }
 
         .picture1, .picture2, .picture3 {
-            margin: 1rem;
-            padding: 2rem;
-            background-color: white;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            height: 6rem;
+            background-color: rgba(246, 46, 46, 0)
         }
 
 
@@ -386,20 +424,58 @@
 
 
 
-    <main class="accessibility-main-container">
+   <main class="accessibility-main-container">
+        <section class="access-welcome">
+            <h2>Velkommen til Accessibility</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis varius quam quisque id diam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Nulla at volutpat diam ut.
+            </p>
+        </section>
         <section class="test-wrapper">
-            <article class="test-article">article</article>
-            <aside class="test-pictures">aside</aside>
+            <article class="test-article">
+                <h2>Resultater fra testen</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis varius quam quisque id diam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Nulla at volutpat diam ut. At imperdiet dui accumsan sit.
+                Nulla at volutpat diam ut. At imperdiet dui accumsan sit. Neque viverra justo nec ultrices dui sapien eget mi proin.
+                Hendrerit gravida rutrum quisque non tellus orci ac.
+                Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. 
+                Euismod quis viverra nibh cras pulvinar mattis nunc. Viverra adipiscing at in tellus.
+                Et malesuada fames ac turpis egestas maecenas pharetra. Vitae semper quis lectus nulla.
+                Nec nam aliquam sem et. Ante metus dictum at tempor commodo ullamcorper a.
+                Justo donec enim diam vulputate ut pharetra sit amet. Sem viverra aliquet eget sit amet tellus cras adipiscing.
+                Vitae tempus quam pellentesque nec nam aliquam.
+                Quis varius quam quisque id. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.
+                Vulputate enim nulla aliquet porttitor lacus.
+                </p>
+            </article>
+            <aside class="test-pictures"><img src="style/img/cat.jpg" alt="accessibility-test"></aside>
         </section>
         <section class="design-wrapper">
-            <article class="design-article">article</article>
+            <article class="design-article">
+                <h2>Design valg</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis varius quam quisque id diam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Nulla at volutpat diam ut. At imperdiet dui accumsan sit.
+                Nulla at volutpat diam ut. At imperdiet dui accumsan sit. Neque viverra justo nec ultrices dui sapien eget mi proin.
+                Hendrerit gravida rutrum quisque non tellus orci ac.
+                Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. 
+                Euismod quis viverra nibh cras pulvinar mattis nunc. Viverra adipiscing at in tellus.
+                Et malesuada fames ac turpis egestas maecenas pharetra. Vitae semper quis lectus nulla.
+                Nec nam aliquam sem et. Ante metus dictum at tempor commodo ullamcorper a.
+                Justo donec enim diam vulputate ut pharetra sit amet. Sem viverra aliquet eget sit amet tellus cras adipiscing.
+                Vitae tempus quam pellentesque nec nam aliquam.
+                Quis varius quam quisque id. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.
+                Vulputate enim nulla aliquet porttitor lacus.
+                </p>
+            </article>
             <article class="design-pictures">
-                <aside class="picture1">picture1</aside>
-                <aside class="picture2">picture2</aside>
-                <aside class="picture3">picture3</aside>
+                <aside class="picture1"><img src="style/img/cat.jpg" alt="design-picture1"></aside>
+                <aside class="picture2"><img src="style/img/cat.jpg" alt="design-picture2"></aside>
+                <aside class="picture3"><img src="style/img/cat.jpg" alt="adesign-picture3"></aside>
             </article>
         </section>
-    </main>
+   </main>
     <footer class="access-footer">
 
         <div class="footerbox1">
