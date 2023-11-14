@@ -23,12 +23,15 @@ margin-top: 50px;
 
 .topical-menu{
     list-style: none;
+    display: flex;
+    position: sticky;
     
 
 }
 
 .topical-menu > li {
     margin: 10px 40px 10px 40px;
+    position:sticky;
     
     
 
@@ -38,7 +41,9 @@ margin-top: 50px;
 color:#F7F7F2;
 font-weight: bold;
 text-decoration: none;
-
+display: block;
+text-align: center;
+font-family: Helvetica, sans-serif;
 
 
 }
@@ -49,23 +54,35 @@ text-decoration: none;
 }
 
 .topical-nav {
-    display: flex;
-    position: fixed;
-    top: 0px;
-    height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #899878;
+  padding: 25px;
+  position: sticky;
+  position: -webkit-sticky;
+  margin-top: -50px;
 }
 
-
-.text-container{  
-    position: absolute;
-    z-index:1;
+#pagetitle{
+  position: absolute;
+  z-index:1;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/style/img/computer.avif);
+  background-position: center;
+  background-size: cover;
 }
-.text-container > h1{
+
+#pagetitle > h1{
     text-align: center;
+    margin:250px 50px 0 50px;
     font-family: fantasy;
     font-weight: lighter;
     letter-spacing: 2px;
-    color: #46494C;
+    color:#F7F7F2;
+    font-size: xx-large;
 }
 
 
@@ -111,7 +128,7 @@ text-decoration: none;
     padding: 50px;
     text-align: center;
 }
-
+/**Inspirert av W3Schools**/
 .animation {
     width: 100%;
     height: 100px;
@@ -137,7 +154,7 @@ text-decoration: none;
     100% {color: rgb(207,33,33);}
   }
 
-
+/**Inspirert av W3Schools**/
   .flip-box {
     background-color: transparent;
     width: 300px;
