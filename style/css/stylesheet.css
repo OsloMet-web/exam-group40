@@ -48,6 +48,7 @@ margin-top: 50px;
 color:#F7F7F2;
 font-weight: bold;
 text-decoration: none;
+<<<<<<< HEAD
 text-align: center;
 <<<<<<< HEAD
 font-family: Helvetica, sans-serif;
@@ -55,6 +56,9 @@ font-size: medium;
 
 =======
 >>>>>>> 76077de (.)
+=======
+
+>>>>>>> 979e2a5 (..)
 
 
 }
@@ -85,6 +89,7 @@ font-size: medium;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Forsidebilde og tittel*/
 #pagetitle{
   position: relative;
@@ -96,6 +101,9 @@ font-size: medium;
 =======
 .text-container{ 
     
+=======
+.text-container{  
+>>>>>>> 979e2a5 (..)
     position: absolute;
     z-index:1;
 }
