@@ -24,14 +24,13 @@ margin-top: 50px;
 .topical-menu{
     list-style: none;
     display: flex;
-    position: sticky;
     
 
 }
 
 .topical-menu > li {
     margin: 10px 40px 10px 40px;
-    position:sticky;
+    text-align: center;
     
     
 
@@ -41,9 +40,9 @@ margin-top: 50px;
 color:#F7F7F2;
 font-weight: bold;
 text-decoration: none;
-display: block;
 text-align: center;
 font-family: Helvetica, sans-serif;
+font-size: large;
 
 
 }
@@ -58,31 +57,37 @@ font-family: Helvetica, sans-serif;
   flex-direction: row;
   justify-content: center;
   background-color: #899878;
-  padding: 25px;
-  position: sticky;
-  position: -webkit-sticky;
-  margin-top: -50px;
+  padding: 20px;
+  margin: -50px 0 0 0;
+  
 }
 
 #pagetitle{
-  position: absolute;
-  z-index:1;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/style/img/computer.avif);
-  background-position: center;
-  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 #pagetitle > h1{
     text-align: center;
-    margin:250px 50px 0 50px;
     font-family: fantasy;
     font-weight: lighter;
     letter-spacing: 2px;
     color:#F7F7F2;
     font-size: xx-large;
+    z-index: 1;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+#pagetitle>img{
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
+  background: linear-gradient(#004092, #020202, transparent)
 }
 
 
@@ -96,6 +101,7 @@ font-family: Helvetica, sans-serif;
 
 .artikkeltekst > p{
     flex-grow: 2;
+    line-height: 1.5;
     
 }
 
@@ -103,6 +109,7 @@ font-family: Helvetica, sans-serif;
     font-family: fantasy;
     font-weight: 10;
     color: #46494C;
+    margin: 50px 0 20px 0;
 
     
 }
@@ -112,6 +119,7 @@ font-family: Helvetica, sans-serif;
     display: flex;
     align-items: flex-end;
     max-width: 100%;
+    margin-top: 50px;
 }
 
 
@@ -161,10 +169,10 @@ font-family: Helvetica, sans-serif;
     height: 200px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
-    margin:30px;
+    margin: 30px;
   }
   
-  /* This container is needed to position the front and back side */
+  /* Posisjon foran og bak innhold */
   .flip-box-inner {
     position: relative;
     width: 100%;
@@ -174,12 +182,12 @@ font-family: Helvetica, sans-serif;
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Horisontalt flip når musen går over boksen */
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
   }
   
-  /* Position the front and back side */
+  /* Posisjon foran og bak boks */
   .flip-box-front, .flip-box-back {
     position: absolute;
     width: 100%;
@@ -188,7 +196,7 @@ font-family: Helvetica, sans-serif;
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
+  /* Styling på front */
   .flip-box-front {
     color: black;
     border:transparent;
@@ -200,22 +208,21 @@ font-family: Helvetica, sans-serif;
     
   }
   
-  /* Style the back side */
+  /* Styling bak */
   .flip-box-back {
     background-color: #899878;
     color: #F7F7F2;
     transform: rotateY(180deg);
   }
   .flip-box-back>p {
-   margin-bottom: 10px;
-   padding: 0 20px 0 20px;
+    padding:20px;
     font-family: Arial, Helvetica, sans-serif;
   }
   .flip-box-back>h4{
     font-family: fantasy;
     font-weight: lighter;
     font-size: larger;
-    margin-bottom: -5px;
+    margin-top: 20px;
   }
 
   #linjetittel {
@@ -223,6 +230,7 @@ font-family: Helvetica, sans-serif;
     font-weight: lighter;
     color: #46494C;
     text-align: center;
+    margin-top: 50px;
   }
 
     
