@@ -78,8 +78,12 @@ font-family: Helvetica, sans-serif;
 =======
 text-align: center;
 font-family: Helvetica, sans-serif;
+<<<<<<< HEAD
 font-size: large;
 >>>>>>> f11bf9a (..)
+=======
+font-size: medium;
+>>>>>>> f88a8e7 (..)
 
 
 }
