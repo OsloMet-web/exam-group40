@@ -102,6 +102,7 @@ font-size: medium;
 .artikkeltekst > p{
     flex-grow: 2;
     line-height: 1.5;
+    font-size: medium;
     
 }
 
@@ -110,6 +111,7 @@ font-size: medium;
     font-weight: 10;
     color: #46494C;
     margin: 50px 0 20px 0;
+    font-size: x-large;
 
     
 }
@@ -231,6 +233,7 @@ font-size: medium;
     color: #46494C;
     text-align: center;
     margin-top: 50px;
+    font-size: large;
   }
 
     
