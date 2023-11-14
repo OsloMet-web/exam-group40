@@ -40,6 +40,7 @@ margin-top: 50px;
     text-align: center;
     
     
+    
 
 }
 
@@ -48,9 +49,12 @@ color:#F7F7F2;
 font-weight: bold;
 text-decoration: none;
 text-align: center;
+<<<<<<< HEAD
 font-family: Helvetica, sans-serif;
 font-size: medium;
 
+=======
+>>>>>>> 76077de (.)
 
 
 }
@@ -114,10 +118,13 @@ font-size: medium;
     color: #46494C;
 }
 
+<<<<<<< HEAD
 .img-container {
     position: relative;
 >>>>>>> 9d795f3 (..)
 }
+=======
+>>>>>>> 76077de (.)
 
 <<<<<<< HEAD
 #pagetitle>img{
