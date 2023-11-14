@@ -30,6 +30,7 @@ margin-top: 50px;
 .topical-menu > li {
     margin: 10px 40px 10px 40px;
     
+    
 
 }
 
@@ -37,6 +38,7 @@ margin-top: 50px;
 color:#F7F7F2;
 font-weight: bold;
 text-decoration: none;
+text-align: center;
 
 
 }
@@ -67,9 +69,6 @@ text-decoration: none;
     color: #46494C;
 }
 
-.img-container {
-    position: relative;
-}
 
 .flexbox {
     display: flex;
