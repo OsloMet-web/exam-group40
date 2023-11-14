@@ -218,9 +218,13 @@ font-size: medium;
     flex-grow: 2;
     line-height: 1.5;
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-size: medium;
 =======
 >>>>>>> f11bf9a (..)
+=======
+    font-size: medium;
+>>>>>>> 18082ad (..)
     
 }
 
@@ -232,11 +236,14 @@ font-size: medium;
 <<<<<<< HEAD
     margin: 50px 0 20px 0;
     font-size: x-large;
+<<<<<<< HEAD
 =======
 >>>>>>> 9d795f3 (..)
 =======
     margin: 50px 0 20px 0;
 >>>>>>> f11bf9a (..)
+=======
+>>>>>>> 18082ad (..)
 
     
 }
@@ -502,6 +509,7 @@ font-size: medium;
     color: #46494C;
     text-align: center;
     margin-top: 50px;
+    font-size: large;
   }
 
 <<<<<<< HEAD
