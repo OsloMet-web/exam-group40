@@ -7,7 +7,7 @@
     <!--Hentet fra font.google.com-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>accessibility</title>
-    <link rel="icon" type="image/x-icon" href="style/img/logo.png"> <!--favicon bilde-->
+    <link rel="icon" type="image/x-icon" href="style/img/favicon.png"> <!--favicon bilde-->
     <!-- <link rel="stylesheet" href="style/css/stylesheet.css">*/ -->
     <style>
 
@@ -221,23 +221,65 @@
 
 
         .accessibility-main-container {
-            display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            /*margin-left: 5rem;*/
-            padding-left: 6rem;
-            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: auto;
+            margin-top: 2%;
         }
 
-        .access-article {
-            flex: 60%;
-            padding: 30px;
-        }  
+        .accessibility-main-container section {
+            margin-right: 2rem;
+            margin-left: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+
+        .test-wrapper {
+            display: flex;
+            flex-direction: row;
+            background-color: aqua;
+        }
+
+        .test-wrapper .test-article, .test-pictures {
+            margin-left: 2rem;
+            margin-right: 2rem;
+            padding: 0.5em;
+            flex: 50%;
+            background-color: red;
+        }
+
+        .design-wrapper {
+            display: flex;
+            flex-direction: row;
+            background-color: yellowgreen;
+        }
+
+        .design-wrapper .design-article, .design-pictures {
+            margin-left: 2rem;
+            margin-right: 2rem;
+            padding: 0.5em;
+            flex: 50%;
+            background-color: blue;
+        }
+
+        .design-pictures {
+            display: flex;
+            flex-direction: column;
+            background-color: violet;
+        }
+
+        .picture1, .picture2, .picture3 {
+            margin: 1rem;
+            padding: 2rem;
+            background-color: white;
+        }
 
 
         .access-footer {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 4rem;
@@ -345,9 +387,18 @@
 
 
     <main class="accessibility-main-container">
-        <menu></menu>
-        <article class="access-article">
-            <h2>accessibility</h2>
+        <section class="test-wrapper">
+            <article class="test-article">article</article>
+            <aside class="test-pictures">aside</aside>
+        </section>
+        <section class="design-wrapper">
+            <article class="design-article">article</article>
+            <article class="design-pictures">
+                <aside class="picture1">picture1</aside>
+                <aside class="picture2">picture2</aside>
+                <aside class="picture3">picture3</aside>
+            </article>
+        </section>
     </main>
     <footer class="access-footer">
 
