@@ -8,20 +8,69 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="stylesheetindex.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
 
   <body>
-  <header>
-    <nav class="menu">
-      <ul>
-      <li><a href="index.html">Hjem</a></li>
-       <li><a href="accessibility.html">Accessibility</a></li>
-       <li><a href="topical.html">Topical</a></li>
-       <li><a href="datatorget.html">Datatorget</a></li>
-       <li><a href="kantina.html">Kantine</a></li>
-      </ul>
-   </nav> 
-    <div id="header">
+    <nav class="navbar">
+
+      <div class="logo-wrapper">
+          <a href="index.html" class="nav-logo">
+              <!--<img src="style/img/logo_lightgreen.png" alt="Hjemme">-->
+              <span class="logo-icon"></span>
+         </a>
+      </div>
+
+      <menu class="nav-group" for="burgertoggle">
+
+          <input id="burgertoggle" type="checkbox">
+
+          <label id="nav-toggle-open" for="burgertoggle">
+              <span class="material-symbols-outlined">menu</span>
+          </label>
+
+          <label for="burgertoggle" id="nav-toggle-close">
+              <span class="material-symbols-outlined">close</span>
+          </label>
+
+          <ul class="navbar-menu" for="burgertoggle"> 
+              <li class="nav-list">
+                  <a href="index.html" class="nav-link">
+                      <span class="material-symbols-outlined" id="nav-icons">
+                          home
+                      </span>
+                      <span class="nav-link-text">Hjemme</span>
+                  </a>
+              </li>
+              <li class="nav-list">
+                  <a href="topical.html" class="nav-link">
+                      <span class="material-symbols-outlined" id="nav-icons">psychology</span>
+                      <span class="nav-link-text">Topical</span>
+                  </a>
+              </li>
+              <li class="nav-list">
+                  <a href="kantina.html" class="nav-link">
+                      <span class="material-symbols-outlined" id="nav-icons">
+                              lunch_dining
+                      </span>
+                      <span class="nav-link-text">Kantine</span>
+                  </a>
+              </li>
+              <li class="nav-list">
+                  <a href="datatorget.html" class="nav-link">
+                      <span class="material-symbols-outlined" id="nav-icons">
+                              devices
+                      </span>
+                      <span class="nav-link-text">Datatorget</span>
+                  </a>
+              </li>
+          </ul>    
+      </menu>
+  </nav>
+ <!--end Navigation bar-->
+
+  <header-index>
+    <div class="header-index">
       <h1>Campus Pilestredet</h1>
     </div>
   </header>

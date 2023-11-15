@@ -31,7 +31,6 @@
         }
 
         h3 {
-        font-family: Helvetica, Arial, sans-serif;
         font-size: 1.7rem;
         font-weight: 500;
         text-align: center;
@@ -142,11 +141,6 @@
             display: none;
         }
 
-        /*#nav-icons {
-            font-size: 1rem;
-            display: none;
-        }*/
-
         #nav-icons {
             font-size: 2rem;
             display: none;
@@ -205,12 +199,6 @@
 
         }
 
-        
-
-        .nav-link-text{
-            /*display: none;*/
-        }
-
         .accessibility-header {
             margin-top: 6rem;
             margin-bottom: 4rem;
@@ -242,6 +230,7 @@
 
 
         .accessibility-main-container {
+            display: flex;
             flex-direction: column;
             align-items: center;
             width: 80%;
@@ -316,44 +305,75 @@
         }
 
 
-        .access-footer {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 4rem;
-            /*margin-left: 5rem;*/
-            padding: 4rem 4rem 4rem 6rem;
-            background: #46494c;
-            font-family: Helvetica, Arial, sans-serif;
-        }
+       .main-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin-top: 6rem;
+        background-color: #e4e6c3;
+       }
 
-        .access-footer p {
-            line-height: 1.5em;
-            color: #f7f7f2;
-        }
+       .main-footer section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        background-color: rgba(255, 0, 0, 0);
+       }
 
-        .footerbox1, .footerbox2, .footerbox3 {
-            flex: 30%;
-            padding-left: 2.5rem;
-        }
+       .upper-footer {
+        width: 90%;
+        margin: auto;
+       }
 
-        .footerbox1 img {
-            width: 7%;
-            height: auto;
-            padding: 3px;
-        }
+       .upper-footer span {
+        flex: 30%;
+       }
 
-        .footerbox4 {
-            flex: 100%;
-            padding-left: 30px;
-            padding-top: 2%;
-        }
+       .school-adress {
+        padding: auto;
+        text-align: center;
+       }
 
-        .footerbox4 img {
-            max-width: 20%;
-            height: auto;
-        }
+       .upper-footer img {
+        width: 100%;
+        height: auto;
+       }
+
+       .upper-footer ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+       }
+
+       .upper-footer li {
+        font-size: 1.2rem;
+        align-items: center;
+        margin-top: 2rem;
+       }
+
+       .bottom-footer {
+        width: 90%;
+        margin: auto;
+       }
+
+       .bottom-footer span, ul {
+        flex: 50%;
+       }
+
+       .bottom-footer ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+       }
+
+        
 
     </style>
 </head>
@@ -477,34 +497,35 @@
             </article>
         </section>
    </main>
-    <footer class="access-footer">
-
-        <div class="footerbox1">
-          <b>Adresse</b>
-          <p>Pilestredet 32 - 54</p>
-          <a href="https://www.facebook.com/oslomet/"><img src="style/img/facebook.png" alt="Facebook-ikon"></a>
-          <a href="https://www.instagram.com/oslomet/"><img src="style/img/instagram.png" alt="Instagram-ikon"></a>
-          <a href="https://www.linkedin.com/school/oslomet/"><img src="style/img/linkedin.png" alt="Linkedin-ikon"></a>
-        </div>
-    
-        <div class="footerbox2">
-          <b>Resepsjon</b>
-        <p>Telefon: +47 67 23 60 00<br>
-           Åpningstid: 08:00 - 15:00 (man-fre)<br>
-           Addresse: Pilestredet 46</p>
-        </div>
-    
-        <div class="footerbox3">
-          <b>Studentsenteret</b>
-        <p>Telefon: +47 67 23 77 78<br>
-           Åpningstid: 10:00 - 14:00 (man-fre)<br>
-           Adresse: Pilestredet 52</p>
-        </div>
-    
-        <div class="footerbox4">
-          <img src="style/img/OsloMet_LogoFull.png" alt="OsloMet Logo">
-          <p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p>
-        </div>
+    <footer class="main-footer">
+        <section class="upper-footer">
+            <span class="school-adress">
+                <h3>Adresse:</h3>
+                <p>Pilestredet 32 - 54</p>
+                <h3>Resepsjon</h3>
+                <p>Telefon: +47 67 23 60 00<br>
+                    Åpningstid: 08:00 - 15:00 (man-fre)<br>
+                    Addresse: Pilestredet 46</p>
+            </span>
+            <span class="footer-logo"><img src="style/img/logo.png" alt="OsloMet Logo"></span>
+            <span>
+                <ul class="footer-list">
+                    <li>accessibility</li>
+                    <li>contact</li>
+                  </ul>
+            </span>
+          </section>
+          <section class="bottom-footer">
+            <span class="trademark"><p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p></span>
+            <ul class="social media">
+              <li><a href="blank">instagram</a></li>
+              <li><a href="blank">tiktok</a></li>
+              <li><a href="blank">linked-in</a></li>
+              <li><a href="blank">facebook</a></li>
+              <li><a href="blank">youtube</a></li>
+              <li><a href="blank">twitter</a></li>
+            </ul>
+          </section>
       </footer>
     </div>
 </body>
