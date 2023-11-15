@@ -1750,6 +1750,7 @@ footer {
     color: #ffffff;
     font-size: 4vw;
   }
+<<<<<<< HEAD
     /*margin: 0;
     padding: 10% 15% 30% 15%;
     font-size: 5vw;
@@ -1871,12 +1872,14 @@ footer {
     transform: translate(-50%, -50%); /* plasserer teksten i midten langs x aksen*/
     color: #ffffff;
     font-size: 5rem;
+=======
+>>>>>>> 7251ae8 (endringer)
     /*margin: 0;
     padding: 10% 15% 30% 15%;
     font-size: 5vw;
     font-family: "Raleway";
     color: #FFFFFF;*/
-  }
+
 /*
 .data-header {
 >>>>>>> 97361b9 (endringer)
@@ -2382,12 +2385,16 @@ footer {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7251ae8 (endringer)
 .data-section4 {
     display: flex;
     flex-direction: row;
     width: 100%;
     margin-top: 10px;
 }
+<<<<<<< HEAD
 .data-section4 img{
     width: 100%;
     height: auto;
@@ -2438,6 +2445,8 @@ footer {
 
 
 =======
+=======
+>>>>>>> 7251ae8 (endringer)
 .data-section4 img{
     width: 100%;
     height: auto;
@@ -2474,9 +2483,13 @@ footer {
      ul, li {
        margin: 1%;
      }
+<<<<<<< HEAD
  }
 =======
 >>>>>>> c6fe1cb (endringer)
 =======
 
 >>>>>>> a59d8aa (forsøk)
+=======
+ }
+>>>>>>> 7251ae8 (endringer)
