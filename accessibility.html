@@ -7,7 +7,7 @@
     <!--Hentet fra font.google.com-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>accessibility</title>
-    <link rel="icon" type="image/x-icon" href="style/img/logo.png"> <!--favicon bilde-->
+    <link rel="icon" type="image/x-icon" href="style/img/favicon.png"> <!--favicon bilde-->
     <!-- <link rel="stylesheet" href="style/css/stylesheet.css">*/ -->
     <style>
 
@@ -23,6 +23,25 @@
             padding: 0;
             min-height: 100vh;
             min-width: 100vh;
+        }
+
+        h2 {
+        font-family: "Raleway";
+        font-size: 2.5rem;
+        }
+
+        h3 {
+        font-size: 1.7rem;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        }
+
+        p {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.2rem;
+        line-height: 2rem;
         }
 
         .navbar {
@@ -122,14 +141,9 @@
             display: none;
         }
 
-        /*#nav-icons {
-            font-size: 1rem;
-            display: none;
-        }*/
-
         #nav-icons {
             font-size: 2rem;
-            visibility: hidden;
+            display: none;
         }
 
         #burgertoggle{
@@ -162,7 +176,7 @@
                 position: relative;
                 top: 0.5rem;
                 background-color: rgba(0, 255, 255, 0);
-                visibility: visible;
+                display: inline-block;
             }
 
             #nav-toggle-open {
@@ -185,14 +199,9 @@
 
         }
 
-        
-
-        .nav-link-text{
-            /*display: none;*/
-        }
-
         .accessibility-header {
             margin-top: 6rem;
+            margin-bottom: 4rem;
             text-align: center;
             background-color: #2a1515b4;
             width: 100%;
@@ -222,57 +231,149 @@
 
         .accessibility-main-container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            /*margin-left: 5rem;*/
-            padding-left: 6rem;
-            font-family: Arial, Helvetica, sans-serif;
+            width: 80%;
+            margin: auto;
+            background-color: rgba(0, 255, 255, 0);
         }
 
-        .access-article {
-            flex: 60%;
-            padding: 30px;
-        }  
+        .accessibility-main-container section {
+            margin: auto;
+        }
+
+        .access-welcome {
+            text-align: center;
+            width: 80%;
+        }
 
 
-        .access-footer {
+        .test-wrapper {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
+            position: relative;
+            top: 2rem;
+            background-color: rgba(0, 255, 255, 0);
+        }
+
+        .test-wrapper .test-article, .test-pictures {
+            margin-left: 2rem;
+            margin-right: 2rem;
+            padding: 0.5em;
+            flex: 50%;
+            background-color: rgba(255, 0, 0, 0);
+        }
+
+        .test-pictures img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .design-wrapper {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 2rem;
+            background-color: rgba(153, 205, 50, 0);
+        }
+
+        .design-wrapper .design-article, .design-pictures {
+            margin-left: 2rem;
+            margin-right: 2rem;
+            padding: 0.5em;
+            flex: 50%;
+            background-color: rgba(0, 0, 255, 0);
+        }
+
+        .design-pictures {
+            display: flex;
+            flex-direction: column;
             justify-content: center;
-            margin-top: 4rem;
-            /*margin-left: 5rem;*/
-            padding: 4rem 4rem 4rem 6rem;
-            background: #46494c;
-            font-family: Helvetica, Arial, sans-serif;
+            background-color: rgba(238, 130, 238, 0);
         }
 
-        .access-footer p {
-            line-height: 1.5em;
-            color: #f7f7f2;
+        .design-pictures img {
+            width: 100%;
+            height: 100%;
         }
 
-        .footerbox1, .footerbox2, .footerbox3 {
-            flex: 30%;
-            padding-left: 2.5rem;
+        .picture1, .picture2, .picture3 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            height: 6rem;
+            background-color: rgba(246, 46, 46, 0)
         }
 
-        .footerbox1 img {
-            width: 7%;
-            height: auto;
-            padding: 3px;
-        }
 
-        .footerbox4 {
-            flex: 100%;
-            padding-left: 30px;
-            padding-top: 2%;
-        }
+       .main-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin-top: 6rem;
+        background-color: #e4e6c3;
+       }
 
-        .footerbox4 img {
-            max-width: 20%;
-            height: auto;
-        }
+       .main-footer section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        background-color: rgba(255, 0, 0, 0);
+       }
+
+       .upper-footer {
+        width: 90%;
+        margin: auto;
+       }
+
+       .upper-footer span {
+        flex: 30%;
+       }
+
+       .school-adress {
+        padding: auto;
+        text-align: center;
+       }
+
+       .upper-footer img {
+        width: 100%;
+        height: auto;
+       }
+
+       .upper-footer ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+       }
+
+       .upper-footer li {
+        font-size: 1.2rem;
+        align-items: center;
+        margin-top: 2rem;
+       }
+
+       .bottom-footer {
+        width: 90%;
+        margin: auto;
+       }
+
+       .bottom-footer span, ul {
+        flex: 50%;
+       }
+
+       .bottom-footer ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+       }
+
+        
 
     </style>
 </head>
@@ -344,39 +445,87 @@
 
 
 
-    <main class="accessibility-main-container">
-        <menu></menu>
-        <article class="access-article">
-            <h2>accessibility</h2>
-    </main>
-    <footer class="access-footer">
-
-        <div class="footerbox1">
-          <b>Adresse</b>
-          <p>Pilestredet 32 - 54</p>
-          <a href="https://www.facebook.com/oslomet/"><img src="style/img/facebook.png" alt="Facebook-ikon"></a>
-          <a href="https://www.instagram.com/oslomet/"><img src="style/img/instagram.png" alt="Instagram-ikon"></a>
-          <a href="https://www.linkedin.com/school/oslomet/"><img src="style/img/linkedin.png" alt="Linkedin-ikon"></a>
-        </div>
-    
-        <div class="footerbox2">
-          <b>Resepsjon</b>
-        <p>Telefon: +47 67 23 60 00<br>
-           Åpningstid: 08:00 - 15:00 (man-fre)<br>
-           Addresse: Pilestredet 46</p>
-        </div>
-    
-        <div class="footerbox3">
-          <b>Studentsenteret</b>
-        <p>Telefon: +47 67 23 77 78<br>
-           Åpningstid: 10:00 - 14:00 (man-fre)<br>
-           Adresse: Pilestredet 52</p>
-        </div>
-    
-        <div class="footerbox4">
-          <img src="style/img/OsloMet_LogoFull.png" alt="OsloMet Logo">
-          <p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p>
-        </div>
+   <main class="accessibility-main-container">
+        <section class="access-welcome">
+            <h2>Velkommen til Accessibility</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis varius quam quisque id diam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Nulla at volutpat diam ut.
+            </p>
+        </section>
+        <section class="test-wrapper">
+            <article class="test-article">
+                <h2>Resultater fra testen</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis varius quam quisque id diam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Nulla at volutpat diam ut. At imperdiet dui accumsan sit.
+                Nulla at volutpat diam ut. At imperdiet dui accumsan sit. Neque viverra justo nec ultrices dui sapien eget mi proin.
+                Hendrerit gravida rutrum quisque non tellus orci ac.
+                Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. 
+                Euismod quis viverra nibh cras pulvinar mattis nunc. Viverra adipiscing at in tellus.
+                Et malesuada fames ac turpis egestas maecenas pharetra. Vitae semper quis lectus nulla.
+                Nec nam aliquam sem et. Ante metus dictum at tempor commodo ullamcorper a.
+                Justo donec enim diam vulputate ut pharetra sit amet. Sem viverra aliquet eget sit amet tellus cras adipiscing.
+                Vitae tempus quam pellentesque nec nam aliquam.
+                Quis varius quam quisque id. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.
+                Vulputate enim nulla aliquet porttitor lacus.
+                </p>
+            </article>
+            <aside class="test-pictures"><img src="style/img/cat.jpg" alt="accessibility-test"></aside>
+        </section>
+        <section class="design-wrapper">
+            <article class="design-article">
+                <h2>Design valg</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis varius quam quisque id diam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Nulla at volutpat diam ut. At imperdiet dui accumsan sit.
+                Nulla at volutpat diam ut. At imperdiet dui accumsan sit. Neque viverra justo nec ultrices dui sapien eget mi proin.
+                Hendrerit gravida rutrum quisque non tellus orci ac.
+                Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. 
+                Euismod quis viverra nibh cras pulvinar mattis nunc. Viverra adipiscing at in tellus.
+                Et malesuada fames ac turpis egestas maecenas pharetra. Vitae semper quis lectus nulla.
+                Nec nam aliquam sem et. Ante metus dictum at tempor commodo ullamcorper a.
+                Justo donec enim diam vulputate ut pharetra sit amet. Sem viverra aliquet eget sit amet tellus cras adipiscing.
+                Vitae tempus quam pellentesque nec nam aliquam.
+                Quis varius quam quisque id. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.
+                Vulputate enim nulla aliquet porttitor lacus.
+                </p>
+            </article>
+            <article class="design-pictures">
+                <aside class="picture1"><img src="style/img/cat.jpg" alt="design-picture1"></aside>
+                <aside class="picture2"><img src="style/img/cat.jpg" alt="design-picture2"></aside>
+                <aside class="picture3"><img src="style/img/cat.jpg" alt="adesign-picture3"></aside>
+            </article>
+        </section>
+   </main>
+    <footer class="main-footer">
+        <section class="upper-footer">
+            <span class="school-adress">
+                <h3>Adresse:</h3>
+                <p>Pilestredet 32 - 54</p>
+                <h3>Resepsjon</h3>
+                <p>Telefon: +47 67 23 60 00<br>
+                    Åpningstid: 08:00 - 15:00 (man-fre)<br>
+                    Addresse: Pilestredet 46</p>
+            </span>
+            <span class="footer-logo"><img src="style/img/logo.png" alt="OsloMet Logo"></span>
+            <span>
+                <ul class="footer-list">
+                    <li>accessibility</li>
+                    <li>contact</li>
+                  </ul>
+            </span>
+          </section>
+          <section class="bottom-footer">
+            <span class="trademark"><p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p></span>
+            <ul class="social media">
+              <li><a href="blank">instagram</a></li>
+              <li><a href="blank">tiktok</a></li>
+              <li><a href="blank">linked-in</a></li>
+              <li><a href="blank">facebook</a></li>
+              <li><a href="blank">youtube</a></li>
+              <li><a href="blank">twitter</a></li>
+            </ul>
+          </section>
       </footer>
     </div>
 </body>
