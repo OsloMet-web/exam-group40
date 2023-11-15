@@ -6,11 +6,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e7a4a82 (changed index navbar)
 :root {
   font-size: 12px;
   font-family: Raleway;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 body {
   color: black;
@@ -349,32 +353,195 @@ body {
   max-width: 10%;
   height: auto; 
 =======
+=======
+>>>>>>> e7a4a82 (changed index navbar)
 body {
+  color: black;
+  background-color: #f7f7f2;
   margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vh;
 }
 
 h2 {
-  font-family: "Raleway";
-  font-size: 2em;
+font-family: "Raleway";
+font-size: 2.5rem;
 }
 
 h3 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+font-size: 1.7rem;
+font-weight: 500;
+text-align: center;
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
 }
 
 p {
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5em;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 1.2rem;
+line-height: 2rem;
 }
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 6rem;
+  z-index: 100;
+  justify-content: space-between;
+  background-color: #e4e6c3;
+}
+
+.logo-wrapper{
+  display: flex;
+  flex: 0.3;
+  align-items: center;
+  margin-left: 2rem;
+  padding: 0;
+  z-index: 200;
+  background: #e4e6c300;
+}
+
+.logo-icon {
+  display: block;
+  background-image: url(style/img/logo-gråmørk.png);
+  background-size: cover;
+  width: 5rem;
+  height: 3.5rem;
+}
+
+.logo-icon:hover {
+  background-image: url(style/img/logo-maincolor.png);
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-group{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2.5rem;
+  position: relative;
+  background-color: rgba(0, 169, 169, 0);
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.nav-group li {
+  list-style: none;
+  background-color: rgba(217, 213, 0, 0);
+
+}
+
+.nav-group a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #46494c;
+  background-color: rgba(70, 0, 0, 0);
+}
+
+.nav-group a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  background: #343434;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+.nav-group a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-group a:hover {
+  color: #343434;
+  transition: transform 1s ease-in;
+}
+
+#nav-toggle-open, #nav-toggle-close {
+  position: relative;
+  margin-right: 2rem;
+  color: #343f3e;
+  background-color: #ff0ad600;
+  cursor: pointer;
+  z-index: 10001;
+  background-color: rgba(250, 235, 215, 0);
+  display: none;
+}
+
+#nav-icons {
+  font-size: 2rem;
+  display: none;
+}
+
+#burgertoggle{
+  display: none;
+}
+
+@media (max-width: 700px) {
+
+  #burger-toggle{
+      opacity: 0;
+  }
+
+  .navbar-menu {
+      flex-direction: column;
+      position: fixed;
+      top: -1000px;
+      /*top: 0;*/
+      right: 0px;
+      width: 100%;
+      height: 100%;
+      justify-content: start;
+      margin-right: 0;
+      align-items: center;
+      background-color: #e4e6c3;
+      padding-top: 6rem;
+      transition: 0.5s ease;
+  }
+
+  #nav-icons {
+      position: relative;
+      top: 0.5rem;
+      background-color: rgba(0, 255, 255, 0);
+      display: inline-block;
+  }
+
+  #nav-toggle-open {
+      display: block;
+  }
+
+  .nav-group input:checked ~ #nav-toggle-open {
+      display: none;
+
+  }
+
+  .nav-group input:checked ~ #nav-toggle-close {
+      display: block;
+
+  }
+
+  .nav-group input:checked ~ .navbar-menu {
+     top: 0;
+  }
+
+}
+
 /*Valgt fonten Raleway fra Google Fonts som font for overskrifter, og Helvetica som font for brødtekst*/
 
-#header {
-  margin: 0;
+.header-index {
+  margin-top: 6rem;
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/Pilestredet_campus.jpeg);
@@ -384,7 +551,7 @@ p {
 >>>>>>> 08c413c (Revert "Merge branch 'main' into angeclara")
 }
 
-#header h1 {
+.header-index h1 {
   margin: 0;
   padding: 20% 20% 20% 50%;
   font-size: 5vw;
@@ -394,6 +561,7 @@ p {
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften (litt mot venstre).*/
 
+<<<<<<< HEAD
 .menu {
   display: flex;
   flex-direction: row;
@@ -560,6 +728,8 @@ p {
 >>>>>>> 08c413c (Revert "Merge branch 'main' into angeclara")
 .welcome {
 =======
+=======
+>>>>>>> e7a4a82 (changed index navbar)
 .rad {
   margin-top: 2%;
   display: flex;
