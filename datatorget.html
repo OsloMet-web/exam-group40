@@ -5,20 +5,16 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style/css/stylesheet.css">
     <title>Datatorget</title>
-    <link rel="icon" type="image/x-icon" href="style/img/favicon.ico"> 
+    <link rel="icon" type="image/x-icon" href="style/img/favicon.png"> 
     <!--Icon er hentet fra Oslomet sin kode-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!--Importerer font fra Google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 <body class="data-body">
 
-       <!-- <section class="logo">
-            Logo
-        </section> -->
-
-        <header>
         <nav class="data-nav">
             <ul>
                 <li><a href="index.html">Hjem</a></li>
@@ -29,90 +25,51 @@
             </ul>
         </nav>
 
-            <section id="data-header">
-                <h1>Velkommen til datatorget!</h1>
-            </section>
-        </header>
-
-        <main class="data-main"> <!--this div is becomming a wrapper for the entire layout-->
-
-        <section class="data-section1">
-            <aside class="data-aside1">
-                <img src="style/img/koding.jpg" alt="En som koder">
-            </aside>
-
-            <article class="data-article1">
-                <div class="h2-article1">
-                <h2>
-                    Hva skjer på datatorget?
-                </h2>
-            </div>
-
-            <div class="p-article1">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec justo ac turpis pharetra lacinia. Ut sodales justo sit amet nibh congue, eget commodo risus ultrices. Nam vulputate, eros nec scelerisque pellentesque, purus ligula fermentum justo, in porta justo nisl at velit. Quisque efficitur nulla ac justo tincidunt, a sodales odio feugiat.
-                </p>
-            </div>
-=======
-
-<body class="data-body">
-
-       <!-- <section class="logo">
-            Logo
-        </section> -->
-
         <header>
-        <nav class="data-nav">
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                 <li><a href="accessibility.html">Accessibility</a></li>
-                 <li><a href="topical.html">Topical</a></li>
-                 <li><a href="datatorget.html">Datatorget</a></li>
-                 <li><a href="kantina.html">Kantine</a></li>
-            </ul>
-        </nav>
-
-            <section id="data-header">
-                <h1>Velkommen til datatorget!</h1>
-            </section>
+            <div class="data-header">
+              <h1>Velkommen til Datatorget</h1>
+            </div>
         </header>
+        <!--Headeren inneholder også et bilde som er lagt inn som et bakgrunnsbilde med CSS, dette for å kunne plassere overskriften
+        over bildet.-->
 
         <main class="data-main"> <!--this div is becomming a wrapper for the entire layout-->
 
+    <!--Bruker flexbox oppbygd av rader og kolonner til å strukturere innholdet på siden, raden fungerer som en container for 
+    kolonnene. Koden for denne strukturen er inspirert av en video av GreatStack (https://youtu.be/oYRda7UtuhA?si=Cc8BsDSYKPBpQDza)-->
+
+    <!--Alt av tekst inne i <p> er generet fra ChatGPT-->
+
         <section class="data-section1">
-            <aside class="data-aside1">
-                <img src="style/img/koding.jpg" alt="En som koder">
-            </aside>
 
-            <article class="data-article1">
-<<<<<<< HEAD
-                Text1
->>>>>>> c6fe1cb (endringer)
-=======
-                <div class="h2-article1">
-                <h2>
-                    Hva skjer på datatorget?
-                </h2>
-            </div>
+            <article class="rad">
 
-            <div class="p-article1">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec justo ac turpis pharetra lacinia. Ut sodales justo sit amet nibh congue, eget commodo risus ultrices. Nam vulputate, eros nec scelerisque pellentesque, purus ligula fermentum justo, in porta justo nisl at velit. Quisque efficitur nulla ac justo tincidunt, a sodales odio feugiat.
-                </p>
-            </div>
->>>>>>> b7d33aa (fiksa innhold i flexbokser)
+                <div class="data-kolonne">
+                    <h2>
+                        Hva skjer på datatorget?
+                    </h2>
+                    <p> Datatorget på Oslomet fungerer som et sentralt knutepunkt for IT-studenter, og det er et senter for læring og utforskning innen informatikk og teknologi. Dette området er dedikert til å støtte studentenes faglige reise ved å tilby avanserte datamaskiner, spesialisert programvare og teknisk utstyr som er essensielt for deres studier. Det gir et miljø som oppmuntrer til samarbeid, utveksling av ideer og praktisk læring. </p>
+                    <p> Med tilgang til laboratorier, arbeidsstasjoner og ressurser som elektroniske databaser og spesialiserte verktøy, blir Datatorget et livlig sted der studenter kan fordype seg i prosjekter, eksperimenter og praktisk erfaring. Teknisk støtte fra kvalifiserte ansatte står også til disposisjon, og dette er en ressurs som bidrar til å løse tekniske utfordringer og gi veiledning når det trengs.</p>
+                </div>
+
+                <div class="data-kolonne">
+                    <img src="style/img/phone.jpg" alt="eat, sleep, code, repeat">
+                    <!--Bildet er hentet fra; https://unsplash.com/photos/black-android-smartphone-vXInUOv1n84-->
+                </div>
+
             </article>
         </section>
 
         <section class="data-section2">
-            <article class="data-article2">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b7d33aa (fiksa innhold i flexbokser)
-                <div class="h2-article2">
-                    <h2>Arbeidsrom</h2>
+            <article class="rad">
+
+                <div class="data-kolonne">
+                    <img src="style/img/arbeidsrom.jpg" alt="bilde av et arbeidsrom">
+                    <!--Bildet er hentet fra istock?? -->
                 </div>
 
-                <div class="ul-article2">
+                <div class="data-kolonne">
+                    <h2>Arbeidsrom</h2>
                     <ul>
                         <li>Stille beliggenhet:</li>
                         <ul>
@@ -126,297 +83,58 @@
                         <ul>
                             <li>For de som ønsker å ta notater eller arbeide mens de leser.</li>
                         </ul>
+                        <li>Støttende miljø:</li>
+                        <ul>
+                            <li>Det kan være studenter tilgjengelig for å gi veiledning og støtte om nødvendig, samt et fellesskap av medstudenter som skaper et støttende miljø for læring og produktivitet.</li>
+                        </ul>
                     </ul>
                 </div>
-<<<<<<< HEAD
-            </article>
 
-            <aside class="data-aside2">
-                <img src="style/img/phone.jpg" alt="eat, sleep, code, repeat">
-=======
-                Text2
-            </article>
-
-            <aside class="data-aside2">
-                Bilde2
->>>>>>> c6fe1cb (endringer)
-=======
-            </article>
-
-            <aside class="data-aside2">
-                <img src="style/img/phone.jpg" alt="eat, sleep, code, repeat">
->>>>>>> b7d33aa (fiksa innhold i flexbokser)
-            </aside>
+        </article>
         </section>
 
         <section class="data-section3">
-            <aside class="data-aside3">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="orakel-logo">
-                    <!--Pil symbol sin kode er hentet frahttps://www.w3schools.com/charsets/ref_utf_arrows.asp-->
-                    <b>Klikk på logoen under og stell deg i kø til Orakeltjenesten &#x2193;</b>
-<<<<<<< HEAD
-=======
-                <div class="orakel-logo">
-<<<<<<< HEAD
-                    <b>Klikk på bildet under og stell deg i kø til Orakeltjenesten:</b>
->>>>>>> b7d33aa (fiksa innhold i flexbokser)
-=======
-                    <!--Pil symbol sin kode er hentet frahttps://www.w3schools.com/charsets/ref_utf_arrows.asp-->
+            <article class="rad">
+
+
+                <div class="data-kolonne">
+                    <!--Pil-symbol sin kode er hentet fra; https://www.w3schools.com/charsets/ref_utf_arrows.asp-->
                     <b>Klikk på bildet under og stell deg i kø til Orakeltjenesten &#x2193;</b>
->>>>>>> 934ae8e (endringer)
-=======
->>>>>>> 97361b9 (endringer)
                     <a href="https://orakeloslomet.github.io/Orakel_Queue_Client/" target="_blank">
                             <img src="style/img/orakel.png"
                                 alt="Orakeltjenesten sin facebook"/>
+                                <!--Bildet av orakeltjenesten sin logo er hentet fra orakeltjenesten Oslomet sin facebook-->
                     </a>
                 </div>
 
-                <div class="orakeltjenesten">
+
+            <div class="data-kolonne">
+                
+                    <h2>
+                        Orakeltjenesten
+                    </h2>
+    
+                    <p>Orakeltjenesten ved Oslomet er en sentral støttetjeneste som tilbyr veiledning, hjelp og informasjon til studenter, ansatte og potensielle søkere.</p>
+                    <p>Orakeltjenesten fungerer som en slags "informasjons- og støttesentral" som tar for seg et bredt spekter av spørsmål knyttet til universitetets ulike fagområder, administrasjon, IT-tjenester, opptakskrav, studieveiledning, og mer. De tilbyr hjelp og veiledning enten ved personlig oppmøte, telefon eller via e-post.</p>
+                    <p>Orakeltjenesten ved Oslomet spiller en viktig rolle i å støtte både studenter og ansatte, og deres tilgjengelighet og ekspertise bidrar til å lette overgangen til universitetslivet samt gi nødvendig støtte gjennom hele studieperioden.</p>
+                    <br>
                     <b>Åpningstid Orakeltjenesten:</b>
-                    <p>Tirsdag & Fredag 12.30-1630</p>
-                </div>
-<<<<<<< HEAD
-            </aside>
+                    <p>Tirsdag & Fredag 12:30-16:30</p>
 
-            <article class="data-article3">
-                
-                    <h2>
-                        Orakeltjenesten
-                    </h2>
-    
-                    <p>Orakeltjenesten på OsloMet er en vennlig og hjelpsom informasjonskilde for på dataingeniør. Den er der for å besvare alle spørsmål og få hjelp innenfor studie. Orakeltjensten skal veilede deg i riktig retning og bistå med hjelp.</p>
+                    </div>
+            
             </article>
         </section>
 
         <section class="data-section4">
-            <img src="style/img/everyone-can-code.jpg" alt="banner med everyone can code">
+            <img src="style/img/kode-banner.png" alt="banner med everyone can code">
+            <!--Bildet er hentet fra; https://unsplash.com/photos/black-bunting-flags-mDinBvq1Sfg-->
         </section>
+
     </main>
         <footer class="data-footer">
             Footer
         </footer>
-=======
-                Bilde3
-=======
->>>>>>> b7d33aa (fiksa innhold i flexbokser)
-            </aside>
-
-            <article class="data-article3">
-                
-                    <h2>
-                        Orakeltjenesten
-                    </h2>
-    
-                    <p>Orakeltjenesten på OsloMet er en vennlig og hjelpsom informasjonskilde for på dataingeniør. Den er der for å besvare alle spørsmål og få hjelp innenfor studie. Orakeltjensten skal veilede deg i riktig retning og bistå med hjelp.</p>
-            </article>
-        </section>
-
-        <section class="data-section4">
-            <img src="style/img/everyone-can-code.jpg" alt="banner med everyone can code">
-        </section>
-    </main>
-        <footer class="data-footer">
-            Footer
-        </footer>
-<<<<<<< HEAD
-    </main>
->>>>>>> c6fe1cb (endringer)
-=======
->>>>>>> 97361b9 (endringer)
 </body>
-
-
-<!--<body class="databody">
-      <nav class="datanavbar">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <img src="style/img/logo.png" alt="OsloMet Logo">
-=======
->>>>>>> 42e5224 (eeEW)
-=======
->>>>>>> 4407e79 (eeEW)
-=======
-<body>
-      <header>
-=======
->>>>>>> c6fe1cb (endringer)
-        <img src="style/img/logo.png" alt="OsloMet Logo">
->>>>>>> 41363ec (endring)
-          <ul>
-            <li><a href="index.html">Hjem</a></li>
-           <li><a href="accessibility.html">Accessibility</a></li>
-           <li><a href="topical.html">Topical</a></li>
-           <li><a href="datatorget.html">Datatorget</a></li>
-           <li><a href="kantina.html">Kantine</a></li>
-          </ul>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c6fe1cb (endringer)
-        </nav>
-        <div id="dataheader">
-            <h1>Velkommen Til Datatorget!</h1>
-        </div>
-<<<<<<< HEAD
-=======
-        </header>
->>>>>>> 41363ec (endring)
-=======
->>>>>>> c6fe1cb (endringer)
-
-    <main class="datacontainer">
-        <article class="dataarticle">
-            <h2>Hva skjer på datatorget?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac urna non arcu gravida tristique. 
-                Quisque a felis ut elit consequat vestibulum. Phasellus vehicula, urna id 
-                facilisis lacinia, dui metus convallis est, id fringilla mauris mauris sit amet 
-                ligula. Integer eu urna ut libero lacinia scelerisque vel nec nisi.</p>
-        </article>
-        <aside class="datasidebar">
-            <img src="style/img/koding.jpg" alt="En som koder">
-        </aside> --> 
-       <!-- 
-        <section class="flexbox1">
-            <b>Adresse:</b>
-            <p>Pilestredet 35, 4.etasje</p>
-            <b>Åpningstid Orakeltjenesten:</b>
-            <p>Tirsdag & Fredag 12.30-1630</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.8756571957914!2d10.7347696!3d59.9196745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f1fc5920b79%3A0xe72cf5d0dee0de6f!2sOsloMet%20-%20Handelsh%C3%B8yskolen!5e0!3m2!1sno!2sno!4v1697620383279!5m2!1sno!2sno" width="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p><b>Kontakt Orakeltjenesten og stell deg i kø:</b></p>
-            <p><a href="https://orakeloslomet.github.io/Orakel_Queue_Client/">Kø til Orakeltjenesten</a></p>
-            <div class = "orakel">
-                <a href="https://www.facebook.com/OrakelOsloMet/?locale=nb_NO">
-                    <picture>
-                        <img src="style/img/orakel.png"
-                            alt="Orakeltjenesten sin facebook"/>
-                    </picture>
-                </a>
-                </div>
-        </section>
-    
-        <article class="flexbox2">
-
-    
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac urna non arcu gravida tristique. Quisque a felis ut elit consequat vestibulum. Phasellus vehicula, urna id facilisis lacinia, dui metus convallis est, id fringilla mauris mauris sit amet ligula. Integer eu urna ut libero lacinia scelerisque vel nec nisi. Curabitur euismod, neque eu aliquet congue, lorem felis congue sapien, ut congue urna tortor in dui. Sed sit amet dolor ut ex iaculis varius. In in justo non tortor aliquet tincidunt vel et massa. Sed vel consequat justo, vel bibendum ex. Nulla facilisi. Vestibulum euismod scelerisque tristique.</p>
-    <h2>Arbeidsrom</h2>
-    <h3>Stille leserom</h3>
-    <ul>
-        <li>Stille beliggenhet:</li>
-        <ul>
-            <li>Et avsidesliggende rom eller område i skolen, helst vekk fra støy og forstyrrelser.</li>
-        </ul>
-        <li>God belysning:</li>
-        <ul>
-            <li>Naturlig lys fra vinduer og lamper for å lese komfortabelt.</li>
-        </ul>
-        <li>Skrivebord og stoler:</li>
-        <ul>
-            <li>For de som ønsker å ta notater eller arbeide mens de leser.</li>
-        </ul>
-    </ul>
-    Generert av ChatGPT
-
-    <h2>dlab</h2>
-    <h3>Orkaltjeneste</h3>
-    <p>Orakeltjenesten på OsloMet er en vennlig og hjelpsom informasjonskilde for på dataingeniør. 
-        Den er der for å besvare alle spørsmål og få hjelp innenfor studie. Orakeltjensten skal veilede deg i riktig retning og bistå med hjelp.</p>
-        Teksten er inspirert av en AI-generert tekst
-        </article>
-    <aside class="flexbox3">
-        
-        <div class="dtorget">
-    <a href="https://student.oslomet.no/auditorier-undervisningsrom/-/undervisningsrom/campus/PIL/bygning/P35">
-        <picture>
-        <img src="style/img/dtorget.JPG"
-            alt="Bilde av datatorget"/>
-        </picture>
-    </a>
-    <b>Datatorget. Foto: Privat</b>
-        </div>
-
-    Bildet av P35 som kan klikkes på å ta deg til en oversikt over alle rom i p35
-<<<<<<< HEAD
-    </aside>
-<<<<<<< HEAD
-=======
-
-    <aside class="flexbox4">
-        <div class ="ansatt">
-        <img src="style/img/rektor.png" alt="Avatar">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <br>
-          <p>Architect & Engineer</p>
-        </div>
-        </div> 
-=======
->>>>>>> c6fe1cb (endringer)
-    </aside>
-
-    <aside class="flexbox4">
-        <aside class ="ansatt">
-        <img src="style/img/rektor.png" alt="Avatar">
-        <div class="container">
-          <h4><b>Andreas Berg</b></h4>
-          <p>Rektor</p>
-        </div>
-        </aside> 
-<<<<<<< HEAD
-    </aside>
-    </main>
->>>>>>> 17015a0 (hhyhhy)
-
-    <aside class="flexbox4">
-        <aside class ="ansatt">
-        <img src="style/img/rektor.png" alt="Avatar">
-        <div class="container">
-          <h4><b>Andreas Berg</b></h4>
-          <p>Rektor</p>
-        </div>
-        </aside> 
-    </aside> -->
-
-=======
-    </aside> -->
-
->>>>>>> c6fe1cb (endringer)
-    <!--</main>
-    
-    <footer class="indexfooter">
-
-        <div class="footerbox1">
-          <b>Adresse</b>
-          <p>Pilestredet 32 - 54</p>
-          <a href="https://www.facebook.com/oslomet/"><img src="style/img/facebook.png" alt="Facebook-ikon"></a>
-          <a href="https://www.instagram.com/oslomet/"><img src="style/img/instagram.png" alt="Instagram-ikon"></a>
-          <a href="https://www.linkedin.com/school/oslomet/"><img src="style/img/linkedin.png" alt="Linkedin-ikon"></a>
-        </div>
-    
-        <div class="footerbox2">
-          <b>Resepsjon</b>
-        <p>Telefon: +47 67 23 60 00<br>
-           Åpningstid: 08:00 - 15:00 (man-fre)<br>
-           Addresse: Pilestredet 46</p>
-        </div>
-    
-        <div class="footerbox3">
-          <b>Studentsenteret</b>
-        <p>Telefon: +47 67 23 77 78<br>
-           Åpningstid: 10:00 - 14:00 (man-fre)<br>
-           Adresse: Pilestredet 52</p>
-        </div>
-    
-        <div class="footerbox4">
-          <img src="style/img/OsloMet_LogoFull.png" alt="OsloMet Logo">
-          <p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p>
-        </div>
-      </footer>
-    
-</body>-->
 </html>
 
