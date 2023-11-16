@@ -966,6 +966,9 @@ containeren.*/
     .data-nav, ul, li, .data-section1, .data-section2, .data-section3 {   
        flex-direction: column;
      }
+     .data-header h1 {
+      font-size: 15vw;
+     }
      ul, li {
        margin: 1%;
      }
