@@ -127,7 +127,7 @@ body {
   .navbar-menu {
       flex-direction: column;
       position: fixed;
-      top: -1000px;
+      top: -2000px;
       /*top: 0;*/
       right: 0px;
       width: 100%;
