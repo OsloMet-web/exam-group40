@@ -647,7 +647,6 @@ font-size: medium;
 
 
 /*Nellie*/
-
 /* Header */
 .header {
   margin: 0;
@@ -657,42 +656,42 @@ font-size: medium;
   background-position: center;
   background-size: cover;
   background-color: #babab1;
-
 }
 
 .meny {
-display: flex;
-flex-direction: row;
-justify-content: center;
-background-color: #d5debf;
-padding: 5px;
-position: sticky;
-position: -webkit-sticky;
-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #d5debf;
+  padding: 5px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
+
 .meny ul {
-list-style: none;
-display: flex;
-position: sticky;
+  list-style: none;
+  display: flex;
+  position: sticky;
 }
 
 .meny li {
-margin-right: 50px;
-position: sticky;
+  margin-right: 50px;
+  position: sticky;
 }
 
 .meny li a {
-text-decoration: none;
-color: #343f3e;
-font-weight: bold;
-display: block;
-text-align: center;
-font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  color: #343f3e;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
 }
 
 .meny a:hover {
-color: #FFFFFF;
-position: sticky;
+  color: #FFFFFF;
+  position: sticky;
 }
 
 /* Forsidebilde */
@@ -719,62 +718,73 @@ position: sticky;
 
 /* Stiler for første boks (info-box) */
 .boks-holder {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-gap: 2rem;
-margin: auto;
-width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: auto;
+  width: 80%;
 }
 
-.info-box, .kantine-bilde {
-flex: 50%;
+.info-box,
+.kantine-bilde,
+.kaffebilde,
+.Åpningstider {
+  flex: 50%;
 }
 
 .info-box {
-background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
-padding: 20px;
-margin-bottom: 20px; /* Juster bredden etter behov */
+  background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
+  padding: 20px;
+  margin-bottom: 20px; /* Juster bredden etter behov */
 }
 
 /* Stiler for andre boks (kantine-bilde) */
 .kantine-bilde {
-width: 100%;
-/* Juster bredden etter behov */
+  width: 100%;
+  /* Juster bredden etter behov */
 }
-.kantine-bilde img{
-width: 100%;
-height: auto;
+.kantine-bilde img {
+  width: 100%;
+  height: auto;
 }
 
 /* Stiler for tredje boks (kaffebilde og Åpningstider) */
-/*
-.boks-holder2 {
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-width: 100%;
-}
-*/
-
-.kaffebilde, .Åpningstider {
-flex: 50%;
+.kaffebilde,
+.Åpningstider {
+  flex: 50%;
 }
 
 /* Stiler for kaffebilde */
 .kaffebilde {
-width: 100%;
+  width: 100%;
 }
 
 .kaffebilde img {
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Stiler for fjerde boks (Åpningstider) */
 .Åpningstider {
-background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
+  background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
+}
+
+/* Ny stil for skjermbredder mindre enn 400px */
+@media screen and (max-width: 400px) {
+  .boks-holder {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .info-box,
+  .kantine-bilde,
+  .kaffebilde,
+  .Åpningstider {
+    flex: 100%;
+    width: 100%;
+  }
 }
 
 /* Footer-seksjon */
@@ -791,7 +801,9 @@ background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.footerbox1, .footerbox2, .footerbox3 {
+.footerbox1,
+.footerbox2,
+.footerbox3 {
   flex: 30%;
   padding-left: 30px;
 }
@@ -803,33 +815,15 @@ background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
 }
 
 .footerbox4 {
-flex: 100%;
-padding-left: 30px;
-padding-top: 2%;
+  flex: 100%;
+  padding-left: 30px;
+  padding-top: 2%;
 }
 
 .footerbox4 img {
   max-width: 20%;
   height: auto;
 }
-@media screen and(max-width: 400px) {
-.boks-holder{
-  flex-direction: column;
-  padding: 0;
-}
-}
-@media screen and (max-width: 1000px) {
-  .meny, .forsidebilde_kantina, .boks-holder, .info-box, .kantine-bilde, 
-  .kaffebilde, .Åpningstider, .kantina_footer, .footerbox1, .footerbox2, 
-  .footerbox3, .footerbox4 {   
-    flex-direction: column;
-  }
-
-  .meny ul, .meny li {
-    margin: 1%;
-  }
-}
-
 /* Ange-Clara */
 
 
