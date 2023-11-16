@@ -862,44 +862,6 @@ padding-top: 2%;
 
 /* Tomine */
 
-:root {
-    font-size: 12px;
-    font-family: Raleway;
-}
-
-h2 {
-    font-family: "Raleway";
-    font-size: 2.5rem;
-    }
-    
-h3 {
-    font-size: 1.7rem;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    }
-    
-p {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.2rem;
-    line-height: 2rem;
-}
-
-ul {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.2rem;
-    line-height: 2rem;
-}
-
-b {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.2rem;
-    line-height: 2rem;
-}
-
-/*Valgt fonten Raleway fra Google Fonts som font for overskrifter, og Helvetica som font for brødtekst*/
-
 
 .data-body {
     background-color: #f7f7f2;
