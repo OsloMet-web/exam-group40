@@ -735,15 +735,14 @@ font-size: medium;
 }
 
 .info-box {
-  background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
+  background-color: #ffffff;
   padding: 20px;
-  margin-bottom: 20px; /* Juster bredden etter behov */
+  margin-bottom: 20px; 
 }
 
 /* Stiler for andre boks (kantine-bilde) */
 .kantine-bilde {
   width: 100%;
-  /* Juster bredden etter behov */
 }
 .kantine-bilde img {
   width: 100%;
@@ -756,14 +755,11 @@ font-size: medium;
   flex: 50%;
 }
 
-.boks-holder boks1, .boks2, .boks3, .boks4 {
-  height: 100%;
-  width: auto;
-}
 
 .boks-holder div, img {
   width: 100%;
   height: auto;
+  margin-bottom: 10px;
 }
 
 /* Stiler for kaffebilde */
