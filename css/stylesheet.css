@@ -80,7 +80,7 @@ line-height: 2rem;
 
 .logo-icon {
   display: block;
-  background-image: url(img/logo.png);
+  background-image: url(../img/logo.png);
   opacity: 0.8;
   background-size: cover;
   width: 5rem;

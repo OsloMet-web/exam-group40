@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" type="text/css" href="css/stylesheet.css">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--Hentet fra font.google.com-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
     <title>accessibility</title>
     <link rel="icon" type="image/x-icon" href="style/img/favicon.png"> <!--favicon bilde-->
     <!-- <link rel="stylesheet" href="style/css/stylesheet.css">*/ -->
@@ -32,6 +36,7 @@
 
             /* Footer color */
             --bg-footer: #899878;
+            --text-footer: #000000;
 
             /* Timers */
             --hover-time: 0.5s;
@@ -347,7 +352,6 @@
        .main-footer {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         width: 100%;
         height: auto;
         margin-top: 6rem;
@@ -355,16 +359,18 @@
         background-color: var(--bg-footer);
        }
 
-       .main-footer p, h3, a{
+       .main-footer p, a{
         color: var(--bg);
+       }
+
+       .main-footer h3 {
+        color: var(--text-primary);
        }
 
        .main-footer section {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
        }
 
        .upper-footer {
@@ -387,34 +393,98 @@
         flex-direction: column;
         list-style: none;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        gap: 1rem;
        }
 
        .upper-footer li {
         font-size: 1.2rem;
+        opacity: 0.8;
         align-items: center;
-        padding-right: 3rem;
+       }
+
+       .upper-footer li:hover {
+        color: var(--bg);
+        opacity: 1;
+        text-decoration: underline;
        }
 
        .bottom-footer {
+        display: flex;
         width: 90%;
         margin: auto;
        }
 
-       .bottom-footer span, ul {
+       .bottom-footer .trademark, .footer-logo, .social-media {
+        margin: auto;
         flex: 30%;
        }
 
-       .bottom-footer img {
-        width: 100%;
-        height: auto;
+       .trademark p{
+        color: var(--text-footer);
        }
+
+       .flogo-wrapper {
+        display: flex;
+        align-items: center;
+
+       }
+
+       .flogo-icon {
+        display: block;
+        position: relative;
+        bottom: 4rem;
+        background-image: url(img/logo2.png);
+        opacity: 0.8;
+        background-size: cover;
+        width:17rem;
+        height: 10rem;
+        margin: auto;
+        transition: transform var(--hover-time) ease-out;
+        background-color: rgba(0, 255, 255, 0);
+        }
+
+        .flogo-icon:hover {
+            opacity: 1;
+            transition: transform var(--hover-time) ease-in-out;
+        }
 
        .bottom-footer ul {
         display: flex;
         flex-direction: row;
         list-style: none;
         justify-content: space-between;
+        gap: 1rem;
+        margin: auto;
+       }
+
+       .social-media li {
+        width: 4rem;
+        height: auto;
+        opacity: 0.8;
+        transition: all var(--hover-time) ease-out;
+       }
+
+       .social-media li:hover {
+            opacity: 1;
+            transition: var(--hover-time) ease-in-out;
+        }
+
+       .social-media img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+       }
+
+       @media (max-width: 750px) {
+        .main-footer section{
+            flex-direction: column;
+        }
+
+        .flogo-icon {
+            margin-top: 5rem;
+        }
+
        }
 
         
@@ -548,31 +618,46 @@
                     Åpningstid: 08:00 - 15:00 (man-fre)<br>
                     Addresse: Pilestredet 46</p>
             </span>
-            <div class="school-adress">
+            <span class="school-adress">
                 <h3>studentsenteret</h3>
                 <p>Telefon: +47 67 23 77 78<br>
                     Åpningstid: 10:00 - 14:00 (man-fre)<br>
                     Adresse: Pilestredet 52</p>
-                 </div>
-                </div>
+                </span>
             <span class="footer-list-container">
                 <h3>Viktige Linker</h3>
                 <ul class="footer-list">
                     <li><a href="accessibility.html">accessibility</a></li>
-                    <li><a href="*">Contact us</a></li>
+                    <li><a href="mailto:post@oslomet.no">Contact us</a></li>
                 </ul>
             </span>
           </section>
           <section class="bottom-footer">
             <span class="trademark"><p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p></span>
-            <span class="footer-logo"><img src="style/img/logo.png" alt="OsloMet Logo"></span>
+            <div class="footer-logo">
+                <a href="index.html" class="">
+                    <span class="flogo-icon"></span>
+               </a>
+            </div>
             <ul class="social-media">
-              <li><a href="https://www.instagram.com/oslomet/">instagram</a></li>
-              <li><a href="https://www.tiktok.com/@oslomet">tiktok</a></li>
-              <li><a href="https://www.linkedin.com/school/oslomet/">linked-in</a></li>
-              <li><a href="https://www.facebook.com/oslomet/">facebook</a></li>
-              <li><a href="https://www.youtube.com/@OsloMetFilm">youtube</a></li>
-              <li><a href="https://twitter.com/oslomet?">X</a></li>
+              <li><a href="https://www.instagram.com/oslomet/">
+                <span><img src="img/instagram.svg" alt=""></span>
+              </a></li>
+              <li><a href="https://www.tiktok.com/@oslomet">
+                <span><img src="img/tiktok.svg" alt=""></span>
+              </a></li>
+              <li><a href="https://www.linkedin.com/school/oslomet/">
+                <span><img src="img/linkedin.svg" alt=""></span>
+              </a></li>
+              <li><a href="https://www.facebook.com/oslomet/">
+                <span><img src="img/facebook.svg" alt=""></span>
+              </a></li>
+              <li><a href="https://www.youtube.com/@OsloMetFilm"><span>
+                <img src="img/youtube.svg" alt="">
+              </span></a></li>
+              <li><a href="https://twitter.com/oslomet?"><span>
+                <img src="img/x.svg" alt="">
+              </span></a></li>
             </ul>
           </section>
       </footer>
