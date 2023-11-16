@@ -6,67 +6,54 @@
     <link rel="icon" type="image/x-icon" href="style/img/favicon.png">
     <meta lang="nb">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="stylesheetindex.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
 
-  <body>
-    <nav class="navbar">
-
-      <div class="logo-wrapper">
-          <a href="index.html" class="nav-logo">
-              <!--<img src="style/img/logo_lightgreen.png" alt="Hjemme">-->
-              <span class="logo-icon"></span>
-         </a>
-      </div>
-
-      <menu class="nav-group" for="burgertoggle">
-
-          <input id="burgertoggle" type="checkbox">
-
-          <label id="nav-toggle-open" for="burgertoggle">
-              <span class="material-symbols-outlined">menu</span>
-          </label>
-
-          <label for="burgertoggle" id="nav-toggle-close">
-              <span class="material-symbols-outlined">close</span>
-          </label>
-
-          <ul class="navbar-menu" for="burgertoggle"> 
-              <li class="nav-list">
-                  <a href="index.html" class="nav-link">
-                      <span class="material-symbols-outlined" id="nav-icons">
-                          home
-                      </span>
-                      <span class="nav-link-text">Hjemme</span>
-                  </a>
-              </li>
-              <li class="nav-list">
-                  <a href="topical.html" class="nav-link">
-                      <span class="material-symbols-outlined" id="nav-icons">psychology</span>
-                      <span class="nav-link-text">Topical</span>
-                  </a>
-              </li>
-              <li class="nav-list">
-                  <a href="kantina.html" class="nav-link">
-                      <span class="material-symbols-outlined" id="nav-icons">
-                              lunch_dining
-                      </span>
-                      <span class="nav-link-text">Kantine</span>
-                  </a>
-              </li>
-              <li class="nav-list">
-                  <a href="datatorget.html" class="nav-link">
-                      <span class="material-symbols-outlined" id="nav-icons">
-                              devices
-                      </span>
-                      <span class="nav-link-text">Datatorget</span>
-                  </a>
-              </li>
-          </ul>    
-      </menu>
-  </nav>
+<body>
+  <nav class="navbar">
+    <div class="logo-wrapper">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon"></span>
+      </a>
+    </div>
+  <menu class="nav-group" for="burgertoggle">
+    <input id="burgertoggle" type="checkbox">
+    <label id="nav-toggle-open" for="burgertoggle">
+      <span class="material-symbols-outlined">menu</span>
+    </label>
+    <label for="burgertoggle" id="nav-toggle-close">
+      <span class="material-symbols-outlined">close</span>
+    </label>
+    <ul class="navbar-menu" for="burgertoggle"> 
+      <li class="nav-list">
+        <a href="index.html" class="nav-link">
+          <span class="material-symbols-outlined" id="nav-icons">home</span>
+          <span class="nav-link-text">Hjem</span>
+        </a>
+      </li>
+     <li class="nav-list">
+        <a href="topical.html" class="nav-link">
+          <span class="material-symbols-outlined" id="nav-icons">psychology</span>
+          <span class="nav-link-text">Topical</span>
+        </a>
+     </li>
+     <li class="nav-list">
+        <a href="kantina.html" class="nav-link">
+          <span class="material-symbols-outlined" id="nav-icons">lunch_dining</span>
+            <span class="nav-link-text">Kantine</span>
+        </a>
+     </li>
+     <li class="nav-list">
+        <a href="datatorget.html" class="nav-link">
+          <span class="material-symbols-outlined" id="nav-icons">devices</span>
+          <span class="nav-link-text">Datatorget</span>
+        </a>
+      </li>
+    </ul>    
+  </menu>
+</nav>
  <!--end Navigation bar-->
 
   <header-index>
@@ -77,69 +64,69 @@
 <!--Headeren inneholder også et bilde som er lagt inn som et bakgrunnsbilde med CSS, dette for å kunne plassere overskriften
 over bildet.-->
 
+<!--Bruker flexbox oppbygd av rader og kolonner til å strukturere innholdet på siden, raden fungerer som en container for 
+  kolonnene. Koden for denne strukturen er inspirert av en video av GreatStack (https://youtu.be/oYRda7UtuhA?si=Cc8BsDSYKPBpQDza)-->
 <section class="velkommen">
   <article class="rad">
     <div class="velkommen-kolonne">
     <h2>Velkommen til Campus Pilestredet</h2>
-  <p>Velkommen til Norges mest urbane universitetscampus. Campusen Pilestredet er omgitt av kafeer for lesing eller 
-    møte med venner, og restauranter hvor du kan kjøpe lunsj til studentvennlige priser. Du finner alle hovedattraksjonene i Oslo 
-    sentrum, inkludert shopping, parker, barer og Oslofjorden, i umiddelbar nærhet.</p>
-  <p>Du kan gå fra den ene enden av campus til den andre på omtrent ti minutter. Over hele campus finner du kafeteriaer, biblioteker, studentpuber, treningssentre og til og med en 
-    klatrevegg. På Campus Pilestredet finner du også Studentsenteret og Servicesenteret. Vår hovedresepsjon ligger i 
-    Pilestredet 46 og Studentsenteret ligger i Pilestredet 52. </p>
+  <p>Velkommen til Norges mest urbane universitetscampus. Campus Pilestredet er omgitt av kafeer for lesing eller 
+    møte med venner, og restauranter hvor du kan kjøpe lunsj til studentvennlige priser. Du finner alle hovedattraksjonene i 
+    Oslo sentrum, inkludert shopping, parker, barer og Oslofjorden, i umiddelbar nærhet.</p>
+  <p>Du kan gå fra den ene enden av campus til den andre på omtrent ti minutter. Over hele campus finner du kafeteriaer, 
+    biblioteker, studentpuber, treningssentre og til og med en klatrevegg. På Campus Pilestredet finner du også Studentsenteret
+    og Servicesenteret. Vår hovedresepsjon ligger i Pilestredet 46 og Studentsenteret ligger i Pilestredet 52. </p>
     </div>
     <div class="velkommen-kolonne">
-      <img src="style/img/campusbilde.jpg" alt="Studenter i parken">
+      <img src="img/campusbilde.jpg" alt="Studenter i parken">
     </div>
   </article>
 </section>
-<!--Bruker flexbox oppbygd av rader og kolonner til å strukturere innholdet på siden, raden fungerer som en container for 
-  kolonnene. Koden for denne strukturen er inspirert av en video av GreatStack (https://youtu.be/oYRda7UtuhA?si=Cc8BsDSYKPBpQDza)-->
 
-<section class="bibliotek">
+  <section class="bibliotek">
   <h2>Bibliotek</h2>
-  <p>Vi har blant annet litteratur, printere, kopimaskiner og arbeidsplasser. Her kan du også få hjelp av bibliotekarene.</p>
+  <p>Bibliotekene har pensumlitteratur, printere, kopimaskiner og flere arbeidsplasser. Du kan også få hjelp av bibliotekarene.</p>
 <article class="rad">
     <div class="bibliotek-kolonne">
       <h3>Bibliotek P48</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sequi, omnis beatae nesciunt mollitia 
-        numquam nam dignissimos magni aperiam cupiditate odit veritatis dolor deserunt illo eos itaque culpa corporis 
-        tempora.</p>
+      <p>Biblioteket har pensum, tidsskrifter, faglitteratur, skjønnlitteratur, barne- og ungdomslitteratur, 
+        lyrikk, tegneserier, film, musikk, lydbøker, offentlige publikasjoner, studentoppgaver, audiovisuelt utstyr og 
+        bokskanner. Du finner også flere arbeidsplasser, grupperom og stille lesesal.</p>
     </div>
     <div class="bibliotek-kolonne">
       <h3>Helsefagbiblioteket P32</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sequi, omnis beatae nesciunt mollitia 
-        numquam nam dignissimos magni aperiam cupiditate odit veritatis dolor deserunt illo eos itaque culpa corporis 
-        tempora.</p>
+      <p>Biblioteket har flere arbeidsplasser, grupperom og stille lesesal. Her finner du fagområdene sykepleie, bioingeniør, ergoterapi, farmasi, fysioterapi, ortopediingeniør,
+        paramedisin og radiografi ogtannteknikk. I anatomirommet finner du en samling anatomiske modeller og plansjer. </p>
     </div>
     <div class="bibliotek-kolonne">
       <h3>Bibliotek P35</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sequi, omnis beatae nesciunt mollitia 
-        numquam nam dignissimos magni aperiam cupiditate odit veritatis dolor deserunt illo eos itaque culpa corporis 
-        tempora.</p>
+      <p>Her finner du fagområder som sosialfag, økonomi og administrasjon, bygg- og energiteknikk, maskin, elektronikk og 
+        kjemi, informasjonsteknologi og velferds- og arbeidslivsforskning. Biblioteket har arbeidsplasser, grupperom og 
+        stille lesesal.</p>
       </div>
   </article>
 </section>
 
 <section class="p35">
   <h2>Ellen Gleditschs hus</h2>
-  <p>Ellen Gleditschs hus ligger i Pilestredet 35, og dette er hovedbygget for teknologi, kunst og design.
-    Her har vi blant annet kantine, samlingsstedet Kroa og et eget datatorg for IT-studenter. Les mer om disse her, 
-    ved å trykke deg inn på undersidene.
+  <p>Ellen Gleditschs hus ligger i Pilestredet 35, og dette er hovedbygget for blant annet ingeniørstudier, økonomistudier og 
+    studier innen teknologi, kunst og design. Her har vi blant annet kantine, samlingsstedet Kroa og et eget datatorg for 
+    IT-studenter. Les mer om disse her, ved å trykke deg inn på sidene under.
   </p>
 <article class="rad">
     <div class="p35-kolonne">
-      <img src="style/img/kantine-link.png" alt="Kantinen i Pilestredet 35">
+      <img src="img/kantine-link.png" alt="Kantinen i Pilestredet 35">
       <a href="kantina.html">KANTINE</a>
     </div>
     <div class="p35-kolonne">
-      <img src="style/img/datatorget-link.png" alt="Datatorget i P35">
+      <img src="img/datatorget-link.png" alt="Datatorget i P35">
       <a href="datatorget.html">DATATORGET</a>
     </div>
     <div class="p35-kolonne">
-      <img src="style/img/kroa-link.png" alt="Samlingsstedet Kroa">
+      <img src="img/kroa-link.png" alt="Samlingsstedet Kroa">
       <a href="https://www.osloteknikersamfund.no/kroa" target="_blank">KROA</a>
       </div>
+  <!--Bildene er et stock-bilder fra iStcok, lastet ned med lisens: https://www.istockphoto.com/-->
   </article>
 </section>
 
@@ -154,9 +141,9 @@ over bildet.-->
     <div class="footerboks1">
       <b>Adresse</b>
       <p>Pilestredet 32 - 54</p>
-      <a href="https://www.facebook.com/oslomet/"><img src="style/img/facebook.png" alt="Facebook-ikon"></a>
-      <a href="https://www.instagram.com/oslomet/"><img src="style/img/instagram.png" alt="Instagram-ikon"></a>
-      <a href="https://www.linkedin.com/school/oslomet/"><img src="style/img/linkedin.png" alt="Linkedin-ikon"></a>
+      <a href="https://www.facebook.com/oslomet/"><img src="img/facebook.png" alt="Facebook-ikon"></a>
+      <a href="https://www.instagram.com/oslomet/"><img src="img/instagram.png" alt="Instagram-ikon"></a>
+      <a href="https://www.linkedin.com/school/oslomet/"><img src="img/linkedin.png" alt="Linkedin-ikon"></a>
     </div>
 
     <div class="footerboks2">
@@ -174,7 +161,7 @@ over bildet.-->
     </div>
 
     <div class="footerboks4">
-      <img src="style/img/OsloMet_LogoFull.png" alt="OsloMet Logo">
+      <img src="img/OsloMet_LogoFull.png" alt="OsloMet Logo">
       <p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p>
     </div>
   </footer>

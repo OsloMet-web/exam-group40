@@ -1,0 +1,972 @@
+/*Felles for alle*/
+
+:root {
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 6rem;
+  z-index: 100;
+  justify-content: space-between;
+  background-color: #e4e6c3;
+}
+
+.logo-wrapper{
+  display: flex;
+  flex: 0.3;
+  align-items: center;
+  margin-left: 2rem;
+  padding: 0;
+  z-index: 200;
+  background: #e4e6c300;
+}
+
+.logo-icon {
+  display: block;
+  background-image: url(../img/logo-gråmørk.png);
+  background-size: cover;
+  width: 5rem;
+  height: 3.5rem;
+}
+
+.logo-icon:hover {
+  background-image: url(../img/logo-maincolor.png);
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-group{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2.5rem;
+  position: relative;
+  background-color: rgba(0, 169, 169, 0);
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.nav-group li {
+  list-style: none;
+  background-color: rgba(217, 213, 0, 0);
+
+}
+
+.nav-group a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #46494c;
+  background-color: rgba(70, 0, 0, 0);
+}
+
+.nav-group a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  background: #343434;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+.nav-group a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-group a:hover {
+  color: #343434;
+  transition: transform 1s ease-in;
+}
+
+#nav-toggle-open, #nav-toggle-close {
+  position: relative;
+  margin-right: 2rem;
+  color: #343f3e;
+  background-color: #ff0ad600;
+  cursor: pointer;
+  z-index: 10001;
+  background-color: rgba(250, 235, 215, 0);
+  display: none;
+}
+
+#nav-icons {
+  font-size: 2rem;
+  display: none;
+}
+
+#burgertoggle{
+  display: none;
+}
+
+@media (max-width: 700px) {
+
+  #burger-toggle{
+      opacity: 0;
+  }
+
+  .navbar-menu {
+      flex-direction: column;
+      position: fixed;
+      top: -1000px;
+      /*top: 0;*/
+      right: 0px;
+      width: 100%;
+      height: 100%;
+      justify-content: start;
+      margin-right: 0;
+      align-items: center;
+      background-color: #e4e6c3;
+      padding-top: 6rem;
+      transition: 0.5s ease;
+  }
+
+  #nav-icons {
+      position: relative;
+      top: 0.5rem;
+      background-color: rgba(0, 255, 255, 0);
+      display: inline-block;
+  }
+
+  #nav-toggle-open {
+      display: block;
+  }
+
+  .nav-group input:checked ~ #nav-toggle-open {
+      display: none;
+
+  }
+
+  .nav-group input:checked ~ #nav-toggle-close {
+      display: block;
+
+  }
+
+  .nav-group input:checked ~ .navbar-menu {
+     top: 0;
+  }
+
+}
+
+/*MARIA - INDEX*/
+
+h2 {
+  font-family: "Raleway";
+  font-size: 2.5rem;
+  }
+  
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  }
+  
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  }
+
+/*Valgt fonten Raleway fra Google Fonts som font for overskrifter, og Helvetica som font for brødtekst*/
+
+.header-index {
+  margin-top: 6rem;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/Pilestredet_campus.jpeg);
+  /*Bildet er hentet fra OsloMet sine nettsider: https://www.oslomet.no/en/about/get-to-know-oslomet*/
+  background-position: center;
+  background-size: cover;
+}
+
+.header-index h1 {
+  margin: 0;
+  padding: 20% 20% 20% 50%;
+  font-size: 5vw;
+  font-family: "Raleway";
+  color: #FFFFFF;
+}
+/*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
+viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften (litt mot venstre).*/
+
+.rad {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.velkommen {
+  width: 80%;
+  margin: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: left;
+}
+
+.velkommen-kolonne {
+  flex-basis: 48%;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
+
+.velkommen-kolonne img {
+  width: 100%;
+}
+/*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for alle delene. Koden for kolonnene varierer,
+avhengig av innhold.*/
+
+.bibliotek {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5em;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bibliotek.jpg);
+  background-size: cover;
+  border-radius: 3em;
+}
+/*Bibliotek-delen har et bakgrunnsbilde, med en mørk transparant farge over for bedre lesbarhet. 
+Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockphoto.com/*/
+
+.bibliotek h2 {
+  color: #FFFFFF;
+  font-size: 3em;
+}
+
+.bibliotek > p {
+  color: #FFFFFF;
+  font-size: 1.5em
+}
+
+.bibliotek-kolonne {
+  flex-basis: 35%;
+  background: #F7F7F2;
+  border-radius: 2em;
+  margin: 5%;
+  padding: 2em;
+  box-sizing: border-box;
+  text-align: left;
+}
+/*Styling av overskrift, tekst og boksene i bibliotek-delen*/
+
+.p35 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5em;
+}
+
+.p35-kolonne {
+  flex-basis: 32%;
+  border-radius: 0.5em;
+  margin-bottom: 1.5em;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+}
+
+.p35-kolonne img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.p35-kolonne a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  transition: 0.5s;
+  font-weight: 500;
+  font-family: "Raleway";
+  color: #FFFFFF;
+  font-size: 2em;
+  padding: 0.5em;
+  text-decoration: none;
+  border: solid;
+  border-color: #FFFFFF;
+}
+
+.p35-kolonne a:hover {
+  background: rgba(137, 152, 120, 0.8);
+}
+/*P35 - Styling tre bokser med hvert sitt bilde og lenker til sider. Bakgrunnen er satt til svart, og transparens på bildene
+er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjonert midt på boksene*/
+
+.kart {
+  width: 80%;
+  margin: auto;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  text-align: center;
+}
+
+.kart iframe {
+  width: 100%;
+}
+
+/*Endre footer?*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px 50px 50px 70px;
+    background: #E4E6C3;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.footerboks1, .footerboks2, .footerboks3 {
+    flex: 30%;
+    padding-left: 30px;
+  }
+
+.footerboks1 img {
+    width: 7%;
+    height: auto;
+    padding: 3px;
+}
+
+.footerboks4 {
+  flex: 100%;
+  padding-left: 30px;
+  padding-top: 2%;
+}
+
+.footerboks4 img {
+    max-width: 20%;
+    height: auto;
+}
+
+@media screen and (max-width: 700px) {
+   .footer, .rad {   
+      flex-direction: column;
+     }
+  }
+
+/*Susanne*/
+.topical-body{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden; /**Fjerner den eksta marginen på siden**/
+}
+
+.topical-article{
+    flex: 60%;
+}
+
+.topical-header{
+align-items: center;
+justify-content: center;
+background-color: #899878;
+margin-top: 50px;
+
+}
+
+
+.topical-menu{
+    list-style: none;
+    display: flex;
+    
+
+}
+
+.topical-menu > li {
+    margin: 10px 40px 10px 40px;
+    text-align: center;
+    
+    
+
+}
+
+.topical-menu > li > a {
+color:#F7F7F2;
+font-weight: bold;
+text-decoration: none;
+text-align: center;
+font-family: Helvetica, sans-serif;
+font-size: medium;
+
+
+}
+
+.topical-menu > li > a:hover{
+    text-decoration: underline;
+    color:#343F3E;
+}
+
+.topical-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #899878;
+  padding: 20px;
+  margin: -50px 0 0 0;
+  
+}
+
+/* Forsidebilde og tittel*/
+#pagetitle{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#pagetitle > h1{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color:#F7F7F2;
+    font-size: xx-large;
+    z-index: 1;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+#pagetitle>img{
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
+  background: linear-gradient(#004092, #020202, transparent)
+}
+
+
+.flexbox {
+    display: flex;
+}
+
+/*Artikkelteksten*/
+.artikkeltekst{
+    padding:2rem;
+}
+
+.artikkeltekst > p{
+    flex-grow: 2;
+    line-height: 1.5;
+    font-size: medium;
+    
+}
+
+.artikkeltekst > h2{
+    font-family: fantasy;
+    font-weight: 10;
+    color: #46494C;
+    margin: 50px 0 20px 0;
+    font-size: x-large;
+
+    
+}
+
+/*Bilde i artikkelen*/
+#bilde1{
+    display: flex;
+    align-items: flex-end;
+    max-width: 100%;
+    margin-top: 50px;
+}
+
+
+#bildekilde1{
+    margin: 0;
+    font-size: smaller;
+    color: grey;
+}
+
+/**Inspirert av W3Schools, animasjon med tekst**/
+.animation {
+    width: 100%;
+    height: 100px;
+    color:rgb(207,33,33);
+    animation-name: example;
+    animation-duration: 30s;
+    padding: 20px;
+    animation-iteration-count: infinite;
+    font-family: Arial;
+    margin-left: 10px;
+    
+}
+@keyframes example {
+    0%   {color: rgb(207, 33, 33);}
+    10%  {color: rgb(234, 125, 58);}
+    20%  {color: #FFD500;}
+    30% {color: rgb(73, 194, 73);}
+    40% {color: rgb(0, 191, 255);}
+    50% {color: rgb(64, 64, 158);}
+    60% {color: rgb(138, 42, 138);}
+    70% {color: violet;}
+    80% {color: pink;}
+    90% {color: rgb(213, 85, 106);}
+    100% {color: rgb(207,33,33);}
+  }
+
+/**Inspirert av W3Schools, flipboxer med bilder og info**/
+  .flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin: 30px;
+  }
+  
+  /* Posisjon foran og bak innhold */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Horisontalt flip når musen går over boksen */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Posisjon foran og bak boks */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Styling på front */
+  .flip-box-front {
+    color: black;
+    border:transparent;
+  }
+
+  .flip-box-front>img{
+    width: 300px;
+    height: 200px;
+    
+  }
+  
+  /* Styling bak */
+  .flip-box-back {
+    background-color: #899878;
+    color: #F7F7F2;
+    transform: rotateY(180deg);
+  }
+  .flip-box-back>p {
+    padding:20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .flip-box-back>h4{
+    font-family: fantasy;
+    font-weight: lighter;
+    font-size: larger;
+    margin-top: 20px;
+  }
+/*Overskrift på linjen med bilder*/
+  #linjetittel {
+    font-family: fantasy;
+    font-weight: lighter;
+    color: #46494C;
+    text-align: center;
+    margin-top: 50px;
+    font-size: large;
+  }
+
+  /*Knappene med linker*/
+  .extrareading{
+    display: flex;
+    float: left;
+  }
+
+  .extrareading:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .buttonlink{
+    margin: -50px 30px 10px 30px;
+  }
+ 
+  .buttonlink > a:link, a:visited{
+      background-color: #899878;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+  
+  }
+
+  .buttonlink > a:hover{
+    color:#46494C
+  }
+/*Footer nederst*/
+  #topical-footer{
+    background-color: bisque;
+    margin:0;
+    margin-top: 50px;
+    padding: 50px;
+    text-align: center;
+    
+}
+
+    
+
+
+
+
+
+
+/*Nellie*/
+/* Header */
+.Kantinaheader {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #F7F7F2;
+    font-family: "Raleway";
+  }
+  
+  .Kantinaheader img {
+    max-width: 100%;
+    height: 0;
+    margin: 0;
+  }
+  
+  /* Navigasjonsmeny */
+  .horizontal-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F7F7F2;
+    padding: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+  
+  .horizontal-menu {
+    list-style: none;
+    position: center;
+    display: flex;
+  }
+  
+  .horizontal-menu li {
+    position: center;
+    margin-right: 40px;
+  }
+  
+  .horizontal-menu li a {
+    text-decoration: none;
+    color: #343f3e;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+  }
+
+/* Forsidebilde */
+.forsidebilde_kantina {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    margin-top: 0px;
+}
+
+.forsidebilde_kantina img {
+    max-width: 90%;
+    height: auto;
+}
+
+.forsidebilde_kantina p {
+    font-size: 12px;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+/* Hovedinnhold */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flexbox2, .flexbox1, .flexbox3 {
+    flex: 1;
+    padding: 15px;
+}
+
+#kantine-bilde {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer-seksjon */
+.kantina_footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px 50px 50px 70px;
+    background: #E4E6C3;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.footerbox1, .footerbox2, .footerbox3 {
+    flex: 30%;
+    padding-left: 30px;
+  }
+
+.footerbox1 img {
+    width: 7%;
+    height: auto;
+    padding: 3px;
+}
+
+.footerbox4 {
+  flex: 100%;
+  padding-left: 30px;
+  padding-top: 2%;
+}
+
+.footerbox4 img {
+    max-width: 20%;
+    height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
+      flex-direction: column;
+    }
+    ul, li {
+      margin: 1%;
+    }
+}
+
+/* Ange-Clara */
+
+
+
+/* Tomine */
+
+:root {
+    font-size: 12px;
+    font-family: Raleway;
+}
+
+h2 {
+    font-family: "Raleway";
+    font-size: 2.5rem;
+    }
+    
+h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    }
+    
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+ul {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+b {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/*Valgt fonten Raleway fra Google Fonts som font for overskrifter, og Helvetica som font for brødtekst*/
+
+
+.data-body {
+    background-color: #f7f7f2;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    border: 5px solid black;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.data-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F7F7F2;
+    padding: 25px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    
+  }
+  
+  .data-nav ul {
+    list-style: none;
+    display: flex;
+    position: sticky;
+  }
+  
+  .data-nav li {
+    margin-right: 50px;
+    position: sticky;
+  }
+  
+  .data-nav li a {
+    text-decoration: none;
+    color: #343f3e;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+  }
+
+
+.data-header {
+    margin-top: 6rem;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/mac.jpeg);
+    /* Bildet er hentet fra; https://unsplash.com/photos/macbook-pro-on-white-surface-WiONHd_zYI4*/
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .data-header h1 {
+    margin: 0;
+    padding: 15% 20% 20% 25%;
+    font-size: 4vw;
+    font-family: "Raleway";
+    color: #FFFFFF;
+  }
+
+/*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
+viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften. Koden er inspirert av W3school.*/
+
+
+.rad {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+.data-kolonne {
+    flex-basis: 48%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+.data-kolonne img {
+    width: 100%;
+}
+
+/*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for section 1,2 og 3. Samme gjelder for kolonnene innad i 
+containeren.*/
+
+.data-section1 {
+    width: 80%;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+
+.data-section2 {
+    width: 80%;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: left;
+    border-top: solid;
+}
+
+.data-section3 {
+    width: 80%;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: left;
+    border-top: solid;
+}
+
+.data-section4 {
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.data-section4 img{
+    width: 100%;
+}
+/* Setter bildet i section 4 til å dekke hele siden til venstre og høyre*/
+
+.data-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 50px;
+    border: 5px solid black;
+    background-color: white; /*bare for å overkjære en kode over*/
+    margin-top: 10px; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+@media screen and (max-width: 700px) {
+    .data-nav, ul, li, .data-section1, .data-section2, .data-section3 {   
+       flex-direction: column;
+     }
+     ul, li {
+       margin: 1%;
+     }
+ }
