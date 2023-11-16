@@ -265,8 +265,9 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   background: #F7F7F2;
   border-radius: 2em;
   margin: 5%;
-  padding: 1em;
+  padding: 2em;
   box-sizing: border-box;
+  text-align: left;
 }
 /*Styling av overskrift, tekst og boksene i bibliotek-delen*/
 
