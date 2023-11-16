@@ -166,6 +166,10 @@ line-height: 2rem;
       opacity: 0;
   }
 
+  .navbar {
+    height: 6rem;
+  }
+
   .navbar-menu {
       flex-direction: column;
       position: fixed;
