@@ -11,14 +11,40 @@
     <!-- <link rel="stylesheet" href="style/css/stylesheet.css">*/ -->
     <style>
 
+        *{
+            outline: 0;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
         :root {
+            /* Common colors*/
+            --text-primary: #343434;
+
+            --secondary: #46494c;
+            --bg: #f7f7f2;
+
+            /* Header nav Colors */
+            --bg-header: #e4e6c3;
+
+            /* Footer color */
+            --bg-footer: #899878;
+
+            /* Timers */
+            --hover-time: 0.5s;
+            -slide-time: 0.5s;
+
             font-size: 12px;
             font-family: Raleway;
         }
 
         body {
-            color: black;
-            background-color: #f7f7f2;
+            z-index: -2;
+            color: var(--text-primary);
+            background-color: var(--bg);
             margin: 0;
             padding: 0;
             min-height: 100vh;
@@ -26,7 +52,6 @@
         }
 
         h2 {
-        font-family: "Raleway";
         font-size: 2.5rem;
         }
 
@@ -39,7 +64,6 @@
         }
 
         p {
-        font-family: Helvetica, Arial, sans-serif;
         font-size: 1.2rem;
         line-height: 2rem;
         }
@@ -53,7 +77,7 @@
             height: 6rem;
             z-index: 100;
             justify-content: space-between;
-            background-color: #e4e6c3;
+            background-color: var(--bg-header);
         }
 
         .logo-wrapper{
@@ -63,17 +87,16 @@
             margin-left: 2rem;
             padding: 0;
             z-index: 200;
-            background: #e4e6c300;
         }
 
         .logo-icon {
             display: block;
-            background-image: url(style/img/logo-gråmørk.png);
+            background-image: url(img/logo.png);
             opacity: 0.8;
             background-size: cover;
             width: 5rem;
             height: 3.5rem;
-            transition: transform 0.5s ease-out;
+            transition: transform var(--hover-time) ease-out;
         }
 
         .logo-icon:hover {
@@ -90,14 +113,12 @@
             display: flex;
             gap: 2.5rem;
             position: relative;
-            background-color: rgba(0, 169, 169, 0);
             list-style: none;
             margin-right: 2rem;
         }
 
         .nav-group li {
             list-style: none;
-            background-color: rgba(217, 213, 0, 0);
 
         }
 
@@ -106,7 +127,7 @@
             text-decoration: none;
             text-transform: uppercase;
             letter-spacing: 0.1rem;
-            color: #46494c;
+            color: var(--secondary);
             background-color: rgba(70, 0, 0, 0);
         }
 
@@ -116,9 +137,9 @@
             width: 100%;
             height: 2px;
             bottom: -2px;
-            background: #343434;
+            background: var(--secondary);
             transform: scaleX(0);
-            transition: transform 0.5s ease-in-out;
+            transition: var(--hover-time) ease-in-out;
             transform-origin: right;
         }
 
@@ -128,18 +149,16 @@
         }
 
         .nav-group a:hover {
-            color: #343434;
+            color: var(--text-primary);
             transition: transform 1s ease-in;
         }
 
         #nav-toggle-open, #nav-toggle-close {
             position: relative;
             margin-right: 2rem;
-            color: #343f3e;
-            background-color: #ff0ad600;
+            color: var(--secondary);
             cursor: pointer;
             z-index: 10001;
-            background-color: rgba(250, 235, 215, 0);
             display: none;
         }
 
@@ -152,7 +171,7 @@
             display: none;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 750px) {
 
             #burger-toggle{
                 opacity: 0;
@@ -169,7 +188,7 @@
                 justify-content: start;
                 margin-right: 0;
                 align-items: center;
-                background-color: #e4e6c3;
+                background-color: var(--bg-header);
                 padding-top: 6rem;
                 transition: 0.5s ease;
             }
@@ -201,7 +220,14 @@
 
         }
 
-        .accessibility-header {
+        @media (max-width: 450px) {
+            .nav-group a::before{
+                display: none;
+            }
+
+        }
+
+        .title {
             margin-top: 6rem;
             margin-bottom: 4rem;
             text-align: center;
@@ -213,21 +239,17 @@
             background-size: cover;
         }
 
-        .accessibility-header img {
+        .title img {
             align-content: center;
             max-width: 100%;
             height: 100%; 
         }
 
-        .accessibility-header h1 {
+        .title h1 {
             position: relative;
-            top: 0rem;
-            right: 6 rem;
-            left: 24;
-            margin: 0;
-            padding: 18rem 2rem 1rem 40rem;
+            top: 50%;
             font-size: 5rem;
-            color: #f7f7f2;
+            color: var(--bg);
         }
 
 
@@ -235,13 +257,21 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 80%;
+            justify-content: space-between;
+            gap: 2rem;
             margin: auto;
-            background-color: rgba(0, 255, 255, 0);
         }
 
         .accessibility-main-container section {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
             margin: auto;
+        }
+
+        .accessibility-main-container article{
+            justify-content: space-between;
+            gap: 2rem;
         }
 
         .access-welcome {
@@ -251,11 +281,8 @@
 
 
         .test-wrapper {
-            display: flex;
-            flex-direction: row;
             position: relative;
             top: 2rem;
-            background-color: rgba(0, 255, 255, 0);
         }
 
         .test-wrapper .test-article, .test-pictures {
@@ -263,20 +290,16 @@
             margin-right: 2rem;
             padding: 0.5em;
             flex: 50%;
-            background-color: rgba(255, 0, 0, 0);
         }
 
         .test-pictures img {
             width: 100%;
-            height: 100%;
+            height: auto;
         }
 
         .design-wrapper {
-            display: flex;
-            flex-direction: row;
             position: relative;
             top: 2rem;
-            background-color: rgba(153, 205, 50, 0);
         }
 
         .design-wrapper .design-article, .design-pictures {
@@ -284,18 +307,16 @@
             margin-right: 2rem;
             padding: 0.5em;
             flex: 50%;
-            background-color: rgba(0, 0, 255, 0);
         }
 
         .design-pictures {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: rgba(238, 130, 238, 0);
         }
 
         .design-pictures img {
-            width: 100%;
+            width: auto;
             height: 100%;
         }
 
@@ -303,8 +324,24 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
             height: 6rem;
-            background-color: rgba(246, 46, 46, 0)
         }
+
+        @media (max-width: 750px) {
+        .accessibility-main-container section {
+            flex-direction: column;
+        }
+
+        .title {
+        }
+
+       }
+
+       @media (max-width: 450px) {
+        .accessibility-main-container section {
+            flex-direction: column;
+        }
+
+       }
 
 
        .main-footer {
@@ -314,7 +351,12 @@
         width: 100%;
         height: auto;
         margin-top: 6rem;
-        background-color: #e4e6c3;
+        color: var(--bg);
+        background-color: var(--bg-footer);
+       }
+
+       .main-footer p, h3, a{
+        color: var(--bg);
        }
 
        .main-footer section {
@@ -323,7 +365,6 @@
         justify-content: space-between;
         margin-bottom: 2rem;
         margin-top: 2rem;
-        background-color: rgba(255, 0, 0, 0);
        }
 
        .upper-footer {
@@ -347,14 +388,12 @@
         list-style: none;
         align-items: center;
         justify-content: center;
-        background-color: rgba(255, 0, 0, 0);
        }
 
        .upper-footer li {
         font-size: 1.2rem;
         align-items: center;
         padding-right: 3rem;
-        background-color: rgba(0, 255, 255, 0);
        }
 
        .bottom-footer {
@@ -384,79 +423,76 @@
 </head>
 <body>
     <!--Navigation bar-->
-    <nav class="navbar">
-
-        <div class="logo-wrapper">
-            <a href="index.html" class="nav-logo">
-                <!--<img src="style/img/logo_lightgreen.png" alt="Hjemme">-->
-                <span class="logo-icon"></span>
-           </a>
-        </div>
-
-        <menu class="nav-group" for="burgertoggle">
-
-            <input id="burgertoggle" type="checkbox">
-
-            <label id="nav-toggle-open" for="burgertoggle">
-                <span class="material-symbols-outlined">menu</span>
-            </label>
-
-            <label for="burgertoggle" id="nav-toggle-close">
-                <span class="material-symbols-outlined">close</span>
-            </label>
-
-            <ul class="navbar-menu" for="burgertoggle"> 
-                <li class="nav-list">
-                    <a href="index.html" class="nav-link">
-                        <span class="material-symbols-outlined" id="nav-icons">
-                            home
-                        </span>
-                        <span class="nav-link-text">Hjemme</span>
-                    </a>
-                </li>
-                <li class="nav-list">
-                    <a href="topical.html" class="nav-link">
-                        <span class="material-symbols-outlined" id="nav-icons">psychology</span>
-                        <span class="nav-link-text">Topical</span>
-                    </a>
-                </li>
-                <li class="nav-list">
-                    <a href="kantina.html" class="nav-link">
-                        <span class="material-symbols-outlined" id="nav-icons">
-                                lunch_dining
-                        </span>
-                        <span class="nav-link-text">Kantine</span>
-                    </a>
-                </li>
-                <li class="nav-list">
-                    <a href="datatorget.html" class="nav-link">
-                        <span class="material-symbols-outlined" id="nav-icons">
-                                devices
-                        </span>
-                        <span class="nav-link-text">Datatorget</span>
-                    </a>
-                </li>
-            </ul>    
-        </menu>
-    </nav>
+    <header class="nav-header">
+        <nav class="navbar">
+            <div class="logo-wrapper">
+                <a href="index.html" class="nav-logo">
+                    <!--<img src="style/img/logo_lightgreen.png" alt="Hjemme">-->
+                    <span class="logo-icon"></span>
+               </a>
+            </div>
+    
+            <menu class="nav-group" for="burgertoggle">
+    
+                <input id="burgertoggle" type="checkbox">
+    
+                <label id="nav-toggle-open" for="burgertoggle">
+                    <span class="material-symbols-outlined">menu</span>
+                </label>
+    
+                <label for="burgertoggle" id="nav-toggle-close">
+                    <span class="material-symbols-outlined">close</span>
+                </label>
+    
+                <ul class="navbar-menu" for="burgertoggle"> 
+                    <li class="nav-list">
+                        <a href="index.html" class="nav-link">
+                            <span class="material-symbols-outlined" id="nav-icons">
+                                home
+                            </span>
+                            <span class="nav-link-text">Hjemme</span>
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="topical.html" class="nav-link">
+                            <span class="material-symbols-outlined" id="nav-icons">psychology</span>
+                            <span class="nav-link-text">Topical</span>
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="kantina.html" class="nav-link">
+                            <span class="material-symbols-outlined" id="nav-icons">
+                                    lunch_dining
+                            </span>
+                            <span class="nav-link-text">Kantine</span>
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="datatorget.html" class="nav-link">
+                            <span class="material-symbols-outlined" id="nav-icons">
+                                    devices
+                            </span>
+                            <span class="nav-link-text">Datatorget</span>
+                        </a>
+                    </li>
+                </ul>    
+            </menu>
+        </nav>
+    </header>
         <!--end Navigation bar-->
-
-    <!--header-->
-        <header class="accessibility-header">
-          <h1>ACCESSIBILITY</h1>
-        </header>
-
-    <!--end header-->
 
 
 
    <main class="accessibility-main-container">
-        <section class="access-welcome">
+        <header class="title">
+            <h1>ACCESSIBILITY</h1>
+        </header>
+        <article class="access-welcome">
             <h2>Velkommen til Accessibility</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Quis varius quam quisque id diam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Nulla at volutpat diam ut.
             </p>
-        </section>
+        </article>
         <section class="test-wrapper">
             <article class="test-article">
                 <h2>Resultater fra testen</h2>
@@ -475,7 +511,7 @@
                 Vulputate enim nulla aliquet porttitor lacus.
                 </p>
             </article>
-            <aside class="test-pictures"><img src="style/img/cat.jpg" alt="accessibility-test"></aside>
+            <aside class="test-pictures"><img src="img/cat.jpg" alt="accessibility-test"></aside>
         </section>
         <section class="design-wrapper">
             <article class="design-article">
@@ -496,9 +532,9 @@
                 </p>
             </article>
             <article class="design-pictures">
-                <aside class="picture1"><img src="style/img/cat.jpg" alt="design-picture1"></aside>
-                <aside class="picture2"><img src="style/img/cat.jpg" alt="design-picture2"></aside>
-                <aside class="picture3"><img src="style/img/cat.jpg" alt="adesign-picture3"></aside>
+                <aside class="picture1"><img src="img/cat.jpg" alt="design-picture1"></aside>
+                <aside class="picture2"><img src="img/cat.jpg" alt="design-picture2"></aside>
+                <aside class="picture3"><img src="img/cat.jpg" alt="adesign-picture3"></aside>
             </article>
         </section>
    </main>
@@ -512,20 +548,20 @@
                     Åpningstid: 08:00 - 15:00 (man-fre)<br>
                     Addresse: Pilestredet 46</p>
             </span>
-            <span class="school-adress">
+            <div class="school-adress">
                 <h3>studentsenteret</h3>
                 <p>Telefon: +47 67 23 77 78<br>
                     Åpningstid: 10:00 - 14:00 (man-fre)<br>
                     Adresse: Pilestredet 52</p>
                  </div>
-            </span>
-            <div class="footer-list-container">
+                </div>
+            <span class="footer-list-container">
                 <h3>Viktige Linker</h3>
                 <ul class="footer-list">
                     <li><a href="accessibility.html">accessibility</a></li>
                     <li><a href="*">Contact us</a></li>
                 </ul>
-             </div>
+            </span>
           </section>
           <section class="bottom-footer">
             <span class="trademark"><p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p></span>
