@@ -922,7 +922,7 @@ containeren.*/
   background-color: var(--bg-footer);
  }
 
- .main-footer p, a{
+ .main-footer p, .main-footer a{
   color: var(--bg);
  }
 
@@ -941,7 +941,7 @@ containeren.*/
   margin: auto;
  }
 
- .upper-footer span, div {
+ .upper-footer span {
   flex: 30%;
   padding: auto;
   text-align: center;
