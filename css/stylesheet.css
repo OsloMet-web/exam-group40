@@ -819,10 +819,13 @@ padding-top: 2%;
 }
 }
 @media screen and (max-width: 1000px) {
-  .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
+  .meny, .forsidebilde_kantina, .boks-holder, .info-box, .kantine-bilde, 
+  .kaffebilde, .Åpningstider, .kantina_footer, .footerbox1, .footerbox2, 
+  .footerbox3, .footerbox4 {   
     flex-direction: column;
   }
-  ul, li {
+
+  .meny ul, .meny li {
     margin: 1%;
   }
 }
