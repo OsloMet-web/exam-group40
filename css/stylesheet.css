@@ -863,7 +863,7 @@ background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
 }
 
 @media (max-width: 750px) {
-.accessibility-main-container section {
+.access-main-container section {
   flex-direction: column;
 }
 
@@ -873,7 +873,7 @@ background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
 }
 
 @media (max-width: 450px) {
-.accessibility-main-container section {
+.access-main-container section {
   flex-direction: column;
 }
 
