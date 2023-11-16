@@ -43,7 +43,7 @@ body {
 }
 
 .logo-icon:hover {
-  background-image: url(../img/logo-maincolor.png);
+  background-image: url(/img/logo-maincolor.png);
   transition: transform 0.5s ease-in-out;
 }
 
