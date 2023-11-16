@@ -1,15 +1,60 @@
 /*Felles for alle*/
 
+*{
+  outline: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
 :root {
+  /* Common colors*/
+  --text-primary: #343434;
+
+  --secondary: #46494c;
+  --bg: #f7f7f2;
+
+  /* Header nav Colors */
+  --bg-header: #e4e6c3;
+
+  /* Footer color */
+  --bg-footer: #899878;
+
+  /* Timers */
+  --hover-time: 0.5s;
+  -slide-time: 0.5s;
+
   font-size: 12px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Raleway;
 }
 
 body {
+  z-index: -2;
+  color: var(--text-primary);
+  background-color: var(--bg);
   margin: 0;
   padding: 0;
   min-height: 100vh;
   min-width: 100vh;
+}
+
+h2 {
+font-size: 2.5rem;
+}
+
+h3 {
+font-size: 1.7rem;
+font-weight: 500;
+text-align: center;
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
+}
+
+p {
+font-size: 1.2rem;
+line-height: 2rem;
 }
 
 .navbar {
@@ -21,7 +66,7 @@ body {
   height: 6rem;
   z-index: 100;
   justify-content: space-between;
-  background-color: #e4e6c3;
+  background-color: var(--bg-header);
 }
 
 .logo-wrapper{
@@ -31,20 +76,21 @@ body {
   margin-left: 2rem;
   padding: 0;
   z-index: 200;
-  background: #e4e6c300;
 }
 
 .logo-icon {
   display: block;
-  background-image: url(../img/logo-gråmørk.png);
+  background-image: url(img/logo.png);
+  opacity: 0.8;
   background-size: cover;
   width: 5rem;
   height: 3.5rem;
+  transition: transform var(--hover-time) ease-out;
 }
 
 .logo-icon:hover {
-  background-image: url(../img/logo-maincolor.png);
-  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav-group{
@@ -56,14 +102,12 @@ body {
   display: flex;
   gap: 2.5rem;
   position: relative;
-  background-color: rgba(0, 169, 169, 0);
   list-style: none;
   margin-right: 2rem;
 }
 
 .nav-group li {
   list-style: none;
-  background-color: rgba(217, 213, 0, 0);
 
 }
 
@@ -72,7 +116,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #46494c;
+  color: var(--secondary);
   background-color: rgba(70, 0, 0, 0);
 }
 
@@ -82,9 +126,9 @@ body {
   width: 100%;
   height: 2px;
   bottom: -2px;
-  background: #343434;
+  background: var(--secondary);
   transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
+  transition: var(--hover-time) ease-in-out;
   transform-origin: right;
 }
 
@@ -94,18 +138,16 @@ body {
 }
 
 .nav-group a:hover {
-  color: #343434;
+  color: var(--text-primary);
   transition: transform 1s ease-in;
 }
 
 #nav-toggle-open, #nav-toggle-close {
   position: relative;
   margin-right: 2rem;
-  color: #343f3e;
-  background-color: #ff0ad600;
+  color: var(--secondary);
   cursor: pointer;
   z-index: 10001;
-  background-color: rgba(250, 235, 215, 0);
   display: none;
 }
 
@@ -118,7 +160,7 @@ body {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
 
   #burger-toggle{
       opacity: 0;
@@ -135,7 +177,7 @@ body {
       justify-content: start;
       margin-right: 0;
       align-items: center;
-      background-color: #e4e6c3;
+      background-color: var(--bg-header);
       padding-top: 6rem;
       transition: 0.5s ease;
   }
@@ -167,26 +209,14 @@ body {
 
 }
 
-/*MARIA - INDEX*/
+@media (max-width: 450px) {
+  .nav-group a::before{
+      display: none;
+  }
 
-h2 {
-  font-family: "Raleway";
-  font-size: 2.5rem;
-  }
-  
-h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  }
-  
-p {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  }
+}
+
+/*MARIA - INDEX*/
 
 /*Valgt fonten Raleway fra Google Fonts som font for overskrifter, og Helvetica som font for brødtekst*/
 
@@ -204,7 +234,6 @@ p {
   margin: 0;
   padding: 20% 20% 20% 50%;
   font-size: 5vw;
-  font-family: "Raleway";
   color: #FFFFFF;
 }
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
