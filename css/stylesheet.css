@@ -874,12 +874,8 @@ b {
     margin-top: 6rem;
     width: 100%;
     height: 100vh;
-<<<<<<< HEAD:style/css/stylesheet.css
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/style/img/mac.jpeg);
-    /* Bildet er hentet fra; https://unsplash.com/photos/macbook-pro-on-white-surface-WiONHd_zYI4*/
-=======
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/mac.jpeg);
->>>>>>> main:css/stylesheet.css
+    /* Bildet er hentet fra; https://unsplash.com/photos/macbook-pro-on-white-surface-WiONHd_zYI4*/
     background-position: center;
     background-size: cover;
   }
