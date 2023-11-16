@@ -756,6 +756,16 @@ font-size: medium;
   flex: 50%;
 }
 
+.boks-holder boks1, .boks2, .boks3, .boks4 {
+  height: 100%;
+  width: auto;
+}
+
+.boks-holder div, img {
+  width: 100%;
+  height: auto;
+}
+
 /* Stiler for kaffebilde */
 .kaffebilde {
   width: 100%;
@@ -770,6 +780,8 @@ font-size: medium;
 .Åpningstider {
   background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
 }
+
+
 
 /* Ny stil for skjermbredder mindre enn 400px */
 @media screen and (max-width: 400px) {
