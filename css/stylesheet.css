@@ -415,16 +415,6 @@ font-size: medium;
     color:#343F3E;
 }
 
-.topical-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #899878;
-  padding: 20px;
-  margin: -50px 0 0 0;
-  
-}
-
 /* Forsidebilde og tittel*/
 #pagetitle{
   position: relative;
@@ -780,7 +770,7 @@ background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
   background-color: #2a1515b4;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/pilestredet.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/pilestredet.jpeg);
   background-position: center;
   background-size: cover;
 }
