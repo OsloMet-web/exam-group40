@@ -62,6 +62,7 @@ font-size: medium;
   
 }
 
+/* Forsidebilde og tittel*/
 #pagetitle{
   position: relative;
   text-align: center;
@@ -95,6 +96,7 @@ font-size: medium;
     display: flex;
 }
 
+/*Artikkelteksten*/
 .artikkeltekst{
     padding:2rem;
 }
@@ -116,7 +118,7 @@ font-size: medium;
     
 }
 
-
+/*Bilde i artikkelen*/
 #bilde1{
     display: flex;
     align-items: flex-end;
@@ -131,14 +133,7 @@ font-size: medium;
     color: grey;
 }
 
-#topical-footer{
-    background-color: bisque;
-    margin:0;
-    margin-top: 50px;
-    padding: 50px;
-    text-align: center;
-}
-/**Inspirert av W3Schools**/
+/**Inspirert av W3Schools, animasjon med tekst**/
 .animation {
     width: 100%;
     height: 100px;
@@ -148,7 +143,8 @@ font-size: medium;
     padding: 20px;
     animation-iteration-count: infinite;
     font-family: Arial;
-    text-align: center;
+    margin-left: 10px;
+    
 }
 @keyframes example {
     0%   {color: rgb(207, 33, 33);}
@@ -164,7 +160,7 @@ font-size: medium;
     100% {color: rgb(207,33,33);}
   }
 
-/**Inspirert av W3Schools**/
+/**Inspirert av W3Schools, flipboxer med bilder og info**/
   .flip-box {
     background-color: transparent;
     width: 300px;
@@ -226,7 +222,7 @@ font-size: medium;
     font-size: larger;
     margin-top: 20px;
   }
-
+/*Overskrift på linjen med bilder*/
   #linjetittel {
     font-family: fantasy;
     font-weight: lighter;
@@ -235,6 +231,45 @@ font-size: medium;
     margin-top: 50px;
     font-size: large;
   }
+
+  /*Knappene med linker*/
+  .extrareading{
+    display: flex;
+    float: left;
+  }
+
+  .extrareading:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .buttonlink{
+    margin: -50px 30px 10px 30px;
+  }
+ 
+  .buttonlink > a:link, a:visited{
+      background-color: #899878;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+  
+  }
+
+  .buttonlink > a:hover{
+    color:#46494C
+  }
+/*Footer nederst*/
+  #topical-footer{
+    background-color: bisque;
+    margin:0;
+    margin-top: 50px;
+    padding: 50px;
+    text-align: center;
+    
+}
 
     
 
@@ -663,13 +698,14 @@ font-size: medium;
     left: 50%;
     transform: translate(-50%, -50%); /* plasserer teksten i midten langs x aksen*/
     color: #ffffff;
-    font-size: 5rem;
+    font-size: 4vw;
+  }
     /*margin: 0;
     padding: 10% 15% 30% 15%;
     font-size: 5vw;
     font-family: "Raleway";
     color: #FFFFFF;*/
-  }
+
 /*
 .data-header {
     display: flex;
@@ -952,6 +988,12 @@ font-size: medium;
     justify-content: center;  
 }
 
+.data-section4 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+}
 .data-section4 img{
     width: 100%;
     height: auto;
@@ -969,3 +1011,11 @@ font-size: medium;
     align-items: center; 
 }
 
+@media screen and (max-width: 700px) {
+    .data-nav, ul, li, .data-section1, .data-section2, .data-section3 {   
+       flex-direction: column;
+     }
+     ul, li {
+       margin: 1%;
+     }
+ }
