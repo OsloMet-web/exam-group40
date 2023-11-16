@@ -816,34 +816,8 @@ b {
     line-height: 2rem;
 }
 
-.indexfooter p {
-  line-height: 1.5em;
-}
+/*Valgt fonten Raleway fra Google Fonts som font for overskrifter, og Helvetica som font for brødtekst*/
 
-.footerbox1, .footerbox2, .footerbox3 {
-    flex: 30%;
-    padding-left: 30px;
-  }
-
-.footerbox1 img {
-    width: 7%;
-    height: auto;
-    padding: 3px;
-}
-
-.footerbox4 {
-  flex: 100%;
-  padding-left: 30px;
-  padding-top: 2%;
-}
-
-.footerbox4 img {
-    max-width: 20%;
-    height: auto;
-}
-*/
-
-/*oppdatert stylesheet tomine*/
 
 .data-body {
     background-color: #f7f7f2;
@@ -852,14 +826,6 @@ b {
     min-height: 100vh;
     min-width: 100vh;
 }
-
-/*.data-main { 
-    display: flex; 
-    flex-direction: column; 
-    width: 80%; /* Bredden på selve nettsiden*/ 
-    /*margin: auto;
-    font-size: 2rem;
-} */
 
 .logo {
     display: flex;
@@ -903,24 +869,49 @@ b {
   }
 
 
-#data-header {
-    margin: 0;
+.data-header {
+    margin-top: 6rem;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/style/img/mac.jpeg);
+    /* Bildet er hentet fra; https://unsplash.com/photos/macbook-pro-on-white-surface-WiONHd_zYI4*/
     background-position: center;
     background-size: cover;
   }
   
-  #data-header h1 {
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* plasserer teksten i midten langs x aksen*/
-    color: #ffffff;
+  .data-header h1 {
+    margin: 0;
+    padding: 15% 20% 20% 25%;
     font-size: 4vw;
+    font-family: "Raleway";
+    color: #FFFFFF;
   }
+
+/*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
+viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften. Koden er inspirert av W3school.*/
+
+
+.rad {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+.data-kolonne {
+    flex-basis: 48%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+.data-kolonne img {
+    width: 100%;
+}
+
+/*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for section 1,2 og 3. Samme gjelder for kolonnene innad i 
+containeren.*/
 
 .data-section1 {
     width: 80%;
@@ -929,28 +920,6 @@ b {
     padding-bottom: 0.5em;
     text-align: left;
 }
-
-.rad {
-    margin-top: 2%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-.velkommen-data-kolonne img {
-    width: 100% /* hvordan få bildet langs høyre marg??*/
-}
-
-.velkommen-data-kolonne {
-    flex-basis: 48%;
-    padding-top: 5em;
-    padding-bottom: 5em;
-    padding-left: 0.1em;
-    padding-right: 0.1em;
-}
-
-
-/*HSHSHHSHSHHSHS*/
-
 
 .data-section2 {
     width: 80%;
@@ -971,17 +940,14 @@ b {
 }
 
 .data-section4 {
-    width: 100%;
     margin: auto;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    text-align: left;
 }
 .data-section4 img{
     width: 100%;
 }
-
-
+/* Setter bildet i section 4 til å dekke hele siden til venstre og høyre*/
 
 .data-footer {
     display: flex;
