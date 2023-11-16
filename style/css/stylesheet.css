@@ -36,14 +36,14 @@ body {
 
 .logo-icon {
   display: block;
-  background-image: url(../img/logo-gråmørk.png);
+  background-image: url(/img/logo-gråmørk.png);
   background-size: cover;
   width: 5rem;
   height: 3.5rem;
 }
 
 .logo-icon:hover {
-  background-image: url(../img/logo-maincolor.png);
+  background-image: url(/img/logo-maincolor.png);
   transition: transform 0.5s ease-in-out;
 }
 
