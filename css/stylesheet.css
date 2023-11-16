@@ -773,6 +773,123 @@ background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
 }
 
 /* Ange-Clara */
+.access-title {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  background-color: #2a1515b4;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(style/img/pilestredet.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.access-title img {
+  align-content: center;
+  max-width: 100%;
+  height: 100%; 
+}
+
+.access-title h1 {
+  position: relative;
+  top: 50%;
+  font-size: 5rem;
+  color: var(--bg);
+}
+
+
+.access-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: auto;
+}
+
+.access-main-container section {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+}
+
+.access-main-container article{
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.access-welcome {
+  text-align: center;
+  width: 80%;
+}
+
+
+.test-wrapper {
+  position: relative;
+  top: 2rem;
+}
+
+.test-wrapper .test-article, .test-pictures {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.5em;
+  flex: 50%;
+}
+
+.test-pictures img {
+  width: 100%;
+  height: auto;
+}
+
+.design-wrapper {
+  position: relative;
+  top: 2rem;
+}
+
+.design-wrapper .design-article, .design-pictures {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.5em;
+  flex: 50%;
+}
+
+.design-pictures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.design-pictures img {
+  width: auto;
+  height: 100%;
+}
+
+.picture1, .picture2, .picture3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 6rem;
+}
+
+@media (max-width: 750px) {
+.accessibility-main-container section {
+  flex-direction: column;
+}
+
+.title {
+}
+
+}
+
+@media (max-width: 450px) {
+.accessibility-main-container section {
+  flex-direction: column;
+}
+
+}
+
+/* End of accessibility-page styling */
 
 
 
