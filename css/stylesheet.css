@@ -706,12 +706,13 @@ font-size: medium;
 .kaffebilde,
 .Åpningstider {
   flex: 50%;
+  
 }
 
 .info-box {
-  background-color: #ffffff;
   padding: 20px;
   margin-bottom: 20px; 
+  
 }
 
 /* Stiler for andre boks (kantine-bilde) */
@@ -748,7 +749,6 @@ font-size: medium;
 
 /* Stiler for fjerde boks (Åpningstider) */
 .Åpningstider {
-  background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
 }
 
 
