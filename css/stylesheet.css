@@ -166,10 +166,6 @@ line-height: 2rem;
       opacity: 0;
   }
 
-  .navbar {
-    height: 6rem;
-  }
-
   .navbar-menu {
       flex-direction: column;
       position: fixed;
@@ -214,6 +210,10 @@ line-height: 2rem;
 }
 
 @media (max-width: 450px) {
+  .navbar-menu{
+    top: -1190px;
+  }
+
   .nav-group a::before{
       display: none;
   }
