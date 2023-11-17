@@ -40,8 +40,14 @@ body {
   min-width: 100vh;
 }
 
+ul {
+  list-style: none;
+}
+
 h2 {
 font-size: 2.5rem;
+text-align: center;
+margin-bottom: 1rem;
 }
 
 h3 {
@@ -55,6 +61,11 @@ margin-bottom: 0.5rem;
 p {
 font-size: 1.2rem;
 line-height: 2rem;
+text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -113,7 +124,6 @@ line-height: 2rem;
 
 .nav-group a {
   position: relative;
-  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: var(--secondary);
@@ -166,10 +176,6 @@ line-height: 2rem;
       opacity: 0;
   }
 
-  .navbar {
-    height: 6rem;
-  }
-
   .navbar-menu {
       flex-direction: column;
       position: fixed;
@@ -214,6 +220,10 @@ line-height: 2rem;
 }
 
 @media (max-width: 450px) {
+  .navbar-menu{
+    top: -1190px;
+  }
+
   .nav-group a::before{
       display: none;
   }
@@ -334,11 +344,9 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   background: transparent;
   transition: 0.5s;
   font-weight: 500;
-  font-family: "Raleway";
   color: #FFFFFF;
   font-size: 2em;
   padding: 0.5em;
-  text-decoration: none;
   border: solid;
   border-color: #FFFFFF;
 }
@@ -384,39 +392,6 @@ align-items: center;
 justify-content: center;
 background-color: #899878;
 margin-top: 50px;
-
-}
-
-
-.topical-menu{
-    list-style: none;
-    display: flex;
-    
-
-}
-
-.topical-menu > li {
-    margin: 10px 40px 10px 40px;
-    text-align: center;
-    
-    
-
-}
-
-.topical-menu > li > a {
-color:#F7F7F2;
-font-weight: bold;
-text-decoration: none;
-text-align: center;
-font-family: Helvetica, sans-serif;
-font-size: medium;
-
-
-}
-
-.topical-menu > li > a:hover{
-    text-decoration: underline;
-    color:#343F3E;
 }
 
 /* Forsidebilde og tittel*/
@@ -621,7 +596,6 @@ font-size: medium;
 
 
 /*Nellie*/
-
 /* Header */
 .header {
   margin: 0;
@@ -631,48 +605,47 @@ font-size: medium;
   background-position: center;
   background-size: cover;
   background-color: #babab1;
-
 }
 
 .meny {
-display: flex;
-flex-direction: row;
-justify-content: center;
-background-color: #d5debf;
-padding: 5px;
-position: sticky;
-position: -webkit-sticky;
-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #d5debf;
+  padding: 5px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
+
 .meny ul {
-list-style: none;
-display: flex;
-position: sticky;
+  list-style: none;
+  display: flex;
+  position: sticky;
 }
 
 .meny li {
-margin-right: 50px;
-position: sticky;
+  margin-right: 50px;
+  position: sticky;
 }
 
 .meny li a {
-text-decoration: none;
-color: #343f3e;
-font-weight: bold;
-display: block;
-text-align: center;
-font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  color: #343f3e;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
 }
 
 .meny a:hover {
-color: #FFFFFF;
-position: sticky;
+  color: #FFFFFF;
+  position: sticky;
 }
 
 /* Forsidebilde */
 .forsidebilde_kantina {
   text-align: center;
-  font-family: Helvetica, sans-serif;
   margin-top: 0px;
 }
 
@@ -685,7 +658,6 @@ position: sticky;
 .forsidebilde_kantina p {
   font-size: 0;
   color: #3d3d3d;
-  text-align: center;
 }
 
 /* Hovedinnhold */
@@ -693,76 +665,80 @@ position: sticky;
 
 /* Stiler for første boks (info-box) */
 .boks-holder {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-gap: 2rem;
-margin: auto;
-width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: auto;
+  width: 80%;
 }
 
-.info-box, .kantine-bilde {
-flex: 50%;
+.info-box,
+.kantine-bilde,
+.kaffebilde,
+.Åpningstider {
+  flex: 50%;
 }
 
 .info-box {
-background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
-padding: 20px;
-margin-bottom: 20px; /* Juster bredden etter behov */
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px; 
 }
 
 /* Stiler for andre boks (kantine-bilde) */
 .kantine-bilde {
-width: 100%;
-/* Juster bredden etter behov */
+  width: 100%;
 }
-.kantine-bilde img{
-width: 100%;
-height: auto;
+.kantine-bilde img {
+  width: 100%;
+  height: auto;
 }
 
 /* Stiler for tredje boks (kaffebilde og Åpningstider) */
-/*
-.boks-holder2 {
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-width: 100%;
+.kaffebilde,
+.Åpningstider {
+  flex: 50%;
 }
-*/
 
-.kaffebilde, .Åpningstider {
-flex: 50%;
+
+.boks-holder div, img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 /* Stiler for kaffebilde */
 .kaffebilde {
-width: 100%;
+  width: 100%;
 }
 
 .kaffebilde img {
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Stiler for fjerde boks (Åpningstider) */
 .Åpningstider {
-background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
+  background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
 }
 
-@media screen and(max-width: 400px) {
-.boks-holder{
-  flex-direction: column;
-  padding: 0;
-}
-}
-@media screen and (max-width: 1000px) {
-  .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
+
+
+/* Ny stil for skjermbredder mindre enn 400px */
+@media screen and (max-width: 400px) {
+  .boks-holder {
     flex-direction: column;
+    padding: 0;
   }
-  ul, li {
-    margin: 1%;
+
+  .info-box,
+  .kantine-bilde,
+  .kaffebilde,
+  .Åpningstider {
+    flex: 100%;
+    width: 100%;
   }
 }
 
@@ -899,39 +875,6 @@ background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
     padding-left: 2%;
 }*/
 
-.data-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #F7F7F2;
-    padding: 25px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    
-  }
-  
-  .data-nav ul {
-    list-style: none;
-    display: flex;
-    position: sticky;
-  }
-  
-  .data-nav li {
-    margin-right: 50px;
-    position: sticky;
-  }
-  
-  .data-nav li a {
-    text-decoration: none;
-    color: #343f3e;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-  }
-
-
 .data-header {
     margin-top: 6rem;
     width: 100%;
@@ -946,7 +889,6 @@ background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
     margin: 0;
     padding: 15% 20% 20% 25%;
     font-size: 4vw;
-    font-family: "Raleway";
     color: #FFFFFF;
   }
 
