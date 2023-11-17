@@ -606,43 +606,6 @@ margin-top: 50px;
   background-size: cover;
   background-color: #babab1;
 }
-
-.meny {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #d5debf;
-  padding: 5px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-
-.meny ul {
-  list-style: none;
-  display: flex;
-  position: sticky;
-}
-
-.meny li {
-  margin-right: 50px;
-  position: sticky;
-}
-
-.meny li a {
-  text-decoration: none;
-  color: #343f3e;
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  font-family: Helvetica, sans-serif;
-}
-
-.meny a:hover {
-  color: #FFFFFF;
-  position: sticky;
-}
-
 /* Forsidebilde */
 .forsidebilde_kantina {
   text-align: center;
@@ -662,6 +625,12 @@ margin-top: 50px;
 
 /* Hovedinnhold */
 /* Generelle stiler for hele seksjonen */
+.kantine-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
 
 /* Stiler for første boks (info-box) */
 .boks-holder {
@@ -678,7 +647,7 @@ margin-top: 50px;
 .boks-holder3 {
   border-top: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;

@@ -6,27 +6,74 @@
         <title>Kantina - OsloMet Campus</title>
         <link rel="icon" type="image/x-icon" href="style/img/favicon.png">
         <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
     </head>
 
  <body>
-    <header>
-     <nav class="meny">
-        <ul>
-         <li><a href="index.html">Hjem</a></li>
-         <li><a href="accessibility.html">Accessibility</a></li>
-         <li><a href="topical.html">Topical</a></li>
-         <li><a href="kantina.html">Kantina</a></li>
-         <li><a href="datatorget.html">Datatorget</a></li> 
-        </ul>
-     </nav>
-        <div class="forsidebilde_kantina">
-         <img src="img/kantineforside.webp">
+  <header class="nav-header">
+    <nav class="navbar">
+        <div class="logo-wrapper">
+            <a href="index.html" class="nav-logo">
+                <!--<img src="style/img/logo_lightgreen.png" alt="Hjemme">-->
+                <span class="logo-icon"></span>
+           </a>
         </div>
 
-    </header>
+        <menu class="nav-group" for="burgertoggle">
+
+            <input id="burgertoggle" type="checkbox">
+
+            <label id="nav-toggle-open" for="burgertoggle">
+                <span class="material-symbols-outlined">menu</span>
+            </label>
+
+            <label for="burgertoggle" id="nav-toggle-close">
+                <span class="material-symbols-outlined">close</span>
+            </label>
+
+            <ul class="navbar-menu" for="burgertoggle"> 
+                <li class="nav-list">
+                    <a href="index.html" class="nav-link">
+                        <span class="material-symbols-outlined" id="nav-icons">
+                            home
+                        </span>
+                        <span class="nav-link-text">Hjemme</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="topical.html" class="nav-link">
+                        <span class="material-symbols-outlined" id="nav-icons">psychology</span>
+                        <span class="nav-link-text">Topical</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="kantina.html" class="nav-link">
+                        <span class="material-symbols-outlined" id="nav-icons">
+                                lunch_dining
+                        </span>
+                        <span class="nav-link-text">Kantine</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="datatorget.html" class="nav-link">
+                        <span class="material-symbols-outlined" id="nav-icons">
+                                devices
+                        </span>
+                        <span class="nav-link-text">Datatorget</span>
+                    </a>
+                </li>
+            </ul>    
+        </menu>
+    </nav>
+</header>
+    <!--end Navigation bar-->
 
  <!-- Hovedinnhold -->
 <main class="kantine-main">
+  <header class="forsidebilde_kantina">
+    <img src="img/kantineforside.webp">
+  </header>
 
     <section class="boks-holder">
            <article class="info-box">
@@ -52,13 +99,8 @@
                <img src="img/serving.webp" alt="Bilde av kantinen">
            </aside>
     </section>
-    <br>        
-    <br>        
-    <br>
-    <br>
 
-    <div><h2>Vår meny</h2>
-    </div>
+    <h2>Vår meny</h2>
     <section class="boks-holder">
        <div class="boks1">
            <img src="img/foodplate1.webp">
@@ -93,8 +135,6 @@
             Egestas egestas fringilla phasellus faucibus scelerisque eleifend.</p>
        </div>
    </section>
-   <br>        
-   <br>        
 
    <section class="boks-holder">
        <div class="boks5">
@@ -104,7 +144,7 @@
             sed do eiusmod tempor incididunt ut labore et 
             dolore magna aliqua. Nullam non nisi est sit. 
             Egestas egestas fringilla phasellus faucibus scelerisque eleifend.</p>
-           </div>
+        </div>
 
        <div class="boks6">
            <img src="img/foodplate11.webp">
@@ -130,32 +170,27 @@
             dolore magna aliqua. Nullam non nisi est sit. 
             Egestas egestas fringilla phasellus faucibus scelerisque eleifend.</p>
        </div>
-    
    </section>
-   <br>        
-   <br>        
-   <br>
-   <br>
 
-   <div><h2>Åpningstider og diverse</h2></div>
     <section class="boks-holder3">
-     <article class="Åpningstider">
-               <h3>Kaffe-Deal!</h3>
-               <p>Kantina er åpen fra mandag til fredag fra 8:00 til 15:30.</p>
-               <em><p>- Kjøp en Sio kopp i vår kantine, og få kaffe til <b>12kr!</b></p></em>
-               <!--Teksten er kopiert fra Sio sine hjemmesider-->     
-               <br>        
-               <br>        
-                   
-            <aside class="kaffebilde">
-               <img src="img/kaffeogkake.webp">
-            </aside>
-     </article>
+      <h2>Åpningstider og diverse</h2>
+      <article class="Åpningstider">
+                <h3>Kaffe-Deal!</h3>
+                <p>Kantina er åpen fra mandag til fredag fra 8:00 til 15:30.</p>
+                <em><p>- Kjøp en Sio kopp i vår kantine, og få kaffe til <b>12kr!</b></p></em>
+                <!--Teksten er kopiert fra Sio sine hjemmesider-->     
+                <br>        
+                <br>        
+                    
+              <aside class="kaffebilde">
+                <img src="img/kaffeogkake.webp">
+              </aside>
+      </article>
     </section>
-   </main>
+</main>
  
     <!-- Footer-seksjonen -->
-    <footer class="main-footer">
+  <footer class="main-footer">
         <section class="upper-footer">
             <span class="school-adress">
                 <h3>Adresse:</h3>
