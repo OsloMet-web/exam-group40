@@ -672,6 +672,18 @@ margin-top: 50px;
   gap: 2rem;
   margin: auto;
   width: 80%;
+  border-bottom: 10px;
+}
+
+.boks-holder3 {
+  border-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: auto;
+  width: 80%;
 }
 
 .info-box,
