@@ -880,14 +880,14 @@ b {
     min-width: 100vh;
 }
 
-.logo {
+/*.logo {
     display: flex;
     flex-direction: row; 
     width: 100%;
     border: 5px solid black;
     align-items: center;
     padding-left: 2%;
-}
+}*/
 
 .data-nav {
     display: flex;
