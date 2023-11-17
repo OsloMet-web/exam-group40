@@ -69,87 +69,86 @@
     </nav>
   </header>
  <!--end Navigation bar-->
-
-  <header-index>
-    <div class="header-index">
-      <h1>Campus Pilestredet</h1>
-    </div>
-  </header>
-<!--Headeren inneholder også et bilde som er lagt inn som et bakgrunnsbilde med CSS, dette for å kunne plassere overskriften
-over bildet.-->
-
-<!--Bruker flexbox oppbygd av rader og kolonner til å strukturere innholdet på siden, raden fungerer som en container for 
-  kolonnene. Koden for denne strukturen er inspirert av en video av GreatStack (https://youtu.be/oYRda7UtuhA?si=Cc8BsDSYKPBpQDza)-->
-<section class="velkommen">
+  <main class="index-main-container">
+    <header-index>
+      <div class="header-index">
+        <h1>Campus Pilestredet</h1>
+      </div>
+    </header>
+  <!--Headeren inneholder også et bilde som er lagt inn som et bakgrunnsbilde med CSS, dette for å kunne plassere overskriften
+  over bildet.-->
+  
+  <!--Bruker flexbox oppbygd av rader og kolonner til å strukturere innholdet på siden, raden fungerer som en container for 
+    kolonnene. Koden for denne strukturen er inspirert av en video av GreatStack (https://youtu.be/oYRda7UtuhA?si=Cc8BsDSYKPBpQDza)-->
+  <section class="velkommen">
+    <article class="rad">
+      <div class="velkommen-kolonne">
+      <h2>Velkommen til Campus Pilestredet</h2>
+    <p>Velkommen til Norges mest urbane universitetscampus. Campus Pilestredet er omgitt av kafeer for lesing eller 
+      møte med venner, og restauranter hvor du kan kjøpe lunsj til studentvennlige priser. Du finner alle hovedattraksjonene i 
+      Oslo sentrum, inkludert shopping, parker, barer og Oslofjorden, i umiddelbar nærhet.</p>
+    <p>Du kan gå fra den ene enden av campus til den andre på omtrent ti minutter. Over hele campus finner du kafeteriaer, 
+      biblioteker, studentpuber, treningssentre og til og med en klatrevegg. På Campus Pilestredet finner du også Studentsenteret
+      og Servicesenteret. Vår hovedresepsjon ligger i Pilestredet 46 og Studentsenteret ligger i Pilestredet 52. </p>
+      </div>
+      <aside class="velkommen-kolonne"><img src="img/campusbilde.jpg" alt="Studenter i parken"></aside>
+    </article>
+  </section>
+  
+    <section class="bibliotek">
+    <h2>Bibliotek</h2>
+    <p>Bibliotekene har pensumlitteratur, printere, kopimaskiner og flere arbeidsplasser. Du kan også få hjelp av bibliotekarene.</p>
   <article class="rad">
-    <div class="velkommen-kolonne">
-    <h2>Velkommen til Campus Pilestredet</h2>
-  <p>Velkommen til Norges mest urbane universitetscampus. Campus Pilestredet er omgitt av kafeer for lesing eller 
-    møte med venner, og restauranter hvor du kan kjøpe lunsj til studentvennlige priser. Du finner alle hovedattraksjonene i 
-    Oslo sentrum, inkludert shopping, parker, barer og Oslofjorden, i umiddelbar nærhet.</p>
-  <p>Du kan gå fra den ene enden av campus til den andre på omtrent ti minutter. Over hele campus finner du kafeteriaer, 
-    biblioteker, studentpuber, treningssentre og til og med en klatrevegg. På Campus Pilestredet finner du også Studentsenteret
-    og Servicesenteret. Vår hovedresepsjon ligger i Pilestredet 46 og Studentsenteret ligger i Pilestredet 52. </p>
-    </div>
-    <div class="velkommen-kolonne">
-      <img src="img/campusbilde.jpg" alt="Studenter i parken">
-    </div>
-  </article>
-</section>
-
-  <section class="bibliotek">
-  <h2>Bibliotek</h2>
-  <p>Bibliotekene har pensumlitteratur, printere, kopimaskiner og flere arbeidsplasser. Du kan også få hjelp av bibliotekarene.</p>
-<article class="rad">
-    <div class="bibliotek-kolonne">
-      <h3>Bibliotek P48</h3>
-      <p>Biblioteket har pensum, tidsskrifter, faglitteratur, skjønnlitteratur, barne- og ungdomslitteratur, 
-        lyrikk, tegneserier, film, musikk, lydbøker, offentlige publikasjoner, studentoppgaver, audiovisuelt utstyr og 
-        bokskanner. Du finner også flere arbeidsplasser, grupperom og stille lesesal.</p>
-    </div>
-    <div class="bibliotek-kolonne">
-      <h3>Helsefagbiblioteket P32</h3>
-      <p>Biblioteket har flere arbeidsplasser, grupperom og stille lesesal. Her finner du fagområdene sykepleie, bioingeniør, ergoterapi, farmasi, fysioterapi, ortopediingeniør,
-        paramedisin og radiografi ogtannteknikk. I anatomirommet finner du en samling anatomiske modeller og plansjer. </p>
-    </div>
-    <div class="bibliotek-kolonne">
-      <h3>Bibliotek P35</h3>
-      <p>Her finner du fagområder som sosialfag, økonomi og administrasjon, bygg- og energiteknikk, maskin, elektronikk og 
-        kjemi, informasjonsteknologi og velferds- og arbeidslivsforskning. Biblioteket har arbeidsplasser, grupperom og 
-        stille lesesal.</p>
+      <div class="bibliotek-kolonne">
+        <h3>Bibliotek P48</h3>
+        <p>Biblioteket har pensum, tidsskrifter, faglitteratur, skjønnlitteratur, barne- og ungdomslitteratur, 
+          lyrikk, tegneserier, film, musikk, lydbøker, offentlige publikasjoner, studentoppgaver, audiovisuelt utstyr og 
+          bokskanner. Du finner også flere arbeidsplasser, grupperom og stille lesesal.</p>
       </div>
-  </article>
-</section>
-
-<section class="p35">
-  <h2>Ellen Gleditschs hus</h2>
-  <p>Ellen Gleditschs hus ligger i Pilestredet 35, og dette er hovedbygget for blant annet ingeniørstudier, økonomistudier og 
-    studier innen teknologi, kunst og design. Her har vi blant annet kantine, samlingsstedet Kroa og et eget datatorg for 
-    IT-studenter. Les mer om disse her, ved å trykke deg inn på sidene under.
-  </p>
-<article class="rad">
-    <div class="p35-kolonne">
-      <img src="img/kantine-link.png" alt="Kantinen i Pilestredet 35">
-      <a href="kantina.html">KANTINE</a>
-    </div>
-    <div class="p35-kolonne">
-      <img src="img/datatorget-link.png" alt="Datatorget i P35">
-      <a href="datatorget.html">DATATORGET</a>
-    </div>
-    <div class="p35-kolonne">
-      <img src="img/kroa-link.png" alt="Samlingsstedet Kroa">
-      <a href="https://www.osloteknikersamfund.no/kroa" target="_blank">KROA</a>
+      <div class="bibliotek-kolonne">
+        <h3>Helsefagbiblioteket P32</h3>
+        <p>Biblioteket har flere arbeidsplasser, grupperom og stille lesesal. Her finner du fagområdene sykepleie, bioingeniør, ergoterapi, farmasi, fysioterapi, ortopediingeniør,
+          paramedisin og radiografi ogtannteknikk. I anatomirommet finner du en samling anatomiske modeller og plansjer. </p>
       </div>
-  <!--Bildene er et stock-bilder fra iStcok, lastet ned med lisens: https://www.istockphoto.com/-->
-  </article>
-</section>
-
-<section class="kart">
-  <h2>Du finner oss her</h2>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2280.7618856696577!2d10.731694383422571!3d59.920714552702435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7913e2a529%3A0xd56463578e04ce80!2sOsloMet!5e0!3m2!1sno!2sno!4v1699530809856!5m2!1sno!2sno" 
-  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-<!--Iframe-koden til kartet er hentet fra Google Maps sin "Bygg inn"-funksjon-->
+      <div class="bibliotek-kolonne">
+        <h3>Bibliotek P35</h3>
+        <p>Her finner du fagområder som sosialfag, økonomi og administrasjon, bygg- og energiteknikk, maskin, elektronikk og 
+          kjemi, informasjonsteknologi og velferds- og arbeidslivsforskning. Biblioteket har arbeidsplasser, grupperom og 
+          stille lesesal.</p>
+        </div>
+    </article>
+  </section>
+  
+  <section class="p35">
+    <h2>Ellen Gleditschs hus</h2>
+    <p>Ellen Gleditschs hus ligger i Pilestredet 35, og dette er hovedbygget for blant annet ingeniørstudier, økonomistudier og 
+      studier innen teknologi, kunst og design. Her har vi blant annet kantine, samlingsstedet Kroa og et eget datatorg for 
+      IT-studenter. Les mer om disse her, ved å trykke deg inn på sidene under.
+    </p>
+  <article class="rad">
+      <div class="p35-kolonne">
+        <img src="img/kantine-link.png" alt="Kantinen i Pilestredet 35">
+        <a href="kantina.html">KANTINE</a>
+      </div>
+      <div class="p35-kolonne">
+        <img src="img/datatorget-link.png" alt="Datatorget i P35">
+        <a href="datatorget.html">DATATORGET</a>
+      </div>
+      <div class="p35-kolonne">
+        <img src="img/kroa-link.png" alt="Samlingsstedet Kroa">
+        <a href="https://www.osloteknikersamfund.no/kroa" target="_blank">KROA</a>
+        </div>
+    <!--Bildene er et stock-bilder fra iStcok, lastet ned med lisens: https://www.istockphoto.com/-->
+    </article>
+  </section>
+  
+  <section class="kart">
+    <h2>Du finner oss her</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2280.7618856696577!2d10.731694383422571!3d59.920714552702435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7913e2a529%3A0xd56463578e04ce80!2sOsloMet!5e0!3m2!1sno!2sno!4v1699530809856!5m2!1sno!2sno" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <!--Iframe-koden til kartet er hentet fra Google Maps sin "Bygg inn"-funksjon-->
+  </main>
 <footer class="main-footer">
   <section class="upper-footer">
       <span class="school-adress">

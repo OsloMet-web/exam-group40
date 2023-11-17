@@ -68,6 +68,11 @@ a {
   text-decoration: none;
 }
 
+section {
+  width: 80%;
+  margin: auto;
+}
+
 .navbar {
   display: flex;
   position: fixed;
@@ -260,8 +265,6 @@ viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere o
 }
 
 .velkommen {
-  width: 80%;
-  margin: auto;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   text-align: left;
@@ -282,8 +285,6 @@ viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere o
 avhengig av innhold.*/
 
 .bibliotek {
-  width: 80%;
-  margin: auto;
   text-align: center;
   padding-top: 5em;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bibliotek.jpg);
@@ -315,8 +316,6 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 /*Styling av overskrift, tekst og boksene i bibliotek-delen*/
 
 .p35 {
-  width: 80%;
-  margin: auto;
   text-align: center;
   padding-top: 5em;
 }
@@ -358,8 +357,6 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjonert midt på boksene*/
 
 .kart {
-  width: 80%;
-  margin: auto;
   padding-top: 5em;
   padding-bottom: 5em;
   text-align: center;
@@ -639,8 +636,6 @@ margin-top: 50px;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  margin: auto;
-  width: 80%;
   border-bottom: 10px;
 }
 
@@ -651,8 +646,6 @@ margin-top: 50px;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  margin: auto;
-  width: 80%;
 }
 
 .info-box,
@@ -762,8 +755,8 @@ margin-top: 50px;
 .access-main-container section {
   display: flex;
   flex-direction: row;
-  width: 80%;
-  margin: auto;
+  justify-content: space-between;
+  gap: 4rem;
 }
 
 .access-main-container article{
@@ -783,9 +776,6 @@ margin-top: 50px;
 }
 
 .test-wrapper .test-article, .test-pictures {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding: 0.5em;
   flex: 50%;
 }
 
@@ -900,16 +890,12 @@ viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere o
 containeren.*/
 
 .data-section1 {
-    width: 80%;
-    margin: auto;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     text-align: left;
 }
 
 .data-section2 {
-    width: 80%;
-    margin: auto;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     text-align: left;
@@ -917,8 +903,6 @@ containeren.*/
 }
 
 .data-section3 {
-    width: 80%;
-    margin: auto;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     text-align: left;
@@ -926,7 +910,6 @@ containeren.*/
 }
 
 .data-section4 {
-    margin: auto;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
@@ -975,7 +958,6 @@ containeren.*/
 
  .upper-footer {
   width: 90%;
-  margin: auto;
  }
 
  .upper-footer span {
@@ -1012,7 +994,6 @@ containeren.*/
  .bottom-footer {
   display: flex;
   width: 90%;
-  margin: auto;
  }
 
  .bottom-footer .trademark, .footer-logo, .social-media {
