@@ -71,6 +71,14 @@ a {
 section {
   width: 80%;
   margin: auto;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.rad {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar {
@@ -241,6 +249,7 @@ section {
 
 .header-index {
   margin-top: 6rem;
+  margin-bottom: 4rem;
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/Pilestredet_campus.jpeg);
@@ -250,33 +259,54 @@ section {
 }
 
 .header-index h1 {
-  margin: 0;
-  padding: 20% 20% 20% 50%;
-  font-size: 5vw;
-  color: #FFFFFF;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  font-size: 5rem;
+  color: var(--bg);
 }
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften (litt mot venstre).*/
 
-.rad {
+/*.rad {
   margin-top: 2%;
   display: flex;
   justify-content: space-between;
-}
+}*/
 
-.velkommen {
+/*.velkommen {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   text-align: left;
+} */
+
+.index-main-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.velkommen {
+  display: flex;
 }
 
 .velkommen-kolonne {
+  flex: 50%;
+}
+
+.velkommen-kolonne p {
+  text-align: left;
+}
+
+/*.velkommen-kolonne {
   flex-basis: 48%;
   padding-top: 5em;
   padding-bottom: 5em;
   padding-left: 0.1em;
   padding-right: 0.1em;
-}
+}*/
 
 .velkommen-kolonne img {
   width: 100%;
@@ -285,8 +315,9 @@ viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere o
 avhengig av innhold.*/
 
 .bibliotek {
-  text-align: center;
-  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bibliotek.jpg);
   background-size: cover;
   border-radius: 3em;
@@ -303,10 +334,13 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   color: #FFFFFF;
   font-size: 1.5em
 }
+.rad {
+  display: flex;
+}
 
 .bibliotek-kolonne {
   flex-basis: 35%;
-  background: #F7F7F2;
+  background: var(--bg);
   border-radius: 2em;
   margin: 5%;
   padding: 2em;
@@ -316,8 +350,9 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 /*Styling av overskrift, tekst og boksene i bibliotek-delen*/
 
 .p35 {
-  text-align: center;
-  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
 }
 
 .p35-kolonne {
@@ -343,11 +378,11 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   background: transparent;
   transition: 0.5s;
   font-weight: 500;
-  color: #FFFFFF;
+  color: var(--bg);
   font-size: 2em;
   padding: 0.5em;
   border: solid;
-  border-color: #FFFFFF;
+  border-color: var(--bg);
 }
 
 .p35-kolonne a:hover {
@@ -865,14 +900,6 @@ margin-top: 50px;
 
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften. Koden er inspirert av W3school.*/
-
-
-.rad {
-    margin-top: 2%;
-    display: flex;
-    justify-content: space-between;
-  }
-
 
 .data-kolonne {
     flex-basis: 48%;
