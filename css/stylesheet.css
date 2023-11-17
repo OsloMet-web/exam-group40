@@ -40,8 +40,14 @@ body {
   min-width: 100vh;
 }
 
+ul {
+  list-style: none;
+}
+
 h2 {
 font-size: 2.5rem;
+text-align: center;
+margin-bottom: 1rem;
 }
 
 h3 {
@@ -55,6 +61,11 @@ margin-bottom: 0.5rem;
 p {
 font-size: 1.2rem;
 line-height: 2rem;
+text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -113,7 +124,6 @@ line-height: 2rem;
 
 .nav-group a {
   position: relative;
-  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: var(--secondary);
@@ -334,11 +344,9 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   background: transparent;
   transition: 0.5s;
   font-weight: 500;
-  font-family: "Raleway";
   color: #FFFFFF;
   font-size: 2em;
   padding: 0.5em;
-  text-decoration: none;
   border: solid;
   border-color: #FFFFFF;
 }
@@ -384,39 +392,6 @@ align-items: center;
 justify-content: center;
 background-color: #899878;
 margin-top: 50px;
-
-}
-
-
-.topical-menu{
-    list-style: none;
-    display: flex;
-    
-
-}
-
-.topical-menu > li {
-    margin: 10px 40px 10px 40px;
-    text-align: center;
-    
-    
-
-}
-
-.topical-menu > li > a {
-color:#F7F7F2;
-font-weight: bold;
-text-decoration: none;
-text-align: center;
-font-family: Helvetica, sans-serif;
-font-size: medium;
-
-
-}
-
-.topical-menu > li > a:hover{
-    text-decoration: underline;
-    color:#343F3E;
 }
 
 /* Forsidebilde og tittel*/
@@ -656,12 +631,10 @@ position: sticky;
 }
 
 .meny li a {
-text-decoration: none;
 color: #343f3e;
 font-weight: bold;
 display: block;
 text-align: center;
-font-family: Helvetica, sans-serif;
 }
 
 .meny a:hover {
@@ -672,7 +645,6 @@ position: sticky;
 /* Forsidebilde */
 .forsidebilde_kantina {
   text-align: center;
-  font-family: Helvetica, sans-serif;
   margin-top: 0px;
 }
 
@@ -685,7 +657,6 @@ position: sticky;
 .forsidebilde_kantina p {
   font-size: 0;
   color: #3d3d3d;
-  text-align: center;
 }
 
 /* Hovedinnhold */
@@ -899,39 +870,6 @@ background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
     padding-left: 2%;
 }
 
-.data-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #F7F7F2;
-    padding: 25px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    
-  }
-  
-  .data-nav ul {
-    list-style: none;
-    display: flex;
-    position: sticky;
-  }
-  
-  .data-nav li {
-    margin-right: 50px;
-    position: sticky;
-  }
-  
-  .data-nav li a {
-    text-decoration: none;
-    color: #343f3e;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-  }
-
-
 .data-header {
     margin-top: 6rem;
     width: 100%;
@@ -946,7 +884,6 @@ background-color: #ffffff; /* Sett ønsket bakgrunnsfarge her */
     margin: 0;
     padding: 15% 20% 20% 25%;
     font-size: 4vw;
-    font-family: "Raleway";
     color: #FFFFFF;
   }
 
