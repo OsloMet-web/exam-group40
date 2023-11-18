@@ -24,7 +24,7 @@
 
   /* Timers */
   --hover-time: 0.5s;
-  -slide-time: 0.5s;
+  --slide-time: 0.5s;
 
   font-size: 12px;
   font-family: Raleway;
@@ -163,6 +163,11 @@ section {
 .nav-group a:hover {
   color: var(--text-primary);
   transition: transform 1s ease-in;
+}
+
+.nav-group .point::before {
+  color: var(--text-primary);
+  transform: scaleX(1);
 }
 
 #nav-toggle-open, #nav-toggle-close {
@@ -1074,8 +1079,8 @@ containeren.*/
  }
 
  .social-media li:hover {
-      opacity: 1;
-      transition: var(--hover-time) ease-in-out;
+  opacity: 1;
+  transition: var(--hover-time) ease-in-out;
   }
 
  .social-media img {
