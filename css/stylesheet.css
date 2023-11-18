@@ -991,7 +991,6 @@ containeren.*/
  .flogo-wrapper {
   display: flex;
   align-items: center;
-
  }
 
  .flogo-icon {
@@ -1020,6 +1019,10 @@ containeren.*/
   justify-content: space-between;
   gap: 1rem;
   margin: auto;
+ }
+
+ .social-media {
+  padding-bottom: 2rem;
  }
 
  .social-media li {
