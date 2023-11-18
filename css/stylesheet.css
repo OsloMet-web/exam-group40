@@ -255,7 +255,7 @@ section {
 
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .navbar-menu{
     top: -1190px;
   }
@@ -814,18 +814,15 @@ margin-top: 50px;
   height: 6rem;
 }
 
-@media (max-width: 750px) {
-.access-main-container section {
+@media screen and (max-width: 750px) {
+section {
   flex-direction: column;
 }
 
-.title {
 }
 
-}
-
-@media (max-width: 450px) {
-.access-main-container section {
+@media screen and (max-width: 450px) {
+section {
   flex-direction: column;
 }
 
