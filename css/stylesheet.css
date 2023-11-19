@@ -40,6 +40,14 @@ body {
   min-width: 100vh;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+}
+
 ul {
   list-style: none;
 }
@@ -75,7 +83,13 @@ a {
   text-decoration: none;
 }
 
+section p, section h2 {
+  text-align: left;
+}
+
 section {
+  display: flex;
+  align-items: center;
   width: 80%;
   margin: auto;
   justify-content: space-between;
@@ -99,7 +113,7 @@ section {
   background-size: cover;
 }
 
-.navbar {
+nav {
   display: flex;
   position: fixed;
   top: 0px;
@@ -208,15 +222,10 @@ section {
 
 @media (max-width: 750px) {
 
-  #burger-toggle{
-      opacity: 0;
-  }
-
   .navbar-menu {
       flex-direction: column;
       position: fixed;
       top: -1000px;
-      /*top: 0;*/
       right: 0px;
       width: 100%;
       height: 100%;
@@ -231,10 +240,25 @@ section {
     text-align: center;
     width: 100%;
     margin: 2rem;
+    padding: 4%;
+    box-sizing: border-box;
+  }
+
+  .navbar-menu li:active {
+    background-color: rgba(247, 247, 242, 0.557);
+  }
+
+  .point {
+    cursor: default;
+    width: 100%;
+    background-color: rgba(247, 247, 242, 0.557);
+  }
+
+  .nav-group a::before{
+      display: none;
   }
 
   #nav-icons {
-      top: 0.5rem;
       background-color: rgba(0, 255, 255, 0);
       display: inline-block;
   }
@@ -264,22 +288,7 @@ section {
     top: -3000px;
   }
   .navbar-menu li {
-    box-sizing: border-box;
     padding: 7%;
-  }
-
-  .navbar-menu li:active {
-    background-color: rgba(247, 247, 242, 0.557);
-  }
-
-  .point {
-    cursor: default;
-    width: 100%;
-    background-color: rgba(247, 247, 242, 0.557);
-  }
-
-  .nav-group a::before{
-      display: none;
   }
 
 }
@@ -295,23 +304,7 @@ section {
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften (litt mot venstre).*/
 
-/*.rad {
-  margin-top: 2%;
-  display: flex;
-  justify-content: space-between;
-}*/
-
-/*.velkommen {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  text-align: left;
-} */
-
 .index-main-container {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  justify-content: space-between;
   gap: 3rem;
 }
 
@@ -322,18 +315,6 @@ viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere o
 .velkommen-kolonne {
   flex: 50%;
 }
-
-.velkommen-kolonne p {
-  text-align: left;
-}
-
-/*.velkommen-kolonne {
-  flex-basis: 48%;
-  padding-top: 5em;
-  padding-bottom: 5em;
-  padding-left: 0.1em;
-  padding-right: 0.1em;
-}*/
 
 .velkommen-kolonne img {
   width: 100%;
@@ -359,7 +340,8 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 
 .bibliotek > p {
   color: #FFFFFF;
-  font-size: 1.5em
+  font-size: 1.5em;
+  text-align: center;
 }
 .rad {
   display: flex;
@@ -372,12 +354,10 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   margin: 5%;
   padding: 2em;
   box-sizing: border-box;
-  text-align: left;
 }
 /*Styling av overskrift, tekst og boksene i bibliotek-delen*/
 
 .p35 {
-  display: flex;
   flex-direction: column;
   padding-top: 1.5rem;
 }
@@ -664,28 +644,18 @@ margin-top: 50px;
 /* Hovedinnhold */
 /* Generelle stiler for hele seksjonen */
 .kantine-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   gap: 3rem;
 }
 
 /* Stiler for første boks (info-box) */
 .boks-holder {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   gap: 2rem;
   border-bottom: 10px;
 }
 
 .boks-holder3 {
-  border-top: 10px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  border-top: 10px;
   gap: 2rem;
 }
 
@@ -763,19 +733,7 @@ margin-top: 50px;
 }
 
 .access-main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   gap: 2rem;
-  margin: auto;
-}
-
-.access-main-container section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 4rem;
 }
 
 .access-main-container article{
@@ -788,32 +746,15 @@ margin-top: 50px;
   width: 80%;
 }
 
-
-.test-wrapper {
-  position: relative;
-  top: 2rem;
-}
-
-.test-wrapper .test-article, .test-pictures {
+.access-kolonne, .design-pictures {
   flex: 50%;
 }
 
-.test-pictures img {
+.test-wrapper img {
   width: 100%;
   height: auto;
 }
 
-.design-wrapper {
-  position: relative;
-  top: 2rem;
-}
-
-.design-wrapper .design-article, .design-pictures {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding: 0.5em;
-  flex: 50%;
-}
 
 .design-pictures {
   display: flex;
@@ -822,11 +763,11 @@ margin-top: 50px;
 }
 
 .design-pictures img {
-  width: auto;
-  height: 100%;
+  width: 80%;
+  height: auto;
 }
 
-.picture1, .picture2, .picture3 {
+.picture {
   margin-top: 1rem;
   margin-bottom: 1rem;
   height: 6rem;
@@ -848,19 +789,7 @@ section {
 
 /* End of accessibility-page styling */
 
-
-
 /* Tomine */
-
-
-.logo {
-    display: flex;
-    flex-direction: row; 
-    width: 100%;
-    border: 5px solid black;
-    align-items: center;
-    padding-left: 2%;
-}
 
 .title-data {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/mac.jpeg);
@@ -876,11 +805,8 @@ section {
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften. Koden er inspirert av W3school.*/
 
 .data-kolonne {
-    flex-basis: 48%;
-    padding-top: 5em;
-    padding-bottom: 5em;
-    padding-left: 0.1em;
-    padding-right: 0.1em;
+    flex: 50%;
+    padding: 2%;
 }
 
 .data-kolonne img {
@@ -890,23 +816,11 @@ viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere o
 /*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for section 1,2 og 3. Samme gjelder for kolonnene innad i 
 containeren.*/
 
-.data-section1 {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    text-align: left;
-}
-
-.data-section2 {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    text-align: left;
+.data-section2{
     border-top: solid;
 }
 
 .data-section3 {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    text-align: left;
     border-top: solid;
 }
 
@@ -920,12 +834,11 @@ containeren.*/
 /* Setter bildet i section 4 til å dekke hele siden til venstre og høyre*/
 
 @media screen and (max-width: 700px) {
-    .data-nav, ul, li, .data-section1, .data-section2, .data-section3 {   
-       flex-direction: column;
+
+     .data-main h1 {
+      font-size: 3rem;
      }
-     .data-header h1 {
-      font-size: 15vw;
-     }
+
      ul, li {
        margin: 1%;
      }
@@ -944,6 +857,7 @@ containeren.*/
  }
 
  .main-footer p, .main-footer a{
+  text-align: center;
   color: var(--bg);
  }
 
@@ -953,7 +867,6 @@ containeren.*/
 
  .main-footer section {
   display: flex;
-  flex-direction: row;
   margin-top: 4rem;
  }
 
@@ -1018,7 +931,7 @@ containeren.*/
   background-image: url(../img/logo2.png);
   opacity: 0.8;
   background-size: cover;
-  width:17rem;
+  width: 17rem;
   height: 10rem;
   margin: auto;
   transition: transform var(--hover-time) ease-out;
@@ -1026,8 +939,8 @@ containeren.*/
   }
 
   .flogo-icon:hover {
-      opacity: 1;
-      transition: transform var(--hover-time) ease-in-out;
+    opacity: 1;
+    transition: transform var(--hover-time) ease-in-out;
   }
 
  .bottom-footer ul {
