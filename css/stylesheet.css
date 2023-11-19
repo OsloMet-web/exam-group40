@@ -46,6 +46,7 @@ main {
   align-items: center;
   margin: auto;
   justify-content: space-between;
+  gap: 3rem;
 }
 
 ul {
@@ -96,10 +97,17 @@ section {
   gap: 2rem;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .rad {
-  margin-top: 2%;
   display: flex;
+  margin-top: 2%;
+  margin: auto;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .title-index, .title-data, .title-kantina, .title-access {
@@ -304,20 +312,12 @@ nav {
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften (litt mot venstre).*/
 
-.index-main-container {
-  gap: 3rem;
-}
-
 .velkommen {
   display: flex;
 }
 
 .velkommen-kolonne {
   flex: 50%;
-}
-
-.velkommen-kolonne img {
-  width: 100%;
 }
 /*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for alle delene. Koden for kolonnene varierer,
 avhengig av innhold.*/
@@ -343,17 +343,14 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   font-size: 1.5em;
   text-align: center;
 }
-.rad {
-  display: flex;
-}
 
 .bibliotek-kolonne {
   flex-basis: 35%;
   background: var(--bg);
-  border-radius: 2em;
+  border-radius: 2rem;
   margin: 5%;
-  padding: 2em;
-  box-sizing: border-box;
+  padding: 4%;
+  overflow: hidden;
 }
 /*Styling av overskrift, tekst og boksene i bibliotek-delen*/
 
@@ -372,7 +369,6 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 }
 
 .p35-kolonne img {
-  width: 100%;
   height: 100%;
   opacity: 0.5;
 }
@@ -399,6 +395,7 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjonert midt på boksene*/
 
 .kart {
+  flex-direction: column;
   padding-top: 5em;
   padding-bottom: 5em;
   text-align: center;
@@ -407,12 +404,6 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
 .kart iframe {
   width: 100%;
 }
-
-@media screen and (max-width: 700px) {
-   .footer, .rad {   
-      flex-direction: column;
-     }
-  }
 
 /*Susanne*/
 .topical-body{
@@ -643,14 +634,19 @@ margin-top: 50px;
 
 /* Hovedinnhold */
 /* Generelle stiler for hele seksjonen */
-.kantine-main {
-  gap: 3rem;
-}
 
 /* Stiler for første boks (info-box) */
-.boks-holder {
-  gap: 2rem;
-  border-bottom: 10px;
+
+.mat-boks1 {
+  flex-direction: column;
+  padding: 2%;
+  border-top: solid;
+}
+
+.mat-boks2 {
+  flex-direction: column;
+  border-bottom: solid;
+  padding: 2%;
 }
 
 .boks-holder3 {
@@ -660,9 +656,7 @@ margin-top: 50px;
 }
 
 .info-box,
-.kantine-bilde,
-.kaffebilde,
-.Åpningstider {
+.kantine-bilde {
   flex: 50%;
   
 }
@@ -677,37 +671,20 @@ margin-top: 50px;
 .kantine-bilde {
   width: 100%;
 }
-.kantine-bilde img {
-  width: 100%;
-  height: auto;
-}
 
 /* Stiler for tredje boks (kaffebilde og Åpningstider) */
-.kaffebilde,
-.Åpningstider {
-  flex: 50%;
-}
 
-
-.boks-holder div, img {
+ .mat-boks1 div, .mat-boks2 div {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
 }
 
 /* Stiler for kaffebilde */
-.kaffebilde {
-  width: 100%;
-}
-
-.kaffebilde img {
-  width: 100%;
-  height: auto;
+.åpningstider h3, .åpningstidere p {
+  text-align: center;
 }
 
 /* Stiler for fjerde boks (Åpningstider) */
-.Åpningstider {
-}
 
 
 
@@ -732,10 +709,6 @@ margin-top: 50px;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/pilestredet.jpeg);
 }
 
-.access-main-container {
-  gap: 2rem;
-}
-
 .access-main-container article{
   justify-content: space-between;
   gap: 2rem;
@@ -748,11 +721,12 @@ margin-top: 50px;
 
 .access-kolonne, .design-pictures {
   flex: 50%;
+  padding: 2%;
 }
 
-.test-wrapper img {
-  width: 100%;
-  height: auto;
+.design-wrapper, .test-wrapper{
+  padding: 2%;
+  border-top: solid;
 }
 
 
@@ -762,29 +736,10 @@ margin-top: 50px;
   justify-content: center;
 }
 
-.design-pictures img {
-  width: 80%;
-  height: auto;
-}
-
 .picture {
   margin-top: 1rem;
   margin-bottom: 1rem;
   height: 6rem;
-}
-
-@media screen and (max-width: 750px) {
-section {
-  flex-direction: column;
-}
-
-}
-
-@media screen and (max-width: 450px) {
-section {
-  flex-direction: column;
-}
-
 }
 
 /* End of accessibility-page styling */
@@ -808,19 +763,10 @@ viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere o
     flex: 50%;
     padding: 2%;
 }
-
-.data-kolonne img {
-    width: 100%;
-}
-
 /*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for section 1,2 og 3. Samme gjelder for kolonnene innad i 
 containeren.*/
 
-.data-section2{
-    border-top: solid;
-}
-
-.data-section3 {
+.data-section2, .data-section3 {
     border-top: solid;
 }
 
@@ -833,16 +779,19 @@ containeren.*/
 }
 /* Setter bildet i section 4 til å dekke hele siden til venstre og høyre*/
 
-@media screen and (max-width: 700px) {
-
-     .data-main h1 {
-      font-size: 3rem;
-     }
-
-     ul, li {
-       margin: 1%;
-     }
- }
+ @media screen and (max-width: 800px) {
+  section, .rad {
+    flex-direction: column;
+  }
+  
+  }
+  
+  @media screen and (max-width: 450px) {
+  section {
+    flex-direction: column;
+  }
+  
+  }
 
  /* footer styling */
 
@@ -866,7 +815,6 @@ containeren.*/
  }
 
  .main-footer section {
-  display: flex;
   margin-top: 4rem;
  }
 
@@ -906,7 +854,6 @@ containeren.*/
  }
 
  .bottom-footer {
-  display: flex;
   width: 90%;
  }
 
@@ -927,15 +874,14 @@ containeren.*/
  .flogo-icon {
   display: block;
   position: relative;
-  bottom: 4rem;
+  bottom: 3.5rem;
   background-image: url(../img/logo2.png);
-  opacity: 0.8;
   background-size: cover;
   width: 17rem;
   height: 10rem;
   margin: auto;
+  opacity: 0.8;
   transition: transform var(--hover-time) ease-out;
-  background-color: rgba(0, 255, 255, 0);
   }
 
   .flogo-icon:hover {
@@ -946,7 +892,6 @@ containeren.*/
  .bottom-footer ul {
   display: flex;
   flex-direction: row;
-  list-style: none;
   justify-content: space-between;
   gap: 1rem;
   margin: auto;
@@ -969,12 +914,10 @@ containeren.*/
   }
 
  .social-media img {
-  width: 100%;
-  height: auto;
   margin: auto;
  }
 
- @media (max-width: 750px) {
+ @media (max-width: 800px) {
   .main-footer section{
       flex-direction: column;
   }
