@@ -719,7 +719,7 @@ margin-top: 50px;
   gap: 2rem;
 }
 
-.access-welcome {
+.introduction {
   text-align: center;
   width: 80%;
 }
@@ -764,7 +764,7 @@ margin-top: 50px;
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften. Koden er inspirert av W3school.*/
 
-.data-kolonne {
+.data-column {
     flex: 50%;
 }
 /*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for section 1,2 og 3. Samme gjelder for kolonnene innad i 
@@ -772,13 +772,12 @@ containeren.*/
 .data-section1, .data-section2, .data-section3, .data-section4 {
   padding-top: 4%;
   padding-bottom: 2%;
-}
-.data-section2, .data-section3, .data-section4 {
   border-top: solid;
 }
 
 .data-section4{
   flex-direction: column;
+  text-align: center;
 }
 
 .data-section4 img{
