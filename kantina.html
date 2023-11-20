@@ -6,32 +6,79 @@
         <title>Kantina - OsloMet Campus</title>
         <link rel="icon" type="image/x-icon" href="style/img/favicon.png">
         <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
     </head>
 
  <body>
-    <header>
-     <nav class="meny">
-        <ul>
-         <li><a href="index.html">Hjem</a></li>
-         <li><a href="accessibility.html">Accessibility</a></li>
-         <li><a href="topical.html">Topical</a></li>
-         <li><a href="kantina.html">Kantina</a></li>
-         <li><a href="datatorget.html">Datatorget</a></li> 
-        </ul>
-     </nav>
-        <div class="forsidebilde_kantina">
-         <img src="img/images.jpeg" alt="Olaf Spiseri">
-         <p>OsloMet Campus Pilestredet, P35. Foto: OsloMet</p>
+  <header class="nav-header">
+    <nav>
+        <div class="logo-wrapper">
+            <a href="index.html" class="nav-logo">
+                <!--<img src="style/img/logo_lightgreen.png" alt="Hjemme">-->
+                <span class="logo-icon"></span>
+           </a>
         </div>
 
-    </header>
+        <menu class="nav-group" for="burgertoggle">
+
+            <input id="burgertoggle" type="checkbox">
+
+            <label id="nav-toggle-open" for="burgertoggle">
+                <span class="material-symbols-outlined">menu</span>
+            </label>
+
+            <label for="burgertoggle" id="nav-toggle-close">
+                <span class="material-symbols-outlined">close</span>
+            </label>
+
+            <ul class="navbar-menu" for="burgertoggle"> 
+                <li class="nav-list">
+                    <a href="index.html">
+                        <span class="material-symbols-outlined" id="nav-icons">
+                            home
+                        </span>
+                        <span class="nav-link-text">Hjemme</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="topical.html">
+                        <span class="material-symbols-outlined" id="nav-icons">psychology</span>
+                        <span class="nav-link-text">Topical</span>
+                    </a>
+                </li>
+                <li class="point">
+                    <a href="kantina.html" class="point">
+                        <span class="material-symbols-outlined" id="nav-icons">
+                                lunch_dining
+                        </span>
+                        <span class="nav-link-text">Kantine</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="datatorget.html">
+                        <span class="material-symbols-outlined" id="nav-icons">
+                                devices
+                        </span>
+                        <span class="nav-link-text">Datatorget</span>
+                    </a>
+                </li>
+            </ul>    
+        </menu>
+    </nav>
+</header>
+    <!--end Navigation bar-->
 
  <!-- Hovedinnhold -->
 <main class="kantine-main">
+  <header class="title-kantina">
+    <h1>Kantina</h1>
+  </header>
 
     <section class="boks-holder">
            <article class="info-box">
-               <h2>Olaf Spiseri</h2>
+               <h2>Om kantina</h2>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                    Lacinia at quis risus sed. Orci phasellus egestas tellus rutrum tellus pellentesque eu. 
                    Cras fermentum odio eu feugiat pretium nibh ipsum. Vitae et leo duis ut diam quam nulla porttitor. 
@@ -50,73 +97,96 @@
                    </p>
            </article>
            <aside class="kantine-bilde">
-               <img src="./img/Olaf Spiseri bilde 2.jpg" alt="Bilde av kantinen">
+               <img src="img/serving.webp" alt="Bilde av kantinen">
            </aside>
     </section>
-   
-    <section class="boks-holder">
-       <div class="boks1">
-           <img src="./img/Bravas Potato Salad-RECIPE.jpg.webp">
-           <h2>Boks 1</h2>
-           <p>Dette er innholdet i Boks 1.</p>
-       </div>
-       <div class="boks2">
-           <img src="./img/Bagel Chips-RECIPE.Jpg.webp">
-           <h2>Boks 2</h2>
-           <p>Dette er innholdet i Boks 2.</p>
-       </div>
-       <div class="boks3">
-           <img src="./img/Tabasco-Gochujang-Salmon-Poke-Bowl-RECIPE.jpg.webp">
-           <h2>Boks 3</h2>
-           <p>Dette er innholdet i Boks 3.</p>
-       </div>
-       <div class="boks4">
-           <img src="./img/Fish Filet Sandwich-RECIPE.Jpg.webp">
-           <h2>Boks 4</h2>
-           <p>Dette er innholdet i Boks 4.</p>
-       </div>
+
+    <section class="mat-boks1">
+        <h2>Vår meny</h2>
+        <article class="rad">
+            <div class="mat-kolonne">
+                <img src="img/foodplate1.webp">
+                <h2>Nudler</h2>
+                <p>Opplev en smak av havet med våre nudler, toppet med kokt egg og reker. 
+                 Den perfekte kombinasjonen av protein og smak for å gi deg en mettende måltidsopplevelse. 
+                 Vennligst informer personalet om eventuelle allergier.</p>
+            </div>
+            <div class="mat-kolonne">
+                <img src="img/foodplate.webp">
+                <h2>Burger</h2>
+              <p>Saftig kjøtt, smeltet ost, friske grønnsaker og våre spesielle sauser 
+                  våre burgere er laget for å tilfredsstille dine cravings for en klassisk og deilig smaksopplevelse. 
+                 Vennligst informer personalet om eventuelle allergier.</p>
+            </div>
+            <div class="mat-kolonne">
+                <img src="img/foodplate12.webp">
+                <h2>Nudler</h2>
+                <p>Vår hjertevarmende nudelsuppe er fullpakket med smak. 
+                 Den deilige buljongen, kombinert med ømt kjøtt og ferske grønnsaker, gjør denne retten til en trøstende favoritt.
+                 Vennligst informer personalet om eventuelle allergier.</p>
+            </div>
+            <div class="mat-kolonne">
+                <img src="img/foodplate5.webp">
+                <h2>suppe</h2>
+                <p>Utforsk en herlig kombinasjon av krydder og sødme i vår gresskarsuppe. 
+                    Perfekt balansert og full av smak, er denne suppen en perfekt start eller avslutning på måltidet. 
+                    Vennligst informer personalet om eventuelle allergier.</p>
+            </div>
+    </article>
    </section>
-   
-   <section class="boks-holder">
-       <div class="boks5">
-           <img src="/img/brown-and-serve-rolls_RECIPE_V3_092823_4878_VOG_final.jpg.webp">
-           <h2>Boks 5</h2>
-           <p>Dette er innholdet i Boks 5.</p>
-       </div>
-       <div class="boks6">
-           <img src="./img/Our-Favorite-creamy-Mashed-Potatoes-04112016.jpg.webp">
-           <h2>Boks 6</h2>
-           <p>Dette er innholdet i Boks 6.</p>
-       </div>
-       <div class="boks7">
-           <img src="./img/Tabasco-Gochujang-Salmon-Poke-Bowl-RECIPE.jpg.webp">
-           <h2>Boks 7</h2>
-           <p>Dette er innholdet i Boks 7.</p>
-       </div>
-       <div class="boks8">
-           <img src="./img/OurFavoriteMacaroniCheese_HERO_082522_38932.jpg.webp">
-           <h2>Boks 8</h2>
-           <p>Dette er innholdet i Boks 8.</p>
-       </div>
+
+   <section class="mat-boks2">
+       <article class="rad">
+        <div class="mat-kolonne">
+            <img src="img/foodplate10.webp">
+            <h2>Pasta</h2>
+         <p>Nyt vår velsmakende pastarett, nøye tilberedt for nettopp deg. 
+             Pastaretten kan tilpasses dine preferanser, enten med grønnsaker, kjøtt eller andre tillegg. 
+             Vennligst informer personalet om eventuelle allergier.</p>
+            </div>
+ 
+        <div class="mat-kolonne">
+            <img src="img/foodplate11.webp">
+            <h2>Salat</h2>
+          <p>Vår friske salat er en fest for øynene og smaksløkene. 
+             Nyt en palett av farger, teksturer og smaker med sesongens 
+             ferskeste grønnsaker, toppet med deilige dressinger. 
+             Vennligst informer personalet om eventuelle allergier.</p>
+        </div>
+        <div class="mat-kolonne">
+            <img src="img/foodplate14.webp">
+            <h2>Vafler</h2>
+         <p> Lyst på noe søtt? Våre vafler er en himmelsk delikatesse, servert varme og gyldne. 
+             Topp dem med friske bær, sirup eller iskrem for en uforglemmelig dessertopplevelse. 
+             Vennligst informer personalet om eventuelle allergier.</p>
+        </div>
+         <div class="mat-kolonne">
+            <img src="img/foodplate13.webp">
+            <h2>Smoothie</h2>
+            <p>Start dagen friskt med en næringsrik smoothie bowl. 
+             Fylt med ferske frukter, bær og crunchy toppings, er dette en 
+             energiboost som smaker like godt som den ser ut. 
+             Vennligst informer personalet om eventuelle allergier.</p>
+        </div>
+       </article>
    </section>
-   
-    <section class="boks-holder">
-           <aside class="kaffebilde">
-               <img src="img/kaffedeal_0.jpg" alt="Bilde av kaffekopper">
-           </aside>
-           
-           <article class="Åpningstider">
-               <h2>Åpningstider</h2>
-               <p>Kantina er åpen fra mandag til fredag fra 8:00 til 15:30.</p>
-               <h3>Kaffe-Deal!</h3>
-               <p>- Kjøp en Sio kopp i vår kantine, og få kaffe til <em>20kr!</em></p>
-               <!--Teksten er kopiert fra Sio sine hjemmesider-->
-           </article>
+
+    <section class="boks-holder3">
+      <h2>Åpningstider og diverse</h2>
+      <article class="åpningstider">
+        <h3>Kaffe-Deal!</h3>
+            <p>Kantina er åpen fra mandag til fredag fra 8:00 til 15:30.</p>
+            <em><p>- Kjøp en Sio kopp i vår kantine, og få kaffe til <b>12kr!</b></p></em>
+            <!--Teksten er kopiert fra Sio sine hjemmesider-->            
+            <aside class="kaffebilde">
+                <img src="img/kaffeogkake.webp">
+            </aside>
+      </article>
     </section>
-   </main>
+</main>
  
     <!-- Footer-seksjonen -->
-    <footer class="main-footer">
+  <footer class="main-footer">
         <section class="upper-footer">
             <span class="school-adress">
                 <h3>Adresse:</h3>
