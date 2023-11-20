@@ -640,31 +640,29 @@ margin-top: 50px;
 }
 /* Forsidebilde */
 
-/* Hovedinnhold */
-/* Generelle stiler for hele seksjonen */
-
 /* Stiler for første boks (info-box) */
 
-.mat-boks1 {
+/* Stiler for  */
+.food-box1 {
   flex-direction: column;
   padding: 2%;
   border-top: solid;
 }
 
-.mat-boks2 {
+.food-box2 {
   flex-direction: column;
   border-bottom: solid;
   padding: 2%;
 }
 
-.boks-holder3 {
+.last-box {
   flex-direction: column;
   border-top: 10px;
   gap: 2rem;
 }
 
 .info-box,
-.kantine-bilde {
+.cantine-picture {
   flex: 50%;
   
 }
@@ -676,19 +674,19 @@ margin-top: 50px;
 }
 
 /* Stiler for andre boks (kantine-bilde) */
-.kantine-bilde {
+.cantine-picture {
   width: 100%;
 }
 
 /* Stiler for tredje boks (kaffebilde og Åpningstider) */
 
- .mat-boks1 div, .mat-boks2 div {
+ .food-column {
   width: 100%;
   height: auto;
 }
 
 /* Stiler for kaffebilde */
-.åpningstider h3, .åpningstidere p {
+.opening-hours h3, .opening-hours p {
   text-align: center;
 }
 
@@ -698,15 +696,15 @@ margin-top: 50px;
 
 /* Ny stil for skjermbredder mindre enn 400px */
 @media screen and (max-width: 400px) {
-  .boks-holder {
+  .first-box {
     flex-direction: column;
     padding: 0;
   }
 
   .info-box,
-  .kantine-bilde,
-  .kaffebilde,
-  .Åpningstider {
+  .cantine-picture,
+  .coffe-picture,
+  .opening-hours {
     flex: 100%;
     width: 100%;
   }
