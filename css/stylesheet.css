@@ -124,11 +124,15 @@ img {
   background-size: cover;
 }
 
+/* STYLING FOR NAVIGASJONSBAREN */
+
+/* Gjør nav-elementer om til en container for alle elementer som skal inkluderes i navigasjon */
+/* Vi tar i bruk flex, og gir baren en fixed posisjon for at den skal være tilgjengelig under hele dokumentet */
+/* z-index er satt til 100 for å dekke alle elementer som kommer nedover */
 nav {
   display: flex;
   position: fixed;
   top: 0px;
-  right: 0px;
   width: 100%;
   height: 6rem;
   z-index: 100;
@@ -136,15 +140,16 @@ nav {
   background-color: var(--bg-header);
 }
 
+/* STYLING FOR OSLO-MET LOGO */
 .logo-wrapper{
   display: flex;
   flex: 0.3;
   align-items: center;
   margin-left: 2rem;
   padding: 0;
-  z-index: 200;
 }
 
+/* setter inn bilde av logoen og gjør bilde en smule gjennomsiktig men en overgang */
 .logo-icon {
   display: block;
   background-image: url(../img/logo.png);
@@ -155,6 +160,7 @@ nav {
   transition: transform var(--hover-time) ease-out;
 }
 
+/* når musen er i kontakt med logoen vil det ikek være noe gjennomsiktighet! */
 .logo-icon:hover {
   opacity: 1;
   transition: transform 0.3s ease-in-out;
@@ -714,6 +720,8 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/pilestredet.jpeg);
 }
 
+
+/* lager mellomrom mellom elementene i artikkel tekstene */
 .access-main-container article{
   justify-content: space-between;
   gap: 2rem;
@@ -724,26 +732,28 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
   width: 80%;
 }
 
+/* setter de to hovedelementene (article og aside) i section boksene til å ta 50% av boksen hver */
 .access-kolonne, .design-pictures {
   flex: 50%;
   padding: 2%;
 }
 
+/* lager border (linje) for å skille hver seksjon for bedre accessibility */
 .design-wrapper, .test-wrapper{
   padding: 2%;
   border-top: solid;
 }
 
-
+/* gjør aside elementet for design boksen om til en flex-container for å utjevne bildene nedover */
 .design-pictures {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: 6rem;
 }
 
+/* gir en høyde til bildene slik at alle holder samme høyde */
 .picture {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   height: 6rem;
 }
 
