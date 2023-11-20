@@ -102,7 +102,7 @@ img {
   height: auto;
 }
 
-.rad {
+.row {
   display: flex;
   margin-top: 2%;
   margin: auto;
@@ -312,11 +312,13 @@ nav {
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften (litt mot venstre).*/
 
-.velkommen {
+.welcome {
   display: flex;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
-.velkommen-kolonne {
+.welcome-column {
   flex: 50%;
 }
 
@@ -325,7 +327,8 @@ viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere o
   flex-direction: column;
   margin: auto;
   text-align: center;
-  padding-top: 5em;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bibliotek.jpg);
   background-size: cover;
   border-radius: 3em;
@@ -358,10 +361,10 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 
 .p35 {
   flex-direction: column;
-  padding-top: 1.5rem;
+  padding-top: 5rem;
 }
 
-.p35-kolonne {
+.p35-column {
   flex-basis: 32%;
   border-radius: 0.5em;
   margin-bottom: 1.5em;
@@ -370,12 +373,12 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   background-color: black;
 }
 
-.p35-kolonne img {
+.p35-column img {
   height: 100%;
   opacity: 0.5;
 }
 
-.p35-kolonne a {
+.p35-column a {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -390,20 +393,20 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   border-color: var(--bg);
 }
 
-.p35-kolonne a:hover {
+.p35-column a:hover {
   background: rgba(137, 152, 120, 0.8);
 }
 /*P35 - Styling tre bokser med hvert sitt bilde og lenker til sider. Bakgrunnen er satt til svart, og transparens på bildene
 er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjonert midt på boksene*/
 
-.kart {
+.map {
   flex-direction: column;
   padding-top: 5em;
   padding-bottom: 5em;
   text-align: center;
 }
 
-.kart iframe {
+.map iframe {
   width: 100%;
 }
 
