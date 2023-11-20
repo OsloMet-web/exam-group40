@@ -845,7 +845,7 @@ de ulike delene av siden*/
   width: 90%;
  }
 
- .upper-footer span, .upper-footer address {
+ .upper-footer span {
   flex: 30%;
   padding: auto;
   text-align: center;
