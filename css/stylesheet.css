@@ -75,9 +75,13 @@ margin-bottom: 0.5rem;
 }
 
 p {
-font-size: 1.2rem;
+font-size: 1.5rem;
 line-height: 2rem;
 text-align: center;
+}
+
+b {
+  font-size: 1.5rem;
 }
 
 a {
@@ -104,7 +108,6 @@ img {
 
 .row {
   display: flex;
-  margin-top: 2%;
   margin: auto;
   justify-content: space-between;
   gap: 2rem;
@@ -716,7 +719,7 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
   gap: 2rem;
 }
 
-.access-welcome {
+.introduction {
   text-align: center;
   width: 80%;
 }
@@ -761,22 +764,24 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften. Koden er inspirert av W3school.*/
 
-.data-kolonne {
+.data-column {
     flex: 50%;
-    padding: 2%;
 }
 /*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for section 1,2 og 3. Samme gjelder for kolonnene innad i 
 containeren.*/
-
-.data-section2, .data-section3 {
-    border-top: solid;
+.data-section1, .data-section2, .data-section3, .data-section4 {
+  padding-top: 4%;
+  padding-bottom: 2%;
+  border-top: solid;
 }
 
-.data-section4 {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+.data-section4{
+  flex-direction: column;
+  text-align: center;
 }
+
 .data-section4 img{
+    margin-top: 2%;
     width: 100%;
 }
 /* Setter bildet i section 4 til å dekke hele siden til venstre og høyre*/
