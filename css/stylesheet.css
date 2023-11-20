@@ -364,7 +364,7 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   padding-top: 5rem;
 }
 
-.p35-kolonne {
+.p35-column {
   flex-basis: 32%;
   border-radius: 0.5em;
   margin-bottom: 1.5em;
@@ -373,12 +373,12 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   background-color: black;
 }
 
-.p35-kolonne img {
+.p35-column img {
   height: 100%;
   opacity: 0.5;
 }
 
-.p35-kolonne a {
+.p35-column a {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -393,7 +393,7 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   border-color: var(--bg);
 }
 
-.p35-kolonne a:hover {
+.p35-column a:hover {
   background: rgba(137, 152, 120, 0.8);
 }
 /*P35 - Styling tre bokser med hvert sitt bilde og lenker til sider. Bakgrunnen er satt til svart, og transparens på bildene
