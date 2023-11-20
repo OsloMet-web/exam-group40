@@ -312,13 +312,13 @@ nav {
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften (litt mot venstre).*/
 
-.velkommen {
+.welcome {
   display: flex;
   padding-top: 3rem;
   padding-bottom: 5rem;
 }
 
-.velkommen-kolonne {
+.welcome-column {
   flex: 50%;
 }
 
