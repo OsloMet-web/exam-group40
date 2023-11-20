@@ -380,7 +380,7 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
     flex: 60%;
 }
 
-.topical-header{
+/**.topical-header{
 align-items: center;
 justify-content: center;
 background-color: #899878;
@@ -428,7 +428,7 @@ font-size: medium;
   padding: 20px;
   margin: -50px 0 0 0;
   
-}
+}**/
 
 /* Forsidebilde og tittel*/
 #pagetitle{
@@ -512,6 +512,8 @@ font-size: medium;
     animation-iteration-count: infinite;
     font-family: Arial;
     margin-left: 10px;
+    margin-bottom: -15px;
+    font-size: large;
     
 }
 @keyframes example {
@@ -581,14 +583,15 @@ font-size: medium;
     transform: rotateY(180deg);
   }
   .flip-box-back>p {
-    padding:20px;
+    padding:0 20px 20px 20px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
   }
   .flip-box-back>h4{
     font-family: fantasy;
     font-weight: lighter;
     font-size: larger;
-    margin-top: 20px;
+    margin-bottom: -10px;
   }
 /*Overskrift på linjen med bilder*/
   #linjetittel {
