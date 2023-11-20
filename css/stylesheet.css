@@ -18,8 +18,8 @@
   /* Bakgrunnsfarge for header */
   --bg-header: #e4e6c3;
 
-  /* Bakgrunnsfarge for footer */
-  --bg-footer: #899878;
+  /* Footer color */
+  --bg-footer: #e4e4c3;
 
   /* Timers */
   --hover-time: 0.5s;
@@ -68,7 +68,7 @@ margin-bottom: 1rem;
 }
 
 h3 {
-font-size: 1.7rem;
+font-size: 2rem;
 font-weight: 500;
 text-align: center;
 margin-top: 0.5rem;
@@ -784,21 +784,21 @@ viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere o
 .data-column {
     flex: 50%;
 }
-/*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for section 1,2 og 3. Samme gjelder for kolonnene innad i 
-containeren.*/
+/* Gir alle de 4 boksene/seksjonene padding oppe og nede, samt en ramme på toppen som blir en delende strek mellom 
+de ulike delene av siden*/
 .data-section1, .data-section2, .data-section3, .data-section4 {
   padding-top: 4%;
   padding-bottom: 2%;
   border-top: solid;
 }
 
+/* Gir section 4 kolonne-retning slik at teskten står ovenfor bildet av banneret*/
 .data-section4{
   flex-direction: column;
   text-align: center;
 }
 
 .data-section4 img{
-    margin-top: 2%;
     width: 100%;
 }
 /* Setter bildet i section 4 til å dekke hele siden til venstre og høyre*/
@@ -837,7 +837,7 @@ containeren.*/
 
  .main-footer p, .main-footer a{
   text-align: center;
-  color: var(--primary);
+  color: var(--text-primary);
  }
 
  .main-footer h3 {
