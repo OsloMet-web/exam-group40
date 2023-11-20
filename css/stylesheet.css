@@ -1,4 +1,3 @@
-/*Felles for alle*/
 
 *{
   outline: 0;
@@ -13,7 +12,6 @@
   /* Lager en root med variabler for å kunne gjenbruke disse gjennom koden og gjøre det enklere for en annen å 
   endre ting i koden. */
   --text-primary: #343434;
-
   --secondary: #46494c;
   --primary: #f7f7f2;
 
@@ -40,7 +38,7 @@ body {
   min-height: 100vh;
   min-width: 100vh;
 }
-/* Setter body bakerst med z-indeks*/
+/* Setter body bakerst med z-indeks, bruker viewheight for bedre skalering av siden*/
 
 main {
   display: flex;
@@ -51,6 +49,7 @@ main {
   gap: 3rem;
 }
 
+/* Tekstelementer: */
 ul {
   list-style: none;
 }
@@ -59,7 +58,7 @@ h1 {
   position: relative;
   top: 50%;
   font-size: 5rem;
-  color: var(--bg);
+  color: var(--primary);
 }
 
 h2 {
@@ -90,6 +89,7 @@ a {
   text-decoration: none;
 }
 
+/* Seksjoner/innhold: */
 section p, section h2 {
   text-align: left;
 }
