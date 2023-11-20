@@ -354,6 +354,11 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   text-align: center;
 }
 
+.library-column > p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
 .library-column {
   flex-basis: 35%;
   background: #F7F7F2;
