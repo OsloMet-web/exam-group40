@@ -1,4 +1,3 @@
-/*Felles for alle*/
 
 *{
   outline: 0;
@@ -10,24 +9,24 @@
 }
 
 :root {
-  /* Common colors*/
+  /* Lager en root med variabler for å kunne gjenbruke disse gjennom koden og gjøre det enklere for en annen å 
+  endre ting i koden. */
   --text-primary: #343434;
-
   --secondary: #46494c;
-  --bg: #f7f7f2;
+  --primary: #f7f7f2;
 
-  /* Header nav Colors */
+  /* Bakgrunnsfarge for header */
   --bg-header: #e4e6c3;
 
-  /* Footer color */
+  /* Bakgrunnsfarge for footer */
   --bg-footer: #899878;
 
   /* Timers */
   --hover-time: 0.5s;
-  --slide-time: 0.5s;
 
   font-size: 12px;
   font-family: Raleway;
+  /* Valgt fonten Raleway fra Google Fonts til overskrifter */
 }
 
 body {
@@ -39,6 +38,7 @@ body {
   min-height: 100vh;
   min-width: 100vh;
 }
+/* Setter body bakerst med z-indeks, bruker viewheight for bedre skalering av siden*/
 
 main {
   display: flex;
@@ -49,6 +49,7 @@ main {
   gap: 3rem;
 }
 
+/* Tekstelementer: */
 ul {
   list-style: none;
 }
@@ -57,7 +58,7 @@ h1 {
   position: relative;
   top: 50%;
   font-size: 5rem;
-  color: var(--bg);
+  color: var(--primary);
 }
 
 h2 {
@@ -88,6 +89,7 @@ a {
   text-decoration: none;
 }
 
+/* Seksjoner/innhold: */
 section p, section h2 {
   text-align: left;
 }
@@ -391,11 +393,11 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   background: transparent;
   transition: 0.5s;
   font-weight: 500;
-  color: var(--bg);
+  color: var(--primary);
   font-size: 2em;
   padding: 0.5em;
   border: solid;
-  border-color: var(--bg);
+  border-color: var(--primary);
 }
 
 .p35-column a:hover {
@@ -824,13 +826,13 @@ containeren.*/
   width: 100%;
   height: auto;
   margin-top: 6rem;
-  color: var(--bg);
+  color: var(--primary);
   background-color: var(--bg-footer);
  }
 
  .main-footer p, .main-footer a{
   text-align: center;
-  color: var(--bg);
+  color: var(--primary);
  }
 
  .main-footer h3 {
@@ -871,7 +873,7 @@ containeren.*/
  }
 
  .upper-footer li:hover {
-  color: var(--bg);
+  color: var(--primary);
   opacity: 1;
   text-decoration: underline;
  }
