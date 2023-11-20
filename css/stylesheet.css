@@ -407,7 +407,7 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
   width: 100%;
 }
 
-/*Susanne*/
+/*Topical site styling*/
 .topical-body{
     margin:0;
     padding: 0;
@@ -419,12 +419,7 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
     flex: 60%;
 }
 
-/**.topical-header{
-align-items: center;
-justify-content: center;
-background-color: #899878;
-margin-top: 50px;
-}
+
 
 /* Forsidebilde og tittel*/
 #pagetitle{
@@ -448,7 +443,7 @@ margin-top: 50px;
    transform: translate(-50%, -50%);
 }
 
-#pagetitle>img{
+#frontpic{
   width: 100%;
   height: auto;
   box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
@@ -461,29 +456,31 @@ margin-top: 50px;
 }
 
 /*Artikkelteksten*/
-.artikkeltekst{
+.article-text{
     padding:2rem;
 }
 
-.artikkeltekst > p{
+.article-text>p{
     flex-grow: 2;
     line-height: 1.5;
     font-size: medium;
+    text-align: left;
     
 }
 
-.artikkeltekst > h2{
+.article-text>h2{
     font-family: fantasy;
     font-weight: 10;
     color: #46494C;
     margin: 50px 0 20px 0;
     font-size: x-large;
+    text-align: left;
 
     
 }
 
 /*Bilde i artikkelen*/
-#bilde1{
+#pic1{
     display: flex;
     align-items: flex-end;
     max-width: 100%;
@@ -491,7 +488,7 @@ margin-top: 50px;
 }
 
 
-#bildekilde1{
+#picsource1{
     margin: 0;
     font-size: smaller;
     color: grey;
@@ -587,10 +584,10 @@ margin-top: 50px;
     font-family: fantasy;
     font-weight: lighter;
     font-size: larger;
-    margin-bottom: -10px;
+    margin: 10px 0 10px 0;
   }
 /*Overskrift på linjen med bilder*/
-  #linjetittel {
+  #linetitle {
     font-family: fantasy;
     font-weight: lighter;
     color: #46494C;
@@ -616,7 +613,7 @@ margin-top: 50px;
   }
  
   .buttonlink > a:link, a:visited{
-      background-color: #899878;
+      background-color: #343F3E;
       color: white;
       padding: 14px 25px;
       text-align: center;
@@ -626,7 +623,7 @@ margin-top: 50px;
   }
 
   .buttonlink > a:hover{
-    color:#46494C
+    color:#e4e6c3
   }
 
 
