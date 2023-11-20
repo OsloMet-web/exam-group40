@@ -835,7 +835,7 @@ containeren.*/
   width: 90%;
  }
 
- .upper-footer span {
+ .upper-footer span, .upper-footer address {
   flex: 30%;
   padding: auto;
   text-align: center;
