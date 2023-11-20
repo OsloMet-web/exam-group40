@@ -149,7 +149,7 @@ nav {
   padding: 0;
 }
 
-/* setter inn bilde av logoen og gjør bilde gjennomsiktig for å danne en effekt når bilde  */
+/* setter inn bilde av logoen og gjør bilde en smule gjennomsiktig men en overgang */
 .logo-icon {
   display: block;
   background-image: url(../img/logo.png);
@@ -160,6 +160,7 @@ nav {
   transition: transform var(--hover-time) ease-out;
 }
 
+/* når musen er i kontakt med logoen vil det ikek være noe gjennomsiktighet! */
 .logo-icon:hover {
   opacity: 1;
   transition: transform 0.3s ease-in-out;
