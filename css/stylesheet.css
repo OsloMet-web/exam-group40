@@ -713,40 +713,46 @@ margin-top: 50px;
 }
 
 /* Ange-Clara */
+
+/* legger inn header-bilde for accessibility-pagen */
 .title-access {
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/pilestredet.jpeg);
 }
 
+
+/* lager mellomrom mellom elementene i artikkel tekstene */
 .access-main-container article{
   justify-content: space-between;
   gap: 2rem;
 }
 
+/* stiller størrelsen på velkommen boksen til lik størrelse med seksjon boksene */
 .access-welcome {
-  text-align: center;
   width: 80%;
 }
 
+/* setter de to hovedelementene (article og aside) i section boksene til å ta 50% av boksen hver */
 .access-kolonne, .design-pictures {
   flex: 50%;
   padding: 2%;
 }
 
+/* lager border (linje) for å skille hver seksjon for bedre accessibility */
 .design-wrapper, .test-wrapper{
   padding: 2%;
   border-top: solid;
 }
 
-
+/* gjør aside elementet for design boksen om til en flex-container for å utjevne bildene nedover */
 .design-pictures {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: 6rem;
 }
 
+/* gir en høyde til bildene slik at alle holder samme høyde */
 .picture {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   height: 6rem;
 }
 
