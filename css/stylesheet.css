@@ -876,11 +876,11 @@ containeren.*/
   text-decoration: underline;
  }
 
- .bottom-footer {
+ .lower-footer {
   width: 90%;
  }
 
- .bottom-footer .trademark, .footer-logo, .social-media {
+ .lower-footer .trademark, .footer-logo, .social-media {
   margin: auto;
   flex: 30%;
  }
@@ -912,7 +912,7 @@ containeren.*/
     transition: transform var(--hover-time) ease-in-out;
   }
 
- .bottom-footer ul {
+ .lower-footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
