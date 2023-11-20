@@ -24,7 +24,7 @@
 
   /* Timers */
   --hover-time: 0.5s;
-  -slide-time: 0.5s;
+  --slide-time: 0.5s;
 
   font-size: 12px;
   font-family: Raleway;
@@ -40,8 +40,24 @@ body {
   min-width: 100vh;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
 ul {
   list-style: none;
+}
+
+h1 {
+  position: relative;
+  top: 50%;
+  font-size: 5rem;
+  color: var(--bg);
 }
 
 h2 {
@@ -68,7 +84,44 @@ a {
   text-decoration: none;
 }
 
-.navbar {
+section p, section h2 {
+  text-align: left;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.rad {
+  display: flex;
+  margin-top: 2%;
+  margin: auto;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.title-index, .title-data, .title-kantina, .title-access {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  /*Bildet er hentet fra OsloMet sine nettsider: https://www.oslomet.no/en/about/get-to-know-oslomet*/
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
   display: flex;
   position: fixed;
   top: 0px;
@@ -152,6 +205,11 @@ a {
   transition: transform 1s ease-in;
 }
 
+.nav-group .point::before {
+  color: var(--text-primary);
+  transform: scaleX(1);
+}
+
 #nav-toggle-open, #nav-toggle-close {
   position: relative;
   margin-right: 2rem;
@@ -172,19 +230,13 @@ a {
 
 @media (max-width: 750px) {
 
-  #burger-toggle{
-      opacity: 0;
-  }
-
   .navbar-menu {
       flex-direction: column;
       position: fixed;
       top: -1000px;
-      /*top: 0;*/
       right: 0px;
       width: 100%;
       height: 100%;
-      justify-content: start;
       margin-right: 0;
       align-items: center;
       background-color: var(--bg-header);
@@ -192,9 +244,29 @@ a {
       transition: 0.5s ease;
   }
 
+  .navbar-menu li{
+    text-align: center;
+    width: 100%;
+    margin: 2rem;
+    padding: 4%;
+    box-sizing: border-box;
+  }
+
+  .navbar-menu li:active {
+    background-color: rgba(247, 247, 242, 0.557);
+  }
+
+  .point {
+    cursor: default;
+    width: 100%;
+    background-color: rgba(247, 247, 242, 0.557);
+  }
+
+  .nav-group a::before{
+      display: none;
+  }
+
   #nav-icons {
-      position: relative;
-      top: 0.5rem;
       background-color: rgba(0, 255, 255, 0);
       display: inline-block;
   }
@@ -219,13 +291,12 @@ a {
 
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .navbar-menu{
-    top: -1190px;
+    top: -3000px;
   }
-
-  .nav-group a::before{
-      display: none;
+  .navbar-menu li {
+    padding: 7%;
   }
 
 }
@@ -234,58 +305,27 @@ a {
 
 /*Valgt fonten Raleway fra Google Fonts som font for overskrifter, og Helvetica som font for brødtekst*/
 
-.header-index {
-  margin-top: 6rem;
-  width: 100%;
-  height: 100vh;
+.title-index {
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/Pilestredet_campus.jpeg);
   /*Bildet er hentet fra OsloMet sine nettsider: https://www.oslomet.no/en/about/get-to-know-oslomet*/
-  background-position: center;
-  background-size: cover;
-}
-
-.header-index h1 {
-  margin: 0;
-  padding: 20% 20% 20% 50%;
-  font-size: 5vw;
-  color: #FFFFFF;
 }
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften (litt mot venstre).*/
 
-.rad {
-  margin-top: 2%;
-  display: flex;
-  justify-content: space-between;
-}
-
 .velkommen {
-  width: 80%;
-  margin: auto;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  text-align: left;
+  display: flex;
 }
 
 .velkommen-kolonne {
-  flex-basis: 48%;
-  padding-top: 5em;
-  padding-bottom: 5em;
-  padding-left: 0.1em;
-  padding-right: 0.1em;
-}
-
-.velkommen-kolonne img {
-  width: 100%;
+  flex: 50%;
 }
 /*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for alle delene. Koden for kolonnene varierer,
 avhengig av innhold.*/
 
 .bibliotek {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bibliotek.jpg);
   background-size: cover;
   border-radius: 3em;
@@ -300,25 +340,23 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 
 .bibliotek > p {
   color: #FFFFFF;
-  font-size: 1.5em
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .bibliotek-kolonne {
   flex-basis: 35%;
-  background: #F7F7F2;
-  border-radius: 2em;
+  background: var(--bg);
+  border-radius: 2rem;
   margin: 5%;
-  padding: 2em;
-  box-sizing: border-box;
-  text-align: left;
+  padding: 4%;
+  overflow: hidden;
 }
 /*Styling av overskrift, tekst og boksene i bibliotek-delen*/
 
 .p35 {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 5em;
+  flex-direction: column;
+  padding-top: 1.5rem;
 }
 
 .p35-kolonne {
@@ -331,7 +369,6 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 }
 
 .p35-kolonne img {
-  width: 100%;
   height: 100%;
   opacity: 0.5;
 }
@@ -344,11 +381,11 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   background: transparent;
   transition: 0.5s;
   font-weight: 500;
-  color: #FFFFFF;
+  color: var(--bg);
   font-size: 2em;
   padding: 0.5em;
   border: solid;
-  border-color: #FFFFFF;
+  border-color: var(--bg);
 }
 
 .p35-kolonne a:hover {
@@ -358,8 +395,7 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjonert midt på boksene*/
 
 .kart {
-  width: 80%;
-  margin: auto;
+  flex-direction: column;
   padding-top: 5em;
   padding-bottom: 5em;
   text-align: center;
@@ -368,12 +404,6 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
 .kart iframe {
   width: 100%;
 }
-
-@media screen and (max-width: 700px) {
-   .footer, .rad {   
-      flex-direction: column;
-     }
-  }
 
 /*Susanne*/
 .topical-body{
@@ -597,87 +627,36 @@ margin-top: 50px;
 
 /*Nellie*/
 /* Header */
-.header {
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  padding: 0;
-  background-position: center;
-  background-size: cover;
-  background-color: #babab1;
+.title-kantina {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/kantineforside.webp);
 }
-
-.meny {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #d5debf;
-  padding: 5px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-
-.meny ul {
-  list-style: none;
-  display: flex;
-  position: sticky;
-}
-
-.meny li {
-  margin-right: 50px;
-  position: sticky;
-}
-
-.meny li a {
-  text-decoration: none;
-  color: #343f3e;
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  font-family: Helvetica, sans-serif;
-}
-
-.meny a:hover {
-  color: #FFFFFF;
-  position: sticky;
-}
-
 /* Forsidebilde */
-.forsidebilde_kantina {
-  text-align: center;
-  margin-top: 0px;
-}
-
-.forsidebilde_kantina img {
-  max-width: 100%;
-  max-height: 100%;
-  border: 0;
-}
-
-.forsidebilde_kantina p {
-  font-size: 0;
-  color: #3d3d3d;
-}
 
 /* Hovedinnhold */
 /* Generelle stiler for hele seksjonen */
 
 /* Stiler for første boks (info-box) */
-.boks-holder {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+
+.mat-boks1 {
+  flex-direction: column;
+  padding: 2%;
+  border-top: solid;
+}
+
+.mat-boks2 {
+  flex-direction: column;
+  border-bottom: solid;
+  padding: 2%;
+}
+
+.boks-holder3 {
+  flex-direction: column;
+  border-top: 10px;
   gap: 2rem;
-  margin: auto;
-  width: 80%;
 }
 
 .info-box,
-.kantine-bilde,
-.kaffebilde,
-.Åpningstider {
+.kantine-bilde {
   flex: 50%;
   
 }
@@ -692,37 +671,20 @@ margin-top: 50px;
 .kantine-bilde {
   width: 100%;
 }
-.kantine-bilde img {
-  width: 100%;
-  height: auto;
-}
 
 /* Stiler for tredje boks (kaffebilde og Åpningstider) */
-.kaffebilde,
-.Åpningstider {
-  flex: 50%;
-}
 
-
-.boks-holder div, img {
+ .mat-boks1 div, .mat-boks2 div {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
 }
 
 /* Stiler for kaffebilde */
-.kaffebilde {
-  width: 100%;
-}
-
-.kaffebilde img {
-  width: 100%;
-  height: auto;
+.åpningstider h3, .åpningstidere p {
+  text-align: center;
 }
 
 /* Stiler for fjerde boks (Åpningstider) */
-.Åpningstider {
-}
 
 
 
@@ -743,46 +705,8 @@ margin-top: 50px;
 }
 
 /* Ange-Clara */
-.access-title {
-  margin-top: 6rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  background-color: #2a1515b4;
-  width: 100%;
-  height: 100vh;
+.title-access {
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/pilestredet.jpeg);
-  background-position: center;
-  background-size: cover;
-}
-
-.access-title img {
-  align-content: center;
-  max-width: 100%;
-  height: 100%; 
-}
-
-.access-title h1 {
-  position: relative;
-  top: 50%;
-  font-size: 5rem;
-  color: var(--bg);
-}
-
-
-.access-main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  margin: auto;
-}
-
-.access-main-container section {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  margin: auto;
 }
 
 .access-main-container article{
@@ -795,35 +719,16 @@ margin-top: 50px;
   width: 80%;
 }
 
-
-.test-wrapper {
-  position: relative;
-  top: 2rem;
-}
-
-.test-wrapper .test-article, .test-pictures {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding: 0.5em;
+.access-kolonne, .design-pictures {
   flex: 50%;
+  padding: 2%;
 }
 
-.test-pictures img {
-  width: 100%;
-  height: auto;
+.design-wrapper, .test-wrapper{
+  padding: 2%;
+  border-top: solid;
 }
 
-.design-wrapper {
-  position: relative;
-  top: 2rem;
-}
-
-.design-wrapper .design-article, .design-pictures {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding: 0.5em;
-  flex: 50%;
-}
 
 .design-pictures {
   display: flex;
@@ -831,121 +736,41 @@ margin-top: 50px;
   justify-content: center;
 }
 
-.design-pictures img {
-  width: auto;
-  height: 100%;
-}
-
-.picture1, .picture2, .picture3 {
+.picture {
   margin-top: 1rem;
   margin-bottom: 1rem;
   height: 6rem;
 }
 
-@media (max-width: 750px) {
-.access-main-container section {
-  flex-direction: column;
-}
-
-.title {
-}
-
-}
-
-@media (max-width: 450px) {
-.access-main-container section {
-  flex-direction: column;
-}
-
-}
-
 /* End of accessibility-page styling */
-
-
 
 /* Tomine */
 
-
-/*.logo {
-    display: flex;
-    flex-direction: row; 
-    width: 100%;
-    border: 5px solid black;
-    align-items: center;
-    padding-left: 2%;
-}*/
-
-.data-header {
-    margin-top: 6rem;
-    width: 100%;
-    height: 100vh;
+.title-data {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/mac.jpeg);
     /* Bildet er hentet fra; https://unsplash.com/photos/macbook-pro-on-white-surface-WiONHd_zYI4*/
-    background-position: center;
-    background-size: cover;
   }
   
-  .data-header h1 {
-    margin: 0;
-    padding: 15% 20% 20% 25%;
-    font-size: 4vw;
-    color: #FFFFFF;
+  .title-data h1 {
+    top: 30%;
+    font-size: 4rem;
   }
 
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften. Koden er inspirert av W3school.*/
 
-
-.rad {
-    margin-top: 2%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-
 .data-kolonne {
-    flex-basis: 48%;
-    padding-top: 5em;
-    padding-bottom: 5em;
-    padding-left: 0.1em;
-    padding-right: 0.1em;
+    flex: 50%;
+    padding: 2%;
 }
-
-.data-kolonne img {
-    width: 100%;
-}
-
 /*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for section 1,2 og 3. Samme gjelder for kolonnene innad i 
 containeren.*/
 
-.data-section1 {
-    width: 80%;
-    margin: auto;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    text-align: left;
-}
-
-.data-section2 {
-    width: 80%;
-    margin: auto;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    text-align: left;
-    border-top: solid;
-}
-
-.data-section3 {
-    width: 80%;
-    margin: auto;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    text-align: left;
+.data-section2, .data-section3 {
     border-top: solid;
 }
 
 .data-section4 {
-    margin: auto;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
@@ -954,17 +779,19 @@ containeren.*/
 }
 /* Setter bildet i section 4 til å dekke hele siden til venstre og høyre*/
 
-@media screen and (max-width: 700px) {
-    .data-nav, ul, li, .data-section1, .data-section2, .data-section3 {   
-       flex-direction: column;
-     }
-     .data-header h1 {
-      font-size: 10vw;
-     }
-     ul, li {
-       margin: 1%;
-     }
- }
+ @media screen and (max-width: 800px) {
+  section, .rad {
+    flex-direction: column;
+  }
+  
+  }
+  
+  @media screen and (max-width: 450px) {
+  section {
+    flex-direction: column;
+  }
+  
+  }
 
  /* footer styling */
 
@@ -979,6 +806,7 @@ containeren.*/
  }
 
  .main-footer p, .main-footer a{
+  text-align: center;
   color: var(--bg);
  }
 
@@ -987,14 +815,11 @@ containeren.*/
  }
 
  .main-footer section {
-  display: flex;
-  flex-direction: row;
   margin-top: 4rem;
  }
 
  .upper-footer {
   width: 90%;
-  margin: auto;
  }
 
  .upper-footer span {
@@ -1029,9 +854,7 @@ containeren.*/
  }
 
  .bottom-footer {
-  display: flex;
   width: 90%;
-  margin: auto;
  }
 
  .bottom-footer .trademark, .footer-logo, .social-media {
@@ -1046,35 +869,36 @@ containeren.*/
  .flogo-wrapper {
   display: flex;
   align-items: center;
-
  }
 
  .flogo-icon {
   display: block;
   position: relative;
-  bottom: 4rem;
+  bottom: 3.5rem;
   background-image: url(../img/logo2.png);
-  opacity: 0.8;
   background-size: cover;
-  width:17rem;
+  width: 17rem;
   height: 10rem;
   margin: auto;
+  opacity: 0.8;
   transition: transform var(--hover-time) ease-out;
-  background-color: rgba(0, 255, 255, 0);
   }
 
   .flogo-icon:hover {
-      opacity: 1;
-      transition: transform var(--hover-time) ease-in-out;
+    opacity: 1;
+    transition: transform var(--hover-time) ease-in-out;
   }
 
  .bottom-footer ul {
   display: flex;
   flex-direction: row;
-  list-style: none;
   justify-content: space-between;
   gap: 1rem;
   margin: auto;
+ }
+
+ .social-media {
+  padding-bottom: 2rem;
  }
 
  .social-media li {
@@ -1085,17 +909,15 @@ containeren.*/
  }
 
  .social-media li:hover {
-      opacity: 1;
-      transition: var(--hover-time) ease-in-out;
+  opacity: 1;
+  transition: var(--hover-time) ease-in-out;
   }
 
  .social-media img {
-  width: 100%;
-  height: auto;
   margin: auto;
  }
 
- @media (max-width: 750px) {
+ @media (max-width: 800px) {
   .main-footer section{
       flex-direction: column;
   }
