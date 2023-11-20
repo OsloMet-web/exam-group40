@@ -1,15 +1,71 @@
 /*Felles for alle*/
 
+*{
+  outline: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
 :root {
+  /* Common colors*/
+  --text-primary: #343434;
+
+  --secondary: #46494c;
+  --bg: #f7f7f2;
+
+  /* Header nav Colors */
+  --bg-header: #e4e6c3;
+
+  /* Footer color */
+  --bg-footer: #899878;
+
+  /* Timers */
+  --hover-time: 0.5s;
+  -slide-time: 0.5s;
+
   font-size: 12px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Raleway;
 }
 
 body {
+  z-index: -2;
+  color: var(--text-primary);
+  background-color: var(--bg);
   margin: 0;
   padding: 0;
   min-height: 100vh;
   min-width: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+font-size: 2.5rem;
+text-align: center;
+margin-bottom: 1rem;
+}
+
+h3 {
+font-size: 1.7rem;
+font-weight: 500;
+text-align: center;
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
+}
+
+p {
+font-size: 1.2rem;
+line-height: 2rem;
+text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -21,7 +77,7 @@ body {
   height: 6rem;
   z-index: 100;
   justify-content: space-between;
-  background-color: #e4e6c3;
+  background-color: var(--bg-header);
 }
 
 .logo-wrapper{
@@ -31,20 +87,21 @@ body {
   margin-left: 2rem;
   padding: 0;
   z-index: 200;
-  background: #e4e6c300;
 }
 
 .logo-icon {
   display: block;
-  background-image: url(../img/logo-gråmørk.png);
+  background-image: url(../img/logo.png);
+  opacity: 0.8;
   background-size: cover;
   width: 5rem;
   height: 3.5rem;
+  transition: transform var(--hover-time) ease-out;
 }
 
 .logo-icon:hover {
-  background-image: url(../img/logo-maincolor.png);
-  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav-group{
@@ -56,23 +113,20 @@ body {
   display: flex;
   gap: 2.5rem;
   position: relative;
-  background-color: rgba(0, 169, 169, 0);
   list-style: none;
   margin-right: 2rem;
 }
 
 .nav-group li {
   list-style: none;
-  background-color: rgba(217, 213, 0, 0);
 
 }
 
 .nav-group a {
   position: relative;
-  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #46494c;
+  color: var(--secondary);
   background-color: rgba(70, 0, 0, 0);
 }
 
@@ -82,9 +136,9 @@ body {
   width: 100%;
   height: 2px;
   bottom: -2px;
-  background: #343434;
+  background: var(--secondary);
   transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
+  transition: var(--hover-time) ease-in-out;
   transform-origin: right;
 }
 
@@ -94,18 +148,16 @@ body {
 }
 
 .nav-group a:hover {
-  color: #343434;
+  color: var(--text-primary);
   transition: transform 1s ease-in;
 }
 
 #nav-toggle-open, #nav-toggle-close {
   position: relative;
   margin-right: 2rem;
-  color: #343f3e;
-  background-color: #ff0ad600;
+  color: var(--secondary);
   cursor: pointer;
   z-index: 10001;
-  background-color: rgba(250, 235, 215, 0);
   display: none;
 }
 
@@ -118,7 +170,7 @@ body {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
 
   #burger-toggle{
       opacity: 0;
@@ -135,7 +187,7 @@ body {
       justify-content: start;
       margin-right: 0;
       align-items: center;
-      background-color: #e4e6c3;
+      background-color: var(--bg-header);
       padding-top: 6rem;
       transition: 0.5s ease;
   }
@@ -167,26 +219,18 @@ body {
 
 }
 
-/*MARIA - INDEX*/
+@media (max-width: 450px) {
+  .navbar-menu{
+    top: -1190px;
+  }
 
-h2 {
-  font-family: "Raleway";
-  font-size: 2.5rem;
+  .nav-group a::before{
+      display: none;
   }
-  
-h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  }
-  
-p {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  }
+
+}
+
+/*MARIA - INDEX*/
 
 /*Valgt fonten Raleway fra Google Fonts som font for overskrifter, og Helvetica som font for brødtekst*/
 
@@ -204,7 +248,6 @@ p {
   margin: 0;
   padding: 20% 20% 20% 50%;
   font-size: 5vw;
-  font-family: "Raleway";
   color: #FFFFFF;
 }
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
@@ -301,11 +344,9 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   background: transparent;
   transition: 0.5s;
   font-weight: 500;
-  font-family: "Raleway";
   color: #FFFFFF;
   font-size: 2em;
   padding: 0.5em;
-  text-decoration: none;
   border: solid;
   border-color: #FFFFFF;
 }
@@ -326,40 +367,6 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
 
 .kart iframe {
   width: 100%;
-}
-
-/*Endre footer?*/
-.footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
-    padding: 50px 50px 50px 70px;
-    background: #E4E6C3;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-.footerboks1, .footerboks2, .footerboks3 {
-    flex: 30%;
-    padding-left: 30px;
-  }
-
-.footerboks1 img {
-    width: 7%;
-    height: auto;
-    padding: 3px;
-}
-
-.footerboks4 {
-  flex: 100%;
-  padding-left: 30px;
-  padding-top: 2%;
-}
-
-.footerboks4 img {
-    max-width: 20%;
-    height: auto;
 }
 
 @media screen and (max-width: 700px) {
@@ -390,49 +397,6 @@ align-items: center;
 justify-content: center;
 background-color: #899878;
 margin-top: 50px;
-
-}
-
-
-.topical-menu{
-    list-style: none;
-    display: flex;
-    
-
-}
-
-.topical-menu > li {
-    margin: 10px 40px 10px 40px;
-    text-align: center;
-    
-    
-
-}
-
-.topical-menu > li > a {
-color:#F7F7F2;
-font-weight: bold;
-text-decoration: none;
-text-align: center;
-font-family: Helvetica, sans-serif;
-font-size: medium;
-
-
-}
-
-.topical-menu > li > a:hover{
-    text-decoration: underline;
-    color:#343F3E;
-}
-
-.topical-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #899878;
-  padding: 20px;
-  margin: -50px 0 0 0;
-  
 }
 
 /* Forsidebilde og tittel*/
@@ -634,238 +598,278 @@ font-size: medium;
   .buttonlink > a:hover{
     color:#46494C
   }
-/*Footer nederst*/
-  #topical-footer{
-    background-color: bisque;
-    margin:0;
-    margin-top: 50px;
-    padding: 50px;
-    text-align: center;
-    
-}
-
-    
-
-
-
-
 
 
 /*Nellie*/
 /* Header */
-.Kantinaheader {
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    background-color: #F7F7F2;
-    font-family: "Raleway";
-  }
-  
-  .Kantinaheader img {
-    max-width: 100%;
-    height: 0;
-    margin: 0;
-  }
-  
-  /* Navigasjonsmeny */
-  .horizontal-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #F7F7F2;
-    padding: 10px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-  }
-  
-  .horizontal-menu {
-    list-style: none;
-    position: center;
-    display: flex;
-  }
-  
-  .horizontal-menu li {
-    position: center;
-    margin-right: 40px;
-  }
-  
-  .horizontal-menu li a {
-    text-decoration: none;
-    color: #343f3e;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-  }
+.header {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  background-color: #babab1;
+}
+
+.meny {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #d5debf;
+  padding: 5px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.meny ul {
+  list-style: none;
+  display: flex;
+  position: sticky;
+}
+
+.meny li {
+  margin-right: 50px;
+  position: sticky;
+}
+
+.meny li a {
+  text-decoration: none;
+  color: #343f3e;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.meny a:hover {
+  color: #FFFFFF;
+  position: sticky;
+}
 
 /* Forsidebilde */
 .forsidebilde_kantina {
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-    margin-top: 0px;
+  text-align: center;
+  margin-top: 0px;
 }
 
 .forsidebilde_kantina img {
-    max-width: 90%;
-    height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border: 0;
 }
 
 .forsidebilde_kantina p {
-    font-size: 12px;
-    color: #3d3d3d;
-    text-align: center;
+  font-size: 0;
+  color: #3d3d3d;
 }
 
 /* Hovedinnhold */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    font-family: Arial, Helvetica, sans-serif;
+/* Generelle stiler for hele seksjonen */
+
+/* Stiler for første boks (info-box) */
+.boks-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: auto;
+  width: 80%;
 }
 
-.flexbox2, .flexbox1, .flexbox3 {
-    flex: 1;
-    padding: 15px;
+.info-box,
+.kantine-bilde,
+.kaffebilde,
+.Åpningstider {
+  flex: 50%;
+  
 }
 
-#kantine-bilde {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.info-box {
+  padding: 20px;
+  margin-bottom: 20px; 
+  
 }
 
-/* Footer-seksjon */
-.kantina_footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
-    padding: 50px 50px 50px 70px;
-    background: #E4E6C3;
-    font-family: Helvetica, Arial, sans-serif;
+/* Stiler for andre boks (kantine-bilde) */
+.kantine-bilde {
+  width: 100%;
+}
+.kantine-bilde img {
+  width: 100%;
+  height: auto;
 }
 
-.footerbox1, .footerbox2, .footerbox3 {
-    flex: 30%;
-    padding-left: 30px;
+/* Stiler for tredje boks (kaffebilde og Åpningstider) */
+.kaffebilde,
+.Åpningstider {
+  flex: 50%;
+}
+
+
+.boks-holder div, img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Stiler for kaffebilde */
+.kaffebilde {
+  width: 100%;
+}
+
+.kaffebilde img {
+  width: 100%;
+  height: auto;
+}
+
+/* Stiler for fjerde boks (Åpningstider) */
+.Åpningstider {
+}
+
+
+
+/* Ny stil for skjermbredder mindre enn 400px */
+@media screen and (max-width: 400px) {
+  .boks-holder {
+    flex-direction: column;
+    padding: 0;
   }
 
-.footerbox1 img {
-    width: 7%;
-    height: auto;
-    padding: 3px;
-}
-
-.footerbox4 {
-  flex: 100%;
-  padding-left: 30px;
-  padding-top: 2%;
-}
-
-.footerbox4 img {
-    max-width: 20%;
-    height: auto;
-}
-
-@media screen and (max-width: 1000px) {
-    .indexcontainer, .indexnavbar, ul, li, .indexfooter {   
-      flex-direction: column;
-    }
-    ul, li {
-      margin: 1%;
-    }
+  .info-box,
+  .kantine-bilde,
+  .kaffebilde,
+  .Åpningstider {
+    flex: 100%;
+    width: 100%;
+  }
 }
 
 /* Ange-Clara */
+.access-title {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  background-color: #2a1515b4;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/pilestredet.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.access-title img {
+  align-content: center;
+  max-width: 100%;
+  height: 100%; 
+}
+
+.access-title h1 {
+  position: relative;
+  top: 50%;
+  font-size: 5rem;
+  color: var(--bg);
+}
+
+
+.access-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: auto;
+}
+
+.access-main-container section {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+}
+
+.access-main-container article{
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.access-welcome {
+  text-align: center;
+  width: 80%;
+}
+
+
+.test-wrapper {
+  position: relative;
+  top: 2rem;
+}
+
+.test-wrapper .test-article, .test-pictures {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.5em;
+  flex: 50%;
+}
+
+.test-pictures img {
+  width: 100%;
+  height: auto;
+}
+
+.design-wrapper {
+  position: relative;
+  top: 2rem;
+}
+
+.design-wrapper .design-article, .design-pictures {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.5em;
+  flex: 50%;
+}
+
+.design-pictures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.design-pictures img {
+  width: auto;
+  height: 100%;
+}
+
+.picture1, .picture2, .picture3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 6rem;
+}
+
+@media (max-width: 750px) {
+.access-main-container section {
+  flex-direction: column;
+}
+
+.title {
+}
+
+}
+
+@media (max-width: 450px) {
+.access-main-container section {
+  flex-direction: column;
+}
+
+}
+
+/* End of accessibility-page styling */
 
 
 
 /* Tomine */
 
-:root {
-    font-size: 12px;
-    font-family: Raleway;
-}
-
-h2 {
-    font-family: "Raleway";
-    font-size: 2.5rem;
-    }
-    
-h3 {
-    font-size: 1.7rem;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    }
-    
-p {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.2rem;
-    line-height: 2rem;
-}
-
-ul {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.2rem;
-    line-height: 2rem;
-}
-
-b {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.2rem;
-    line-height: 2rem;
-}
-
-.indexfooter p {
-  line-height: 1.5em;
-}
-
-.footerbox1, .footerbox2, .footerbox3 {
-    flex: 30%;
-    padding-left: 30px;
-  }
-
-.footerbox1 img {
-    width: 7%;
-    height: auto;
-    padding: 3px;
-}
-
-.footerbox4 {
-  flex: 100%;
-  padding-left: 30px;
-  padding-top: 2%;
-}
-
-.footerbox4 img {
-    max-width: 20%;
-    height: auto;
-}
-*/
-
-/*oppdatert stylesheet tomine*/
-
-.data-body {
-    background-color: #f7f7f2;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    min-width: 100vh;
-}
-
-/*.data-main { 
-    display: flex; 
-    flex-direction: column; 
-    width: 80%; /* Bredden på selve nettsiden*/ 
-    /*margin: auto;
-    font-size: 2rem;
-} */
 
 .logo {
     display: flex;
@@ -876,57 +880,48 @@ b {
     padding-left: 2%;
 }
 
-.data-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #F7F7F2;
-    padding: 25px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    
-  }
-  
-  .data-nav ul {
-    list-style: none;
-    display: flex;
-    position: sticky;
-  }
-  
-  .data-nav li {
-    margin-right: 50px;
-    position: sticky;
-  }
-  
-  .data-nav li a {
-    text-decoration: none;
-    color: #343f3e;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-  }
-
-
-#data-header {
-    margin: 0;
+.data-header {
+    margin-top: 6rem;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/mac.jpeg);
+    /* Bildet er hentet fra; https://unsplash.com/photos/macbook-pro-on-white-surface-WiONHd_zYI4*/
     background-position: center;
     background-size: cover;
   }
   
-  #data-header h1 {
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* plasserer teksten i midten langs x aksen*/
-    color: #ffffff;
+  .data-header h1 {
+    margin: 0;
+    padding: 15% 20% 20% 25%;
     font-size: 4vw;
+    color: #FFFFFF;
   }
+
+/*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
+viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften. Koden er inspirert av W3school.*/
+
+
+.rad {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+.data-kolonne {
+    flex-basis: 48%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+.data-kolonne img {
+    width: 100%;
+}
+
+/*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for section 1,2 og 3. Samme gjelder for kolonnene innad i 
+containeren.*/
 
 .data-section1 {
     width: 80%;
@@ -935,28 +930,6 @@ b {
     padding-bottom: 0.5em;
     text-align: left;
 }
-
-.rad {
-    margin-top: 2%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-.velkommen-data-kolonne img {
-    width: 100% /* hvordan få bildet langs høyre marg??*/
-}
-
-.velkommen-data-kolonne {
-    flex-basis: 48%;
-    padding-top: 5em;
-    padding-bottom: 5em;
-    padding-left: 0.1em;
-    padding-right: 0.1em;
-}
-
-
-/*HSHSHHSHSHHSHS*/
-
 
 .data-section2 {
     width: 80%;
@@ -977,35 +950,163 @@ b {
 }
 
 .data-section4 {
-    width: 100%;
     margin: auto;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    text-align: left;
 }
 .data-section4 img{
     width: 100%;
 }
-
-
-
-.data-footer {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    min-height: 50px;
-    border: 5px solid black;
-    background-color: white; /*bare for å overkjære en kode over*/
-    margin-top: 10px; 
-    justify-content: center; 
-    align-items: center; 
-}
+/* Setter bildet i section 4 til å dekke hele siden til venstre og høyre*/
 
 @media screen and (max-width: 700px) {
     .data-nav, ul, li, .data-section1, .data-section2, .data-section3 {   
        flex-direction: column;
      }
+     .data-header h1 {
+      font-size: 15vw;
+     }
      ul, li {
        margin: 1%;
      }
+ }
+
+ /* footer styling */
+
+ .main-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 6rem;
+  color: var(--bg);
+  background-color: var(--bg-footer);
+ }
+
+ .main-footer p, .main-footer a{
+  color: var(--bg);
+ }
+
+ .main-footer h3 {
+  color: var(--text-primary);
+ }
+
+ .main-footer section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+ }
+
+ .upper-footer {
+  width: 90%;
+  margin: auto;
+ }
+
+ .upper-footer span {
+  flex: 30%;
+  padding: auto;
+  text-align: center;
+ }
+
+ .footer-list-container {
+  align-items: center;
+ }
+
+ .upper-footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+ }
+
+ .upper-footer li {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  align-items: center;
+ }
+
+ .upper-footer li:hover {
+  color: var(--bg);
+  opacity: 1;
+  text-decoration: underline;
+ }
+
+ .bottom-footer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+ }
+
+ .bottom-footer .trademark, .footer-logo, .social-media {
+  margin: auto;
+  flex: 30%;
+ }
+
+ .trademark p{
+  color: var(--text-footer);
+ }
+
+ .flogo-wrapper {
+  display: flex;
+  align-items: center;
+
+ }
+
+ .flogo-icon {
+  display: block;
+  position: relative;
+  bottom: 4rem;
+  background-image: url(../img/logo2.png);
+  opacity: 0.8;
+  background-size: cover;
+  width:17rem;
+  height: 10rem;
+  margin: auto;
+  transition: transform var(--hover-time) ease-out;
+  background-color: rgba(0, 255, 255, 0);
+  }
+
+  .flogo-icon:hover {
+      opacity: 1;
+      transition: transform var(--hover-time) ease-in-out;
+  }
+
+ .bottom-footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: auto;
+ }
+
+ .social-media li {
+  width: 4rem;
+  height: auto;
+  opacity: 0.8;
+  transition: all var(--hover-time) ease-out;
+ }
+
+ .social-media li:hover {
+      opacity: 1;
+      transition: var(--hover-time) ease-in-out;
+  }
+
+ .social-media img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+ }
+
+ @media (max-width: 750px) {
+  .main-footer section{
+      flex-direction: column;
+  }
+
+  .flogo-icon {
+      margin-top: 5rem;
+  }
+
  }
