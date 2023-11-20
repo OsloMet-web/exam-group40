@@ -318,7 +318,7 @@ nav {
   flex: 50%;
 }
 
-.bibliotek {
+.library {
   width: 80%;
   flex-direction: column;
   margin: auto;
@@ -332,18 +332,18 @@ nav {
 /*Bibliotek-delen har et bakgrunnsbilde, med en mørk transparant farge over for bedre lesbarhet. 
 Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockphoto.com/*/
 
-.bibliotek h2 {
+.library h2 {
   color: #FFFFFF;
   font-size: 3em;
 }
 
-.bibliotek > p {
+.library > p {
   color: #FFFFFF;
   font-size: 1.5em;
   text-align: center;
 }
 
-.bibliotek-kolonne {
+.library-column {
   flex-basis: 35%;
   background: #F7F7F2;
   border-radius: 2em;
@@ -783,13 +783,13 @@ containeren.*/
 
 /* Skalering for main */
 @media screen and (max-width: 1300px) {
-  .bibliotek article{
+  .library article{
     flex-direction: column;
   }
 }
 
  @media screen and (max-width: 800px) {
-  section, .rad {
+  section, .row {
     flex-direction: column;
   }
   
