@@ -314,6 +314,8 @@ viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere o
 
 .velkommen {
   display: flex;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 .velkommen-kolonne {
@@ -325,7 +327,8 @@ viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere o
   flex-direction: column;
   margin: auto;
   text-align: center;
-  padding-top: 5em;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bibliotek.jpg);
   background-size: cover;
   border-radius: 3em;
@@ -358,7 +361,7 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 
 .p35 {
   flex-direction: column;
-  padding-top: 1.5rem;
+  padding-top: 5rem;
 }
 
 .p35-kolonne {
