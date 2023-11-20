@@ -461,6 +461,7 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
     font-family: fantasy;
     font-weight: lighter;
     letter-spacing: 2px;
+    padding: 2%;
     background-color: var(--text-primary);
     color: var(--primary);
     font-size: xx-large;
