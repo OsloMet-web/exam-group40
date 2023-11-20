@@ -781,6 +781,13 @@ containeren.*/
 }
 /* Setter bildet i section 4 til å dekke hele siden til venstre og høyre*/
 
+/* Skalering for main */
+@media screen and (max-width: 1300px) {
+  .bibliotek article{
+    flex-direction: column;
+  }
+}
+
  @media screen and (max-width: 800px) {
   section, .rad {
     flex-direction: column;
@@ -795,8 +802,7 @@ containeren.*/
   
   }
 
- /* footer styling */
-
+ /* Footer styling */
  .main-footer {
   display: flex;
   flex-direction: column;
