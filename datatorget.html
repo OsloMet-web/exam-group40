@@ -3,35 +3,76 @@
 <head>
     <meta lang="nb">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <title>Datatorget</title>
-    <link rel="icon" type="image/x-icon" href="style/img/favicon.png"> 
+    <link rel="icon" type="image/x-icon" href="img/favicon.png"> 
     <!--Icon er hentet fra Oslomet sin kode-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
     <!--Importerer font fra Google-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body class="data-body">
-
-        <nav class="data-nav">
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                 <li><a href="accessibility.html">Accessibility</a></li>
-                 <li><a href="topical.html">Topical</a></li>
-                 <li><a href="datatorget.html">Datatorget</a></li>
-                 <li><a href="kantina.html">Kantine</a></li>
-            </ul>
-        </nav>
-
-        <header>
-            <div class="data-header">
-              <h1>Velkommen til Datatorget</h1>
+    <!--Navigation bar-->
+    <header class="nav-header">
+        <nav>
+            <div class="logo-wrapper">
+                <a href="index.html" class="nav-logo">
+                    <!--<img src="style/img/logo_lightgreen.png" alt="Hjemme">-->
+                    <span class="logo-icon"></span>
+               </a>
             </div>
-        </header>
-        <!--Headeren inneholder også et bilde som er lagt inn som et bakgrunnsbilde med CSS, dette for å kunne plassere overskriften
-        over bildet.-->
+    
+            <menu class="nav-group" for="burgertoggle">
+    
+                <input id="burgertoggle" type="checkbox">
+    
+                <label id="nav-toggle-open" for="burgertoggle">
+                    <span class="material-symbols-outlined">menu</span>
+                </label>
+    
+                <label for="burgertoggle" id="nav-toggle-close">
+                    <span class="material-symbols-outlined">close</span>
+                </label>
+    
+                <ul class="navbar-menu" for="burgertoggle"> 
+                    <li class="nav-list">
+                        <a href="index.html">
+                            <span class="material-symbols-outlined" id="nav-icons">
+                                home
+                            </span>
+                            <span class="nav-link-text">Hjemme</span>
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="topical.html">
+                            <span class="material-symbols-outlined" id="nav-icons">psychology</span>
+                            <span class="nav-link-text">Topical</span>
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="kantina.html">
+                            <span class="material-symbols-outlined" id="nav-icons">
+                                    lunch_dining
+                            </span>
+                            <span class="nav-link-text">Kantine</span>
+                        </a>
+                    </li>
+                    <li class="point">
+                        <a href="datatorget.html" class="point">
+                            <span class="material-symbols-outlined" id="nav-icons">
+                                    devices
+                            </span>
+                            <span class="nav-link-text">Datatorget</span>
+                        </a>
+                    </li>
+                </ul>    
+            </menu>
+        </nav>
+    </header>
+        <!--end Navigation bar-->
 
         <main class="data-main"> <!--this div is becomming a wrapper for the entire layout-->
 
@@ -40,101 +81,148 @@
 
     <!--Alt av tekst inne i <p> er generet fra ChatGPT-->
 
+        <header class="title-data">
+            <h1>Velkommen til Datatorget</h1>
+        </header>
+         <!--Headeren inneholder også et bilde som er lagt inn som et bakgrunnsbilde med CSS, dette for å kunne plassere overskriften
+        over bildet.-->
+
         <section class="data-section1">
 
-            <article class="rad">
-
-                <div class="data-kolonne">
-                    <h2>
-                        Hva skjer på datatorget?
-                    </h2>
-                    <p> Datatorget på Oslomet fungerer som et sentralt knutepunkt for IT-studenter, og det er et senter for læring og utforskning innen informatikk og teknologi. Dette området er dedikert til å støtte studentenes faglige reise ved å tilby avanserte datamaskiner, spesialisert programvare og teknisk utstyr som er essensielt for deres studier. Det gir et miljø som oppmuntrer til samarbeid, utveksling av ideer og praktisk læring. </p>
-                    <p> Med tilgang til laboratorier, arbeidsstasjoner og ressurser som elektroniske databaser og spesialiserte verktøy, blir Datatorget et livlig sted der studenter kan fordype seg i prosjekter, eksperimenter og praktisk erfaring. Teknisk støtte fra kvalifiserte ansatte står også til disposisjon, og dette er en ressurs som bidrar til å løse tekniske utfordringer og gi veiledning når det trengs.</p>
-                </div>
-
-                <div class="data-kolonne">
-                    <img src="style/img/phone.jpg" alt="eat, sleep, code, repeat">
-                    <!--Bildet er hentet fra; https://unsplash.com/photos/black-android-smartphone-vXInUOv1n84-->
-                </div>
-
+            <article class="data-kolonne">
+                <h2>
+                    Hva skjer på datatorget?
+                </h2>
+                <p> Datatorget på Oslomet fungerer som et sentralt knutepunkt for IT-studenter, og det er et senter for læring og utforskning innen informatikk og teknologi. Dette området er dedikert til å støtte studentenes faglige reise ved å tilby avanserte datamaskiner, spesialisert programvare og teknisk utstyr som er essensielt for deres studier. Det gir et miljø som oppmuntrer til samarbeid, utveksling av ideer og praktisk læring. </p>
+                <p> Med tilgang til laboratorier, arbeidsstasjoner og ressurser som elektroniske databaser og spesialiserte verktøy, blir Datatorget et livlig sted der studenter kan fordype seg i prosjekter, eksperimenter og praktisk erfaring. Teknisk støtte fra kvalifiserte ansatte står også til disposisjon, og dette er en ressurs som bidrar til å løse tekniske utfordringer og gi veiledning når det trengs.</p>
             </article>
+
+            <aside class="data-kolonne">
+                <img src="img/phone.jpg" alt="eat, sleep, code, repeat">
+                <!--Bildet er hentet fra; https://unsplash.com/photos/black-android-smartphone-vXInUOv1n84-->
+            </aside>
+
         </section>
 
         <section class="data-section2">
-            <article class="rad">
 
-                <div class="data-kolonne">
-                    <img src="style/img/arbeidsrom.jpg" alt="bilde av et arbeidsrom">
-                    <!--Bildet er hentet fra istock?? -->
-                </div>
+            <aside class="data-kolonne">
+                <img src="img/arbeidsrom.jpg" alt="bilde av et arbeidsrom">
+                <!--Bildet er hentet fra istock?? -->
+            </aside>
 
-                <div class="data-kolonne">
-                    <h2>Arbeidsrom</h2>
+            <article class="data-kolonne">
+                <h2>Arbeidsrom</h2>
+                <ul>
+                    <li>Stille beliggenhet:</li>
                     <ul>
-                        <li>Stille beliggenhet:</li>
-                        <ul>
-                            <li>Et avsidesliggende rom eller område i skolen, helst vekk fra støy og forstyrrelser.</li>
-                        </ul>
-                        <li>God belysning:</li>
-                        <ul>
-                            <li>Naturlig lys fra vinduer og lamper for å lese komfortabelt.</li>
-                        </ul>
-                        <li>Skrivebord og stoler:</li>
-                        <ul>
-                            <li>For de som ønsker å ta notater eller arbeide mens de leser.</li>
-                        </ul>
-                        <li>Støttende miljø:</li>
-                        <ul>
-                            <li>Det kan være studenter tilgjengelig for å gi veiledning og støtte om nødvendig, samt et fellesskap av medstudenter som skaper et støttende miljø for læring og produktivitet.</li>
-                        </ul>
+                        <li>Et avsidesliggende rom eller område i skolen, helst vekk fra støy og forstyrrelser.</li>
                     </ul>
-                </div>
+                    <li>God belysning:</li>
+                    <ul>
+                        <li>Naturlig lys fra vinduer og lamper for å lese komfortabelt.</li>
+                    </ul>
+                    <li>Skrivebord og stoler:</li>
+                    <ul>
+                        <li>For de som ønsker å ta notater eller arbeide mens de leser.</li>
+                    </ul>
+                    <li>Støttende miljø:</li>
+                    <ul>
+                        <li>Det kan være studenter tilgjengelig for å gi veiledning og støtte om nødvendig, samt et fellesskap av medstudenter som skaper et støttende miljø for læring og produktivitet.</li>
+                    </ul>
+                </ul>
+            </article>
 
-        </article>
         </section>
 
         <section class="data-section3">
-            <article class="rad">
 
-
-                <div class="data-kolonne">
-                    <!--Pil-symbol sin kode er hentet fra; https://www.w3schools.com/charsets/ref_utf_arrows.asp-->
-                    <b>Klikk på bildet under og stell deg i kø til Orakeltjenesten &#x2193;</b>
-                    <a href="https://orakeloslomet.github.io/Orakel_Queue_Client/" target="_blank">
-                            <img src="style/img/orakel.png"
-                                alt="Orakeltjenesten sin facebook"/>
-                                <!--Bildet av orakeltjenesten sin logo er hentet fra orakeltjenesten Oslomet sin facebook-->
-                    </a>
-                </div>
-
-
-            <div class="data-kolonne">
-                
-                    <h2>
-                        Orakeltjenesten
-                    </h2>
-    
-                    <p>Orakeltjenesten ved Oslomet er en sentral støttetjeneste som tilbyr veiledning, hjelp og informasjon til studenter, ansatte og potensielle søkere.</p>
-                    <p>Orakeltjenesten fungerer som en slags "informasjons- og støttesentral" som tar for seg et bredt spekter av spørsmål knyttet til universitetets ulike fagområder, administrasjon, IT-tjenester, opptakskrav, studieveiledning, og mer. De tilbyr hjelp og veiledning enten ved personlig oppmøte, telefon eller via e-post.</p>
-                    <p>Orakeltjenesten ved Oslomet spiller en viktig rolle i å støtte både studenter og ansatte, og deres tilgjengelighet og ekspertise bidrar til å lette overgangen til universitetslivet samt gi nødvendig støtte gjennom hele studieperioden.</p>
-                    <br>
-                    <b>Åpningstid Orakeltjenesten:</b>
-                    <p>Tirsdag & Fredag 12:30-16:30</p>
-
-                    </div>
-            
+            <article class="data-kolonne">
+                <!--Pil-symbol sin kode er hentet fra; https://www.w3schools.com/charsets/ref_utf_arrows.asp-->
+                <b>Klikk på bildet under og stell deg i kø til Orakeltjenesten &#x2193;</b>
+                <a href="https://orakeloslomet.github.io/Orakel_Queue_Client/" target="_blank">
+                        <img src="img/orakel.png"
+                            alt="Orakeltjenesten sin facebook"/>
+                            <!--Bildet av orakeltjenesten sin logo er hentet fra orakeltjenesten Oslomet sin facebook-->
+                </a>
             </article>
+
+            <article class="data-kolonne">
+            
+                <h2>
+                    Orakeltjenesten
+                </h2>
+
+                <p>Orakeltjenesten ved Oslomet er en sentral støttetjeneste som tilbyr veiledning, hjelp og informasjon til studenter, ansatte og potensielle søkere.</p>
+                <p>Orakeltjenesten fungerer som en slags "informasjons- og støttesentral" som tar for seg et bredt spekter av spørsmål knyttet til universitetets ulike fagområder, administrasjon, IT-tjenester, opptakskrav, studieveiledning, og mer. De tilbyr hjelp og veiledning enten ved personlig oppmøte, telefon eller via e-post.</p>
+                <p>Orakeltjenesten ved Oslomet spiller en viktig rolle i å støtte både studenter og ansatte, og deres tilgjengelighet og ekspertise bidrar til å lette overgangen til universitetslivet samt gi nødvendig støtte gjennom hele studieperioden.</p>
+                <br>
+                <b>Åpningstid Orakeltjenesten:</b>
+                <p>Tirsdag & Fredag 12:30-16:30</p>
+
+            </article>
+            
         </section>
 
         <section class="data-section4">
-            <img src="style/img/kode-banner.png" alt="banner med everyone can code">
+            <img src="img/kode-banner.png" alt="banner med everyone can code">
             <!--Bildet er hentet fra; https://unsplash.com/photos/black-bunting-flags-mDinBvq1Sfg-->
         </section>
 
     </main>
-        <footer class="data-footer">
-            Footer
-        </footer>
+    <footer class="main-footer">
+        <section class="upper-footer">
+            <span class="school-adress">
+                <h3>Adresse:</h3>
+                <p>Pilestredet 32 - 54</p>
+                <h3>Resepsjon</h3>
+                <p>Telefon: +47 67 23 60 00<br>
+                    Åpningstid: 08:00 - 15:00 (man-fre)<br>
+                    Addresse: Pilestredet 46</p>
+            </span>
+            <span class="school-adress">
+                <h3>studentsenteret</h3>
+                <p>Telefon: +47 67 23 77 78<br>
+                    Åpningstid: 10:00 - 14:00 (man-fre)<br>
+                    Adresse: Pilestredet 52</p>
+                </span>
+            <span class="footer-list-container">
+                <h3>Viktige Linker</h3>
+                <ul class="footer-list">
+                    <li><a href="accessibility.html">accessibility</a></li>
+                    <li><a href="mailto:post@oslomet.no">Contact us</a></li>
+                </ul>
+            </span>
+          </section>
+          <section class="bottom-footer">
+            <span class="trademark"><p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p></span>
+            <div class="footer-logo">
+                <a href="index.html" class="">
+                    <span class="flogo-icon"></span>
+               </a>
+            </div>
+            <ul class="social-media">
+              <li><a href="https://www.instagram.com/oslomet/">
+                <span><img src="img/instagram.svg" alt=""></span>
+              </a></li>
+              <li><a href="https://www.tiktok.com/@oslomet">
+                <span><img src="img/tiktok.svg" alt=""></span>
+              </a></li>
+              <li><a href="https://www.linkedin.com/school/oslomet/">
+                <span><img src="img/linkedin.svg" alt=""></span>
+              </a></li>
+              <li><a href="https://www.facebook.com/oslomet/">
+                <span><img src="img/facebook.svg" alt=""></span>
+              </a></li>
+              <li><a href="https://www.youtube.com/@OsloMetFilm"><span>
+                <img src="img/youtube.svg" alt="">
+              </span></a></li>
+              <li><a href="https://twitter.com/oslomet?"><span>
+                <img src="img/x.svg" alt="">
+              </span></a></li>
+            </ul>
+          </section>
+    </footer>
 </body>
 </html>
 

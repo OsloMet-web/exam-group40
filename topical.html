@@ -7,6 +7,10 @@
 <meta lang="en">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -14,62 +18,62 @@
 <body class="topical-body">
     
 <!--Navigeringsmenyen og linkene til de andre sidene-->
-   <!-- <header class="topical-header">
-        <nav class="topical-nav"> 
-                <ul class=topical-menu>
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="accessibility.html">Accessibility</a></li>
-                    <li><a href="topical.html">Topical</a></li>
-                    <li><a href="kantina.html">Kantina</a></li>
-                    <li><a href="datatorget.html">Datatorget</a></li>
-                </ul>
-        </nav>
-        
-    </header>-->
-
-    <nav class="navbar">
+<header class="nav-header">
+    <nav>
         <div class="logo-wrapper">
-          <a href="index.html" class="nav-logo">
-            <span class="logo-icon"></span>
-          </a>
+            <a href="index.html" class="nav-logo">
+                <!--<img src="style/img/logo_lightgreen.png" alt="Hjemme">-->
+                <span class="logo-icon"></span>
+           </a>
         </div>
-      <menu class="nav-group" for="burgertoggle">
-        <input id="burgertoggle" type="checkbox">
-        <label id="nav-toggle-open" for="burgertoggle">
-          <span class="material-symbols-outlined">menu</span>
-        </label>
-        <label for="burgertoggle" id="nav-toggle-close">
-          <span class="material-symbols-outlined">close</span>
-        </label>
-        <ul class="navbar-menu" for="burgertoggle"> 
-          <li class="nav-list">
-            <a href="index.html" class="nav-link">
-              <span class="material-symbols-outlined" id="nav-icons">home</span>
-              <span class="nav-link-text">Hjem</span>
-            </a>
-          </li>
-         <li class="nav-list">
-            <a href="topical.html" class="nav-link">
-              <span class="material-symbols-outlined" id="nav-icons">psychology</span>
-              <span class="nav-link-text">Topical</span>
-            </a>
-         </li>
-         <li class="nav-list">
-            <a href="kantina.html" class="nav-link">
-              <span class="material-symbols-outlined" id="nav-icons">lunch_dining</span>
-                <span class="nav-link-text">Kantine</span>
-            </a>
-         </li>
-         <li class="nav-list">
-            <a href="datatorget.html" class="nav-link">
-              <span class="material-symbols-outlined" id="nav-icons">devices</span>
-              <span class="nav-link-text">Datatorget</span>
-            </a>
-          </li>
-        </ul>    
-      </menu>
+
+        <menu class="nav-group" for="burgertoggle">
+
+            <input id="burgertoggle" type="checkbox">
+
+            <label id="nav-toggle-open" for="burgertoggle">
+                <span class="material-symbols-outlined">menu</span>
+            </label>
+
+            <label for="burgertoggle" id="nav-toggle-close">
+                <span class="material-symbols-outlined">close</span>
+            </label>
+
+            <ul class="navbar-menu" for="burgertoggle"> 
+                <li class="nav-list">
+                    <a href="index.html">
+                        <span class="material-symbols-outlined" id="nav-icons">
+                            home
+                        </span>
+                        <span class="nav-link-text">Hjemme</span>
+                    </a>
+                </li>
+                <li class="point">
+                    <a href="topical.html" class="point">
+                        <span class="material-symbols-outlined" id="nav-icons">psychology</span>
+                        <span class="nav-link-text">Topical</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="kantina.html">
+                        <span class="material-symbols-outlined" id="nav-icons">
+                                lunch_dining
+                        </span>
+                        <span class="nav-link-text">Kantine</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="datatorget.html">
+                        <span class="material-symbols-outlined" id="nav-icons">
+                                devices
+                        </span>
+                        <span class="nav-link-text">Datatorget</span>
+                    </a>
+                </li>
+            </ul>    
+        </menu>
     </nav>
-     <!--end Navigation bar-->
+</header>
 
     <!--Forsidebilde og overskrift-->
     <section id="pagetitle">
@@ -241,34 +245,59 @@
 </main>
 
 <!--Footer nederst-->
-<footer class="footer">
-    <div class="footerboks1">
-      <b>Adresse</b>
-      <p>Pilestredet 32 - 54</p>
-      <a href="https://www.facebook.com/oslomet/"><img src="img/facebook.png" alt="Facebook-ikon"></a>
-      <a href="https://www.instagram.com/oslomet/"><img src="img/instagram.png" alt="Instagram-ikon"></a>
-      <a href="https://www.linkedin.com/school/oslomet/"><img src="img/linkedin.png" alt="Linkedin-ikon"></a>
-    </div>
-
-    <div class="footerboks2">
-      <b>Resepsjon</b>
-    <p>Telefon: +47 67 23 60 00<br>
-       Åpningstid: 08:00 - 15:00 (man-fre)<br>
-       Addresse: Pilestredet 46</p>
-    </div>
-
-    <div class="footerboks3">
-      <b>Studentsenteret</b>
-    <p>Telefon: +47 67 23 77 78<br>
-       Åpningstid: 10:00 - 14:00 (man-fre)<br>
-       Adresse: Pilestredet 52</p>
-    </div>
-
-    <div class="footerboks4">
-      <img src="img/OsloMet_LogoFull.png" alt="OsloMet Logo">
-      <p>© Artikkeltekst hentet fra OsloMet Canvas: Teknologi og samfunn for programmere. Annen tekst generert fra ChatGPT.</p>
-    </div>
-  </footer>
+<footer class="main-footer">
+    <section class="upper-footer">
+        <span class="school-adress">
+            <h3>Adresse:</h3>
+            <p>Pilestredet 32 - 54</p>
+            <h3>Resepsjon</h3>
+            <p>Telefon: +47 67 23 60 00<br>
+                Åpningstid: 08:00 - 15:00 (man-fre)<br>
+                Addresse: Pilestredet 46</p>
+        </span>
+        <span class="school-adress">
+            <h3>studentsenteret</h3>
+            <p>Telefon: +47 67 23 77 78<br>
+                Åpningstid: 10:00 - 14:00 (man-fre)<br>
+                Adresse: Pilestredet 52</p>
+            </span>
+        <span class="footer-list-container">
+            <h3>Viktige Linker</h3>
+            <ul class="footer-list">
+                <li><a href="accessibility.html">accessibility</a></li>
+                <li><a href="mailto:post@oslomet.no">Contact us</a></li>
+            </ul>
+        </span>
+      </section>
+      <section class="bottom-footer">
+        <span class="trademark"><p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p></span>
+        <div class="footer-logo">
+            <a href="index.html" class="">
+                <span class="flogo-icon"></span>
+           </a>
+        </div>
+        <ul class="social-media">
+          <li><a href="https://www.instagram.com/oslomet/">
+            <span><img src="img/instagram.svg" alt=""></span>
+          </a></li>
+          <li><a href="https://www.tiktok.com/@oslomet">
+            <span><img src="img/tiktok.svg" alt=""></span>
+          </a></li>
+          <li><a href="https://www.linkedin.com/school/oslomet/">
+            <span><img src="img/linkedin.svg" alt=""></span>
+          </a></li>
+          <li><a href="https://www.facebook.com/oslomet/">
+            <span><img src="img/facebook.svg" alt=""></span>
+          </a></li>
+          <li><a href="https://www.youtube.com/@OsloMetFilm"><span>
+            <img src="img/youtube.svg" alt="">
+          </span></a></li>
+          <li><a href="https://twitter.com/oslomet?"><span>
+            <img src="img/x.svg" alt="">
+          </span></a></li>
+        </ul>
+      </section>
+</footer>
 
 
 </body>
