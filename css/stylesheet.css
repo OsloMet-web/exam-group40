@@ -106,7 +106,7 @@ img {
   height: auto;
 }
 
-.rad {
+.row {
   display: flex;
   margin: auto;
   justify-content: space-between;
@@ -304,31 +304,30 @@ nav {
 
 }
 
-/*MARIA - INDEX*/
-
-/*Valgt fonten Raleway fra Google Fonts som font for overskrifter, og Helvetica som font for brødtekst*/
+/*INDEX*/
 
 .title-index {
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/Pilestredet_campus.jpeg);
   /*Bildet er hentet fra OsloMet sine nettsider: https://www.oslomet.no/en/about/get-to-know-oslomet*/
 }
-/*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
-viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften (litt mot venstre).*/
 
-.velkommen {
+.welcome {
   display: flex;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
-.velkommen-kolonne {
+.welcome-column {
   flex: 50%;
 }
 
-.bibliotek {
+.library {
   width: 80%;
   flex-direction: column;
   margin: auto;
   text-align: center;
-  padding-top: 5em;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bibliotek.jpg);
   background-size: cover;
   border-radius: 3em;
@@ -336,18 +335,18 @@ viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere o
 /*Bibliotek-delen har et bakgrunnsbilde, med en mørk transparant farge over for bedre lesbarhet. 
 Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockphoto.com/*/
 
-.bibliotek h2 {
+.library h2 {
   color: #FFFFFF;
   font-size: 3em;
 }
 
-.bibliotek > p {
+.library > p {
   color: #FFFFFF;
   font-size: 1.5em;
   text-align: center;
 }
 
-.bibliotek-kolonne {
+.library-column {
   flex-basis: 35%;
   background: #F7F7F2;
   border-radius: 2em;
@@ -361,10 +360,10 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 
 .p35 {
   flex-direction: column;
-  padding-top: 1.5rem;
+  padding-top: 5rem;
 }
 
-.p35-kolonne {
+.p35-column {
   flex-basis: 32%;
   border-radius: 0.5em;
   margin-bottom: 1.5em;
@@ -373,12 +372,12 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   background-color: black;
 }
 
-.p35-kolonne img {
+.p35-column img {
   height: 100%;
   opacity: 0.5;
 }
 
-.p35-kolonne a {
+.p35-column a {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -393,24 +392,24 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   border-color: var(--bg);
 }
 
-.p35-kolonne a:hover {
+.p35-column a:hover {
   background: rgba(137, 152, 120, 0.8);
 }
 /*P35 - Styling tre bokser med hvert sitt bilde og lenker til sider. Bakgrunnen er satt til svart, og transparens på bildene
 er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjonert midt på boksene*/
 
-.kart {
+.map {
   flex-direction: column;
   padding-top: 5em;
   padding-bottom: 5em;
   text-align: center;
 }
 
-.kart iframe {
+.map iframe {
   width: 100%;
 }
 
-/*Susanne*/
+/* TOPICAL */
 .topical-body{
     margin:0;
     padding: 0;
@@ -422,12 +421,7 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
     flex: 60%;
 }
 
-.topical-header{
-align-items: center;
-justify-content: center;
-background-color: #899878;
-margin-top: 50px;
-}
+
 
 /* Forsidebilde og tittel*/
 #pagetitle{
@@ -451,7 +445,7 @@ margin-top: 50px;
    transform: translate(-50%, -50%);
 }
 
-#pagetitle>img{
+#frontpic{
   width: 100%;
   height: auto;
   box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
@@ -464,29 +458,31 @@ margin-top: 50px;
 }
 
 /*Artikkelteksten*/
-.artikkeltekst{
+.article-text{
     padding:2rem;
 }
 
-.artikkeltekst > p{
+.article-text>p{
     flex-grow: 2;
     line-height: 1.5;
     font-size: medium;
+    text-align: left;
     
 }
 
-.artikkeltekst > h2{
+.article-text>h2{
     font-family: fantasy;
     font-weight: 10;
     color: #46494C;
     margin: 50px 0 20px 0;
     font-size: x-large;
+    text-align: left;
 
     
 }
 
 /*Bilde i artikkelen*/
-#bilde1{
+#pic1{
     display: flex;
     align-items: flex-end;
     max-width: 100%;
@@ -494,7 +490,7 @@ margin-top: 50px;
 }
 
 
-#bildekilde1{
+#picsource1{
     margin: 0;
     font-size: smaller;
     color: grey;
@@ -511,6 +507,8 @@ margin-top: 50px;
     animation-iteration-count: infinite;
     font-family: Arial;
     margin-left: 10px;
+    margin-bottom: -15px;
+    font-size: large;
     
 }
 @keyframes example {
@@ -580,17 +578,18 @@ margin-top: 50px;
     transform: rotateY(180deg);
   }
   .flip-box-back>p {
-    padding:20px;
+    padding:0 20px 20px 20px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
   }
   .flip-box-back>h4{
     font-family: fantasy;
     font-weight: lighter;
     font-size: larger;
-    margin-top: 20px;
+    margin: 10px 0 10px 0;
   }
 /*Overskrift på linjen med bilder*/
-  #linjetittel {
+  #linetitle {
     font-family: fantasy;
     font-weight: lighter;
     color: #46494C;
@@ -616,7 +615,7 @@ margin-top: 50px;
   }
  
   .buttonlink > a:link, a:visited{
-      background-color: #899878;
+      background-color: #343F3E;
       color: white;
       padding: 14px 25px;
       text-align: center;
@@ -626,14 +625,15 @@ margin-top: 50px;
   }
 
   .buttonlink > a:hover{
-    color:#46494C
+    color:#e4e6c3
   }
 
 
-/*Nellie*/
+/* KANTINE */
+
 /* Header */
 .title-kantina {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/kantineforside.webp);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/Kantine-forside.jpg);
 }
 /* Forsidebilde */
 
@@ -709,7 +709,7 @@ margin-top: 50px;
   }
 }
 
-/* Ange-Clara */
+/* ACCESSIBILITY */
 .title-access {
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/pilestredet.jpeg);
 }
@@ -749,7 +749,7 @@ margin-top: 50px;
 
 /* End of accessibility-page styling */
 
-/* Tomine */
+/* DATATORGET */
 
 .title-data {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/mac.jpeg);
@@ -788,13 +788,13 @@ containeren.*/
 
 /* Skalering for main */
 @media screen and (max-width: 1300px) {
-  .bibliotek article{
+  .library article{
     flex-direction: column;
   }
 }
 
  @media screen and (max-width: 800px) {
-  section, .rad {
+  section, .row {
     flex-direction: column;
   }
   
