@@ -348,7 +348,7 @@ nav {
   /*Bildet er hentet fra OsloMet sine nettsider: https://www.oslomet.no/en/about/get-to-know-oslomet*/
 }
 
-/*Styling av av velkommen-delen på forsiden, welcome fungerer som container og welcome-column er kolonnene/delene inne 
+/*Styling av velkommen-delen på forsiden, welcome fungerer som container og welcome-column er kolonnene/delene inne 
 i containeren. Her er det bare oppdelt i to, og flex er derfor satt til 50%. */
 .welcome {
   display: flex;
