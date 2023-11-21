@@ -76,8 +76,8 @@
     <header class="title-index">
         <h1>OsloMet</h1>
     </header>
-  <!--Headeren inneholder også et bilde som er lagt inn som et bakgrunnsbilde med CSS, dette for å kunne plassere overskriften
-  over bildet.-->
+  <!--Lager en header med en hovedoverskrift for hele siden. Headeren inneholder også et bilde som er lagt inn som et 
+    bakgrunnsbilde med CSS, dette for å kunne plassere overskriften over bildet.-->
   
   <!--Bruker flexbox oppbygd av rader og kolonner til å strukturere innholdet på siden, raden fungerer som en container for 
     kolonnene. Koden for denne strukturen er inspirert av en video av GreatStack (https://youtu.be/oYRda7UtuhA?si=Cc8BsDSYKPBpQDza)-->
@@ -96,14 +96,15 @@
       <aside class="welcome-column">
         <img src="img/campusbilde.jpg" alt="Studenter i parken">
       </aside>
-
   </section>
   
+  <!--Bruker sematiske elementer for å dele opp siden - section som en generell del/inndeling av siden, article for det 
+    selvstendige innholdet i de ulike delene (fungerer også som "raden"/flex-container), og aside for oppdeling innad i
+    denne (flex-elementer).-->
   <section class="library">
     <h2>Bibliotek</h2>
     <p>Bibliotekene har pensumlitteratur, printere, kopimaskiner og flere arbeidsplasser. Du kan også få hjelp av bibliotekarene.</p>
     <article class="row">
-
       <aside class="library-column">
         <h3>Bibliotek P48</h3>
         <p>Biblioteket har pensum, tidsskrifter, faglitteratur, skjønnlitteratur, barne- og ungdomslitteratur, 
@@ -121,11 +122,12 @@
           kjemi, informasjonsteknologi og velferds- og arbeidslivsforskning. Biblioteket har arbeidsplasser, grupperom og 
           stille lesesal.</p>
       </aside>
-      
     </article>
-
   </section>
   
+  <!--Seksjonene har egne klasser som beskriver innholder i denne delen av siden. Article-delene bruker den samme klassen
+  "row", fordi de alle bruker samme container som vil ha samme format. Deretter har aside-boksene en egen klasse for å kunne
+    bruke egen CSS for kolonnene/flex-elementene.-->
   <section class="p35">
     <h2>Ellen Gleditschs hus</h2>
     <p>Ellen Gleditschs hus ligger i Pilestredet 35, og dette er hovedbygget for blant annet ingeniørstudier, økonomistudier og 
