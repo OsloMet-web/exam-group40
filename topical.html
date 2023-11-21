@@ -25,61 +25,59 @@
 <body class="topical-body">
     
 <!--Navigeringsmenyen og linkene til de andre sidene-->
-<header class="nav-header">
+   <!--Navigeringsmenyen og linkene til de andre sidene-->
+   <header class="nav-header">
     <nav>
         <div class="logo-wrapper">
             <a href="index.html" title="oslomet-logo">
+                <!--<img src="style/img/logo_lightgreen.png" alt="Hjemme">-->
                 <span class="logo-icon"></span>
-           </a>
+            </a>
         </div>
 
+        <!-- container/wrapper for link-delen av navigasjonsbaren-->
         <menu class="nav-group" for="burgertoggle">
 
+            <!-- burgermeny verdier, koden for dette er hentet fra CompletePage_02_Simple-Burger-menu, i forelsesningsnotater -->
             <input id="burgertoggle" type="checkbox">
-
             <label id="nav-toggle-open" for="burgertoggle">
                 <span class="material-symbols-outlined">menu</span>
             </label>
-
             <label for="burgertoggle" id="nav-toggle-close">
                 <span class="material-symbols-outlined">close</span>
             </label>
 
+            <!-- denne listen fungerer som en container for lenkene i navigasjonsbaren -->
             <ul class="navbar-menu" for="burgertoggle"> 
-                <li class="nav-list">
+                <li>
                     <a href="index.html">
-                        <span class="material-symbols-outlined" id="nav-icons">
-                            home
-                        </span>
+                        <span class="material-symbols-outlined" id="nav-icons">home</span>
                         <span class="nav-link-text">Hjem</span>
                     </a>
                 </li>
-                <li class="point">
+                <li>
                     <a href="topical.html" class="point">
                         <span class="material-symbols-outlined" id="nav-icons">psychology</span>
                         <span class="nav-link-text">Topical</span>
                     </a>
                 </li>
-                <li class="nav-list">
+                <li>
                     <a href="kantina.html">
-                        <span class="material-symbols-outlined" id="nav-icons">
-                                lunch_dining
-                        </span>
+                        <span class="material-symbols-outlined" id="nav-icons">lunch_dining</span>
                         <span class="nav-link-text">Kantine</span>
                     </a>
                 </li>
-                <li class="nav-list">
+                <li>
                     <a href="datatorget.html">
-                        <span class="material-symbols-outlined" id="nav-icons">
-                                devices
-                        </span>
+                        <span class="material-symbols-outlined" id="nav-icons">devices</span>
                         <span class="nav-link-text">Datatorget</span>
                     </a>
                 </li>
             </ul>    
         </menu>
     </nav>
-</header>
+ </header>
+    <!--end Navigation bar-->
 
     <!--Forsidebilde og overskrift-->
     <section id="pagetitle">
