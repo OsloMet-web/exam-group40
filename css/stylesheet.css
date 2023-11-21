@@ -797,11 +797,12 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
   gap: 2rem;
 }
 
-/* setter en broder rundt bildene */
+/* setter en border rundt bildene */
 .access-main-container img {
   border: solid;
 }
 
+/* klassen er en flex med kolonne retning */
 .introduction {
   text-align: center;
   width: 80%;
