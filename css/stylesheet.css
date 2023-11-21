@@ -480,17 +480,17 @@ Det er for å line opp med resten av siden. */
 
 #pagetitle > h1{
     text-align: center;
-    font-family: fantasy;
+    font-family: fantasy,Arial, Helvetica, sans-serif;
     font-weight: lighter;
     letter-spacing: 2px;
     color: var(--primary);
     font-size: xx-large;
-    z-index: 1;
+    z-index: 1; /**Sette teksten foran bildet**/
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-   transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%); /**Teksten kommer på midten**/
 }
 
 /**Forsidebilde**/
@@ -549,7 +549,7 @@ Det er for å line opp med resten av siden. */
 
 /**Overskrifter i artikkel**/
 .article-text>h2{
-    font-family: fantasy;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
     font-weight: 10;
     color: #46494C;
     margin: 50px 0 20px 0;
