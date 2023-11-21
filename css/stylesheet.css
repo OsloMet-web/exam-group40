@@ -105,6 +105,11 @@ section {
   gap: 2rem;
 }
 
+article {
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 /*Alle bilder settes til å fylle bredden i beholderen og samtidig beholde riktig dimensjoner ved å sette automatisk høyde. */
 img {
   width: 100%;
@@ -133,7 +138,7 @@ setter headeren til å dekke hele beholderen. */
 
 /* STYLING FOR NAVIGASJONSBAREN */
 
-/* Gjør nav-elementer om til en container for alle elementer som skal inkluderes i navigasjon */
+/* Gjør nav om til en container for alle elementer som skal inkluderes i navigasjon */
 /* Vi tar i bruk flex, og gir baren en fixed posisjon for at den skal være tilgjengelig under hele dokumentet */
 /* z-index er satt til 100 for å dekke alle elementer som kommer nedover */
 nav {
