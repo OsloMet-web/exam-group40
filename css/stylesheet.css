@@ -93,12 +93,12 @@ a {
   text-decoration: none;
 }
 
-/* Setter tekst i seksjonene mot venstre for bedre lesbarhet */
+/* Setter tekst i seksjonene på alle sidene mot venstre for bedre lesbarhet */
 section p, section h2 {
   text-align: left;
 }
 
-/*Setter section*/
+/*Setter section for alle sider*/
 section {
   display: flex;
   align-items: center;
