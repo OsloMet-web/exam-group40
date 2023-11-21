@@ -298,12 +298,12 @@ nav {
   }
 
 
-  /* animasjonen for store skjermer er ikke lenger synlig */
+  /* Animasjonen for store skjermer er ikke lenger synlig */
   .nav-group a::before{
     display: none;
   }
 
-  /* ikoner blir synlig */
+  /* Ikoner blir synlig */
   #nav-icons {
      display: inline-block;
   }
@@ -312,7 +312,7 @@ nav {
     display: block;
   }
 
-  /* første burger ikon forsvinner, en x vil ta den plassen når bruker trykker på ikonet */
+  /* Første burger ikon forsvinner, en x vil ta den plassen når bruker trykker på ikonet */
   .nav-group input:checked ~ #nav-toggle-open {
     display: none;
 
@@ -323,7 +323,7 @@ nav {
 
   }
 
-  /* burgermenyen skyves ned */
+  /* Burgermenyen skyves ned */
   .nav-group input:checked ~ .navbar-menu {
      top: 0;
   }
