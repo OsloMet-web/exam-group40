@@ -1,4 +1,3 @@
-/*Felles for alle*/
 
 *{
   outline: 0;
@@ -10,24 +9,24 @@
 }
 
 :root {
-  /* Common colors*/
+  /* Lager en root med variabler for å kunne gjenbruke disse gjennom koden og gjøre det enklere for en annen å 
+  endre ting i koden. */
   --text-primary: #343434;
-
   --secondary: #46494c;
-  --bg: #f7f7f2;
+  --primary: #f7f7f2;
 
-  /* Header nav Colors */
+  /* Bakgrunnsfarge for header */
   --bg-header: #e4e6c3;
 
   /* Footer color */
-  --bg-footer: #899878;
+  --bg-footer: #e4e4c3;
 
   /* Timers */
   --hover-time: 0.5s;
-  --slide-time: 0.5s;
 
   font-size: 12px;
   font-family: Raleway;
+  /* Valgt fonten Raleway fra Google Fonts til overskrifter */
 }
 
 body {
@@ -39,6 +38,7 @@ body {
   min-height: 100vh;
   min-width: 100vh;
 }
+/* Setter body bakerst med z-indeks, bruker viewheight for bedre skalering av siden*/
 
 main {
   display: flex;
@@ -49,6 +49,7 @@ main {
   gap: 3rem;
 }
 
+/* Tekstelementer: */
 ul {
   list-style: none;
 }
@@ -57,7 +58,7 @@ h1 {
   position: relative;
   top: 50%;
   font-size: 5rem;
-  color: var(--bg);
+  color: var(--primary);
 }
 
 h2 {
@@ -67,7 +68,7 @@ margin-bottom: 1rem;
 }
 
 h3 {
-font-size: 1.7rem;
+font-size: 2rem;
 font-weight: 500;
 text-align: center;
 margin-top: 0.5rem;
@@ -75,15 +76,21 @@ margin-bottom: 0.5rem;
 }
 
 p {
-font-size: 1.2rem;
-line-height: 2rem;
+font-size: 1.5rem;
+line-height: 2.5rem;
 text-align: center;
 }
 
+b {
+  font-size: 1.5rem;
+}
+
 a {
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
+/* Seksjoner/innhold: */
 section p, section h2 {
   text-align: left;
 }
@@ -104,7 +111,6 @@ img {
 
 .row {
   display: flex;
-  margin-top: 2%;
   margin: auto;
   justify-content: space-between;
   gap: 2rem;
@@ -121,11 +127,15 @@ img {
   background-size: cover;
 }
 
+/* STYLING FOR NAVIGASJONSBAREN */
+
+/* Gjør nav-elementer om til en container for alle elementer som skal inkluderes i navigasjon */
+/* Vi tar i bruk flex, og gir baren en fixed posisjon for at den skal være tilgjengelig under hele dokumentet */
+/* z-index er satt til 100 for å dekke alle elementer som kommer nedover */
 nav {
   display: flex;
   position: fixed;
   top: 0px;
-  right: 0px;
   width: 100%;
   height: 6rem;
   z-index: 100;
@@ -133,21 +143,23 @@ nav {
   background-color: var(--bg-header);
 }
 
+/* STYLING FOR OSLO-MET LOGO */
 .logo-wrapper{
   display: flex;
   flex: 0.3;
   align-items: center;
   margin-left: 2rem;
-  padding: 0;
   z-index: 200;
+  padding: 0;
 }
 
+/* setter inn bilde av logoen og gjør bilde en smule gjennomsiktig med en overgang når musen treffer logoen forsvinner det */
 .logo-icon {
   display: block;
-  background-image: url(../img/logo.png);
+  background-image: url(../img/logo2.png);
   opacity: 0.8;
   background-size: cover;
-  width: 5rem;
+  width: 6rem;
   height: 3.5rem;
   transition: transform var(--hover-time) ease-out;
 }
@@ -157,11 +169,13 @@ nav {
   transition: transform 0.3s ease-in-out;
 }
 
+/* nav-group */
 .nav-group{
   display: flex;
   align-items: center;
 }
 
+/* stiller retningen til den uordnede listen for rad med jevne mellomrom */
 .navbar-menu {
   display: flex;
   gap: 2.5rem;
@@ -170,19 +184,17 @@ nav {
   margin-right: 2rem;
 }
 
-.nav-group li {
-  list-style: none;
-
-}
-
+/* Styler linkene på den uordnede listen, position relative for god skalering! */
 .nav-group a {
   position: relative;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: var(--secondary);
-  background-color: rgba(70, 0, 0, 0);
+  background-color: #e4e6c300;
 }
 
+/* lager en animasjon under linkene på navigasjonsbaren */
+/* koden for animasjon er hentet fra YouTube OnlineTutorials https://youtu.be/zQngLMkngQE?si=LA2rE8l4zWKPIy7O */
 .nav-group a::before {
   content: '';
   position: absolute;
@@ -205,21 +217,26 @@ nav {
   transition: transform 1s ease-in;
 }
 
+/* point klassen holder markøren/ animasjonen på den gjeldene siden dette er for at bruker skal vite hvilken side den er på */
 .nav-group .point::before {
   color: var(--text-primary);
   transform: scaleX(1);
 }
 
+/* Styling for åpne og lukke ikonet som kommer på mindre skjermoppløsninger, ikonene er ikke synlige ellers*/
 #nav-toggle-open, #nav-toggle-close {
   position: relative;
   margin-right: 2rem;
   color: var(--secondary);
   cursor: pointer;
-  z-index: 10001;
+  z-index: 200;
   display: none;
 }
 
+/* Styler navigasjons ikoner, disse er ikke synlige på store skjermer */
 #nav-icons {
+  position: relative;
+  bottom: -0.5rem;
   font-size: 2rem;
   display: none;
 }
@@ -228,63 +245,71 @@ nav {
   display: none;
 }
 
-@media (max-width: 750px) {
+/* Navigasjonsbar styling for mellomstore skjermer, nettbrett og lesebrett! */
 
+@media screen and (max-width: 750px) {
+
+  /* her fortsetter koden for burgermenyen. top er satt til -83rem for at innholdet skal "forsvinne" (skyves opp) selve navigasjonsbaren styles også*/
   .navbar-menu {
-      flex-direction: column;
-      position: fixed;
-      top: -1000px;
-      right: 0px;
-      width: 100%;
-      height: 100%;
-      margin-right: 0;
-      align-items: center;
-      background-color: var(--bg-header);
-      padding-top: 6rem;
-      transition: 0.5s ease;
+    flex-direction: column;
+    position: fixed;
+    top: -83rem;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    align-items: center;
+    background-color: var(--bg-header);
+    padding-top: 6rem;
+    transition: 0.5s ease;
   }
 
+  /* Styler lenkene når listen er på kolonne form, altså når bruker huker av burgermenyen, og når bruker navigerer seg */
   .navbar-menu li{
     text-align: center;
     width: 100%;
     margin: 2rem;
     padding: 4%;
-    box-sizing: border-box;
   }
 
   .navbar-menu li:active {
     background-color: rgba(247, 247, 242, 0.557);
   }
 
+  /* endrer stylingen for gjeldene skjerm for bedre navigering på mindre skjermer */
   .point {
     cursor: default;
     width: 100%;
     background-color: rgba(247, 247, 242, 0.557);
   }
 
+
+  /* animasjonen for store skjermer er ikke lenger synlig */
   .nav-group a::before{
-      display: none;
+    display: none;
   }
 
+  /* ikoner blir synlig */
   #nav-icons {
-      background-color: rgba(0, 255, 255, 0);
-      display: inline-block;
+     display: inline-block;
   }
 
   #nav-toggle-open {
-      display: block;
+    display: block;
   }
 
+  /* første burger ikon forsvinner, en x vil ta den plassen når bruker trykker på ikonet */
   .nav-group input:checked ~ #nav-toggle-open {
-      display: none;
+    display: none;
 
   }
 
   .nav-group input:checked ~ #nav-toggle-close {
-      display: block;
+    display: block;
 
   }
 
+  /* burgermenyen skyves ned */
   .nav-group input:checked ~ .navbar-menu {
      top: 0;
   }
@@ -304,7 +329,7 @@ nav {
 /*INDEX*/
 
 .title-index {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/Pilestredet_campus.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/pilestredet_campus.jpeg);
   /*Bildet er hentet fra OsloMet sine nettsider: https://www.oslomet.no/en/about/get-to-know-oslomet*/
 }
 
@@ -318,7 +343,7 @@ nav {
   flex: 50%;
 }
 
-.bibliotek {
+.library {
   width: 80%;
   flex-direction: column;
   margin: auto;
@@ -332,18 +357,23 @@ nav {
 /*Bibliotek-delen har et bakgrunnsbilde, med en mørk transparant farge over for bedre lesbarhet. 
 Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockphoto.com/*/
 
-.bibliotek h2 {
+.library h2 {
   color: #FFFFFF;
   font-size: 3em;
 }
 
-.bibliotek > p {
+.library > p {
   color: #FFFFFF;
   font-size: 1.5em;
   text-align: center;
 }
 
-.bibliotek-kolonne {
+.library-column > p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.library-column {
   flex-basis: 35%;
   background: #F7F7F2;
   border-radius: 2em;
@@ -382,11 +412,11 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   background: transparent;
   transition: 0.5s;
   font-weight: 500;
-  color: var(--bg);
+  color: var(--primary);
   font-size: 2em;
   padding: 0.5em;
   border: solid;
-  border-color: var(--bg);
+  border-color: var(--primary);
 }
 
 .p35-column a:hover {
@@ -432,7 +462,9 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
     font-family: fantasy;
     font-weight: lighter;
     letter-spacing: 2px;
-    color:#F7F7F2;
+    padding: 2%;
+    background-color: var(--text-primary);
+    color: var(--primary);
     font-size: xx-large;
     z-index: 1;
     margin: 0;
@@ -570,13 +602,14 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
   
   /* Styling bak */
   .flip-box-back {
-    background-color: #899878;
-    color: #F7F7F2;
+    background-color: var(--bg-header);
+    color: var(--text-primary);
     transform: rotateY(180deg);
   }
   .flip-box-back>p {
     padding:0 20px 20px 20px;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
     font-size: small;
   }
   .flip-box-back>h4{
@@ -630,35 +663,33 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
 
 /* Header */
 .title-kantina {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/kantineforside.webp);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/Kantine-forside.jpg);
 }
 /* Forsidebilde */
 
-/* Hovedinnhold */
-/* Generelle stiler for hele seksjonen */
-
 /* Stiler for første boks (info-box) */
 
-.mat-boks1 {
+/* Stiler for  */
+.food-box1 {
   flex-direction: column;
   padding: 2%;
   border-top: solid;
 }
 
-.mat-boks2 {
+.food-box2 {
   flex-direction: column;
   border-bottom: solid;
   padding: 2%;
 }
 
-.boks-holder3 {
+.last-box {
   flex-direction: column;
   border-top: 10px;
   gap: 2rem;
 }
 
 .info-box,
-.kantine-bilde {
+.cantine-picture {
   flex: 50%;
   
 }
@@ -670,20 +701,22 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
 }
 
 /* Stiler for andre boks (kantine-bilde) */
-.kantine-bilde {
+.cantine-picture {
   width: 100%;
 }
 
 /* Stiler for tredje boks (kaffebilde og Åpningstider) */
 
- .mat-boks1 div, .mat-boks2 div {
+ .food-column {
   width: 100%;
   height: auto;
 }
 
 /* Stiler for kaffebilde */
-.åpningstider h3, .åpningstidere p {
+.opening-hours h2, .opening-hours h3, .opening-hours p {
   text-align: center;
+  padding-bottom: 2.0rem;
+
 }
 
 /* Stiler for fjerde boks (Åpningstider) */
@@ -692,15 +725,15 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
 
 /* Ny stil for skjermbredder mindre enn 400px */
 @media screen and (max-width: 400px) {
-  .boks-holder {
+  .first-box {
     flex-direction: column;
     padding: 0;
   }
 
   .info-box,
-  .kantine-bilde,
-  .kaffebilde,
-  .Åpningstider {
+  .cantine-picture,
+  .coffe-picture,
+  .opening-hours {
     flex: 100%;
     width: 100%;
   }
@@ -711,36 +744,40 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/pilestredet.jpeg);
 }
 
+
+/* lager mellomrom mellom elementene i artikkel tekstene */
 .access-main-container article{
   justify-content: space-between;
   gap: 2rem;
 }
 
-.access-welcome {
+.introduction {
   text-align: center;
   width: 80%;
 }
 
+/* setter de to hovedelementene (article og aside) i section boksene til å ta 50% av boksen hver */
 .access-kolonne, .design-pictures {
   flex: 50%;
   padding: 2%;
 }
 
+/* lager border (linje) for å skille hver seksjon for bedre accessibility */
 .design-wrapper, .test-wrapper{
   padding: 2%;
   border-top: solid;
 }
 
-
+/* gjør aside elementet for design boksen om til en flex-container for å utjevne bildene nedover */
 .design-pictures {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: 6rem;
 }
 
+/* gir en høyde til bildene slik at alle holder samme høyde */
 .picture {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   height: 6rem;
 }
 
@@ -761,21 +798,23 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
 /*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
 viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften. Koden er inspirert av W3school.*/
 
-.data-kolonne {
+.data-column {
     flex: 50%;
-    padding: 2%;
 }
-/*Styling av flexbokser - raden fungerer som en flex-container og har lik kode for section 1,2 og 3. Samme gjelder for kolonnene innad i 
-containeren.*/
+/* Gir alle de 4 boksene/seksjonene padding oppe og nede, samt en ramme på toppen som blir en delende strek mellom 
+de ulike delene av siden*/
+.data-section1, .data-section2, .data-section3, .data-section4 {
+  padding-top: 4%;
+  padding-bottom: 2%;
+  border-top: solid;
+}
 
-.data-section2, .data-section3 {
-    border-top: solid;
+/* Gir section 4 kolonne-retning slik at teskten står ovenfor bildet av banneret*/
+.data-section4{
+  flex-direction: column;
+  text-align: center;
 }
 
-.data-section4 {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
 .data-section4 img{
     width: 100%;
 }
@@ -783,13 +822,13 @@ containeren.*/
 
 /* Skalering for main */
 @media screen and (max-width: 1300px) {
-  .bibliotek article{
+  .library article{
     flex-direction: column;
   }
 }
 
  @media screen and (max-width: 800px) {
-  section, .rad {
+  section, .row {
     flex-direction: column;
   }
   
@@ -809,13 +848,13 @@ containeren.*/
   width: 100%;
   height: auto;
   margin-top: 6rem;
-  color: var(--bg);
+  color: var(--primary);
   background-color: var(--bg-footer);
  }
 
  .main-footer p, .main-footer a{
   text-align: center;
-  color: var(--bg);
+  color: var(--text-primary);
  }
 
  .main-footer h3 {
@@ -856,16 +895,16 @@ containeren.*/
  }
 
  .upper-footer li:hover {
-  color: var(--bg);
+  color: var(--primary);
   opacity: 1;
   text-decoration: underline;
  }
 
- .bottom-footer {
+ .lower-footer {
   width: 90%;
  }
 
- .bottom-footer .trademark, .footer-logo, .social-media {
+ .lower-footer .trademark, .footer-logo, .social-media {
   margin: auto;
   flex: 30%;
  }
@@ -897,7 +936,7 @@ containeren.*/
     transition: transform var(--hover-time) ease-in-out;
   }
 
- .bottom-footer ul {
+ .lower-footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -925,9 +964,18 @@ containeren.*/
   margin: auto;
  }
 
+ @media screen and (max-width: 1300px){
+  .social-media li {
+    width: 2.5rem;
+  }
+ }
  @media (max-width: 800px) {
   .main-footer section{
       flex-direction: column;
+  }
+
+  .social-media li {
+    width: 4rem;
   }
 
   .flogo-icon {
