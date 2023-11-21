@@ -159,9 +159,18 @@
 </main>
 
 <!-- Footer-seksjonen -->
-  </main>
+
+<!--Footerern er strukturert av en kontainer "main-footer" og to hoved seksjoner. Seksjonene skiller den øverste delen av footerer
+og den nederste delen av footeren. i første seksjon har vi tre span elementer altså inline elementer for å skille tre underseksjoner i hovedseksjonen-->
+
+<!--I den andre seksjonen er underseksjonene også fordelt på tre, men da tar vi i bruk span, div og ul da det andre elementet er en logo og det tredje er en uorden liste-->
+<!--main-footer fungerer som en container for footer seksjonen. og er en klasse slik at alle underelementer her vil kunne tilpasses den-->
 <footer class="main-footer">
+
+  <!--Første delseksjon-->
   <section class="upper-footer">
+
+      <!--1/3 underseksjoner-->
       <span class="school-address">
           <h3>Adresse:</h3>
           <p>Pilestredet 32 - 54</p>
@@ -171,6 +180,8 @@
               Adresse: Pilestredet 46
           </p>
       </span>
+
+      <!--2/3 underseksjoner-->
       <span class="school-address">
           <h3>Studentsenteret</h3>
           <p>Telefon: +47 67 23 77 78<br>
@@ -178,6 +189,8 @@
               Adresse: Pilestredet 52
           </p>
       </span>
+
+      <!--3/3 underseksjoner-->
       <span class="footer-list-container">
           <h3>Viktige lenker</h3>
               <ul class="footer-list">
@@ -186,15 +199,22 @@
               </ul>
       </span>
   </section>
+
+  <!--Andre delseksjon-->
   <section class="lower-footer">
+           <!--1/3 underseksjoner-->
           <span class="trademark">
               <p>© Bilde og tekst er hentet fra OsloMet sine nettsider (oslomet.no)</p>
           </span>
-          <div class="footer-logo">
+
+           <!--2/3 underseksjoner-->
+          <span class="footer-logo">
               <a href="index.html" title="oslomet-logo">
                   <span class="flogo-icon"></span>
               </a>
-          </div>
+          </span>
+
+           <!--3/3 underseksjoner-->
           <ul class="social-media">
               <li><a href="https://www.instagram.com/oslomet/"><span><img src="img/instagram.svg" alt="instagram logo"></span></a></li>
               <li><a href="https://www.tiktok.com/@oslomet"><span><img src="img/tiktok.svg" alt="tiktok logo"></span></a></li>
