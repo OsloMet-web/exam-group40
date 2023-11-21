@@ -166,7 +166,7 @@ nav {
   padding: 0;
 }
 
-/* setter inn bilde av logoen og gjør bilde litt gjennomsiktig med en overgang når musen treffer logoen forsvinner det */
+/* setter inn bilde av logoen og gjør bildet delvis gjennomsiktig med en overgang når musen treffer logoen forsvinner det */
 .logo-icon {
   display: block;
   background-image: url(../img/logo2.png);
