@@ -206,8 +206,8 @@ nav {
   background-color: #e4e6c300;
 }
 
-/* lager en animasjon under linkene på navigasjonsbaren */
-/* koden for animasjon er hentet fra YouTube OnlineTutorials https://youtu.be/zQngLMkngQE?si=LA2rE8l4zWKPIy7O */
+/* Lager en animasjon under linkene på navigasjonsbaren */
+/* Koden for animasjon er hentet fra YouTube OnlineTutorials https://youtu.be/zQngLMkngQE?si=LA2rE8l4zWKPIy7O */
 .nav-group a::before {
   content: '';
   position: absolute;
@@ -230,7 +230,7 @@ nav {
   transition: transform 1s ease-in;
 }
 
-/* point klassen holder markøren/ animasjonen på den gjeldene siden dette er for at bruker skal vite hvilken side den er på */
+/* Point klassen holder markøren/ animasjonen på den gjeldene siden, dette er for at bruker skal vite hvilken side den er på */
 .nav-group .point::before {
   color: var(--text-primary);
   transform: scaleX(1);
