@@ -412,7 +412,7 @@ for bedre lesbarhet på tekst-link, og tekstlenkene er posisjonert midt på boks
   padding-top: 5rem;
 }
 
-/*Setter hver boks til å dekke 32 prosent av containeren (tredelt), litt avrundede kantr, bruker position: relative; til 
+/*Setter hver boks til å dekke 32 prosent av containeren (tredelt), litt avrundede kanter, bruker position: relative; til 
 å kunne posisjonere linkene i midten av boksene senere. */
 .p35-column {
   flex-basis: 32%;
