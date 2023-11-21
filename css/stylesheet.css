@@ -665,11 +665,30 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
 .title-kantina {
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/Kantine-forside.jpg);
 }
-/* Forsidebilde */
+/*Slutt på header*/
 
-/* Stiler for første boks (info-box) */
+/* Hovedinnhold */
+/* Stiler for første section (first-box) */
+.first-box {
+  flex-direction: column;
+  padding: 2%;
+}
 
-/* Stiler for  */
+.info-box,
+.cantine-picture {
+  flex: 50%;
+}
+
+.info-box {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.cantine-picture {
+  width: 100%;
+}
+
+/* Stiler for andre og tredje section (food-box 1 & 2) */
 .food-box1 {
   flex-direction: column;
   padding: 2%;
@@ -681,47 +700,23 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
   border-bottom: solid;
   padding: 2%;
 }
+/*Stiler for div boksene inni food-box 1 & 2 )*/
+.food-column {
+  width: 100%;
+  height: auto;
+}
 
+/* Stiler for fjerde section (last-box) */
 .last-box {
   flex-direction: column;
   border-top: 10px;
   gap: 2rem;
 }
 
-.info-box,
-.cantine-picture {
-  flex: 50%;
-  
-}
-
-.info-box {
-  padding: 20px;
-  margin-bottom: 20px; 
-  
-}
-
-/* Stiler for andre boks (kantine-bilde) */
-.cantine-picture {
-  width: 100%;
-}
-
-/* Stiler for tredje boks (kaffebilde og Åpningstider) */
-
- .food-column {
-  width: 100%;
-  height: auto;
-}
-
-/* Stiler for kaffebilde */
 .opening-hours h2, .opening-hours h3, .opening-hours p {
   text-align: center;
   padding-bottom: 2.0rem;
-
 }
-
-/* Stiler for fjerde boks (Åpningstider) */
-
-
 
 /* Ny stil for skjermbredder mindre enn 400px */
 @media screen and (max-width: 400px) {
@@ -729,15 +724,14 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
     flex-direction: column;
     padding: 0;
   }
-
   .info-box,
   .cantine-picture,
-  .coffe-picture,
   .opening-hours {
     flex: 100%;
     width: 100%;
   }
 }
+/*Slutt på hovedinnhold for kantina*/
 
 /* ACCESSIBILITY */
 .title-access {
