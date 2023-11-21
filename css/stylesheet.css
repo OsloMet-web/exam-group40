@@ -342,6 +342,8 @@ nav {
   /*Bildet er hentet fra OsloMet sine nettsider: https://www.oslomet.no/en/about/get-to-know-oslomet*/
 }
 
+/*Styling av av velkommen-delen på forsiden, welcome fungerer som container og welcome-column er kolonnene/delene inne 
+i containeren. Her er det bare oppdelt i to, og flex er derfor satt til 50%. */
 .welcome {
   display: flex;
   padding-top: 3rem;
@@ -352,6 +354,9 @@ nav {
   flex: 50%;
 }
 
+/* Ny seksjon/container for bibliotekene. Denne delen har et bakgrunnsbilde, med en mørk transparant farge over for bedre 
+lesbarhet. Her er det først en overskrift, en liten beskrivende tekst og deretter tre bokser (for hvert bibliotek). Disse
+styles med library-column klassen. */
 .library {
   width: 80%;
   flex-direction: column;
@@ -360,12 +365,26 @@ nav {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bibliotek.jpg);
+  /*Bibliotek-delen har et bakgrunnsbilde, med en mørk transparant farge over for bedre lesbarhet. 
+Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockphoto.com/*/
   background-size: cover;
   border-radius: 3em;
 }
-/*Bibliotek-delen har et bakgrunnsbilde, med en mørk transparant farge over for bedre lesbarhet. 
-Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockphoto.com/*/
 
+/*Setter box-sizing til border-box slik at 35% flex-basis inkluderer padding, og ikke vil øke den totale bredden. 
+Bruker overflow: hidden; til å sikre at kolonnene ikke overskrider dimensjonene.*/
+.library-column {
+  flex-basis: 35%;
+  background: #F7F7F2;
+  border-radius: 2em;
+  margin: 5%;
+  padding: 2em;
+  box-sizing: border-box;
+  text-align: left;
+  overflow: hidden;
+}
+
+/*Tekst i bibliotekdelen må styles litt annerledes da det er et bilde som bakgrunn og delene er satt i noe mindre bokser. */
 .library h2 {
   color: #FFFFFF;
   font-size: 3em;
@@ -382,23 +401,15 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   font-size: 1.2rem;
 }
 
-.library-column {
-  flex-basis: 35%;
-  background: #F7F7F2;
-  border-radius: 2em;
-  margin: 5%;
-  padding: 2em;
-  box-sizing: border-box;
-  text-align: left;
-  overflow: hidden;
-}
-/*Styling av overskrift, tekst og boksene i bibliotek-delen*/
-
+/*Styling av P35-delen. Tre bokser med hvert sitt bilde og lenker til sider. Legger en mørk transparent farge over bildene
+for bedre lesbarhet på tekst-link, og tekstlenkene er posisjonert midt på boksene*/
 .p35 {
   flex-direction: column;
   padding-top: 5rem;
 }
 
+/*Setter hver boks til å dekke 32 prosent av containeren (tredelt), litt avrundede kantr, bruker position: relative; til 
+å kunne posisjonere linkene i midten av boksene senere. */
 .p35-column {
   flex-basis: 32%;
   border-radius: 0.5em;
@@ -408,11 +419,14 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
   background-color: black;
 }
 
+/*Setter høyden til å fylle hele beholderen og gjør de litt transparante for bedre lesbarhet av lenkene. */
 .p35-column img {
   height: 100%;
   opacity: 0.5;
 }
 
+/*Styling av lenkene. Bruker position: absolute; og transform for å overlappe og posisjonere over bildene. Setter en 
+hvit kant rundt lenkene og legger til en grønn bakgrunnfarge når man holder musepekeren over.  */
 .p35-column a {
   position: absolute;
   top: 50%;
@@ -431,9 +445,9 @@ Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockph
 .p35-column a:hover {
   background: rgba(137, 152, 120, 0.8);
 }
-/*P35 - Styling tre bokser med hvert sitt bilde og lenker til sider. Bakgrunnen er satt til svart, og transparens på bildene
-er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjonert midt på boksene*/
 
+/*Styling av kart - senterer og legger litt padding over og under, og setter bredden til 100% for å fylle ut beholderen.
+Det er for å line opp med resten av siden. */
 .map {
   flex-direction: column;
   padding-top: 5em;
