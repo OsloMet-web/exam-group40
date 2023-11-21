@@ -49,7 +49,7 @@ main {
   gap: 3rem;
 }
 
-/* Tekstelementer: */
+/* Styling av ulike tekstelementer som vil fungere som standarder for hele siden */
 ul {
   list-style: none;
 }
@@ -90,11 +90,12 @@ a {
   text-decoration: none;
 }
 
-/* Seksjoner/innhold: */
+/* Setter tekst i seksjonene mot venstre for bedre lesbarhet */
 section p, section h2 {
   text-align: left;
 }
 
+/*Setter section*/
 section {
   display: flex;
   align-items: center;
@@ -104,11 +105,13 @@ section {
   gap: 2rem;
 }
 
+/*Alle bilder settes til å fylle bredden i beholderen og samtidig beholde riktig dimensjoner ved å sette automatisk høyde. */
 img {
   width: 100%;
   height: auto;
 }
 
+/*Row-classen brukes som en container for de ulike delene på siden - for hver "rad" bortover. */
 .row {
   display: flex;
   margin: auto;
@@ -116,13 +119,14 @@ img {
   gap: 2rem;
 }
 
+/*Generell styling for header-bildene. Legger inn margin på topp og bunn, bruker viewheight for bedre skalering, og 
+setter headeren til å dekke hele beholderen. */
 .title-index, .title-data, .title-kantina, .title-access {
   margin-top: 6rem;
   margin-bottom: 4rem;
   text-align: center;
   width: 100%;
   height: 100vh;
-  /*Bildet er hentet fra OsloMet sine nettsider: https://www.oslomet.no/en/about/get-to-know-oslomet*/
   background-position: center;
   background-size: cover;
 }
@@ -784,17 +788,18 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
     /* Bildet er hentet fra; https://unsplash.com/photos/macbook-pro-on-white-surface-WiONHd_zYI4*/
   }
   
+/*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
+viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften. Koden er inspirert av W3school.*/
   .title-data h1 {
     top: 30%;
     font-size: 4rem;
   }
 
-/*Styling av header - valgt å sette bildet som en bakgrunn for å kunne plassere overskriften over bildet. Brukt 
-viewheight og viewwidth for bedre skalering. Bruker padding for å posisjonere overskriften. Koden er inspirert av W3school.*/
-
-.data-column {
+/* Settes til direction row som standard, og sier at hver av boksene skal inneholde 50% av bredden til seksjonen(section) den er i*/
+.data {
     flex: 50%;
 }
+
 /* Gir alle de 4 boksene/seksjonene padding oppe og nede, samt en ramme på toppen som blir en delende strek mellom 
 de ulike delene av siden*/
 .data-section1, .data-section2, .data-section3, .data-section4 {
@@ -809,10 +814,10 @@ de ulike delene av siden*/
   text-align: center;
 }
 
+/* Setter bildet i section 4 til å dekke hele siden til venstre og høyre*/
 .data-section4 img{
     width: 100%;
 }
-/* Setter bildet i section 4 til å dekke hele siden til venstre og høyre*/
 
 /* Skalering for main */
 @media screen and (max-width: 1300px) {
