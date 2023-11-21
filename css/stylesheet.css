@@ -614,6 +614,8 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
     border: 1px solid #f1f1f1;
     perspective: 1000px;
     margin: 80px;
+    display: flex;
+    flex-direction: column;
   }
   
   /* Posisjon foran og bak innhold */
@@ -685,7 +687,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
     font-size: large;
   }
 
-  /*Knappene med linker*/
+  /*Knappene med linker, inspirert av W3Schools: https://www.w3schools.com/howto/howto_css_button_group.asp*/
   .extrareading{
     display: flex;
     float: left;
@@ -730,7 +732,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
 /* Hovedinnhold */
 /* Stiler for første section (first-box) */
 .first-box {
-  flex-direction: column;
+  flex-direction: row;
   padding: 2%;
 }
 
