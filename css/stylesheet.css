@@ -220,6 +220,7 @@ nav {
   transform-origin: right;
 }
 
+/* Dette gir understreken når musen treffer linkene i navigasjonsbaren */
 .nav-group a:hover::before {
   transform: scaleX(1);
   transform-origin: left;
