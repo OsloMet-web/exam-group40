@@ -770,7 +770,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp*/
 }
 
 /* Ny stil for skjermbredder mindre enn 400px */
-@media screen and (max-width: 700px) {
+/*@media screen and (max-width: 400px) {
   .first-box {
     flex-direction: column;
     padding: 0;
@@ -780,8 +780,8 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp*/
   .opening-hours {
     flex: 100%;
     width: 100%;
-  }
-}
+ }
+}*/
 /*Slutt på hovedinnhold for kantina*/
 
 /* ACCESSIBILITY */
@@ -866,7 +866,7 @@ de ulike delene av siden*/
 
 /* Skalering for main */
 @media screen and (max-width: 1300px) {
-  .library article{
+  .library article, .first-box{
     flex-direction: column;
   }
 }
@@ -1008,7 +1008,7 @@ de ulike delene av siden*/
   }
  }
  @media (max-width: 800px) {
-  .main-footer section{
+  .main-footer section {
       flex-direction: column;
   }
 
