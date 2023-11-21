@@ -156,7 +156,7 @@ nav {
   background-color: var(--bg-header);
 }
 
-/* STYLING FOR OSLO-MET LOGO */
+/* STYLING FOR OSLO-MET LOGO wrapperen til logoen fungerer for å kunne plassere bildet korrekt*/
 .logo-wrapper{
   display: flex;
   flex: 0.3;
@@ -166,7 +166,7 @@ nav {
   padding: 0;
 }
 
-/* setter inn bilde av logoen og gjør bilde en smule gjennomsiktig med en overgang når musen treffer logoen forsvinner det */
+/* setter inn bilde av logoen og gjør bilde litt gjennomsiktig med en overgang når musen treffer logoen forsvinner det */
 .logo-icon {
   display: block;
   background-image: url(../img/logo2.png);
