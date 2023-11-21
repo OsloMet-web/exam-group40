@@ -700,7 +700,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      gap: 2rem;
+      gap: 5rem;
       margin:20%;
     }
   
