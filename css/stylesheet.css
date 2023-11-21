@@ -188,7 +188,7 @@ nav {
   align-items: center;
 }
 
-/* stiller retningen til den uordnede listen for rad med jevne mellomrom */
+/* stiller retningen til den uordnede listen til rad med jevne mellomrom */
 .navbar-menu {
   display: flex;
   gap: 2.5rem;
