@@ -1001,6 +1001,8 @@ de ulike delene av siden*/
   margin: auto;
  }
 
+ /* sosiale medier ikoner hentet fra https://iconmonstr.com/license/ og https://www.svgrepo.com/page/licensing/#CC%20Attribution*/
+
  @media screen and (max-width: 1300px){
   .social-media li {
     width: 2.5rem;
