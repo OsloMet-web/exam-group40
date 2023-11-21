@@ -899,12 +899,10 @@ de ulike delene av siden*/
 @media screen and (max-width: 450px) {
   section {
     flex-direction: column;
-   }
+  }
 }
 
  /* Footer styling */
-
- /* container for footer de to underseksjonene skal komme under hverandre*/
  .main-footer {
   display: flex;
   flex-direction: column;
@@ -915,31 +913,29 @@ de ulike delene av siden*/
   background-color: var(--bg-footer);
  }
 
- /* Endrer styling for tekster */
- .main-footer p{
+ .main-footer p, .main-footer a{
   text-align: center;
- }
-
- .main-footer h3, .main-footer a {
   color: var(--text-primary);
  }
 
- /* gir godt mellomrom mellom elementene i seksjonen */
+ .main-footer h3 {
+  color: var(--text-primary);
+ }
+
  .main-footer section {
   margin-top: 4rem;
  }
 
- /* Styling for seksjonene begynner */
- .upper-footer, .lower-footer {
+ .upper-footer {
   width: 90%;
  }
 
- /* Styling for underseksjoner */
- .upper-footer span, .trademark, .footer-logo, .social-media {
+ .upper-footer span {
   flex: 30%;
+  padding: auto;
+  text-align: center;
  }
 
- /* Styling for link listen */
  .footer-list-container {
   align-items: center;
  }
@@ -947,12 +943,12 @@ de ulike delene av siden*/
  .upper-footer ul {
   display: flex;
   flex-direction: column;
+  list-style: none;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
  }
 
- /* lager hover effekt */
  .upper-footer li {
   font-size: 1.2rem;
   opacity: 0.8;
@@ -960,19 +956,29 @@ de ulike delene av siden*/
  }
 
  .upper-footer li:hover {
+  color: var(--primary);
   opacity: 1;
   text-decoration: underline;
  }
 
- /* Styling for elementer i underseksjon*/
+ .lower-footer {
+  width: 90%;
+ }
 
- /* container for logoen */
+ .lower-footer .trademark, .footer-logo, .social-media {
+  margin: auto;
+  flex: 30%;
+ }
+
+ .trademark p{
+  color: var(--text-footer);
+ }
+
  .flogo-wrapper {
   display: flex;
   align-items: center;
  }
 
- /* plassering av logo med hover-effekt */
  .flogo-icon {
   display: block;
   position: relative;
@@ -991,14 +997,15 @@ de ulike delene av siden*/
     transition: transform var(--hover-time) ease-in-out;
   }
 
-  /* styling av sosiale medier ikoner ul listen "social-media" fungerer som en container for liste elementene elementene er rad stilt
-  med gode mellomrom mellom*/
- .social-media {
+ .lower-footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 1rem;
   margin: auto;
+ }
+
+ .social-media {
   padding-bottom: 2rem;
  }
 
@@ -1009,13 +1016,11 @@ de ulike delene av siden*/
   transition: all var(--hover-time) ease-out;
  }
 
- /* hover effekt */
  .social-media li:hover {
   opacity: 1;
   transition: var(--hover-time) ease-in-out;
   }
 
-  
  .social-media img {
   margin: auto;
  }
