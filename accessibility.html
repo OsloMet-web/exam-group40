@@ -12,6 +12,7 @@
     <!--Link til external stylesheets, brukt for ikoner og skrift. hentet fra font.google.com-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!--Favicon bilde-->
     <link rel="icon" type="image/x-icon" href="img/favicon.png"> 
@@ -97,12 +98,24 @@
 
         <section class="test-wrapper">
             <article class="access-kolonne">
-                <h2>Resultater fra testen</h2>
+                <h2>Mal, struktur og valg av elementer</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                    Malen til nettstedet inkluderer bruken av nav, head og footer. Dette bygger på den visuelle meningen til siden
+                    og gjør den veldig brukervennlig for brukere med hjelpemidler
+                    I <strong>header</strong> har vi inkludert OsloMet logo, altså side navnet og Navigeringsmenyen. I <strong>nav</strong> har vi lenket til de andre sidene.
+                    I <strong>footer</strong> vil bruker kunne navigere seg til tilgjengeligjhetserklæringen for nettstedet, også har vi har inkludert copyright og sosiale medier for skolen.
+                </p>
+                <p>
+                    I <strong>html</strong> elementet har vi tatt i bruk "nb" og "en". Dette er slik at en stemme-assistent skal kunne forstå hvilket språk som er i bruk på siden. 
+                    "nb" er tatt i bruk i den generelle
+                    side malen, men "en" er tatt i bruk for topical da innholdet på denne siden er engelsk.
                 </p>
             </article>
-            <aside class="access-kolonne"><img src="img/cat.jpg" alt="accessibility-test"></aside>
+            <article class="design-pictures">
+                <aside class="picture"><img src="img/navigasjonbar.png" alt="bruken-av point-klassen"></aside>
+                <aside class="picture"><img src="img/språkvalg.png" alt="bruk-av-nb"></aside>
+                <aside class="picture"><img src="img/farge-palett.jpg" alt="design-picture"></aside>
+            </article>
         </section>
 
         <section class="test-wrapper">
@@ -119,14 +132,13 @@
             <article class="access-kolonne">
                 <h2>Design valg</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Quis varius quam quisque id diam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Nulla at volutpat diam ut. At imperdiet dui accumsan sit.
-                Nulla at volutpat diam ut. At imperdiet dui accumsan sit. Neque viverra justo nec ultrices dui sapien eget mi proin.
-                Hendrerit gravida rutrum quisque non tellus orci ac.
+                    I <strong>nav</strong> har vi lenket til de andre sidene
+                    og tatt i bruk en point klasse, som forteller bruker hvilken side de er på uten å måtte se i tab.
+                    Denne klassen er tatt i bruke for å øke den visuelle tilgjengeligheten generelt, men spesielt for brukere av mindre skjermer
                 </p>
             </article>
             <article class="design-pictures">
-                <aside class="picture"><img src="img/farge-palett.jpg" alt="design-picture"></aside>
+                <aside class="picture"><img src="img/bilde-av-point.png" alt="bruken av point klassen"></aside>
                 <aside class="picture"><img src="img/farge-palett.jpg" alt="design-picture"></aside>
                 <aside class="picture"><img src="img/farge-palett.jpg" alt="design-picture"></aside>
             </article>
@@ -183,7 +195,7 @@
             <img src="img/youtube.svg" alt="youtube logo">
           </span></a></li>
           <li><a href="https://twitter.com/oslomet?"><span>
-            <img src="img/x.svg" alt="twitter logo">
+            <img src="img/x.svg" alt="twitter-logo">
           </span></a></li>
         </ul>
       </section>
