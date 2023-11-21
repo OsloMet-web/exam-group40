@@ -679,7 +679,7 @@ er satt til 50% for bedre lesbarhet på tekst-link, og tekstlenkene er posisjone
 /* Hovedinnhold */
 /* Stiler for første section (first-box) */
 .first-box {
-  flex-direction: column;
+  flex-direction: row;
   padding: 2%;
 }
 
