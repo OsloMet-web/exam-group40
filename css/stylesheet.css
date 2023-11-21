@@ -516,7 +516,6 @@ Det er for å line opp med resten av siden. */
 /**Selve brødteksten sin styling**/
 .article-text>p{
     flex-grow: 2;
-    line-height: 1.5;
     font-size: medium;
     text-align: left;
     
@@ -654,7 +653,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
   }
 /*Overskrift på linjen med bilder*/
   #linetitle {
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: lighter;
     color: #46494C;
     text-align: center;
