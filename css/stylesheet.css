@@ -506,8 +506,6 @@ Det er for å line opp med resten av siden. */
     display: flex;
 }
 
-/**Skalering for mellomstore skjermer**/
-
 /*Artikkelteksten*/
 .article-text{
     padding:2rem;
@@ -690,6 +688,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
     color:#e4e6c3
   }
 
+  /**Skalering for mellomstore skjermer**/
   @media screen and (max-width: 800px) {
     .flexbox {
       flex-direction: column;
