@@ -9,9 +9,9 @@
   text-decoration: none;
 }
 
-:root {
-  /* Lager en root med variabler for å kunne gjenbruke disse gjennom koden og gjøre det enklere for en annen å 
+/* Lager en root med variabler for å kunne gjenbruke disse gjennom koden og gjøre det enklere for en annen å 
   endre ting i koden. */
+:root {
   --text-primary: #343434;
   --secondary: #46494c;
   --primary: #f7f7f2;
@@ -30,6 +30,7 @@
   /* Valgt fonten Raleway fra Google Fonts til overskrifter */
 }
 
+/* Setter body bakerst med z-indeks, bruker viewheight for bedre skalering av siden*/
 body {
   z-index: -2;
   color: var(--text-primary);
@@ -39,8 +40,8 @@ body {
   min-height: 100vh;
   min-width: 100vh;
 }
-/* Setter body bakerst med z-indeks, bruker viewheight for bedre skalering av siden*/
 
+/* En container for alt hovedinnholdet. Elementene er midtstilt og det settes naturlige mellomrom mellom hvert av elementene (gap) */
 main {
   display: flex;
   flex-direction: column;
