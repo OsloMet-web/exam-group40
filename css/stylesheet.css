@@ -263,7 +263,7 @@ nav {
 
 @media screen and (max-width: 750px) {
 
-  /* her fortsetter koden for burgermenyen. top er satt til -83rem for at innholdet skal "forsvinne" (skyves opp) selve navigasjonsbaren styles også*/
+  /* Her fortsetter koden for burgermenyen. top er satt til -83rem for at innholdet skal "forsvinne" (skyves opp), selve navigasjonsbaren styles også*/
   .navbar-menu {
     flex-direction: column;
     position: fixed;
