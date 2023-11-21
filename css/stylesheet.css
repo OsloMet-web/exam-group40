@@ -964,9 +964,18 @@ de ulike delene av siden*/
   margin: auto;
  }
 
+ @media screen and (max-width: 1300px){
+  .social-media li {
+    width: 2.5rem;
+  }
+ }
  @media (max-width: 800px) {
   .main-footer section{
       flex-direction: column;
+  }
+
+  .social-media li {
+    width: 4rem;
   }
 
   .flogo-icon {
