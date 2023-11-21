@@ -364,9 +364,7 @@ i containeren. Her er det bare oppdelt i to, og flex er derfor satt til 50%. */
 lesbarhet. Her er det først en overskrift, en liten beskrivende tekst og deretter tre bokser (for hvert bibliotek). Disse
 styles med library-column klassen. */
 .library {
-  width: 80%;
   flex-direction: column;
-  margin: auto;
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
