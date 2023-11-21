@@ -790,7 +790,6 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/pilestredet.jpeg);
 }
 
-
 /* lager mellomrom mellom elementene i artikkel tekstene */
 .access-main-container article{
   justify-content: space-between;
@@ -817,9 +816,11 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
 .design-wrapper, .test-wrapper{
   border-top: solid;
 }
+
 .design-wrapper {
   flex-direction: column;
 }
+
 /* gjør aside elementet for design boksen om til en flex-container for å utjevne bildene nedover */
 .design-pictures {
   display: flex;
