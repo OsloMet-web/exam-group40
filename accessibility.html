@@ -30,7 +30,10 @@
             </a>
         </div>
 
+        <!-- container/wrapper for link-delen av navigasjonsbaren-->
         <menu class="nav-group" for="burgertoggle">
+
+            <!-- burgermeny verdier, koden for dette er hentet fra CompletePage_02_Simple-Burger-menu, i forelsesningsnotater -->
             <input id="burgertoggle" type="checkbox">
             <label id="nav-toggle-open" for="burgertoggle">
                 <span class="material-symbols-outlined">menu</span>
@@ -39,26 +42,27 @@
                 <span class="material-symbols-outlined">close</span>
             </label>
 
+            <!-- denne listen fungerer som en container for lenkene i navigasjonsbaren -->
             <ul class="navbar-menu" for="burgertoggle"> 
-                <li class="nav-list">
+                <li>
                     <a href="index.html">
                         <span class="material-symbols-outlined" id="nav-icons">home</span>
                         <span class="nav-link-text">Hjem</span>
                     </a>
                 </li>
-                <li class="nav-list">
+                <li>
                     <a href="topical.html">
                         <span class="material-symbols-outlined" id="nav-icons">psychology</span>
                         <span class="nav-link-text">Topical</span>
                     </a>
                 </li>
-                <li class="point">
+                <li>
                     <a href="kantina.html">
                         <span class="material-symbols-outlined" id="nav-icons">lunch_dining</span>
                         <span class="nav-link-text">Kantine</span>
                     </a>
                 </li>
-                <li class="nav-list">
+                <li>
                     <a href="datatorget.html">
                         <span class="material-symbols-outlined" id="nav-icons">devices</span>
                         <span class="nav-link-text">Datatorget</span>
@@ -70,16 +74,28 @@
  </header>
     <!--end Navigation bar-->
 
+
+<!-- container for hoveddinnholdet i accessibility-->
 <main class="access-main-container">
+
+    <!-- Header start -->
     <header class="title-access">
         <h1>ACCESSIBILITY</h1>
     </header>
+
+    <!--Header slutt-->
+
+    <!--Velkomst-->
     <article class="introduction">
         <h2>Velkommen til Accessibility</h2>
         <p>Her vil vi kort presentere kodevalg som er gjort for å fremme bedre tilgjengelighet og universell utforming av siden, 
         og hvordan tilgjengeligheten er testet. </p>
     </article>
+
+    <!--Første hoved seksjon-->
     <section class="design-wrapper">
+
+        <!--Første under seksjon-->
         <article class="access-kolonne">
             <h2>Mal, struktur og valg av elementer</h2>
             <p>For grunnmuren av siden har tatt i bruk en spesifikk fargepalett som vi har valgt å bruke gjennom hele siden.
@@ -111,6 +127,8 @@
                 <p>Vi har hatt stort fokus på god lesbarhet og universell utforming. Vi har valgt fonten Raleway som font på siden,
                     da denne er sans-serif, og har en tydelig, enkel og klar form. </p>
             </article>
+
+            <!--andre under seksjon-->
             <article class="design-pictures">
                 <aside class="picture"><img src="img/navigasjonbar.png" alt="bruken-av point-klassen"></aside>
                 <aside class="picture"><img src="img/språkvalg.png" alt="bruk-av-nb"></aside>
@@ -119,7 +137,13 @@
             </article>
         </section>
 
+        <!--slutt første hoved seksjon-->
+
+
+        <!--andre hoved seksjon-->
         <section class="test-wrapper">
+
+            <!--Første under seksjon-->
             <article class="access-kolonne">
                 <h2>Resultater av Lighthouse testen</h2>
                 <p> For å teste tilgjengeligheten til siden har vi valgt å bruke Lighthouse sin test. Resultatene ga oss en
@@ -135,13 +159,21 @@
                     svaksynte brukere navigere seg enklere gjennom siden. Videre
                 </p>
             </article>
+
+            <!--andre under seksjon-->
             <article class="design-pictures">
                 <aside class="picture"><img src="img/resultater fra testen.png" alt="accessibility-test"></aside>
                 <aside class="picture"><img src="img/resultatene.png" alt=""></aside>
             </article>
         </section>
 
+        <!--andre hoved seksjon-->
+
+        <!--tredje hoved seksjon-->
         <section class="design-wrapper">
+
+
+            <!--Første under seksjon-->
             <article class="access-kolonne">
                 <h2>Design utenom testen på index-siden</h2>
                 <p> For ekstra brukervennlighet har vi brukt en <strong>"point"</strong> klasse, for at brukeren til enhver 
@@ -153,7 +185,12 @@
                 <p>Vi har også inkludert detaljer for å ha skape kontraster. Blant annet har vi brukt en "hover" 
                     effekt på linker for å gjøre det mer intuitivt hva man trykker på, som igjen fremmer brukervennligheten.  </p>
             </article>
+
+            <!--slutt andre hoved seksjon-->
+
             <h3>Bilder av point klassen i funksjon</h3>
+
+            <!--andre under seksjon-->
             <aside class="design-pictures">
                 <div class="picture"><img src="img/navigasjonbar.png" alt="bruken-av point-klassen"></div>
                 <div class="picture"><img src="img/bruk-point-mindreskjerm.png" alt="bruk-av-nb"></div>
@@ -168,9 +205,13 @@
                 <div class="picture"><img src="img/hover.png" alt=""></div>
             </aside>
         </section>
+
+        <!--slutt andre hoved seksjon-->
         
    </main>
    
+<!--slutt hoveddel-->
+
 <!-- Footer-seksjonen -->
 
 <!--Footerern er strukturert av en kontainer "main-footer" og to hoved seksjoner. Seksjonene skiller den øverste delen av footerer
