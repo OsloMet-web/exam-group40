@@ -714,7 +714,6 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
     }
   }
 
-
 /* KANTINE */
 
 /* Header */
@@ -730,8 +729,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
   padding: 2%;
 }
 
-.info-box,
-.cantine-picture {
+.info-box, .cantine-picture {
   flex: 50%;
 }
 
