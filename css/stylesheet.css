@@ -890,19 +890,17 @@ de ulike delene av siden*/
   }
 }
 
- @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   section, .row {
     flex-direction: column;
   }
+}
   
-  }
-  
-  @media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   section {
     flex-direction: column;
   }
-  
-  }
+}
 
  /* Footer styling */
  .main-footer {
