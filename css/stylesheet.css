@@ -484,7 +484,6 @@ Det er for å line opp med resten av siden. */
     font-weight: lighter;
     letter-spacing: 2px;
     color: var(--primary);
-    font-size: xx-large;
     z-index: 1; /**Sette teksten foran bildet**/
     margin: 0;
     position: absolute;
