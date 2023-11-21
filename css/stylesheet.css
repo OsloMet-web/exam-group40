@@ -557,7 +557,6 @@ https://www.w3schools.com/css/css3_animations.asp**/
     font-family: Arial;
     margin-left: 10px;
     margin-bottom: -15px;
-    
 }
 
 /**Fargene i animasjonen**/
@@ -622,7 +621,6 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
   .flip-box-front>img{
     width: 300px;
     height: 200px;
-    
   }
   
   /**Styling bak**/
