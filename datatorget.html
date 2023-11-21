@@ -26,7 +26,6 @@
     <nav>
         <div class="logo-wrapper">
             <a href="index.html" title="oslomet-logo">
-                <!--<img src="style/img/logo_lightgreen.png" alt="Hjemme">-->
                 <span class="logo-icon"></span>
             </a>
         </div>
@@ -71,52 +70,52 @@
  </header>
     <!--end Navigation bar-->
 
-   <header class="nav-header">
-    <nav>
-        <div class="logo-wrapper">
-            <a href="index.html" title="oslomet-logo">
-                <span class="logo-icon"></span>
-            </a>
-        </div>
+    <header class="nav-header">
+        <nav>
+            <div class="logo-wrapper">
+                <a href="index.html" title="oslomet-logo">
+                    <span class="logo-icon"></span>
+                </a>
+            </div>
 
-        <menu class="nav-group" for="burgertoggle">
-            <input id="burgertoggle" type="checkbox">
-            <label id="nav-toggle-open" for="burgertoggle">
-                <span class="material-symbols-outlined">menu</span>
-            </label>
-            <label for="burgertoggle" id="nav-toggle-close">
-                <span class="material-symbols-outlined">close</span>
-            </label>
+            <menu class="nav-group" for="burgertoggle">
+                <input id="burgertoggle" type="checkbox">
+                <label id="nav-toggle-open" for="burgertoggle">
+                    <span class="material-symbols-outlined">menu</span>
+                </label>
+                <label for="burgertoggle" id="nav-toggle-close">
+                    <span class="material-symbols-outlined">close</span>
+                </label>
 
-            <ul class="navbar-menu" for="burgertoggle"> 
-                <li class="nav-list">
-                    <a href="index.html">
-                        <span class="material-symbols-outlined" id="nav-icons">home</span>
-                        <span class="nav-link-text">Hjem</span>
-                    </a>
-                </li>
-                <li class="nav-list">
-                    <a href="topical.html">
-                        <span class="material-symbols-outlined" id="nav-icons">psychology</span>
-                        <span class="nav-link-text">Topical</span>
-                    </a>
-                </li>
-                <li class="point">
-                    <a href="kantina.html">
-                        <span class="material-symbols-outlined" id="nav-icons">lunch_dining</span>
-                        <span class="nav-link-text">Kantine</span>
-                    </a>
-                </li>
-                <li class="nav-list">
-                    <a href="datatorget.html" class="point">
-                        <span class="material-symbols-outlined" id="nav-icons">devices</span>
-                        <span class="nav-link-text">Datatorget</span>
-                    </a>
-                </li>
-            </ul>    
-        </menu>
-    </nav>
- </header>
+                <ul class="navbar-menu" for="burgertoggle"> 
+                    <li class="nav-list">
+                        <a href="index.html">
+                            <span class="material-symbols-outlined" id="nav-icons">home</span>
+                            <span class="nav-link-text">Hjem</span>
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="topical.html">
+                            <span class="material-symbols-outlined" id="nav-icons">psychology</span>
+                            <span class="nav-link-text">Topical</span>
+                        </a>
+                    </li>
+                    <li class="point">
+                        <a href="kantina.html">
+                            <span class="material-symbols-outlined" id="nav-icons">lunch_dining</span>
+                            <span class="nav-link-text">Kantine</span>
+                        </a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="datatorget.html" class="point">
+                            <span class="material-symbols-outlined" id="nav-icons">devices</span>
+                            <span class="nav-link-text">Datatorget</span>
+                        </a>
+                    </li>
+                </ul>    
+            </menu>
+        </nav>
+    </header>
     <!--end Navigation bar-->
 
     <main>  
@@ -134,6 +133,7 @@
         
         <!--Section 1 er en container for article og aside.-->
         <section class="data-section1">
+            <!--article som inneholder overskift med tekst under-->
             <article class="data">
                 <h2>
                     Hva skjer på datatorget?
@@ -142,6 +142,7 @@
                 <p> Med tilgang til laboratorier, arbeidsstasjoner og ressurser som elektroniske databaser og spesialiserte verktøy, blir Datatorget et livlig sted der studenter kan fordype seg i prosjekter, eksperimenter og praktisk erfaring.</p>
             <!-- Tekst er generert ved hjelp av AI-->
             </article>
+            <!--aside som inneholder et bilde av en telefon som viser eat, sleep, code, repeat-->
             <aside class="data">
                 <img src="img/phone.jpg" alt="eat, sleep, code, repeat">
                 <!--Bildet er hentet fra; https://unsplash.com/photos/black-android-smartphone-vXInUOv1n84-->
@@ -150,10 +151,12 @@
 
         <!--Section 2 er en container for aside og article-->
         <section class="data-section2">
+            <!--aside som inneholder et bilde av et arbeidsområde-->
             <aside class="data">
                 <img src="img/arbeidsrom.jpg" alt="picture of a working space">
                 <!--Bildet er et stock-bilde fra iStcok, lastet ned med lisens: https://www.istockphoto.com/-->
             </aside>
+            <!--article som innholder fet skrift og tekst under hver av den fete teksten-->
             <article class="data">
                 <h2>Arbeidsrom</h2>
                     <b>Stille beliggenhet:</b>
@@ -170,10 +173,9 @@
 
         <!--Section 3 er en container for 2 articles-->
         <section class="data-section3">
+            <!--article som inneholder en overskrift og tekst, samt en linjeskift og så fet skrift og tekst-->
             <article class="data">
-                <h2>
-                    Orakeltjenesten
-                </h2>
+                <h2>Orakeltjenesten</h2>
                 <p>Orakeltjenesten ved Oslomet er en sentral støttetjeneste som tilbyr veiledning, hjelp og informasjon til studenter, ansatte og potensielle søkere.</p>
                 <p>Orakeltjenesten fungerer som en slags "informasjons- og støttesentral" som tar for seg et bredt spekter av spørsmål knyttet til universitetets ulike fagområder, administrasjon, IT-tjenester, opptakskrav, studieveiledning, og mer. De tilbyr hjelp og veiledning enten ved personlig oppmøte, telefon eller via e-post.</p>
                 <!-- Tekst er generert ved hjelp av AI-->
@@ -181,6 +183,7 @@
                 <b>Åpningstid Orakeltjenesten:</b>
                 <p>Tirsdag & Fredag 12:30-16:30</p>
             </article>
+            <!--article som inneholder en tekst over et bildet med en pil fra teksten som peker ned på bildet-->
             <article class="data">
                 <!--Pil-symbol sin kode er hentet fra; https://www.w3schools.com/charsets/ref_utf_arrows.asp-->
                 <b>Klikk på bildet under og stell deg i kø til Orakeltjenesten &#x2193;</b>
@@ -195,8 +198,11 @@
         <!--Section 4 er en container for h2 og aside-->
         <section class="data-section4">
             <h2>Finn din plass på torget og kom i gang med kodingen</h2>
-            <aside><img src="img/kode-banner.png" alt="banner with the text everyone can code"></aside>
-            <!--Bildet er hentet fra; https://unsplash.com/photos/black-bunting-flags-mDinBvq1Sfg-->
+            <!--aside som inneholder et bildert av et banner hvor det står everyone can code-->
+            <aside>
+                <img src="img/kode-banner.png" alt="banner with the text everyone can code">
+                <!--Bildet er hentet fra; https://unsplash.com/photos/black-bunting-flags-mDinBvq1Sfg-->
+            </aside>
         </section>
     </main>
 
