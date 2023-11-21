@@ -899,7 +899,7 @@ de ulike delene av siden*/
 @media screen and (max-width: 450px) {
   section {
     flex-direction: column;
-  }
+   }
 }
 
  /* Footer styling */
