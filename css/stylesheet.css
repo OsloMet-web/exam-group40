@@ -480,7 +480,7 @@ Det er for å line opp med resten av siden. */
 
 #pagetitle > h1{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: lighter;
     letter-spacing: 2px;
     color: var(--primary);
@@ -498,7 +498,7 @@ Det er for å line opp med resten av siden. */
   width: 100%;
   height: auto;
   box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
-  filter:brightness(0.5);
+  filter:brightness(0.8);
 }
 
 /**Bruker flexbokser**/
@@ -549,7 +549,7 @@ Det er for å line opp med resten av siden. */
 
 /**Overskrifter i artikkel**/
 .article-text>h2{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 10;
     color: #46494C;
     margin: 50px 0 20px 0;
@@ -673,7 +673,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
 
   /**Overskriftene i boksene**/
   .flip-box-back>h4{
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: lighter;
     font-size: larger;
     margin: 10px 0 10px 0;
