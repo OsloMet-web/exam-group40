@@ -37,8 +37,6 @@ body {
   background-color: var(--bg);
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  min-width: 100vh;
 }
 
 /* En container for alt hovedinnholdet. Elementene er midtstilt og det settes naturlige mellomrom mellom hvert av elementene (gap) */
@@ -130,7 +128,7 @@ img {
 
 /*Generell styling for header-bildene. Legger inn margin på topp og bunn, bruker viewheight for bedre skalering, og 
 setter headeren til å dekke hele beholderen. */
-.title-index, .title-data, .title-kantina, .title-access {
+.title-index, .title-data, .title-kantina, .title-access, .title-topical {
   margin-top: 6rem;
   margin-bottom: 4rem;
   text-align: center;
@@ -153,6 +151,7 @@ nav {
   height: 6rem;
   z-index: 100;
   justify-content: space-between;
+  overflow: Hidden;
   background-color: var(--bg-header);
 }
 
@@ -264,11 +263,11 @@ nav {
 
 @media screen and (max-width: 750px) {
 
-  /* Her fortsetter koden for burgermenyen. top er satt til -83rem for at innholdet skal "forsvinne" (skyves opp), selve navigasjonsbaren styles også*/
+  /* Her fortsetter koden for burgermenyen. top er satt til -100rem for at innholdet skal "forsvinne" (skyves opp), selve navigasjonsbaren styles også*/
   .navbar-menu {
     flex-direction: column;
     position: fixed;
-    top: -83rem;
+    top: -100rem;
     right: 0;
     width: 100%;
     height: 100%;
@@ -464,64 +463,67 @@ Det er for å line opp med resten av siden. */
   width: 100%;
 }
 
-/* TOPICAL */
+/* TOPICAL Styling*/
 
+/* endrer font-family */
 .topical-body{
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden; /*Fjerner den eksta marginen på siden*/
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
-.topical-article{
-    flex: 60%;
-}
-
-
-/*Tittelen foran forsidebilde*/
-#pagetitle{
-  position: relative;
-  text-align: center;
-}
-
-#pagetitle > h1{
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    color: var(--primary);
-    z-index: 1; /*Sette teksten foran bildet*/
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-   transform: translate(-50%, -50%); /*Teksten kommer på midten*/
-}
-
-/*Forsidebilde*/
-#frontpic{
-  box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
-  filter:brightness(0.8);
+/* setter font for overskrifter */
+.topical-body h1, .topical-body h2, .topical-body h3, .topical-body h4 {
+  font-weight: 10;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 /*Bruker flexbokser*/
 .flexbox {
-    display: flex;
+  display: flex;
+  width: 90%;
 }
+
+/* dette fungerer som en container for text innholdet på siden */
+.kolonne-top {
+  flex: 50%;
+  flex-direction: column;
+}
+
+/* styler slik som de andre seksjonene */
+.topical-article{
+  width: 80%;
+  margin: auto;
+}
+
+
+/*Styling for forsidebilde*/
+.title-topical {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/computer.avif);
+  box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
+  /* Bildet er hentet av Glenn Carstens-Peters på Unsplash.com */
+}
+
+.title-topical h1{
+  color: var(--primary);
+  z-index: 20;
+  top: 50%; 
+}
+
  /*Skalering for mellomstore skjermer*/
  @media screen and (max-width: 800px) {
   .flexbox {
-    flex-direction: column;
-  }
-  .flexbox article {
-    display: flex;
+    width: 100%;
     flex-direction: column;
   }
 
+  .topical-article {
+    width: 100%;
+  }
+
   .flexbox aside {
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 5rem;
-    margin:20%;
   }
 
   .flip-box {
@@ -533,33 +535,12 @@ Det er for å line opp med resten av siden. */
     margin-bottom:50%;
   }
 }
-/*Artikkelteksten*/
-.article-text{
-    padding:2rem;
-}
-
-/*Selve brødteksten sin styling*/
-.article-text>p{
-    font-size: medium;
-    text-align: left;
-}
 
 /*Overskrifter i artikkel*/
-.article-text>h2{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 10;
-    color: #46494C;
-    margin: 50px 0 20px 0;
-    font-size: x-large;
-    text-align: left;   
-}
-
-/*Bilde i artikkelen*/
-#pic1{
-    display: flex;
-    align-items: flex-end;
-    max-width: 100%;
-    margin-top: 50px;
+.topical-article h2{
+    margin-top: 2rem;
+    font-size: 2.5rem;  
+    color: var(--secondary);
 }
 
 /*Kilden til bilde*/
@@ -580,7 +561,6 @@ https://www.w3schools.com/css/css3_animations.asp*/
     padding: 20px;
     animation-iteration-count: infinite;
     font-family: Arial;
-    margin-left: 10px;
     margin-bottom: -15px;
 }
 
@@ -601,13 +581,14 @@ https://www.w3schools.com/css/css3_animations.asp*/
 
 /*Inspirert av W3Schools, flipboxer med bilder og info som snur med 3D-effekt
 https://www.w3schools.com/howto/howto_css_flip_box.asp*/
+  
   .flip-box {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 25rem;
+    height: 17rem;
     border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    margin: 80px;
+    perspective: 83rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
   }
@@ -641,12 +622,6 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp*/
     color: black;
     border:transparent;
   }
-
-  /*Styling på bildene*/
-  .flip-box-front>img{
-    width: 300px;
-    height: 200px;
-  }
   
   /*Styling bak*/
   .flip-box-back {
@@ -656,28 +631,24 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp*/
   }
 
   /*Styling på brødteksten i boksene*/
-  .flip-box-back>p {
-    padding:0 20px 20px 20px;
-    font-family: Arial, Helvetica, sans-serif;
+  .flip-box-back p {
+    padding: 1rem;
     line-height: 1.5rem;
     font-size: small;
   }
 
   /*Overskriftene i boksene*/
-  .flip-box-back>h4{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
-    font-size: larger;
-    margin: 10px 0 10px 0;
+  .flip-box-back h4{
+    font-size: 2.5rem;
+    margin-top: 1rem;
   }
 /*Overskrift på linjen med bilder*/
   #linetitle {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
     color: #46494C;
     text-align: center;
-    margin-top: 50px;
-    font-size: large;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   /*Knappene med linker, inspirert av W3Schools: https://www.w3schools.com/howto/howto_css_button_group.asp*/
@@ -694,7 +665,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp*/
   }
 /*Posisjon på knapper*/
   .buttonlink{
-    margin: -50px 30px 10px 30px;
+    margin: auto;
   }
  
   /*Styling på linkene*/
@@ -710,7 +681,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp*/
 
 /*Når musen er over linkene*/
   .buttonlink > a:hover{
-    color:#e4e6c3
+    color: var(--bg-header);
   }
 
 /* KANTINE */
