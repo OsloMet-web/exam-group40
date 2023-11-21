@@ -671,7 +671,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
     font-size: large;
   }
 
-  /*Knappene med linker*/
+  /*Knappene med linker, inspirert av W3Schools: https://www.w3schools.com/howto/howto_css_button_group.asp*/
   .extrareading{
     display: flex;
     float: left;
