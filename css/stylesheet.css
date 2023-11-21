@@ -515,7 +515,6 @@ Det er for å line opp med resten av siden. */
 
 /**Selve brødteksten sin styling**/
 .article-text>p{
-    flex-grow: 2;
     font-size: medium;
     text-align: left;
     
