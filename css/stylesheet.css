@@ -79,6 +79,7 @@ p {
 font-size: 1.5rem;
 line-height: 2.5rem;
 text-align: center;
+margin-bottom: 2%;
 }
 
 b {
@@ -820,21 +821,26 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
 
 /* lager border (linje) for å skille hver seksjon for bedre accessibility */
 .design-wrapper, .test-wrapper{
-  padding: 2%;
   border-top: solid;
 }
-
+.design-wrapper {
+  flex-direction: column;
+}
 /* gjør aside elementet for design boksen om til en flex-container for å utjevne bildene nedover */
 .design-pictures {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   gap: 6rem;
 }
 
 /* gir en høyde til bildene slik at alle holder samme høyde */
 .picture {
-  height: 6rem;
+  padding: 6%;
+  width: 100%;
+  padding: 0;
+  border: solid;
 }
 
 /* End of accessibility-page styling */
@@ -884,19 +890,17 @@ de ulike delene av siden*/
   }
 }
 
- @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   section, .row {
     flex-direction: column;
   }
+}
   
-  }
-  
-  @media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   section {
     flex-direction: column;
   }
-  
-  }
+}
 
  /* Footer styling */
  .main-footer {
