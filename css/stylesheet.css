@@ -864,11 +864,6 @@ de ulike delene av siden*/
   text-align: center;
 }
 
-/* Setter bildet i section 4 til å dekke hele siden til venstre og høyre*/
-.data-section4 img{
-    width: 100%;
-}
-
 /* Skalering for main */
 @media screen and (max-width: 1300px) {
   .library article{
