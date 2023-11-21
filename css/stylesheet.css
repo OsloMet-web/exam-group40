@@ -290,7 +290,7 @@ nav {
     background-color: rgba(247, 247, 242, 0.557);
   }
 
-  /* endrer stylingen for gjeldene skjerm for bedre navigering på mindre skjermer */
+  /* endrer stylingen på gjeldende side for bedre navigering på mindre skjermer */
   .point {
     cursor: default;
     width: 100%;
