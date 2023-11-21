@@ -786,6 +786,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
 /*Slutt på hovedinnhold for kantina*/
 
 /* ACCESSIBILITY */
+/* Bildet er hentet fra OsloMet sin nettside https://www.oslomet.no/om/studiested-pilestredet */
 .title-access {
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/pilestredet.jpeg);
 }
