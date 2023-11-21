@@ -1,5 +1,5 @@
 
-/**Velger alle elementer**/
+/*Gjelder alle elementer*/
 *{
   outline: 0;
   margin: 0;
@@ -467,7 +467,7 @@ Det er for å line opp med resten av siden. */
 
 .topical-body{
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden; /**Fjerner den eksta marginen på siden**/
+    overflow-x: hidden; /*Fjerner den eksta marginen på siden*/
 }
 
 .topical-article{
@@ -487,25 +487,25 @@ Det er for å line opp med resten av siden. */
     font-weight: lighter;
     letter-spacing: 2px;
     color: var(--primary);
-    z-index: 1; /**Sette teksten foran bildet**/
+    z-index: 1; /*Sette teksten foran bildet*/
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-   transform: translate(-50%, -50%); /**Teksten kommer på midten**/
+   transform: translate(-50%, -50%); /*Teksten kommer på midten*/
 }
 
-/**Forsidebilde**/
+/*Forsidebilde*/
 #frontpic{
   box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
   filter:brightness(0.8);
 }
 
-/**Bruker flexbokser**/
+/*Bruker flexbokser*/
 .flexbox {
     display: flex;
 }
- /**Skalering for mellomstore skjermer**/
+ /*Skalering for mellomstore skjermer*/
  @media screen and (max-width: 800px) {
   .flexbox {
     flex-direction: column;
@@ -537,13 +537,13 @@ Det er for å line opp med resten av siden. */
     padding:2rem;
 }
 
-/**Selve brødteksten sin styling**/
+/*Selve brødteksten sin styling*/
 .article-text>p{
     font-size: medium;
     text-align: left;
 }
 
-/**Overskrifter i artikkel**/
+/*Overskrifter i artikkel*/
 .article-text>h2{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 10;
@@ -561,15 +561,15 @@ Det er for å line opp med resten av siden. */
     margin-top: 50px;
 }
 
-/**Kilden til bilde**/
+/*Kilden til bilde*/
 #picsource1{
     margin: 0;
     font-size: smaller;
     color: grey;
 }
 
-/**Inspirert av W3Schools, animasjon med endrende farge på tekst
-https://www.w3schools.com/css/css3_animations.asp**/
+/*Inspirert av W3Schools, animasjon med endrende farge på tekst
+https://www.w3schools.com/css/css3_animations.asp*/
 .animation {
     width: 100%;
     height: 100px;
@@ -583,7 +583,7 @@ https://www.w3schools.com/css/css3_animations.asp**/
     margin-bottom: -15px;
 }
 
-/**Fargene i animasjonen**/
+/*Fargene i animasjonen*/
 @keyframes example {
     0%   {color: rgb(207, 33, 33);}
     10%  {color: rgb(234, 125, 58);}
@@ -598,8 +598,8 @@ https://www.w3schools.com/css/css3_animations.asp**/
     100% {color: rgb(207,33,33);}
   }
 
-/**Inspirert av W3Schools, flipboxer med bilder og info som snur med 3D-effekt
-https://www.w3schools.com/howto/howto_css_flip_box.asp**/
+/*Inspirert av W3Schools, flipboxer med bilder og info som snur med 3D-effekt
+https://www.w3schools.com/howto/howto_css_flip_box.asp*/
   .flip-box {
     background-color: transparent;
     width: 300px;
@@ -641,20 +641,20 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
     border:transparent;
   }
 
-  /**Styling på bildene**/
+  /*Styling på bildene*/
   .flip-box-front>img{
     width: 300px;
     height: 200px;
   }
   
-  /**Styling bak**/
+  /*Styling bak*/
   .flip-box-back {
     background-color: var(--bg-header);
     color: var(--text-primary);
     transform: rotateY(180deg);
   }
 
-  /**Styling på brødteksten i boksene**/
+  /*Styling på brødteksten i boksene*/
   .flip-box-back>p {
     padding:0 20px 20px 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -662,7 +662,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
     font-size: small;
   }
 
-  /**Overskriftene i boksene**/
+  /*Overskriftene i boksene*/
   .flip-box-back>h4{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: lighter;
@@ -691,12 +691,12 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
     clear: both;
     display: table;
   }
-/**Posisjon på knapper**/
+/*Posisjon på knapper*/
   .buttonlink{
     margin: -50px 30px 10px 30px;
   }
  
-  /**Styling på linkene**/
+  /*Styling på linkene*/
   .buttonlink > a:link, a:visited{
       background-color: #343F3E;
       color: white;
@@ -707,7 +707,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
       border:solid white 10px;
   }
 
-/**Når musen er over linkene**/
+/*Når musen er over linkene*/
   .buttonlink > a:hover{
     color:#e4e6c3
   }
@@ -790,30 +790,30 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/pilestredet.jpeg);
 }
 
-/* lager mellomrom mellom elementene i artikkel tekstene */
+/* Lager mellomrom mellom elementene i artikkel tekstene */
 .access-main-container article{
   justify-content: space-between;
   gap: 2rem;
 }
 
-/* setter en border rundt bildene */
+/* Setter en border rundt bildene */
 .access-main-container img {
   border: solid;
 }
 
-/* klassen er en flex med kolonne retning */
+/* Klassen er en flex med kolonne retning */
 .introduction {
   text-align: center;
   width: 80%;
 }
 
-/* setter de to hovedelementene (article og aside) i section boksene til å ta 50% av boksen hver */
+/* Setter de to hovedelementene (article og aside) i section boksene til å ta 50% av boksen hver */
 .access-kolonne, .design-pictures {
   flex: 50%;
   padding: 2%;
 }
 
-/* lager border (linje) for å skille hver seksjon for bedre accessibility */
+/* Lager border (linje) for å skille hver seksjon for bedre accessibility */
 .design-wrapper, .test-wrapper{
   border-top: solid;
 }
@@ -822,7 +822,7 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
   flex-direction: column;
 }
 
-/* gjør aside elementet for design boksen om til en flex-container for å utjevne bildene nedover */
+/* Gjør aside elementet for design boksen om til en flex-container for å utjevne bildene nedover */
 .design-pictures {
   display: flex;
   flex-direction: column;
@@ -885,7 +885,7 @@ de ulike delene av siden*/
 
 /* Footer styling */
 
- /* container for footer de to underseksjonene skal komme under hverandre*/
+ /* Container for footer de to underseksjonene skal komme under hverandre*/
  .main-footer {
   display: flex;
   flex-direction: column;
@@ -905,7 +905,7 @@ de ulike delene av siden*/
   color: var(--text-primary);
  }
 
- /* gir godt mellomrom mellom elementene i seksjonen */
+ /* Setter mellomrom mellom elementene i seksjonen */
  .main-footer section {
   margin-top: 4rem;
  }
@@ -933,7 +933,7 @@ de ulike delene av siden*/
   gap: 1rem;
  }
 
- /* lager hover effekt */
+ /* Lager hover effekt */
  .upper-footer li {
   font-size: 1.2rem;
   opacity: 0.8;
@@ -947,13 +947,13 @@ de ulike delene av siden*/
 
  /* Styling for elementer i underseksjon*/
 
- /* container for logoen */
+ /* Container for logoen */
  .flogo-wrapper {
   display: flex;
   align-items: center;
  }
 
- /* plassering av logo med hover-effekt */
+ /* Plassering av logo med hover-effekt */
  .flogo-icon {
   display: block;
   position: relative;
@@ -972,7 +972,7 @@ de ulike delene av siden*/
     transition: transform var(--hover-time) ease-in-out;
   }
 
-  /* styling av sosiale medier ikoner ul listen "social-media" fungerer som en container for liste elementene elementene er rad stilt
+  /* Styling av sosiale medier ikoner ul listen "social-media" fungerer som en container for liste elementene elementene er rad stilt
   med gode mellomrom mellom*/
  .social-media {
   display: flex;
@@ -990,18 +990,17 @@ de ulike delene av siden*/
   transition: all var(--hover-time) ease-out;
  }
 
- /* hover effekt */
+ /* Hover effekt */
  .social-media li:hover {
   opacity: 1;
   transition: var(--hover-time) ease-in-out;
   }
-
   
  .social-media img {
   margin: auto;
  }
 
- /* sosiale medier ikoner hentet fra https://iconmonstr.com/license/ og https://www.svgrepo.com/page/licensing/#CC%20Attribution*/
+ /* Sosiale medier ikoner hentet fra https://iconmonstr.com/license/ og https://www.svgrepo.com/page/licensing/#CC%20Attribution*/
 
  @media screen and (max-width: 1300px){
   .social-media li {
