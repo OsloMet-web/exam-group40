@@ -497,8 +497,6 @@ Det er for å line opp med resten av siden. */
 
 /**Forsidebilde**/
 #frontpic{
-  width: 100%;
-  height: auto;
   box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
   filter:brightness(0.8);
 }
@@ -509,32 +507,7 @@ Det er for å line opp med resten av siden. */
 }
 
 /**Skalering for mellomstore skjermer**/
-@media screen and (max-width: 800px) {
-  .flexbox {
-    flex-direction: column;
-  }
-  .flexbox article {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .flexbox aside {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    margin:20%;
-  }
-
-  .flip-box {
-    width: 100%;
-    height: auto;
-  }
-
-  .buttonlink{
-    margin-bottom:50%;
-  }
-}
 /*Artikkelteksten*/
 .article-text{
     padding:2rem;
@@ -720,6 +693,33 @@ https://www.w3schools.com/howto/howto_css_flip_box.asp**/
 /**Når musen er over linkene**/
   .buttonlink > a:hover{
     color:#e4e6c3
+  }
+
+  @media screen and (max-width: 800px) {
+    .flexbox {
+      flex-direction: column;
+    }
+    .flexbox article {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .flexbox aside {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      margin:20%;
+    }
+  
+    .flip-box {
+      width: 100%;
+      height: auto;
+    }
+  
+    .buttonlink{
+      margin-bottom:50%;
+    }
   }
 
 
