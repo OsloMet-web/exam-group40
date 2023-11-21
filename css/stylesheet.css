@@ -517,7 +517,6 @@ Det er for å line opp med resten av siden. */
 .article-text>p{
     font-size: medium;
     text-align: left;
-    
 }
 
 /**Overskrifter i artikkel**/
@@ -527,9 +526,7 @@ Det er for å line opp med resten av siden. */
     color: #46494C;
     margin: 50px 0 20px 0;
     font-size: x-large;
-    text-align: left;
-
-    
+    text-align: left;   
 }
 
 /*Bilde i artikkelen*/
