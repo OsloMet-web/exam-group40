@@ -70,38 +70,31 @@
  </header>
     <!--end Navigation bar-->
 
-   <main class="access-main-container">
-    
-        <header class="title-access">
-            <h1>ACCESSIBILITY</h1>
-        </header>
-        <article class="introduction">
-            <h2>Velkommen til Accessibility</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Quis varius quam quisque id diam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Nulla at volutpat diam ut.
-            </p>
-        </article>
-
-        <section class="design-wrapper">
-            <article class="access-kolonne">
-                <h2>Mal, struktur og valg av elementer</h2>
-                <p>
-                    Malen til nettstedet inkluderer bruken av nav, head og footer. Dette bygger på den visuelle meningen til siden
-                    og gjør den veldig brukervennlig for brukere med assisterende midler.
-                    I <strong>header</strong> har vi inkludert et bilde på hver side med et mørkt filter over for å klart kunne lyse frem sidenavnet! 
-                    I <strong>header</strong> har vi også <strong>nav</strong>. I navigasjonbaren har vi lenket til de andre sidene,
-                    og inkludert en OsloMet logo. Gjennom denne vil brukeren enkelt kunne navigere seg gjennom hver side!
-                    I <strong>footer</strong> vil bruker kunne navigere seg til tilgjengeligjhetserklæringen for nettstedet, også har vi har inkludert copyright og sosiale medier for skolen.
+<main class="access-main-container">
+    <header class="title-access">
+        <h1>ACCESSIBILITY</h1>
+    </header>
+    <article class="introduction">
+        <h2>Velkommen til Accessibility</h2>
+        <p>Her vil vi kort presentere kodevalg som er gjort for å fremme bedre tilgjengelighet og universell utforming av siden, 
+        og hvordan tilgjengeligheten er testet. </p>
+    </article>
+    <section class="design-wrapper">
+        <article class="access-kolonne">
+            <h2>Mal, struktur og valg av elementer</h2>
+             <p> Nettsiden er oppbygd med elementene nav, head og footer. Dette bygger på den visuelle utformingen av siden 
+                    og gjør den mer brukervennlig for personer som har behov for assisterende hjelpemidler. 
+                    I <strong>header</strong> elementet på hver side har bildet et mørkt filter over, for å gjøre overskriften mer synlig og lesbar. 
+                    I <strong>header</strong> har vi også et <strong>nav</strong> element. I navigasjonbaren har vi lenket til 
+                    de andre sidene, og inkludert en OsloMet logo. Gjennom denne vil brukeren enkelt kunne navigere seg gjennom 
+                    hver side. I <strong>footer</strong> kan brukeren navigere seg til tilgjengeligjhetserklæringen for nettstedet.
+                    Her har vi også inkludert informasjon om opphavsrett og lenker til sosiale medier. 
                 </p>
-                <p>
-                    I <strong>html</strong> elementet har vi tatt i bruk "nb" og "en". Dette er slik at en stemme-assistent skal kunne forstå hvilket språk som er i bruk på siden. 
-                    "nb" er tatt i bruk i den generelle
-                    side malen, men "en" er tatt i bruk for topical da innholdet på denne siden er engelsk.
-                </p>
-                <p>
-                    Vi har hatt stort fokus på god lesbarhet for brukeren og har valgt fonten Raleway hentet fra google fonts
-                    for å strukturere innholdet.
-                </p>
+                <p>I <strong>html</strong> elementet har satt sidens språk til "nb" for de generelle sidene, og "en" for 
+                    topical-siden da innholdet på denne siden er skrevet på engelsk. Dette gjør at en stemme-assistent kan 
+                    forstå hvilket språk teksten på siden er skrevet i.</p>
+                <p>Vi har hatt stort fokus på god lesbarhet og universell utforming. Vi har valgt fonten Raleway som font på siden,
+                    da denne er sans-serif, og har en tydelig, enkel og klar form. </p>
             </article>
             <article class="design-pictures">
                 <aside class="picture"><img src="img/navigasjonbar.png" alt="bruken-av point-klassen"></aside>
@@ -112,23 +105,18 @@
 
         <section class="test-wrapper">
             <article class="access-kolonne">
-                <h2>Resultater av lighthouse testen</h2>
-                <p>
-                    for å teste tilgjengeligjheten til siden har vi valgt å ta i brukt lighthouse. Resultatene ga oss 100 i accessibility
-                    med
-                </p>
-                <p>Fra testen kan vi peke ut noen ting! Vi har tatt i bruk divesre attributter, slik som <strong>alt</strong> for å gi bruker
-                    en beskrivelse av bildene vi har valgt å bruke, dette kan være veldig vikitg for brukere som tar i bruk skjermlesere
-                    og for bildene våres som ikke ikke har noen spesifikk tekst som beskriver dem!
-                </p>
-                <p>Testen har også pekt på vår bruk av liste elementer. I navigasjonbaren har vi valgt en <strong>"ul"</strong>
-                    En uroden liste. Denne listen inneholder <strong>li</strong> liste elementer, blir dette enklere
-                    å tolke for en bruker med skjermleser da disse krever at <strong>li</strong> elementene er i et foreldreelement
-                    for å kunne funke korrekt.
-                </p>
-                <p>
-                    Videre peker testen på fargekontraster i hjemmesiden! dette har vi hatt et stort fokus på. Fargekontrastene lar
-                    svaksynte brukere spesielt enkelt kunne navigere seg gjennom siden uten store problemer. Videre
+                <h2>Resultater av Lighthouse testen</h2>
+                <p> For å teste tilgjengeligjheten til siden har vi valgt å bruke Lighthouse sin test. Resultatene ga oss en
+                    score på 100 i accessibility. </p>
+                <p>Fra testresultatet kan vi peke ut flere ting som fremmer bedre tilgjengelighet. Vi har brukt diverse 
+                    attributter, slik som <strong>alt</strong> for å gi brukeren en beskrivelse av bildene. Dette kan være 
+                    veldig vikitg for brukere som har behov for skjermlesere, og for bilder uten bildetekst. </p>
+                <p>Testen har også pekt på bruken vår av liste-elementer. I navigasjonbaren har vi valgt en <strong>"ul"</strong> 
+                    - en uordnet liste. Denne listen inneholder <strong>li</strong> liste elementer. Dette er enklere å tolke 
+                    for en bruker med skjermleser, da disse krever at <strong>li</strong> elementene er i et foreldreelement
+                    for å kunne fungere korrekt.</p>
+                <p> Videre peker resultatene fra testen på fargekontrast. Dette er noe vi har hatt stort fokus på. Fargekontrastene lar
+                    svaksynte brukere navigere seg enklere gjennom siden. Videre
                 </p>
             </article>
             <article class="design-pictures">
